@@ -4,7 +4,8 @@
     .castle-marker-pin
       .castle-marker-head
       .castle-marker-shaft
-    .castle-marker-label {{ label }}
+    .castle-marker-label
+      .castle-marker-label-content {{ label }}
 
 
 </template>
