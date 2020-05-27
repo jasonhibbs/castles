@@ -4,9 +4,9 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 const mapStart = {
-  zoom: 4.75,
-  lat: 55,
-  lng: -4.2,
+  zoom: 5.75,
+  lat: 54.54333,
+  lng: -1.92667,
   style: 'mapbox://styles/jasonhibbs/ckapkbzfh0fmw1instsyk4cph?fresh=true',
 }
 
