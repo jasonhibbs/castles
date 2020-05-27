@@ -49,6 +49,8 @@ export default class CastleMap extends Vue {
 
   onMapLoaded(e: any) {
     this.$store.state.map = e.map
+    this.mapView.center = this.map.getCenter()
+    this.mapView.zoom = this.map.getZoom()
     this.updateBounds()
   }
 

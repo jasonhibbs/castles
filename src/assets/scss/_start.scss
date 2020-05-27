@@ -2,27 +2,70 @@
 
 #app > h1 {
   position: fixed;
-  top: rem(20);
-  left: rem(20);
+  top: 0;
+  left: 0;
   z-index: 1;
+  padding: rem(20);
 }
 
 // Castles
+
+#map {
+  --color-map-base: #f2eee8;
+  --color-map-text: #464948;
+}
 
 .castle-marker {
   --size-exp: calc(var(--map-zoom) * (var(--map-zoom) * 0.875));
   --size: calc(0.125px * var(--size-exp));
   --width: max(2px, var(--size));
   --height: max(2px, var(--size));
+  --pin-background-color: var(--color-map-text);
+  --pin-halo-color: var(--color-map-base);
+
+  cursor: pointer;
+  font-family: var(--font-body);
+  color: var(--color-map-text);
+  padding: rem(8);
+  // mix-blend-mode: luminosity;
+
+  &:hover {
+    z-index: 1;
+  }
 }
 
 .castle-marker-head {
   width: var(--width);
   height: var(--height);
-  background-color: #000;
-  border-radius: var(--size);
+  background-color: var(--pin-background-color);
+  box-shadow: 0 0 0 2px var(--pin-halo-color);
+  border-radius: 1em;
+  transition: box-shadow 0.1s ease-out;
+
+  .castle-marker:hover & {
+    box-shadow: 0 0 0 2px var(--pin-halo-color),
+      0 0 0 4px var(--pin-background-color);
+  }
 }
 
 .castle-marker-label {
-  display: none;
+  pointer-events: none;
+  position: absolute;
+  bottom: 50%;
+  left: 100%;
+  width: max-content;
+  font-size: rem(16);
+  padding-top: rem(1);
+  padding-left: rem(5);
+  padding-right: rem(5);
+
+  color: #f2eee8;
+  background-color: var(--color-map-text);
+
+  opacity: 0;
+  transition: opacity 0.1s ease-out;
+
+  .castle-marker:hover & {
+    opacity: 1;
+  }
 }
