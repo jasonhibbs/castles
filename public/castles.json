@@ -1,0 +1,3414 @@
+[
+  {
+    "name": "Someries Castle",
+    "href": "https://en.wikipedia.org/wiki/Someries_Castle",
+    "coords": {
+      "lat": 51.86889,
+      "lng": -0.37583
+    }
+  },
+  {
+    "name": "Donnington Castle",
+    "href": "https://en.wikipedia.org/wiki/Donnington_Castle",
+    "coords": {
+      "lat": 51.41944,
+      "lng": -1.3375
+    }
+  },
+  {
+    "name": "Windsor Castle",
+    "href": "https://en.wikipedia.org/wiki/Windsor_Castle",
+    "coords": {
+      "lat": 51.48333,
+      "lng": -0.60417
+    }
+  },
+  {
+    "name": "Boarstall Tower",
+    "href": "https://en.wikipedia.org/wiki/Boarstall_Tower",
+    "coords": {
+      "lat": 51.82333,
+      "lng": -1.09556
+    }
+  },
+  {
+    "name": "Buckden Palace",
+    "href": "https://en.wikipedia.org/wiki/Buckden_Towers",
+    "coords": {
+      "lat": 52.29417,
+      "lng": -0.2525
+    }
+  },
+  {
+    "name": "Elton Hall",
+    "href": "https://en.wikipedia.org/wiki/Elton_Hall",
+    "coords": {
+      "lat": 52.52361,
+      "lng": -0.3975
+    }
+  },
+  {
+    "name": "Kimbolton Castle",
+    "href": "https://en.wikipedia.org/wiki/Kimbolton_Castle",
+    "coords": {
+      "lat": 52.2964,
+      "lng": -0.3884
+    }
+  },
+  {
+    "name": "Kirtling Tower",
+    "href": "https://en.wikipedia.org/wiki/Kirtling_Tower",
+    "coords": {
+      "lat": 52.1891,
+      "lng": 0.465
+    }
+  },
+  {
+    "name": "Longthorpe Tower",
+    "href": "https://en.wikipedia.org/wiki/Longthorpe_Tower",
+    "coords": {
+      "lat": 52.5708,
+      "lng": -0.2869
+    }
+  },
+  {
+    "name": "Northborough Castle",
+    "href": "https://en.wikipedia.org/wiki/Northborough_Castle",
+    "coords": {
+      "lat": 52.6557,
+      "lng": -0.2998
+    }
+  },
+  {
+    "name": "Woodcroft Castle",
+    "href": "https://en.wikipedia.org/wiki/Woodcroft_Castle",
+    "coords": {
+      "lat": 52.6263,
+      "lng": -0.3172
+    }
+  },
+  {
+    "name": "Beeston Castle",
+    "href": "https://en.wikipedia.org/wiki/Beeston_Castle",
+    "coords": {
+      "lat": 53.1277,
+      "lng": -2.6913
+    }
+  },
+  {
+    "name": "Chester Castle",
+    "href": "https://en.wikipedia.org/wiki/Chester_Castle",
+    "coords": {
+      "lat": 53.1853,
+      "lng": -2.8923
+    }
+  },
+  {
+    "name": "Cholmondeley Castle",
+    "href": "https://en.wikipedia.org/wiki/Cholmondeley_Castle",
+    "coords": {
+      "lat": 53.0572,
+      "lng": -2.6932
+    }
+  },
+  {
+    "name": "Doddington Castle",
+    "href": "https://en.wikipedia.org/wiki/Doddington_Castle",
+    "coords": {
+      "lat": 53.0197,
+      "lng": -2.4356
+    }
+  },
+  {
+    "name": "Halton Castle",
+    "href": "https://en.wikipedia.org/wiki/Halton_Castle",
+    "coords": {
+      "lat": 53.3331,
+      "lng": -2.6957
+    }
+  },
+  {
+    "name": "Peckforton Castle",
+    "href": "https://en.wikipedia.org/wiki/Peckforton_Castle",
+    "coords": {
+      "lat": 53.1175,
+      "lng": -2.699
+    }
+  },
+  {
+    "name": "Auckland Castle",
+    "href": "https://en.wikipedia.org/wiki/Auckland_Castle",
+    "coords": {
+      "lat": 54.6664,
+      "lng": -1.6702
+    }
+  },
+  {
+    "name": "Barnard Castle",
+    "href": "https://en.wikipedia.org/wiki/Barnard_Castle_(castle)",
+    "coords": {
+      "lat": 54.54333,
+      "lng": -1.92667
+    }
+  },
+  {
+    "name": "Bowes Castle",
+    "href": "https://en.wikipedia.org/wiki/Bowes_Castle",
+    "coords": {
+      "lat": 54.5168,
+      "lng": -2.0139
+    }
+  },
+  {
+    "name": "Brancepeth Castle",
+    "href": "https://en.wikipedia.org/wiki/Brancepeth_Castle",
+    "coords": {
+      "lat": 54.73333,
+      "lng": -1.65
+    }
+  },
+  {
+    "name": "Durham Castle",
+    "href": "https://en.wikipedia.org/wiki/Durham_Castle",
+    "coords": {
+      "lat": 54.77472,
+      "lng": -1.57611
+    }
+  },
+  {
+    "name": "Lambton Castle",
+    "href": "https://en.wikipedia.org/wiki/Lambton_Castle",
+    "coords": {
+      "lat": 54.867,
+      "lng": -1.536
+    }
+  },
+  {
+    "name": "Lumley Castle",
+    "href": "https://en.wikipedia.org/wiki/Lumley_Castle",
+    "coords": {
+      "lat": 54.85472,
+      "lng": -1.55293
+    }
+  },
+  {
+    "name": "Mortham Tower",
+    "href": "https://en.wikipedia.org/wiki/Greta_Bridge",
+    "coords": {
+      "lat": 54.51336,
+      "lng": -1.86715
+    }
+  },
+  {
+    "name": "Raby Castle",
+    "href": "https://en.wikipedia.org/wiki/Raby_Castle",
+    "coords": {
+      "lat": 54.59083,
+      "lng": -1.80194
+    }
+  },
+  {
+    "name": "Raby Old Lodge",
+    "href": "https://en.wikipedia.org/wiki/Staindrop",
+    "coords": {
+      "lat": 54.567,
+      "lng": -1.8
+    }
+  },
+  {
+    "name": "Scargill Castle",
+    "href": "https://en.wikipedia.org/wiki/Scargill,_County_Durham",
+    "coords": {
+      "lat": 54.49125,
+      "lng": -1.92279
+    }
+  },
+  {
+    "name": "Walworth Castle",
+    "href": "https://en.wikipedia.org/wiki/Walworth_Castle",
+    "coords": {
+      "lat": 54.565,
+      "lng": -1.639
+    }
+  },
+  {
+    "name": "Witton Castle",
+    "href": "https://en.wikipedia.org/wiki/Witton_Castle",
+    "coords": {
+      "lat": 54.6684,
+      "lng": -1.7643
+    }
+  },
+  {
+    "name": "Caerhays Castle",
+    "href": "https://en.wikipedia.org/wiki/Caerhays_Castle",
+    "coords": {
+      "lat": 50.2396,
+      "lng": -4.8467
+    }
+  },
+  {
+    "name": "Carn Brea Castle",
+    "href": "https://en.wikipedia.org/wiki/Carn_Brea_Castle",
+    "coords": {
+      "lat": 50.2224583,
+      "lng": -5.2448333
+    }
+  },
+  {
+    "name": "Ince Castle",
+    "href": "https://en.wikipedia.org/wiki/Ince_Castle",
+    "coords": {
+      "lat": 50.3899284,
+      "lng": -4.25513
+    }
+  },
+  {
+    "name": "Launceston Castle",
+    "href": "https://en.wikipedia.org/wiki/Launceston_Castle",
+    "coords": {
+      "lat": 50.63757,
+      "lng": -4.36144
+    }
+  },
+  {
+    "name": "Pendennis Castle",
+    "href": "https://en.wikipedia.org/wiki/Pendennis_Castle",
+    "coords": {
+      "lat": 50.14722,
+      "lng": -5.04777
+    }
+  },
+  {
+    "name": "Pengersick Castle",
+    "href": "https://en.wikipedia.org/wiki/Germoe#Pengersick_Castle",
+    "coords": {
+      "lat": 50.115,
+      "lng": -5.379
+    }
+  },
+  {
+    "name": "Place House, Fowey",
+    "href": "https://en.wikipedia.org/wiki/Place_House",
+    "coords": {
+      "lat": 50.336,
+      "lng": -4.637
+    }
+  },
+  {
+    "name": "Restormel Castle",
+    "href": "https://en.wikipedia.org/wiki/Restormel_Castle",
+    "coords": {
+      "lat": 50.4223,
+      "lng": -4.6715
+    }
+  },
+  {
+    "name": "St Catherine's Castle",
+    "href": "https://en.wikipedia.org/wiki/St_Catherine%27s_Castle",
+    "coords": {
+      "lat": 50.328222,
+      "lng": -4.644444
+    }
+  },
+  {
+    "name": "St. Mawes Castle",
+    "href": "https://en.wikipedia.org/wiki/St_Mawes_Castle",
+    "coords": {
+      "lat": 50.15486,
+      "lng": -5.02377
+    }
+  },
+  {
+    "name": "St. Michael's Mount",
+    "href": "https://en.wikipedia.org/wiki/St_Michael%27s_Mount",
+    "coords": {
+      "lat": 50.116,
+      "lng": -5.4772
+    }
+  },
+  {
+    "name": "Tintagel Castle",
+    "href": "https://en.wikipedia.org/wiki/Tintagel_Castle",
+    "coords": {
+      "lat": 50.6679737,
+      "lng": -4.7599283
+    }
+  },
+  {
+    "name": "Trematon Castle",
+    "href": "https://en.wikipedia.org/wiki/Trematon_Castle",
+    "coords": {
+      "lat": 50.40044,
+      "lng": -4.23774
+    }
+  },
+  {
+    "name": "Appleby Castle",
+    "href": "https://en.wikipedia.org/wiki/Appleby_Castle",
+    "coords": {
+      "lat": 54.57423,
+      "lng": -2.48878
+    }
+  },
+  {
+    "name": "Armathwaite Castle",
+    "href": "https://en.wikipedia.org/wiki/Armathwaite_Castle",
+    "coords": {
+      "lat": 54.8055,
+      "lng": -2.7701
+    }
+  },
+  {
+    "name": "Arnside Tower",
+    "href": "https://en.wikipedia.org/wiki/Arnside_Tower",
+    "coords": {
+      "lat": 54.1841,
+      "lng": -2.8335
+    }
+  },
+  {
+    "name": "Askerton Castle",
+    "href": "https://en.wikipedia.org/wiki/Askerton_Castle",
+    "coords": {
+      "lat": 55.0153,
+      "lng": -2.7053
+    }
+  },
+  {
+    "name": "Beetham Hall",
+    "href": "https://en.wikipedia.org/wiki/Beetham",
+    "coords": {
+      "lat": 54.208,
+      "lng": -2.775
+    }
+  },
+  {
+    "name": "Bewcastle Castle",
+    "href": "https://en.wikipedia.org/wiki/Bewcastle_Castle",
+    "coords": {
+      "lat": 55.0649,
+      "lng": -2.6811
+    }
+  },
+  {
+    "name": "Bewley Castle",
+    "href": "https://en.wikipedia.org/wiki/Colby,_Cumbria",
+    "coords": {
+      "lat": 54.578,
+      "lng": -2.519
+    }
+  },
+  {
+    "name": "Blencow Hall",
+    "href": "https://en.wikipedia.org/wiki/Blencow",
+    "coords": {
+      "lat": 54.666,
+      "lng": -2.85
+    }
+  },
+  {
+    "name": "Brackenburgh Old Tower",
+    "href": "https://en.wikipedia.org/wiki/Calthwaite",
+    "coords": {
+      "lat": 54.754,
+      "lng": -2.828
+    }
+  },
+  {
+    "name": "Brackenhill Tower",
+    "href": "https://en.wikipedia.org/wiki/Brackenhill_Tower",
+    "coords": {
+      "lat": 55.016764,
+      "lng": -2.8682286
+    }
+  },
+  {
+    "name": "Branthwaite Hall",
+    "href": "https://en.wikipedia.org/wiki/Branthwaite_Hall",
+    "coords": {
+      "lat": 54.6142,
+      "lng": -3.4493
+    }
+  },
+  {
+    "name": "Brough Castle",
+    "href": "https://en.wikipedia.org/wiki/Brough_Castle",
+    "coords": {
+      "lat": 54.5218,
+      "lng": -2.3244
+    }
+  },
+  {
+    "name": "Brougham Castle",
+    "href": "https://en.wikipedia.org/wiki/Brougham_Castle",
+    "coords": {
+      "lat": 54.654,
+      "lng": -2.7191
+    }
+  },
+  {
+    "name": "Brougham Hall",
+    "href": "https://en.wikipedia.org/wiki/Brougham_Hall",
+    "coords": {
+      "lat": 54.648,
+      "lng": -2.7329
+    }
+  },
+  {
+    "name": "Broughton Tower",
+    "href": "https://en.wikipedia.org/wiki/Broughton-in-Furness",
+    "coords": {
+      "lat": 54.278,
+      "lng": -3.214
+    }
+  },
+  {
+    "name": "Burneside Hall",
+    "href": "https://en.wikipedia.org/wiki/Burneside_Hall",
+    "coords": {
+      "lat": 54.3563,
+      "lng": -2.757
+    }
+  },
+  {
+    "name": "Carlisle Castle",
+    "href": "https://en.wikipedia.org/wiki/Carlisle_Castle",
+    "coords": {
+      "lat": 54.89726,
+      "lng": -2.941936
+    }
+  },
+  {
+    "name": "Catterlen Hall",
+    "href": "https://en.wikipedia.org/wiki/Catterlen",
+    "coords": {
+      "lat": 54.683333,
+      "lng": -2.816667
+    }
+  },
+  {
+    "name": "Clifton Hall",
+    "href": "https://en.wikipedia.org/wiki/Clifton_Hall,_Cumbria",
+    "coords": {
+      "lat": 54.6368,
+      "lng": -2.7297
+    }
+  },
+  {
+    "name": "Cockermouth Castle",
+    "href": "https://en.wikipedia.org/wiki/Cockermouth_Castle",
+    "coords": {
+      "lat": 54.66552,
+      "lng": -3.36122
+    }
+  },
+  {
+    "name": "Corby Castle",
+    "href": "https://en.wikipedia.org/wiki/Corby_Castle",
+    "coords": {
+      "lat": 54.8797,
+      "lng": -2.8262
+    }
+  },
+  {
+    "name": "Dacre Castle",
+    "href": "https://en.wikipedia.org/wiki/Dacre_Castle",
+    "coords": {
+      "lat": 54.6316,
+      "lng": -2.8365
+    }
+  },
+  {
+    "name": "Dalston Hall",
+    "href": "https://en.wikipedia.org/wiki/Dalston_Hall",
+    "coords": {
+      "lat": 54.85466,
+      "lng": -2.97302
+    }
+  },
+  {
+    "name": "Dalton Castle",
+    "href": "https://en.wikipedia.org/wiki/Dalton_Castle",
+    "coords": {
+      "lat": 54.1554,
+      "lng": -3.1865
+    }
+  },
+  {
+    "name": "Drawdykes Castle",
+    "href": "https://en.wikipedia.org/wiki/Linstock,_Cumbria",
+    "coords": {
+      "lat": 54.917,
+      "lng": -2.894
+    }
+  },
+  {
+    "name": "Drumburgh Castle",
+    "href": "https://en.wikipedia.org/wiki/Drumburgh_Castle",
+    "coords": {
+      "lat": 54.9266,
+      "lng": -3.1484
+    }
+  },
+  {
+    "name": "Egremont Castle",
+    "href": "https://en.wikipedia.org/wiki/Egremont_Castle",
+    "coords": {
+      "lat": 54.47836,
+      "lng": -3.5294
+    }
+  },
+  {
+    "name": "Gleaston Castle",
+    "href": "https://en.wikipedia.org/wiki/Gleaston_Castle",
+    "coords": {
+      "lat": 54.134,
+      "lng": -3.1317
+    }
+  },
+  {
+    "name": "Greystoke Castle",
+    "href": "https://en.wikipedia.org/wiki/Greystoke_Castle",
+    "coords": {
+      "lat": 54.66999,
+      "lng": -2.87757
+    }
+  },
+  {
+    "name": "Harbybrow Tower",
+    "href": "https://en.wikipedia.org/wiki/Harbybrow",
+    "coords": {
+      "lat": 54.762,
+      "lng": -3.256
+    }
+  },
+  {
+    "name": "Hayton Castle",
+    "href": "https://en.wikipedia.org/wiki/Hayton_Castle",
+    "coords": {
+      "lat": 54.762593,
+      "lng": -3.384152
+    }
+  },
+  {
+    "name": "Hazelslack Tower",
+    "href": "https://en.wikipedia.org/wiki/Hazelslack",
+    "coords": {
+      "lat": 54.201,
+      "lng": -2.803
+    }
+  },
+  {
+    "name": "Howgill Castle",
+    "href": "https://en.wikipedia.org/wiki/Milburn,_Cumbria#Landmarks",
+    "coords": {
+      "lat": 54.657,
+      "lng": -2.536
+    }
+  },
+  {
+    "name": "Hutton-in-the-Forest",
+    "href": "https://en.wikipedia.org/wiki/Hutton-in-the-Forest",
+    "coords": {
+      "lat": 54.714,
+      "lng": -2.839
+    }
+  },
+  {
+    "name": "Hutton John",
+    "href": "https://en.wikipedia.org/wiki/Hutton_John",
+    "coords": {
+      "lat": 54.633,
+      "lng": -2.874
+    }
+  },
+  {
+    "name": "Ingmire Hall",
+    "href": "https://en.wikipedia.org/wiki/Sedbergh#Landmarks",
+    "coords": {
+      "lat": 54.322,
+      "lng": -2.526
+    }
+  },
+  {
+    "name": "Isel Hall",
+    "href": "https://en.wikipedia.org/wiki/Blindcrake",
+    "coords": {
+      "lat": 54.696,
+      "lng": -3.3
+    }
+  },
+  {
+    "name": "Kendal Castle",
+    "href": "https://en.wikipedia.org/wiki/Kendal_Castle",
+    "coords": {
+      "lat": 54.32492,
+      "lng": -2.73644
+    }
+  },
+  {
+    "name": "Kentmere Hall",
+    "href": "https://en.wikipedia.org/wiki/Kentmere",
+    "coords": {
+      "lat": 54.429,
+      "lng": -2.84
+    }
+  },
+  {
+    "name": "Kirkandrews Tower",
+    "href": "https://en.wikipedia.org/wiki/Listed_buildings_in_Kirkandrews",
+    "coords": {
+      "lat": 55.03813,
+      "lng": -2.95734
+    }
+  },
+  {
+    "name": "Linstock Castle",
+    "href": "https://en.wikipedia.org/wiki/Linstock,_Cumbria",
+    "coords": {
+      "lat": 54.917,
+      "lng": -2.894
+    }
+  },
+  {
+    "name": "Lowther Castle",
+    "href": "https://en.wikipedia.org/wiki/Lowther_Castle",
+    "coords": {
+      "lat": 54.60583,
+      "lng": -2.74028
+    }
+  },
+  {
+    "name": "Middleton Hall",
+    "href": "https://en.wikipedia.org/w/index.php?title=Middleton_Hall,_Cumbria&action=edit&redlink=1"
+  },
+  {
+    "name": "Millom Castle",
+    "href": "https://en.wikipedia.org/wiki/Millom_Castle",
+    "coords": {
+      "lat": 54.220982,
+      "lng": -3.27247
+    }
+  },
+  {
+    "name": "Muncaster Castle",
+    "href": "https://en.wikipedia.org/wiki/Muncaster_Castle",
+    "coords": {
+      "lat": 54.3546554,
+      "lng": -3.3808693
+    }
+  },
+  {
+    "name": "Naworth Castle",
+    "href": "https://en.wikipedia.org/wiki/Naworth_Castle",
+    "coords": {
+      "lat": 54.95556,
+      "lng": -2.68889
+    }
+  },
+  {
+    "name": "Newbiggin Hall",
+    "href": "https://en.wikipedia.org/wiki/Newbiggin,_Kirkby_Thore",
+    "coords": {
+      "lat": 54.64999,
+      "lng": -2.5773
+    }
+  },
+  {
+    "name": "Pendragon Castle",
+    "href": "https://en.wikipedia.org/wiki/Pendragon_Castle",
+    "coords": {
+      "lat": 54.41747,
+      "lng": -2.33898
+    }
+  },
+  {
+    "name": "Penrith Castle",
+    "href": "https://en.wikipedia.org/wiki/Penrith_Castle",
+    "coords": {
+      "lat": 54.6621,
+      "lng": -2.7573
+    }
+  },
+  {
+    "name": "Piel Castle",
+    "href": "https://en.wikipedia.org/wiki/Piel_Castle",
+    "coords": {
+      "lat": 54.0626,
+      "lng": -3.1733
+    }
+  },
+  {
+    "name": "Prior's Tower, Carlisle",
+    "href": "https://en.wikipedia.org/wiki/Carlisle_Cathedral#Architecture",
+    "coords": {
+      "lat": 54.89472,
+      "lng": -2.93861
+    }
+  },
+  {
+    "name": "Rose Castle",
+    "href": "https://en.wikipedia.org/wiki/Rose_Castle",
+    "coords": {
+      "lat": 54.8064,
+      "lng": -2.9802
+    }
+  },
+  {
+    "name": "Scaleby Castle",
+    "href": "https://en.wikipedia.org/wiki/Scaleby_Castle",
+    "coords": {
+      "lat": 54.9532,
+      "lng": -2.8619
+    }
+  },
+  {
+    "name": "Sizergh Castle",
+    "href": "https://en.wikipedia.org/wiki/Sizergh_Castle_%26_Garden",
+    "coords": {
+      "lat": 54.28444,
+      "lng": -2.77194
+    }
+  },
+  {
+    "name": "Toppin Castle",
+    "href": "https://en.wikipedia.org/wiki/Hayton,_Carlisle",
+    "coords": {
+      "lat": 54.911,
+      "lng": -2.769
+    }
+  },
+  {
+    "name": "Ubarrow Hall",
+    "href": "https://en.wikipedia.org/wiki/Longsleddale",
+    "coords": {
+      "lat": 54.419,
+      "lng": -2.77
+    }
+  },
+  {
+    "name": "Wharton Hall",
+    "href": "https://en.wikipedia.org/wiki/Wharton_Hall",
+    "coords": {
+      "lat": 54.4505,
+      "lng": -2.3547
+    }
+  },
+  {
+    "name": "Whitehall, Mealsgate",
+    "href": "https://en.wikipedia.org/wiki/Mealsgate",
+    "coords": {
+      "lat": 54.768,
+      "lng": -3.231
+    }
+  },
+  {
+    "name": "Workington Hall",
+    "href": "https://en.wikipedia.org/wiki/Workington",
+    "coords": {
+      "lat": 54.6365,
+      "lng": -3.5549
+    }
+  },
+  {
+    "name": "Wray Castle",
+    "href": "https://en.wikipedia.org/wiki/Wray_Castle",
+    "coords": {
+      "lat": 54.4006345,
+      "lng": -2.9641913
+    }
+  },
+  {
+    "name": "Wraysholme Tower",
+    "href": "https://en.wikipedia.org/wiki/Allithwaite",
+    "coords": {
+      "lat": 54.1802,
+      "lng": -2.9398
+    }
+  },
+  {
+    "name": "Yanwath Hall",
+    "href": "https://en.wikipedia.org/wiki/Yanwath_and_Eamont_Bridge",
+    "coords": {
+      "lat": 54.642,
+      "lng": -2.741
+    }
+  },
+  {
+    "name": "Bolsover Castle",
+    "href": "https://en.wikipedia.org/wiki/Bolsover_Castle",
+    "coords": {
+      "lat": 53.23139,
+      "lng": -1.29694
+    }
+  },
+  {
+    "name": "Codnor Castle",
+    "href": "https://en.wikipedia.org/wiki/Codnor_Castle",
+    "coords": {
+      "lat": 53.0454,
+      "lng": -1.3548
+    }
+  },
+  {
+    "name": "Elvaston Castle",
+    "href": "https://en.wikipedia.org/wiki/Elvaston_Castle",
+    "coords": {
+      "lat": 52.89278,
+      "lng": -1.39528
+    }
+  },
+  {
+    "name": "Haddon Hall",
+    "href": "https://en.wikipedia.org/wiki/Haddon_Hall",
+    "coords": {
+      "lat": 53.1939,
+      "lng": -1.6498
+    }
+  },
+  {
+    "name": "Mackworth Castle",
+    "href": "https://en.wikipedia.org/wiki/Mackworth_Castle",
+    "coords": {
+      "lat": 52.9369,
+      "lng": -1.5352
+    }
+  },
+  {
+    "name": "Peveril Castle",
+    "href": "https://en.wikipedia.org/wiki/Peveril_Castle",
+    "coords": {
+      "lat": 53.3402,
+      "lng": -1.7772
+    }
+  },
+  {
+    "name": "Riber Castle",
+    "href": "https://en.wikipedia.org/wiki/Riber_Castle",
+    "coords": {
+      "lat": 53.1278,
+      "lng": -1.543
+    }
+  },
+  {
+    "name": "Wingfield Manor",
+    "href": "https://en.wikipedia.org/wiki/Wingfield_Manor",
+    "coords": {
+      "lat": 53.08911,
+      "lng": -1.44303
+    }
+  },
+  {
+    "name": "Affeton Castle",
+    "href": "https://en.wikipedia.org/wiki/Affeton_Castle",
+    "coords": {
+      "lat": 50.9092,
+      "lng": -3.7717
+    }
+  },
+  {
+    "name": "Berry Pomeroy Castle",
+    "href": "https://en.wikipedia.org/wiki/Berry_Pomeroy_Castle",
+    "coords": {
+      "lat": 50.449,
+      "lng": -3.6366
+    }
+  },
+  {
+    "name": "Bickleigh Castle",
+    "href": "https://en.wikipedia.org/wiki/Bickleigh_Castle",
+    "coords": {
+      "lat": 50.85139,
+      "lng": -3.5125
+    }
+  },
+  {
+    "name": "Compton Castle",
+    "href": "https://en.wikipedia.org/wiki/Compton_Castle",
+    "coords": {
+      "lat": 50.4726858,
+      "lng": -3.6001199
+    }
+  },
+  {
+    "name": "Dartmouth Castle",
+    "href": "https://en.wikipedia.org/wiki/Dartmouth_Castle",
+    "coords": {
+      "lat": 50.34203,
+      "lng": -3.56829
+    }
+  },
+  {
+    "name": "Castle Drogo",
+    "href": "https://en.wikipedia.org/wiki/Castle_Drogo",
+    "coords": {
+      "lat": 50.696,
+      "lng": -3.8114
+    }
+  },
+  {
+    "name": "Gidleigh Castle",
+    "href": "https://en.wikipedia.org/wiki/Gidleigh_Castle",
+    "coords": {
+      "lat": 50.68004,
+      "lng": -3.88245
+    }
+  },
+  {
+    "name": "Hemyock Castle",
+    "href": "https://en.wikipedia.org/wiki/Hemyock_Castle",
+    "coords": {
+      "lat": 50.91249,
+      "lng": -3.23144
+    }
+  },
+  {
+    "name": "Kingswear Castle",
+    "href": "https://en.wikipedia.org/wiki/Kingswear_Castle",
+    "coords": {
+      "lat": 50.34125,
+      "lng": -3.55983
+    }
+  },
+  {
+    "name": "Lydford Castle",
+    "href": "https://en.wikipedia.org/wiki/Lydford_Castle",
+    "coords": {
+      "lat": 50.6428,
+      "lng": -4.1115
+    }
+  },
+  {
+    "name": "Marisco Castle",
+    "href": "https://en.wikipedia.org/wiki/Lundy#Marisco_Castle",
+    "coords": {
+      "lat": 51.18117,
+      "lng": -4.67467
+    }
+  },
+  {
+    "name": "Okehampton Castle",
+    "href": "https://en.wikipedia.org/wiki/Okehampton_Castle",
+    "coords": {
+      "lat": 50.730515,
+      "lng": -4.008649
+    }
+  },
+  {
+    "name": "Plympton Castle",
+    "href": "https://en.wikipedia.org/wiki/Plympton",
+    "coords": {
+      "lat": 50.386,
+      "lng": -4.051
+    }
+  },
+  {
+    "name": "Powderham Castle",
+    "href": "https://en.wikipedia.org/wiki/Powderham_Castle",
+    "coords": {
+      "lat": 50.642972,
+      "lng": -3.459972
+    }
+  },
+  {
+    "name": "Rougemont Castle",
+    "href": "https://en.wikipedia.org/wiki/Rougemont_Castle",
+    "coords": {
+      "lat": 50.72567,
+      "lng": -3.53006
+    }
+  },
+  {
+    "name": "Exeter",
+    "href": "https://en.wikipedia.org/wiki/Exeter",
+    "coords": {
+      "lat": 50.717,
+      "lng": -3.533
+    }
+  },
+  {
+    "name": "Salcombe Castle",
+    "href": "https://en.wikipedia.org/wiki/Salcombe_Castle",
+    "coords": {
+      "lat": 50.2289,
+      "lng": -3.7765
+    }
+  },
+  {
+    "name": "Tiverton Castle",
+    "href": "https://en.wikipedia.org/wiki/Tiverton_Castle",
+    "coords": {
+      "lat": 50.9063,
+      "lng": -3.4885
+    }
+  },
+  {
+    "name": "Totnes Castle",
+    "href": "https://en.wikipedia.org/wiki/Totnes_Castle",
+    "coords": {
+      "lat": 50.4321,
+      "lng": -3.691
+    }
+  },
+  {
+    "name": "Watermouth Castle",
+    "href": "https://en.wikipedia.org/wiki/Watermouth_Castle",
+    "coords": {
+      "lat": 51.21333,
+      "lng": -4.08028
+    }
+  },
+  {
+    "name": "Brownsea Castle",
+    "href": "https://en.wikipedia.org/wiki/Brownsea_Island",
+    "coords": {
+      "lat": 50.69167,
+      "lng": -1.97222
+    }
+  },
+  {
+    "name": "Christchurch Castle",
+    "href": "https://en.wikipedia.org/wiki/Christchurch_Castle",
+    "coords": {
+      "lat": 50.733369,
+      "lng": -1.77501
+    }
+  },
+  {
+    "name": "Corfe Castle",
+    "href": "https://en.wikipedia.org/wiki/Corfe_Castle",
+    "coords": {
+      "lat": 50.64,
+      "lng": -2.058
+    }
+  },
+  {
+    "name": "Lulworth Castle",
+    "href": "https://en.wikipedia.org/wiki/Lulworth_Castle",
+    "coords": {
+      "lat": 50.6375,
+      "lng": -2.21056
+    }
+  },
+  {
+    "name": "Pennsylvania Castle",
+    "href": "https://en.wikipedia.org/wiki/Pennsylvania_Castle",
+    "coords": {
+      "lat": 50.538514,
+      "lng": -2.430482
+    }
+  },
+  {
+    "name": "Portland Castle",
+    "href": "https://en.wikipedia.org/wiki/Portland_Castle",
+    "coords": {
+      "lat": 50.56825,
+      "lng": -2.44671
+    }
+  },
+  {
+    "name": "Rufus Castle",
+    "href": "https://en.wikipedia.org/wiki/Rufus_Castle",
+    "coords": {
+      "lat": 50.5385,
+      "lng": -2.4294
+    }
+  },
+  {
+    "name": "Sherborne Old Castle",
+    "href": "https://en.wikipedia.org/wiki/Sherborne_Castle",
+    "coords": {
+      "lat": 50.9494,
+      "lng": -2.5024
+    }
+  },
+  {
+    "name": "Woodsford Castle",
+    "href": "https://en.wikipedia.org/wiki/Woodsford",
+    "coords": {
+      "lat": 50.714,
+      "lng": -2.338
+    }
+  },
+  {
+    "name": "Paull Holme Tower",
+    "href": "https://en.wikipedia.org/wiki/Paull_Holme_Tower",
+    "coords": {
+      "lat": 53.7069,
+      "lng": -0.2059
+    }
+  },
+  {
+    "name": "Skipsea Castle",
+    "href": "https://en.wikipedia.org/wiki/Skipsea_Castle",
+    "coords": {
+      "lat": 53.978668,
+      "lng": -0.229589
+    }
+  },
+  {
+    "name": "Wressle Castle",
+    "href": "https://en.wikipedia.org/wiki/Wressle_Castle",
+    "coords": {
+      "lat": 53.7755,
+      "lng": -0.9287
+    }
+  },
+  {
+    "name": "Bodiam Castle",
+    "href": "https://en.wikipedia.org/wiki/Bodiam_Castle",
+    "coords": {
+      "lat": 51.0023,
+      "lng": 0.5435
+    }
+  },
+  {
+    "name": "Camber Castle",
+    "href": "https://en.wikipedia.org/wiki/Camber_Castle",
+    "coords": {
+      "lat": 50.93305,
+      "lng": 0.73248
+    }
+  },
+  {
+    "name": "Hastings Castle",
+    "href": "https://en.wikipedia.org/wiki/Hastings_Castle",
+    "coords": {
+      "lat": 50.85631,
+      "lng": 0.58731
+    }
+  },
+  {
+    "name": "Herstmonceux Castle",
+    "href": "https://en.wikipedia.org/wiki/Herstmonceux_Castle",
+    "coords": {
+      "lat": 50.8695,
+      "lng": 0.3387
+    }
+  },
+  {
+    "name": "Lewes Castle",
+    "href": "https://en.wikipedia.org/wiki/Lewes_Castle",
+    "coords": {
+      "lat": 50.87417,
+      "lng": 0.00694
+    }
+  },
+  {
+    "name": "Pevensey Castle",
+    "href": "https://en.wikipedia.org/wiki/Pevensey_Castle",
+    "coords": {
+      "lat": 50.8188,
+      "lng": 0.3342
+    }
+  },
+  {
+    "name": "Rye Castle (Ypres Tower)",
+    "href": "https://en.wikipedia.org/wiki/Rye_Castle",
+    "coords": {
+      "lat": 50.9498194,
+      "lng": 0.7355861
+    }
+  },
+  {
+    "name": "Colchester Castle",
+    "href": "https://en.wikipedia.org/wiki/Colchester_Castle",
+    "coords": {
+      "lat": 51.890589,
+      "lng": 0.903047
+    }
+  },
+  {
+    "name": "Hadleigh Castle",
+    "href": "https://en.wikipedia.org/wiki/Hadleigh_Castle",
+    "coords": {
+      "lat": 51.5444,
+      "lng": 0.609
+    }
+  },
+  {
+    "name": "Hedingham Castle",
+    "href": "https://en.wikipedia.org/wiki/Hedingham_Castle",
+    "coords": {
+      "lat": 51.9925,
+      "lng": 0.60111
+    }
+  },
+  {
+    "name": "Walden Castle",
+    "href": "https://en.wikipedia.org/wiki/Walden_Castle",
+    "coords": {
+      "lat": 52.0255,
+      "lng": 0.242
+    }
+  },
+  {
+    "name": "Berkeley Castle",
+    "href": "https://en.wikipedia.org/wiki/Berkeley_Castle",
+    "coords": {
+      "lat": 51.68797,
+      "lng": -2.45707
+    }
+  },
+  {
+    "name": "Beverstone Castle",
+    "href": "https://en.wikipedia.org/wiki/Beverstone_Castle",
+    "coords": {
+      "lat": 51.644239,
+      "lng": -2.201553
+    }
+  },
+  {
+    "name": "St. Briavel's Castle",
+    "href": "https://en.wikipedia.org/wiki/St_Briavel%27s_Castle",
+    "coords": {
+      "lat": 51.738,
+      "lng": -2.6405
+    }
+  },
+  {
+    "name": "Sudeley Castle",
+    "href": "https://en.wikipedia.org/wiki/Sudeley_Castle",
+    "coords": {
+      "lat": 51.94722,
+      "lng": -1.95611
+    }
+  },
+  {
+    "name": "Thornbury Castle",
+    "href": "https://en.wikipedia.org/wiki/Thornbury_Castle",
+    "coords": {
+      "lat": 51.6136,
+      "lng": -2.5301
+    }
+  },
+  {
+    "name": "Tower of London",
+    "href": "https://en.wikipedia.org/wiki/Tower_of_London",
+    "coords": {
+      "lat": 51.50806,
+      "lng": -0.07611
+    }
+  },
+  {
+    "name": "Manor Farm, Ruislip",
+    "href": "https://en.wikipedia.org/wiki/Manor_Farm,_Ruislip",
+    "coords": {
+      "lat": 51.578206,
+      "lng": -0.428451
+    }
+  },
+  {
+    "name": "Radcliffe Tower",
+    "href": "https://en.wikipedia.org/wiki/Radcliffe_Tower",
+    "coords": {
+      "lat": 53.56361,
+      "lng": -2.308259
+    }
+  },
+  {
+    "name": "Calshot Castle",
+    "href": "https://en.wikipedia.org/wiki/Calshot_Castle",
+    "coords": {
+      "lat": 50.82,
+      "lng": -1.3075
+    }
+  },
+  {
+    "name": "Hurst Castle",
+    "href": "https://en.wikipedia.org/wiki/Hurst_Castle",
+    "coords": {
+      "lat": 50.70639,
+      "lng": -1.55111
+    }
+  },
+  {
+    "name": "Netley Castle",
+    "href": "https://en.wikipedia.org/wiki/Netley_Castle",
+    "coords": {
+      "lat": 50.878,
+      "lng": -1.36
+    }
+  },
+  {
+    "name": "Odiham Castle",
+    "href": "https://en.wikipedia.org/wiki/Odiham_Castle",
+    "coords": {
+      "lat": 51.2614194,
+      "lng": -0.9617222
+    }
+  },
+  {
+    "name": "Portchester Castle",
+    "href": "https://en.wikipedia.org/wiki/Portchester_Castle",
+    "coords": {
+      "lat": 50.836546,
+      "lng": -1.113034
+    }
+  },
+  {
+    "name": "Southampton Castle",
+    "href": "https://en.wikipedia.org/wiki/Southampton_Castle",
+    "coords": {
+      "lat": 50.9007,
+      "lng": -1.4054
+    }
+  },
+  {
+    "name": "Southsea Castle",
+    "href": "https://en.wikipedia.org/wiki/Southsea_Castle",
+    "coords": {
+      "lat": 50.77805,
+      "lng": -1.08888
+    }
+  },
+  {
+    "name": "Winchester Castle",
+    "href": "https://en.wikipedia.org/wiki/Winchester_Castle",
+    "coords": {
+      "lat": 51.06243,
+      "lng": -1.32054
+    }
+  },
+  {
+    "name": "Wolvesey Castle",
+    "href": "https://en.wikipedia.org/wiki/Wolvesey_Castle",
+    "coords": {
+      "lat": 51.059111,
+      "lng": -1.310056
+    }
+  },
+  {
+    "name": "Brampton Bryan Castle",
+    "href": "https://en.wikipedia.org/wiki/Brampton_Bryan_Castle",
+    "coords": {
+      "lat": 52.3478,
+      "lng": -2.9263
+    }
+  },
+  {
+    "name": "Clifford Castle",
+    "href": "https://en.wikipedia.org/wiki/Clifford_Castle",
+    "coords": {
+      "lat": 52.10443,
+      "lng": -3.10666
+    }
+  },
+  {
+    "name": "Croft Castle",
+    "href": "https://en.wikipedia.org/wiki/Croft_Castle",
+    "coords": {
+      "lat": 52.28486,
+      "lng": -2.80916
+    }
+  },
+  {
+    "name": "Downton Castle",
+    "href": "https://en.wikipedia.org/wiki/Downton_Castle",
+    "coords": {
+      "lat": 52.3678,
+      "lng": -2.8164
+    }
+  },
+  {
+    "name": "Eastnor Castle",
+    "href": "https://en.wikipedia.org/wiki/Eastnor_Castle",
+    "coords": {
+      "lat": 52.0297,
+      "lng": -2.3877
+    }
+  },
+  {
+    "name": "Goodrich Castle",
+    "href": "https://en.wikipedia.org/wiki/Goodrich_Castle",
+    "coords": {
+      "lat": 51.8761,
+      "lng": -2.613
+    }
+  },
+  {
+    "name": "Hampton Court",
+    "href": "https://en.wikipedia.org/wiki/Hampton_Court,_Herefordshire",
+    "coords": {
+      "lat": 52.1676583,
+      "lng": -2.7041417
+    }
+  },
+  {
+    "name": "Kentchurch Court",
+    "href": "https://en.wikipedia.org/wiki/Kentchurch_Court",
+    "coords": {
+      "lat": 51.928581,
+      "lng": -2.840475
+    }
+  },
+  {
+    "name": "Kinnersley Castle",
+    "href": "https://en.wikipedia.org/wiki/Kinnersley_Castle",
+    "coords": {
+      "lat": 52.141,
+      "lng": -2.957
+    }
+  },
+  {
+    "name": "Longtown Castle",
+    "href": "https://en.wikipedia.org/wiki/Longtown_Castle",
+    "coords": {
+      "lat": 51.9562,
+      "lng": -2.991
+    }
+  },
+  {
+    "name": "Pembridge Castle",
+    "href": "https://en.wikipedia.org/wiki/Pembridge_Castle",
+    "coords": {
+      "lat": 51.8698,
+      "lng": -2.7448
+    }
+  },
+  {
+    "name": "Snodhill Castle",
+    "href": "https://en.wikipedia.org/wiki/Dorstone",
+    "coords": {
+      "lat": 52.0703,
+      "lng": -3.0016
+    }
+  },
+  {
+    "name": "Treago Castle",
+    "href": "https://en.wikipedia.org/wiki/Treago_Castle",
+    "coords": {
+      "lat": 51.9114,
+      "lng": -2.7425
+    }
+  },
+  {
+    "name": "Wigmore Castle",
+    "href": "https://en.wikipedia.org/wiki/Wigmore_Castle",
+    "coords": {
+      "lat": 52.3177,
+      "lng": -2.8714
+    }
+  },
+  {
+    "name": "Wilton Castle",
+    "href": "https://en.wikipedia.org/wiki/Wilton_Castle",
+    "coords": {
+      "lat": 51.916163,
+      "lng": -2.596635
+    }
+  },
+  {
+    "name": "Berkhamsted Castle",
+    "href": "https://en.wikipedia.org/wiki/Berkhamsted_Castle",
+    "coords": {
+      "lat": 51.76361,
+      "lng": -0.55889
+    }
+  },
+  {
+    "name": "Hertford Castle",
+    "href": "https://en.wikipedia.org/wiki/Hertford_Castle",
+    "coords": {
+      "lat": 51.7955,
+      "lng": -0.08
+    }
+  },
+  {
+    "name": "Carisbrooke Castle",
+    "href": "https://en.wikipedia.org/wiki/Carisbrooke_Castle",
+    "coords": {
+      "lat": 50.6874,
+      "lng": -1.3133
+    }
+  },
+  {
+    "name": "Norris Castle",
+    "href": "https://en.wikipedia.org/wiki/Norris_Castle",
+    "coords": {
+      "lat": 50.763056,
+      "lng": -1.270556
+    }
+  },
+  {
+    "name": "Yarmouth Castle",
+    "href": "https://en.wikipedia.org/wiki/Yarmouth_Castle",
+    "coords": {
+      "lat": 50.706667,
+      "lng": -1.500278
+    }
+  },
+  {
+    "name": "West Cowes Castle",
+    "href": "https://en.wikipedia.org/wiki/Cowes#Early_history",
+    "coords": {
+      "lat": 50.7595,
+      "lng": -1.3002
+    }
+  },
+  {
+    "name": "Cromwell's Castle",
+    "href": "https://en.wikipedia.org/wiki/Cromwell%27s_Castle",
+    "coords": {
+      "lat": 49.9616,
+      "lng": -6.3505
+    }
+  },
+  {
+    "name": "Star Castle",
+    "href": "https://en.wikipedia.org/wiki/Star_Castle,_Isles_of_Scilly",
+    "coords": {
+      "lat": 49.915378,
+      "lng": -6.321056
+    }
+  },
+  {
+    "name": "Allington Castle",
+    "href": "https://en.wikipedia.org/wiki/Allington_Castle",
+    "coords": {
+      "lat": 51.293333,
+      "lng": 0.511702
+    }
+  },
+  {
+    "name": "Canterbury Castle",
+    "href": "https://en.wikipedia.org/wiki/Canterbury_Castle",
+    "coords": {
+      "lat": 51.275686,
+      "lng": 1.074618
+    }
+  },
+  {
+    "name": "Chiddingstone Castle",
+    "href": "https://en.wikipedia.org/wiki/Chiddingstone_Castle",
+    "coords": {
+      "lat": 51.1858,
+      "lng": 0.1424
+    }
+  },
+  {
+    "name": "Chilham Castle",
+    "href": "https://en.wikipedia.org/wiki/Chilham_Castle",
+    "coords": {
+      "lat": 51.243,
+      "lng": 0.96
+    }
+  },
+  {
+    "name": "Cooling Castle",
+    "href": "https://en.wikipedia.org/wiki/Cooling_Castle",
+    "coords": {
+      "lat": 51.455441,
+      "lng": 0.523084
+    }
+  },
+  {
+    "name": "Deal Castle",
+    "href": "https://en.wikipedia.org/wiki/Deal_Castle",
+    "coords": {
+      "lat": 51.21943,
+      "lng": 1.40356
+    }
+  },
+  {
+    "name": "Dover Castle",
+    "href": "https://en.wikipedia.org/wiki/Dover_Castle",
+    "coords": {
+      "lat": 51.1297,
+      "lng": 1.3214
+    }
+  },
+  {
+    "name": "Eynsford Castle",
+    "href": "https://en.wikipedia.org/wiki/Eynsford_Castle",
+    "coords": {
+      "lat": 51.370556,
+      "lng": 0.213333
+    }
+  },
+  {
+    "name": "Hever Castle",
+    "href": "https://en.wikipedia.org/wiki/Hever_Castle",
+    "coords": {
+      "lat": 51.18722,
+      "lng": 0.11417
+    }
+  },
+  {
+    "name": "Kingsgate Castle",
+    "href": "https://en.wikipedia.org/wiki/Kingsgate_Castle",
+    "coords": {
+      "lat": 51.38306,
+      "lng": 1.44333
+    }
+  },
+  {
+    "name": "Leeds Castle",
+    "href": "https://en.wikipedia.org/wiki/Leeds_Castle",
+    "coords": {
+      "lat": 51.24856,
+      "lng": 0.63008
+    }
+  },
+  {
+    "name": "Leybourne Castle",
+    "href": "https://en.wikipedia.org/wiki/Leybourne_Castle",
+    "coords": {
+      "lat": 51.3043861,
+      "lng": 0.4208889
+    }
+  },
+  {
+    "name": "Lullingstone Castle",
+    "href": "https://en.wikipedia.org/wiki/Lullingstone_Castle",
+    "coords": {
+      "lat": 51.3585,
+      "lng": 0.1959
+    }
+  },
+  {
+    "name": "Lympne Castle",
+    "href": "https://en.wikipedia.org/wiki/Lympne_Castle",
+    "coords": {
+      "lat": 51.0722167,
+      "lng": 1.0236222
+    }
+  },
+  {
+    "name": "Otford Palace",
+    "href": "https://en.wikipedia.org/wiki/Otford_Palace",
+    "coords": {
+      "lat": 51.3114,
+      "lng": 0.1911
+    }
+  },
+  {
+    "name": "Penshurst Place",
+    "href": "https://en.wikipedia.org/wiki/Penshurst_Place",
+    "coords": {
+      "lat": 51.1747,
+      "lng": 0.1838
+    }
+  },
+  {
+    "name": "Rochester Castle",
+    "href": "https://en.wikipedia.org/wiki/Rochester_Castle",
+    "coords": {
+      "lat": 51.3899935,
+      "lng": 0.5014843
+    }
+  },
+  {
+    "name": "St Leonard's Tower, West Malling",
+    "href": "https://en.wikipedia.org/wiki/St_Leonard%27s_Tower,_West_Malling",
+    "coords": {
+      "lat": 51.2882444,
+      "lng": 0.4019083
+    }
+  },
+  {
+    "name": "Saltwood Castle",
+    "href": "https://en.wikipedia.org/wiki/Saltwood_Castle",
+    "coords": {
+      "lat": 51.0818444,
+      "lng": 1.0843667
+    }
+  },
+  {
+    "name": "Sandgate Castle",
+    "href": "https://en.wikipedia.org/wiki/Sandgate_Castle",
+    "coords": {
+      "lat": 51.073444,
+      "lng": 1.148889
+    }
+  },
+  {
+    "name": "Scotney Castle",
+    "href": "https://en.wikipedia.org/wiki/Scotney_Castle",
+    "coords": {
+      "lat": 51.0928,
+      "lng": 0.4082
+    }
+  },
+  {
+    "name": "Sissinghurst Castle",
+    "href": "https://en.wikipedia.org/wiki/Sissinghurst_Castle",
+    "coords": {
+      "lat": 51.1157,
+      "lng": 0.5815
+    }
+  },
+  {
+    "name": "Starkey Castle",
+    "href": "https://en.wikipedia.org/wiki/Wouldham",
+    "coords": {
+      "lat": 51.34964,
+      "lng": 0.45836
+    }
+  },
+  {
+    "name": "Stone Castle",
+    "href": "https://en.wikipedia.org/wiki/Stone_Castle",
+    "coords": {
+      "lat": 51.44333,
+      "lng": 0.27778
+    }
+  },
+  {
+    "name": "Sutton Valence Castle",
+    "href": "https://en.wikipedia.org/wiki/Sutton_Valence_Castle",
+    "coords": {
+      "lat": 51.21238,
+      "lng": 0.59775
+    }
+  },
+  {
+    "name": "Tonbridge Castle",
+    "href": "https://en.wikipedia.org/wiki/Tonbridge_Castle",
+    "coords": {
+      "lat": 51.1971,
+      "lng": 0.2721
+    }
+  },
+  {
+    "name": "Upnor Castle",
+    "href": "https://en.wikipedia.org/wiki/Upnor_Castle",
+    "coords": {
+      "lat": 51.406907,
+      "lng": 0.527114
+    }
+  },
+  {
+    "name": "Walmer Castle",
+    "href": "https://en.wikipedia.org/wiki/Walmer_Castle",
+    "coords": {
+      "lat": 51.200992,
+      "lng": 1.402308
+    }
+  },
+  {
+    "name": "Westenhanger Castle",
+    "href": "https://en.wikipedia.org/wiki/Westenhanger_Castle",
+    "coords": {
+      "lat": 51.09444,
+      "lng": 1.03139
+    }
+  },
+  {
+    "name": "Ashton Hall",
+    "href": "https://en.wikipedia.org/wiki/Ashton_Hall",
+    "coords": {
+      "lat": 54.0089,
+      "lng": -2.8229
+    }
+  },
+  {
+    "name": "Borwick Hall",
+    "href": "https://en.wikipedia.org/wiki/Borwick_Hall",
+    "coords": {
+      "lat": 54.15,
+      "lng": -2.73
+    }
+  },
+  {
+    "name": "Clitheroe Castle",
+    "href": "https://en.wikipedia.org/wiki/Clitheroe_Castle",
+    "coords": {
+      "lat": 53.8709,
+      "lng": -2.3931
+    }
+  },
+  {
+    "name": "Hornby Castle",
+    "href": "https://en.wikipedia.org/wiki/Hornby_Castle,_Lancashire",
+    "coords": {
+      "lat": 54.1114,
+      "lng": -2.6323
+    }
+  },
+  {
+    "name": "Lancaster Castle",
+    "href": "https://en.wikipedia.org/wiki/Lancaster_Castle",
+    "coords": {
+      "lat": 54.04981,
+      "lng": -2.80562
+    }
+  },
+  {
+    "name": "Thurland Castle",
+    "href": "https://en.wikipedia.org/wiki/Thurland_Castle",
+    "coords": {
+      "lat": 54.152,
+      "lng": -2.5978
+    }
+  },
+  {
+    "name": "Turton Tower",
+    "href": "https://en.wikipedia.org/wiki/Turton_Tower",
+    "coords": {
+      "lat": 53.633,
+      "lng": -2.4075
+    }
+  },
+  {
+    "name": "Ashby de la Zouch Castle",
+    "href": "https://en.wikipedia.org/wiki/Ashby_de_la_Zouch_Castle",
+    "coords": {
+      "lat": 52.746132,
+      "lng": -1.4664382
+    }
+  },
+  {
+    "name": "Belvoir Castle",
+    "href": "https://en.wikipedia.org/wiki/Belvoir_Castle",
+    "coords": {
+      "lat": 52.8945,
+      "lng": -0.7825611
+    }
+  },
+  {
+    "name": "Kirby Muxloe Castle",
+    "href": "https://en.wikipedia.org/wiki/Kirby_Muxloe_Castle",
+    "coords": {
+      "lat": 52.6366,
+      "lng": -1.2272
+    }
+  },
+  {
+    "name": "Leicester Castle",
+    "href": "https://en.wikipedia.org/wiki/Leicester_Castle",
+    "coords": {
+      "lat": 52.632333,
+      "lng": -1.141194
+    }
+  },
+  {
+    "name": "Bolingbroke Castle",
+    "href": "https://en.wikipedia.org/wiki/Bolingbroke_Castle",
+    "coords": {
+      "lat": 53.16414,
+      "lng": 0.01638
+    }
+  },
+  {
+    "name": "Grimsthorpe Castle",
+    "href": "https://en.wikipedia.org/wiki/Grimsthorpe_Castle",
+    "coords": {
+      "lat": 52.7923,
+      "lng": -0.4523
+    }
+  },
+  {
+    "name": "Hussey Tower",
+    "href": "https://en.wikipedia.org/wiki/Boston,_Lincolnshire#Landmarks",
+    "coords": {
+      "lat": 52.974,
+      "lng": -0.0214
+    }
+  },
+  {
+    "name": "Kyme Tower",
+    "href": "https://en.wikipedia.org/wiki/South_Kyme",
+    "coords": {
+      "lat": 53.03212,
+      "lng": -0.2489
+    }
+  },
+  {
+    "name": "Lincoln Castle",
+    "href": "https://en.wikipedia.org/wiki/Lincoln_Castle",
+    "coords": {
+      "lat": 53.23529,
+      "lng": -0.54095
+    }
+  },
+  {
+    "name": "Rochford Tower",
+    "href": "https://en.wikipedia.org/wiki/Boston,_Lincolnshire#Landmarks",
+    "coords": {
+      "lat": 52.974,
+      "lng": -0.0214
+    }
+  },
+  {
+    "name": "Somerton Castle",
+    "href": "https://en.wikipedia.org/wiki/Somerton_Castle",
+    "coords": {
+      "lat": 53.1177,
+      "lng": -0.576
+    }
+  },
+  {
+    "name": "Tattershall Castle",
+    "href": "https://en.wikipedia.org/wiki/Tattershall_Castle_(Lincolnshire)",
+    "coords": {
+      "lat": 53.101333,
+      "lng": -0.192611
+    }
+  },
+  {
+    "name": "Torksey Castle",
+    "href": "https://en.wikipedia.org/wiki/Torksey_Castle",
+    "coords": {
+      "lat": 53.3,
+      "lng": -0.745
+    }
+  },
+  {
+    "name": "Brimstage Hall",
+    "href": "https://en.wikipedia.org/wiki/Brimstage",
+    "coords": {
+      "lat": 53.3316,
+      "lng": -3.0622
+    }
+  },
+  {
+    "name": "Leasowe Castle",
+    "href": "https://en.wikipedia.org/wiki/Leasowe_Castle",
+    "coords": {
+      "lat": 53.414,
+      "lng": -3.098
+    }
+  },
+  {
+    "name": "Baconsthorpe Castle",
+    "href": "https://en.wikipedia.org/wiki/Baconsthorpe_Castle",
+    "coords": {
+      "lat": 52.8985,
+      "lng": 1.152
+    }
+  },
+  {
+    "name": "Burgh Castle",
+    "href": "https://en.wikipedia.org/wiki/Burgh_Castle_Roman_Site",
+    "coords": {
+      "lat": 52.5826,
+      "lng": 1.6515
+    }
+  },
+  {
+    "name": "Caister Castle",
+    "href": "https://en.wikipedia.org/wiki/Caister_Castle"
+  },
+  {
+    "name": "Castle Acre Castle",
+    "href": "https://en.wikipedia.org/wiki/Castle_Acre_Castle",
+    "coords": {
+      "lat": 52.703052,
+      "lng": 0.693285
+    }
+  },
+  {
+    "name": "Castle Rising Castle",
+    "href": "https://en.wikipedia.org/wiki/Castle_Rising_(castle)",
+    "coords": {
+      "lat": 52.7928,
+      "lng": 0.4689
+    }
+  },
+  {
+    "name": "Claxton Castle",
+    "href": "https://en.wikipedia.org/wiki/Claxton_Castle",
+    "coords": {
+      "lat": 52.5818,
+      "lng": 1.4451
+    }
+  },
+  {
+    "name": "Norwich Castle",
+    "href": "https://en.wikipedia.org/wiki/Norwich_Castle",
+    "coords": {
+      "lat": 52.6286,
+      "lng": 1.2964
+    }
+  },
+  {
+    "name": "Oxburgh Hall",
+    "href": "https://en.wikipedia.org/wiki/Oxburgh_Hall",
+    "coords": {
+      "lat": 52.58139,
+      "lng": 0.57083
+    }
+  },
+  {
+    "name": "Weeting Castle",
+    "href": "https://en.wikipedia.org/wiki/Weeting_Castle",
+    "coords": {
+      "lat": 52.4711,
+      "lng": 0.6163
+    }
+  },
+  {
+    "name": "Astwell Castle",
+    "href": "https://en.wikipedia.org/wiki/Astwell_Castle",
+    "coords": {
+      "lat": 52.09167,
+      "lng": -1.11417
+    }
+  },
+  {
+    "name": "Barnwell Castle",
+    "href": "https://en.wikipedia.org/wiki/Barnwell_Castle",
+    "coords": {
+      "lat": 52.45563,
+      "lng": -0.46062
+    }
+  },
+  {
+    "name": "Rockingham Castle",
+    "href": "https://en.wikipedia.org/wiki/Rockingham_Castle",
+    "coords": {
+      "lat": 52.5129,
+      "lng": -0.724
+    }
+  },
+  {
+    "name": "Thorpe Waterville Castle",
+    "href": "https://en.wikipedia.org/wiki/Thorpe_Waterville_Castle",
+    "coords": {
+      "lat": 52.4211,
+      "lng": -0.4986
+    }
+  },
+  {
+    "name": "Alnham Vicars Pele",
+    "href": "https://en.wikipedia.org/wiki/Alnham",
+    "coords": {
+      "lat": 55.3915,
+      "lng": -2.0081
+    }
+  },
+  {
+    "name": "Alnwick Castle",
+    "href": "https://en.wikipedia.org/wiki/Alnwick_Castle",
+    "coords": {
+      "lat": 55.41575,
+      "lng": -1.70607
+    }
+  },
+  {
+    "name": "Aydon Castle",
+    "href": "https://en.wikipedia.org/wiki/Aydon_Castle",
+    "coords": {
+      "lat": 54.9904,
+      "lng": -2
+    }
+  },
+  {
+    "name": "Bamburgh Castle",
+    "href": "https://en.wikipedia.org/wiki/Bamburgh_Castle",
+    "coords": {
+      "lat": 55.608,
+      "lng": -1.709
+    }
+  },
+  {
+    "name": "Barmoor Castle",
+    "href": "https://en.wikipedia.org/wiki/Barmoor_Castle",
+    "coords": {
+      "lat": 55.65245,
+      "lng": -2.00601
+    }
+  },
+  {
+    "name": "Beaufront Castle",
+    "href": "https://en.wikipedia.org/wiki/Beaufront_Castle",
+    "coords": {
+      "lat": 54.988,
+      "lng": -2.058
+    }
+  },
+  {
+    "name": "Bellister Castle",
+    "href": "https://en.wikipedia.org/wiki/Bellister_Castle",
+    "coords": {
+      "lat": 54.961,
+      "lng": -2.468
+    }
+  },
+  {
+    "name": "Belsay Castle",
+    "href": "https://en.wikipedia.org/wiki/Belsay_Castle",
+    "coords": {
+      "lat": 55.102,
+      "lng": -1.869
+    }
+  },
+  {
+    "name": "Berwick Castle",
+    "href": "https://en.wikipedia.org/wiki/Berwick_Castle",
+    "coords": {
+      "lat": 55.7738,
+      "lng": -2.0116
+    }
+  },
+  {
+    "name": "Bitchfield Castle",
+    "href": "https://en.wikipedia.org/wiki/Bitchfield_Castle",
+    "coords": {
+      "lat": 55.089,
+      "lng": -1.857
+    }
+  },
+  {
+    "name": "Blenkinsop Castle",
+    "href": "https://en.wikipedia.org/wiki/Blenkinsop_Castle",
+    "coords": {
+      "lat": 54.974,
+      "lng": -2.525
+    }
+  },
+  {
+    "name": "Bothal Castle",
+    "href": "https://en.wikipedia.org/wiki/Bothal_Castle",
+    "coords": {
+      "lat": 55.173,
+      "lng": -1.625
+    }
+  },
+  {
+    "name": "Bywell Castle",
+    "href": "https://en.wikipedia.org/wiki/Bywell_Castle",
+    "coords": {
+      "lat": 54.951,
+      "lng": -1.925
+    }
+  },
+  {
+    "name": "Callaly Castle",
+    "href": "https://en.wikipedia.org/wiki/Callaly_Castle",
+    "coords": {
+      "lat": 55.383,
+      "lng": -1.921
+    }
+  },
+  {
+    "name": "Cartington Castle",
+    "href": "https://en.wikipedia.org/wiki/Cartington_Castle",
+    "coords": {
+      "lat": 55.335,
+      "lng": -1.94
+    }
+  },
+  {
+    "name": "Chillingham Castle",
+    "href": "https://en.wikipedia.org/wiki/Chillingham_Castle",
+    "coords": {
+      "lat": 55.526,
+      "lng": -1.905
+    }
+  },
+  {
+    "name": "Chipchase Castle",
+    "href": "https://en.wikipedia.org/wiki/Chipchase_Castle",
+    "coords": {
+      "lat": 55.0756,
+      "lng": -2.186
+    }
+  },
+  {
+    "name": "Cocklaw Tower",
+    "href": "https://en.wikipedia.org/wiki/Chollerton#Landmarks",
+    "coords": {
+      "lat": 55.046,
+      "lng": -2.103
+    }
+  },
+  {
+    "name": "Cockle Park Tower",
+    "href": "https://en.wikipedia.org/wiki/Cocklepark_Tower",
+    "coords": {
+      "lat": 55.213,
+      "lng": -1.684
+    }
+  },
+  {
+    "name": "Corbridge Vicar's Pele",
+    "href": "https://en.wikipedia.org/wiki/Corbridge_Vicar%27s_Pele",
+    "coords": {
+      "lat": 54.974,
+      "lng": -2.019
+    }
+  },
+  {
+    "name": "Coupland Castle",
+    "href": "https://en.wikipedia.org/wiki/Coupland_Castle",
+    "coords": {
+      "lat": 55.574,
+      "lng": -2.103
+    }
+  },
+  {
+    "name": "Craster Tower",
+    "href": "https://en.wikipedia.org/wiki/Craster_Tower",
+    "coords": {
+      "lat": 55.47,
+      "lng": -1.597
+    }
+  },
+  {
+    "name": "Crawley Tower",
+    "href": "https://en.wikipedia.org/wiki/Powburn#Landmarks",
+    "coords": {
+      "lat": 55.443,
+      "lng": -1.896
+    }
+  },
+  {
+    "name": "Cresswell Castle",
+    "href": "https://en.wikipedia.org/wiki/Cresswell_Castle,_Northumberland",
+    "coords": {
+      "lat": 55.233,
+      "lng": -1.5408
+    }
+  },
+  {
+    "name": "Dilston Castle",
+    "href": "https://en.wikipedia.org/wiki/Dilston_Castle",
+    "coords": {
+      "lat": 54.965,
+      "lng": -2.039
+    }
+  },
+  {
+    "name": "Dunstanburgh Castle",
+    "href": "https://en.wikipedia.org/wiki/Dunstanburgh_Castle",
+    "coords": {
+      "lat": 55.4911,
+      "lng": -1.5932
+    }
+  },
+  {
+    "name": "Edlingham Castle",
+    "href": "https://en.wikipedia.org/wiki/Edlingham_Castle",
+    "coords": {
+      "lat": 55.376755,
+      "lng": -1.81842
+    }
+  },
+  {
+    "name": "Elsdon Tower",
+    "href": "https://en.wikipedia.org/wiki/Elsdon_Tower",
+    "coords": {
+      "lat": 55.2346,
+      "lng": -2.1021
+    }
+  },
+  {
+    "name": "Embleton Tower",
+    "href": "https://en.wikipedia.org/wiki/Embleton_Tower",
+    "coords": {
+      "lat": 55.495,
+      "lng": -1.637
+    }
+  },
+  {
+    "name": "Etal Castle",
+    "href": "https://en.wikipedia.org/wiki/Etal_Castle",
+    "coords": {
+      "lat": 55.648,
+      "lng": -2.121
+    }
+  },
+  {
+    "name": "Featherstone Castle",
+    "href": "https://en.wikipedia.org/wiki/Featherstone_Castle",
+    "coords": {
+      "lat": 54.943,
+      "lng": -2.51
+    }
+  },
+  {
+    "name": "Ford Castle",
+    "href": "https://en.wikipedia.org/wiki/Ford_Castle",
+    "coords": {
+      "lat": 55.631,
+      "lng": -2.091
+    }
+  },
+  {
+    "name": "Halton Castle",
+    "href": "https://en.wikipedia.org/wiki/Halton_Castle,_Northumberland",
+    "coords": {
+      "lat": 55.005,
+      "lng": -2.006
+    }
+  },
+  {
+    "name": "Harbottle Castle",
+    "href": "https://en.wikipedia.org/wiki/Harbottle_Castle",
+    "coords": {
+      "lat": 55.337,
+      "lng": -2.109
+    }
+  },
+  {
+    "name": "Haughton Castle",
+    "href": "https://en.wikipedia.org/wiki/Haughton_Castle",
+    "coords": {
+      "lat": 55.05053,
+      "lng": -2.12988
+    }
+  },
+  {
+    "name": "Hexham Moot Hall and Old Gaol",
+    "href": "https://en.wikipedia.org/wiki/Hexham#Notable_buildings",
+    "coords": {
+      "lat": 54.971,
+      "lng": -2.101
+    }
+  },
+  {
+    "name": "Horsley Tower, Longhorsley",
+    "href": "https://en.wikipedia.org/wiki/Longhorsley",
+    "coords": {
+      "lat": 55.244,
+      "lng": -1.773
+    }
+  },
+  {
+    "name": "Langley Castle",
+    "href": "https://en.wikipedia.org/wiki/Langley_Castle",
+    "coords": {
+      "lat": 54.956,
+      "lng": -2.259
+    }
+  },
+  {
+    "name": "Lemmington Hall",
+    "href": "https://en.wikipedia.org/wiki/Lemmington_Hall",
+    "coords": {
+      "lat": 55.39546,
+      "lng": -1.810281
+    }
+  },
+  {
+    "name": "Lindisfarne Castle",
+    "href": "https://en.wikipedia.org/wiki/Lindisfarne_Castle",
+    "coords": {
+      "lat": 55.669,
+      "lng": -1.785
+    }
+  },
+  {
+    "name": "Mitford Castle",
+    "href": "https://en.wikipedia.org/wiki/Mitford_Castle",
+    "coords": {
+      "lat": 55.164,
+      "lng": -1.734
+    }
+  },
+  {
+    "name": "Morpeth Castle",
+    "href": "https://en.wikipedia.org/wiki/Morpeth_Castle",
+    "coords": {
+      "lat": 55.164,
+      "lng": -1.686
+    }
+  },
+  {
+    "name": "Norham Castle",
+    "href": "https://en.wikipedia.org/wiki/Norham_Castle",
+    "coords": {
+      "lat": 55.722,
+      "lng": -2.149
+    }
+  },
+  {
+    "name": "Preston Tower, Ellingham",
+    "href": "https://en.wikipedia.org/wiki/Preston_Tower,_Northumberland",
+    "coords": {
+      "lat": 55.5222934,
+      "lng": -1.7105359
+    }
+  },
+  {
+    "name": "Prior Castell's Tower",
+    "href": "https://en.wikipedia.org/wiki/Farne_Islands",
+    "coords": {
+      "lat": 55.622,
+      "lng": -1.628
+    }
+  },
+  {
+    "name": "Prudhoe Castle",
+    "href": "https://en.wikipedia.org/wiki/Prudhoe_Castle",
+    "coords": {
+      "lat": 54.964,
+      "lng": -1.854
+    }
+  },
+  {
+    "name": "Shilbottle Tower",
+    "href": "https://en.wikipedia.org/wiki/Shilbottle#Buildings",
+    "coords": {
+      "lat": 55.3721,
+      "lng": -1.6915
+    }
+  },
+  {
+    "name": "Shortflatt Tower",
+    "href": "https://en.wikipedia.org/wiki/Bolam,_Northumberland",
+    "coords": {
+      "lat": 55.136,
+      "lng": -1.852
+    }
+  },
+  {
+    "name": "Thirlwall Castle",
+    "href": "https://en.wikipedia.org/wiki/Thirlwall_Castle",
+    "coords": {
+      "lat": 54.989,
+      "lng": -2.532
+    }
+  },
+  {
+    "name": "Warkworth Castle",
+    "href": "https://en.wikipedia.org/wiki/Warkworth_Castle",
+    "coords": {
+      "lat": 55.3447,
+      "lng": -1.6105
+    }
+  },
+  {
+    "name": "Whittingham Tower",
+    "href": "https://en.wikipedia.org/wiki/Whittingham,_Northumberland",
+    "coords": {
+      "lat": 55.397,
+      "lng": -1.899
+    }
+  },
+  {
+    "name": "Whitton Tower",
+    "href": "https://en.wikipedia.org/wiki/Rothbury#Landmarks",
+    "coords": {
+      "lat": 55.3097,
+      "lng": -1.9109
+    }
+  },
+  {
+    "name": "Willimoteswick Castle",
+    "href": "https://en.wikipedia.org/wiki/Bardon_Mill#Landmarks",
+    "coords": {
+      "lat": 54.975,
+      "lng": -2.337
+    }
+  },
+  {
+    "name": "Ayton Castle",
+    "href": "https://en.wikipedia.org/wiki/West_Ayton",
+    "coords": {
+      "lat": 54.247,
+      "lng": -0.487
+    }
+  },
+  {
+    "name": "Barden Tower",
+    "href": "https://en.wikipedia.org/wiki/Barden_Tower",
+    "coords": {
+      "lat": 54.0107,
+      "lng": -1.9239
+    }
+  },
+  {
+    "name": "Bolton Castle",
+    "href": "https://en.wikipedia.org/wiki/Bolton_Castle",
+    "coords": {
+      "lat": 54.321932,
+      "lng": -1.948106
+    }
+  },
+  {
+    "name": "Cawood Castle",
+    "href": "https://en.wikipedia.org/wiki/Cawood_Castle",
+    "coords": {
+      "lat": 53.8315,
+      "lng": -1.1309
+    }
+  },
+  {
+    "name": "Clifford's Tower",
+    "href": "https://en.wikipedia.org/wiki/Clifford%27s_Tower",
+    "coords": {
+      "lat": 53.9558,
+      "lng": -1.08
+    }
+  },
+  {
+    "name": "Crayke Castle",
+    "href": "https://en.wikipedia.org/wiki/Crayke_Castle",
+    "coords": {
+      "lat": 54.1289,
+      "lng": -1.1459
+    }
+  },
+  {
+    "name": "Danby Castle",
+    "href": "https://en.wikipedia.org/wiki/Danby,_North_Yorkshire",
+    "coords": {
+      "lat": 54.4677,
+      "lng": -0.9097
+    }
+  },
+  {
+    "name": "Gilling Castle",
+    "href": "https://en.wikipedia.org/wiki/Gilling_Castle",
+    "coords": {
+      "lat": 54.18335,
+      "lng": -1.06527
+    }
+  },
+  {
+    "name": "Hazlewood Castle",
+    "href": "https://en.wikipedia.org/wiki/Hazlewood_Castle",
+    "coords": {
+      "lat": 53.8523,
+      "lng": -1.3192
+    }
+  },
+  {
+    "name": "Hellifield Peel",
+    "href": "https://en.wikipedia.org/wiki/Hellifield",
+    "coords": {
+      "lat": 54.0045,
+      "lng": -2.2215
+    }
+  },
+  {
+    "name": "Helmsley Castle",
+    "href": "https://en.wikipedia.org/wiki/Helmsley_Castle",
+    "coords": {
+      "lat": 54.2391,
+      "lng": -1.0655
+    }
+  },
+  {
+    "name": "Hornby Castle",
+    "href": "https://en.wikipedia.org/wiki/Hornby_Castle,_Yorkshire",
+    "coords": {
+      "lat": 54.339,
+      "lng": -1.653
+    }
+  },
+  {
+    "name": "Knaresborough Castle",
+    "href": "https://en.wikipedia.org/wiki/Knaresborough_Castle",
+    "coords": {
+      "lat": 54.00719,
+      "lng": -1.46932
+    }
+  },
+  {
+    "name": "Marmion Tower",
+    "href": "https://en.wikipedia.org/wiki/Marmion_Tower",
+    "coords": {
+      "lat": 54.2034,
+      "lng": -1.5937
+    }
+  },
+  {
+    "name": "Middleham Castle",
+    "href": "https://en.wikipedia.org/wiki/Middleham_Castle",
+    "coords": {
+      "lat": 54.284065,
+      "lng": -1.8069
+    }
+  },
+  {
+    "name": "(Old) Mulgrave Castle",
+    "href": "https://en.wikipedia.org/wiki/Mulgrave_Castle",
+    "coords": {
+      "lat": 54.4935,
+      "lng": -0.7055
+    }
+  },
+  {
+    "name": "Nappa Hall",
+    "href": "https://en.wikipedia.org/wiki/Nappa_Hall",
+    "coords": {
+      "lat": 54.313,
+      "lng": -2.055
+    }
+  },
+  {
+    "name": "Pickering Castle",
+    "href": "https://en.wikipedia.org/wiki/Pickering_Castle",
+    "coords": {
+      "lat": 54.25,
+      "lng": -0.77556
+    }
+  },
+  {
+    "name": "Ravensworth Castle",
+    "href": "https://en.wikipedia.org/wiki/Ravensworth_Castle_(North_Yorkshire)",
+    "coords": {
+      "lat": 54.4598,
+      "lng": -1.7841
+    }
+  },
+  {
+    "name": "Richmond Castle",
+    "href": "https://en.wikipedia.org/wiki/Richmond_Castle",
+    "coords": {
+      "lat": 54.4017,
+      "lng": -1.7376
+    }
+  },
+  {
+    "name": "Ripley Castle",
+    "href": "https://en.wikipedia.org/wiki/Ripley_Castle",
+    "coords": {
+      "lat": 54.041,
+      "lng": -1.568
+    }
+  },
+  {
+    "name": "Scarborough Castle",
+    "href": "https://en.wikipedia.org/wiki/Scarborough_Castle",
+    "coords": {
+      "lat": 54.287,
+      "lng": -0.388
+    }
+  },
+  {
+    "name": "Sheriff Hutton Castle",
+    "href": "https://en.wikipedia.org/wiki/Sheriff_Hutton_Castle",
+    "coords": {
+      "lat": 54.08778,
+      "lng": -1.00472
+    }
+  },
+  {
+    "name": "Skelton Castle",
+    "href": "https://en.wikipedia.org/wiki/Skelton-in-Cleveland",
+    "coords": {
+      "lat": 54.5619,
+      "lng": -0.9874
+    }
+  },
+  {
+    "name": "Skipton Castle",
+    "href": "https://en.wikipedia.org/wiki/Skipton_Castle",
+    "coords": {
+      "lat": 53.9637342,
+      "lng": -2.0143676
+    }
+  },
+  {
+    "name": "Snape Castle",
+    "href": "https://en.wikipedia.org/wiki/Snape,_North_Yorkshire",
+    "coords": {
+      "lat": 54.25366,
+      "lng": -1.58976
+    }
+  },
+  {
+    "name": "South Cowton Castle",
+    "href": "https://en.wikipedia.org/wiki/South_Cowton_Castle",
+    "coords": {
+      "lat": 54.415697,
+      "lng": -1.548293
+    }
+  },
+  {
+    "name": "Spofforth Castle",
+    "href": "https://en.wikipedia.org/wiki/Spofforth_Castle",
+    "coords": {
+      "lat": 53.9538,
+      "lng": -1.4468
+    }
+  },
+  {
+    "name": "Whorlton Castle",
+    "href": "https://en.wikipedia.org/wiki/Whorlton,_North_Yorkshire",
+    "coords": {
+      "lat": 54.41515,
+      "lng": -1.25517
+    }
+  },
+  {
+    "name": "Wilton Castle",
+    "href": "https://en.wikipedia.org/wiki/Wilton_Castle_(Yorkshire)",
+    "coords": {
+      "lat": 54.56889,
+      "lng": -1.10139
+    }
+  },
+  {
+    "name": "Halloughton Manor House",
+    "href": "https://en.wikipedia.org/wiki/Halloughton",
+    "coords": {
+      "lat": 53.057,
+      "lng": -0.974
+    }
+  },
+  {
+    "name": "Newark Castle",
+    "href": "https://en.wikipedia.org/wiki/Newark_Castle,_Nottinghamshire",
+    "coords": {
+      "lat": 53.0775,
+      "lng": -0.812415
+    }
+  },
+  {
+    "name": "Nottingham Castle",
+    "href": "https://en.wikipedia.org/wiki/Nottingham_Castle",
+    "coords": {
+      "lat": 52.9493,
+      "lng": -1.1546
+    }
+  },
+  {
+    "name": "Bampton Castle",
+    "href": "https://en.wikipedia.org/wiki/Bampton_Castle,_Oxfordshire",
+    "coords": {
+      "lat": 51.7254,
+      "lng": -1.553
+    }
+  },
+  {
+    "name": "Broughton Castle",
+    "href": "https://en.wikipedia.org/wiki/Broughton_Castle",
+    "coords": {
+      "lat": 52.04063,
+      "lng": -1.39199
+    }
+  },
+  {
+    "name": "Hanwell Castle",
+    "href": "https://en.wikipedia.org/wiki/Hanwell,_Oxfordshire#Hanwell_Castle",
+    "coords": {
+      "lat": 52.091,
+      "lng": -1.364
+    }
+  },
+  {
+    "name": "Oxford Castle",
+    "href": "https://en.wikipedia.org/wiki/Oxford_Castle",
+    "coords": {
+      "lat": 51.7517,
+      "lng": -1.2632
+    }
+  },
+  {
+    "name": "Rotherfield Greys Castle",
+    "href": "https://en.wikipedia.org/wiki/Greys_Court",
+    "coords": {
+      "lat": 51.54485,
+      "lng": -0.95591
+    }
+  },
+  {
+    "name": "Shirburn Castle",
+    "href": "https://en.wikipedia.org/wiki/Shirburn_Castle",
+    "coords": {
+      "lat": 51.65757,
+      "lng": -0.9938
+    }
+  },
+  {
+    "name": "Wallingford Castle",
+    "href": "https://en.wikipedia.org/wiki/Wallingford_Castle",
+    "coords": {
+      "lat": 51.6029,
+      "lng": -1.1221
+    }
+  },
+  {
+    "name": "Oakham Castle",
+    "href": "https://en.wikipedia.org/wiki/Oakham_Castle",
+    "coords": {
+      "lat": 52.670957,
+      "lng": -0.727449
+    }
+  },
+  {
+    "name": "Acton Burnell Castle",
+    "href": "https://en.wikipedia.org/wiki/Acton_Burnell_castle",
+    "coords": {
+      "lat": 52.61286,
+      "lng": -2.68966
+    }
+  },
+  {
+    "name": "Alberbury Castle",
+    "href": "https://en.wikipedia.org/wiki/Alberbury_Castle",
+    "coords": {
+      "lat": 52.7234,
+      "lng": -2.952
+    }
+  },
+  {
+    "name": "Bridgnorth Castle",
+    "href": "https://en.wikipedia.org/wiki/Bridgnorth_Castle",
+    "coords": {
+      "lat": 52.5314,
+      "lng": -2.4201
+    }
+  },
+  {
+    "name": "Broncroft Castle",
+    "href": "https://en.wikipedia.org/wiki/Bouldon",
+    "coords": {
+      "lat": 52.462,
+      "lng": -2.67
+    }
+  },
+  {
+    "name": "Cheney Longville Castle",
+    "href": "https://en.wikipedia.org/wiki/Cheney_Longville_Castle",
+    "coords": {
+      "lat": 52.45712,
+      "lng": -2.85941
+    }
+  },
+  {
+    "name": "Clun Castle",
+    "href": "https://en.wikipedia.org/wiki/Clun_Castle",
+    "coords": {
+      "lat": 52.4216,
+      "lng": -3.0337
+    }
+  },
+  {
+    "name": "Hopton Castle",
+    "href": "https://en.wikipedia.org/wiki/Hopton_Castle",
+    "coords": {
+      "lat": 52.3958,
+      "lng": -2.9318
+    }
+  },
+  {
+    "name": "Ludlow Castle",
+    "href": "https://en.wikipedia.org/wiki/Ludlow_Castle",
+    "coords": {
+      "lat": 52.3672,
+      "lng": -2.723
+    }
+  },
+  {
+    "name": "Moreton Corbet Castle",
+    "href": "https://en.wikipedia.org/wiki/Moreton_Corbet_Castle",
+    "coords": {
+      "lat": 52.8045,
+      "lng": -2.6541
+    }
+  },
+  {
+    "name": "Quatford Castle",
+    "href": "https://en.wikipedia.org/wiki/Quatford",
+    "coords": {
+      "lat": 52.513,
+      "lng": -2.386
+    }
+  },
+  {
+    "name": "Red Castle",
+    "href": "https://en.wikipedia.org/wiki/Hawkstone_Park",
+    "coords": {
+      "lat": 52.85755,
+      "lng": -2.642975
+    }
+  },
+  {
+    "name": "Rowton Castle",
+    "href": "https://en.wikipedia.org/wiki/Rowton_Castle",
+    "coords": {
+      "lat": 52.7087,
+      "lng": -2.9207
+    }
+  },
+  {
+    "name": "Shrewsbury Castle",
+    "href": "https://en.wikipedia.org/wiki/Shrewsbury_Castle",
+    "coords": {
+      "lat": 52.7077,
+      "lng": -2.7541
+    }
+  },
+  {
+    "name": "Stokesay Castle",
+    "href": "https://en.wikipedia.org/wiki/Stokesay_Castle",
+    "coords": {
+      "lat": 52.4303,
+      "lng": -2.8313
+    }
+  },
+  {
+    "name": "Wattlesborough Castle",
+    "href": "https://en.wikipedia.org/wiki/Wattlesborough_Castle",
+    "coords": {
+      "lat": 52.7074,
+      "lng": -2.956
+    }
+  },
+  {
+    "name": "Whittington Castle",
+    "href": "https://en.wikipedia.org/wiki/Whittington_Castle",
+    "coords": {
+      "lat": 52.8731,
+      "lng": -3.0043
+    }
+  },
+  {
+    "name": "Banwell Castle",
+    "href": "https://en.wikipedia.org/wiki/Banwell_Castle",
+    "coords": {
+      "lat": 51.32361,
+      "lng": -2.86
+    }
+  },
+  {
+    "name": "Beckington Castle",
+    "href": "https://en.wikipedia.org/wiki/Beckington_Castle",
+    "coords": {
+      "lat": 51.26222,
+      "lng": -2.28833
+    }
+  },
+  {
+    "name": "Dunster Castle",
+    "href": "https://en.wikipedia.org/wiki/Dunster_Castle",
+    "coords": {
+      "lat": 51.1809,
+      "lng": -3.4449
+    }
+  },
+  {
+    "name": "Farleigh Hungerford Castle",
+    "href": "https://en.wikipedia.org/wiki/Farleigh_Hungerford_Castle",
+    "coords": {
+      "lat": 51.3167,
+      "lng": -2.287
+    }
+  },
+  {
+    "name": "Newton St Loe Castle",
+    "href": "https://en.wikipedia.org/wiki/Newton_St_Loe_Castle",
+    "coords": {
+      "lat": 51.3733,
+      "lng": -2.441
+    }
+  },
+  {
+    "name": "Nunney Castle",
+    "href": "https://en.wikipedia.org/wiki/Nunney_Castle",
+    "coords": {
+      "lat": 51.2101754,
+      "lng": -2.3783328
+    }
+  },
+  {
+    "name": "Stogursey Castle",
+    "href": "https://en.wikipedia.org/wiki/Stogursey_Castle",
+    "coords": {
+      "lat": 51.1761,
+      "lng": -3.1429
+    }
+  },
+  {
+    "name": "Sutton Court",
+    "href": "https://en.wikipedia.org/wiki/Sutton_Court",
+    "coords": {
+      "lat": 51.34167,
+      "lng": -2.58028
+    }
+  },
+  {
+    "name": "Taunton Castle",
+    "href": "https://en.wikipedia.org/wiki/Taunton_Castle",
+    "coords": {
+      "lat": 51.0153,
+      "lng": -3.1138
+    }
+  },
+  {
+    "name": "Walton Castle",
+    "href": "https://en.wikipedia.org/wiki/Walton_Castle",
+    "coords": {
+      "lat": 51.451755,
+      "lng": -2.842477
+    }
+  },
+  {
+    "name": "Wells Bishop's Palace",
+    "href": "https://en.wikipedia.org/wiki/Bishop%27s_Palace,_Wells",
+    "coords": {
+      "lat": 51.209293,
+      "lng": -2.64255
+    }
+  },
+  {
+    "name": "Conisbrough Castle",
+    "href": "https://en.wikipedia.org/wiki/Conisbrough_Castle",
+    "coords": {
+      "lat": 53.48417,
+      "lng": -1.22639
+    }
+  },
+  {
+    "name": "Tickhill Castle",
+    "href": "https://en.wikipedia.org/wiki/Tickhill_Castle",
+    "coords": {
+      "lat": 53.4291,
+      "lng": -1.1081
+    }
+  },
+  {
+    "name": "Alton Castle",
+    "href": "https://en.wikipedia.org/wiki/Alton_Castle",
+    "coords": {
+      "lat": 52.9798,
+      "lng": -1.8912
+    }
+  },
+  {
+    "name": "Caverswall Castle",
+    "href": "https://en.wikipedia.org/wiki/Caverswall_Castle",
+    "coords": {
+      "lat": 52.9825,
+      "lng": -2.0759
+    }
+  },
+  {
+    "name": "Chartley Castle",
+    "href": "https://en.wikipedia.org/wiki/Chartley_Castle",
+    "coords": {
+      "lat": 52.85399,
+      "lng": -1.98659
+    }
+  },
+  {
+    "name": "Eccleshall Castle",
+    "href": "https://en.wikipedia.org/wiki/Eccleshall_Castle",
+    "coords": {
+      "lat": 52.8627,
+      "lng": -2.25841
+    }
+  },
+  {
+    "name": "Stafford Castle",
+    "href": "https://en.wikipedia.org/wiki/Stafford_Castle",
+    "coords": {
+      "lat": 52.7973,
+      "lng": -2.1468
+    }
+  },
+  {
+    "name": "Stourton Castle",
+    "href": "https://en.wikipedia.org/wiki/Stourton_Castle",
+    "coords": {
+      "lat": 52.46727,
+      "lng": -2.20015
+    }
+  },
+  {
+    "name": "Tamworth Castle",
+    "href": "https://en.wikipedia.org/wiki/Tamworth_Castle",
+    "coords": {
+      "lat": 52.63278,
+      "lng": -1.69667
+    }
+  },
+  {
+    "name": "Tutbury Castle",
+    "href": "https://en.wikipedia.org/wiki/Tutbury_Castle",
+    "coords": {
+      "lat": 52.859479,
+      "lng": -1.690575
+    }
+  },
+  {
+    "name": "Bungay Castle",
+    "href": "https://en.wikipedia.org/wiki/Bungay_Castle",
+    "coords": {
+      "lat": 52.4553,
+      "lng": 1.4367
+    }
+  },
+  {
+    "name": "Clare Castle",
+    "href": "https://en.wikipedia.org/wiki/Clare_Castle",
+    "coords": {
+      "lat": 52.0768,
+      "lng": 0.5829
+    }
+  },
+  {
+    "name": "Eye Castle",
+    "href": "https://en.wikipedia.org/wiki/Eye_Castle",
+    "coords": {
+      "lat": 52.3202,
+      "lng": 1.1503
+    }
+  },
+  {
+    "name": "Framlingham Castle",
+    "href": "https://en.wikipedia.org/wiki/Framlingham_Castle",
+    "coords": {
+      "lat": 52.22405,
+      "lng": 1.34691
+    }
+  },
+  {
+    "name": "Mettingham Castle",
+    "href": "https://en.wikipedia.org/wiki/Mettingham_Castle",
+    "coords": {
+      "lat": 52.4448,
+      "lng": 1.4714
+    }
+  },
+  {
+    "name": "Orford Castle",
+    "href": "https://en.wikipedia.org/wiki/Orford_Castle",
+    "coords": {
+      "lat": 52.0936,
+      "lng": 1.53
+    }
+  },
+  {
+    "name": "Wingfield Castle",
+    "href": "https://en.wikipedia.org/wiki/Wingfield_Castle"
+  },
+  {
+    "name": "Farnham Castle",
+    "href": "https://en.wikipedia.org/wiki/Farnham_Castle",
+    "coords": {
+      "lat": 51.21889,
+      "lng": -0.80278
+    }
+  },
+  {
+    "name": "Guildford Castle",
+    "href": "https://en.wikipedia.org/wiki/Guildford_Castle",
+    "coords": {
+      "lat": 51.2346,
+      "lng": -0.5741
+    }
+  },
+  {
+    "name": "Hylton Castle",
+    "href": "https://en.wikipedia.org/wiki/Hylton_Castle",
+    "coords": {
+      "lat": 54.92253,
+      "lng": -1.44318
+    }
+  },
+  {
+    "name": "Newcastle Castle",
+    "href": "https://en.wikipedia.org/wiki/The_Castle,_Newcastle",
+    "coords": {
+      "lat": 54.9688,
+      "lng": -1.6105
+    }
+  },
+  {
+    "name": "Old Hollinside",
+    "href": "https://en.wikipedia.org/wiki/Whickham",
+    "coords": {
+      "lat": 54.9456,
+      "lng": -1.6726
+    }
+  },
+  {
+    "name": "Ravensworth Castle",
+    "href": "https://en.wikipedia.org/wiki/Ravensworth_Castle_(Tyne_and_Wear)",
+    "coords": {
+      "lat": 54.9264,
+      "lng": -1.6387
+    }
+  },
+  {
+    "name": "Tynemouth Castle",
+    "href": "https://en.wikipedia.org/wiki/Tynemouth_Castle",
+    "coords": {
+      "lat": 55.0175,
+      "lng": -1.4189
+    }
+  },
+  {
+    "name": "Astley Castle",
+    "href": "https://en.wikipedia.org/wiki/Astley_Castle",
+    "coords": {
+      "lat": 52.5024,
+      "lng": -1.5424
+    }
+  },
+  {
+    "name": "Kenilworth Castle",
+    "href": "https://en.wikipedia.org/wiki/Kenilworth_Castle",
+    "coords": {
+      "lat": 52.3479693,
+      "lng": -1.5923611
+    }
+  },
+  {
+    "name": "Maxstoke Castle",
+    "href": "https://en.wikipedia.org/wiki/Maxstoke_Castle",
+    "coords": {
+      "lat": 52.4994,
+      "lng": -1.6729
+    }
+  },
+  {
+    "name": "Warwick Castle",
+    "href": "https://en.wikipedia.org/wiki/Warwick_Castle",
+    "coords": {
+      "lat": 52.27944,
+      "lng": -1.58472
+    }
+  },
+  {
+    "name": "Dudley Castle",
+    "href": "https://en.wikipedia.org/wiki/Dudley_Castle",
+    "coords": {
+      "lat": 52.5142,
+      "lng": -2.08
+    }
+  },
+  {
+    "name": "Amberley Castle",
+    "href": "https://en.wikipedia.org/wiki/Amberley_Castle",
+    "coords": {
+      "lat": 50.90914,
+      "lng": -0.54064
+    }
+  },
+  {
+    "name": "Arundel Castle",
+    "href": "https://en.wikipedia.org/wiki/Arundel_Castle",
+    "coords": {
+      "lat": 50.85611,
+      "lng": -0.55361
+    }
+  },
+  {
+    "name": "Bramber Castle",
+    "href": "https://en.wikipedia.org/wiki/Bramber_Castle",
+    "coords": {
+      "lat": 50.884087,
+      "lng": -0.316088
+    }
+  },
+  {
+    "name": "Halnaker House",
+    "href": "https://en.wikipedia.org/wiki/Halnaker",
+    "coords": {
+      "lat": 50.86508,
+      "lng": -0.71193
+    }
+  },
+  {
+    "name": "(Old) Knepp Castle",
+    "href": "https://en.wikipedia.org/wiki/Knepp_Castle",
+    "coords": {
+      "lat": 50.97578,
+      "lng": -0.34482
+    }
+  },
+  {
+    "name": "Dobroyd Castle",
+    "href": "https://en.wikipedia.org/wiki/Dobroyd_Castle",
+    "coords": {
+      "lat": 53.71028,
+      "lng": -2.10806
+    }
+  },
+  {
+    "name": "Harewood Castle",
+    "href": "https://en.wikipedia.org/wiki/Harewood_Castle",
+    "coords": {
+      "lat": 53.9059,
+      "lng": -1.5117
+    }
+  },
+  {
+    "name": "Pontefract Castle",
+    "href": "https://en.wikipedia.org/wiki/Pontefract_Castle",
+    "coords": {
+      "lat": 53.69556,
+      "lng": -1.30389
+    }
+  },
+  {
+    "name": "Sandal Castle",
+    "href": "https://en.wikipedia.org/wiki/Sandal_Castle",
+    "coords": {
+      "lat": 53.658889,
+      "lng": -1.491111
+    }
+  },
+  {
+    "name": "Devizes Castle",
+    "href": "https://en.wikipedia.org/wiki/Devizes_Castle",
+    "coords": {
+      "lat": 51.3508,
+      "lng": -1.9985
+    }
+  },
+  {
+    "name": "Longford Castle",
+    "href": "https://en.wikipedia.org/wiki/Longford_Castle",
+    "coords": {
+      "lat": 51.039167,
+      "lng": -1.756925
+    }
+  },
+  {
+    "name": "Ludgershall Castle",
+    "href": "https://en.wikipedia.org/wiki/Ludgershall_Castle",
+    "coords": {
+      "lat": 51.2596,
+      "lng": -1.6233
+    }
+  },
+  {
+    "name": "Old Sarum Castle",
+    "href": "https://en.wikipedia.org/wiki/Old_Sarum",
+    "coords": {
+      "lat": 51.09255,
+      "lng": -1.8075
+    }
+  },
+  {
+    "name": "Old Wardour Castle",
+    "href": "https://en.wikipedia.org/wiki/Old_Wardour_Castle",
+    "coords": {
+      "lat": 51.0365,
+      "lng": -2.0888
+    }
+  },
+  {
+    "name": "Caldwall Castle",
+    "href": "https://en.wikipedia.org/wiki/Kidderminster#History",
+    "coords": {
+      "lat": 52.3885,
+      "lng": -2.249
+    }
+  },
+  {
+    "name": "Hartlebury Castle",
+    "href": "https://en.wikipedia.org/wiki/Hartlebury_Castle",
+    "coords": {
+      "lat": 52.3386,
+      "lng": -2.2421
+    }
+  },
+  {
+    "name": "Holt Castle",
+    "href": "https://en.wikipedia.org/wiki/Holt_Fleet#Medieval_period",
+    "coords": {
+      "lat": 52.26937,
+      "lng": -2.2608
+    }
+  },
+  {
+    "name": "Worcester Castle",
+    "href": "https://en.wikipedia.org/wiki/Worcester_Castle",
+    "coords": {
+      "lat": 52.1867,
+      "lng": -2.2223
+    }
+  }
+]

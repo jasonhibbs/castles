@@ -1,32 +1,46 @@
-<template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+<template lang="pug">
+
+  #app
+    castle-map
+      castle-markers(
+        v-if="hasCastles"
+        :castles="castles"
+      )
+
+    router-view(:key="$route.fullPath")
+
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<style lang="scss" src="@/assets/scss/style.scss"></style>
 
-#nav {
-  padding: 30px;
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator'
+import CastleMap from '@/components/CastleMap.vue'
+import CastleMarkers from '@/components/CastleMarkers.vue'
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+@Component({
+  components: {
+    CastleMap,
+    CastleMarkers,
+  },
+})
+export default class App extends Vue {
+  castles: any[] = []
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+  async fetchCastles() {
+    return fetch('/castles.json')
+      .then(response => response.json())
+      .then(data => {
+        this.castles = data
+      })
+  }
+
+  get hasCastles() {
+    return this.castles.length
+  }
+
+  mounted() {
+    this.fetchCastles()
   }
 }
-</style>
+</script>

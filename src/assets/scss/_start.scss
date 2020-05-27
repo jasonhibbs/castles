@@ -1,0 +1,30 @@
+// Start ———————————————————————————————————————————————————————————————
+
+button[aria-checked='true'] {
+  --color: var(--color-root);
+  --background-color: var(--contrast-darker);
+  --hover-background-color: var(--contrast-darker);
+}
+
+.banner {
+  color: var(--color-text-key);
+  background: var(--color-key-20);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--space-rem-smallest) rem(var(--screen-padding-x));
+}
+
+.slide-from-bottom-enter-active,
+.slide-from-bottom-leave-active {
+  transition: transform 0.3s cubic-bezier((1/4), (10/12), (1/10), 1);
+}
+.slide-from-bottom-leave-active {
+  transition: transform 0.3s cubic-bezier((1/10), 0, (3/4), (2/12));
+}
+
+.slide-from-bottom-enter,
+.slide-from-bottom-leave-to {
+  transform: translateY(100%);
+}
