@@ -1,6 +1,6 @@
 // Start ———————————————————————————————————————————————————————————————
 
-#app > h1 {
+#app > header {
   position: fixed;
   top: 0;
   left: 0;
@@ -18,8 +18,8 @@
 .castle-marker {
   --size-exp: calc(var(--map-zoom) * (var(--map-zoom) * 0.875));
   --size: calc(0.125px * var(--size-exp));
-  --width: max(2px, var(--size));
-  --height: max(2px, var(--size));
+  --width: max(2px, min(var(--size), 20px));
+  --height: max(2px, min(var(--size), 20px));
   --pin-background-color: var(--color-map-text);
   --pin-halo-color: var(--color-map-base);
 
@@ -39,7 +39,7 @@
   height: var(--height);
   background-color: var(--pin-background-color);
   box-shadow: 0 0 0 2px var(--pin-halo-color);
-  border-radius: 1em;
+  border-radius: 2em;
   transition: box-shadow 0.1s ease-out;
 
   .castle-marker:hover & {
@@ -62,7 +62,7 @@
   color: #f2eee8;
   background-color: var(--color-map-text);
 
-  opacity: 0;
+  opacity: calc(var(--map-zoom-floor) - 10);
   transition: opacity 0.1s ease-out;
 
   .castle-marker:hover & {

@@ -6,7 +6,7 @@
     :center="mapConfig.center"
     :zoom="mapConfig.zoom"
     :hash="true"
-    :style="{ '--map-zoom': mapView.zoom, '--map-bearing': `${mapView.bearing}deg` }"
+    :style="{ '--map-zoom': mapView.zoom, '--map-zoom-floor': Math.floor(mapView.zoom), '--map-bearing': `${mapView.bearing}deg` }"
     @load="onMapLoaded"
     @move="onMapMove"
     @rotate="onMapRotate"

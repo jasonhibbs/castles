@@ -1,7 +1,9 @@
 <template lang="pug">
 
   #app
-    h1 Where’s my nearest eye test?
+    header
+      h1 Where can I test my eyes?
+      h2 A map of English castles
     castle-map
       castle-markers(
         v-if="hasCastles"
