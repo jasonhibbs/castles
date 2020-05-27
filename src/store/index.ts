@@ -7,7 +7,7 @@ const mapStart = {
   zoom: 4.75,
   lat: 55,
   lng: -4.2,
-  style: 'mapbox://styles/jasonhibbs/ckapkbzfh0fmw1instsyk4cph',
+  style: 'mapbox://styles/jasonhibbs/ckapkbzfh0fmw1instsyk4cph?fresh=true',
 }
 
 export default new Vuex.Store({

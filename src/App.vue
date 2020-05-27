@@ -1,6 +1,7 @@
 <template lang="pug">
 
   #app
+    h1 Where’s my nearest eye test?
     castle-map
       castle-markers(
         v-if="hasCastles"

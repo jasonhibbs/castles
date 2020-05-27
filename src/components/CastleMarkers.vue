@@ -6,20 +6,21 @@
       v-if="castle.coords"
       :coordinates="[castle.coords.lng, castle.coords.lat]"
     )
-      div(
+      castle-marker(
         slot="marker"
-      ) {{ castle.name }}
+        :castle="castle"
+      )
 
 </template>
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator'
-import { MglMap, MglMarker, MglGeojsonLayer } from 'vue-mapbox'
+import { MglMarker } from 'vue-mapbox'
+import CastleMarker from '@/components/CastleMarker.vue'
 
 @Component({
   components: {
-    MglMap,
     MglMarker,
-    MglGeojsonLayer,
+    CastleMarker,
   },
 })
 export default class CastleMarkers extends Vue {
