@@ -6,29 +6,29 @@
     name="sheet"
     @enter="enter"
   )
-    .overlay-context
-      .overlay(
-        ref="overlay"
+    .sheet-context
+      .sheet(
+        ref="sheet"
         :class="classes"
         @scroll="scroll"
       )
-        .overlay-margin(
-          ref="overlayMargin"
+        .sheet-margin(
+          ref="sheetMargin"
           @mouseover="elide"
           @click="elide"
           @touchstart="elide"
           @touchmove="elide"
         )
-        .overlay-stop._top(
+        .sheet-stop._top(
           ref="stopTop"
         )
-        .overlay-stop._mid(
+        .sheet-stop._mid(
           ref="stopMid"
         )
-        .overlay-stop._bottom(
+        .sheet-stop._bottom(
           ref="stopLow"
         )
-        .overlay-content(
+        .sheet-content(
           @mouseover="activate"
           @touchstart="activate"
         )
@@ -50,7 +50,7 @@ export default class BottomSheet extends Vue {
   onClient = false
   interactive = true
   scrolled = false
-  atTop = true
+  atTop = false
   dismissed = false
   scrollTop = 0
 
@@ -89,17 +89,17 @@ export default class BottomSheet extends Vue {
   }
 
   toTop() {
-    // this.$refs.overlay.scrollTop = this.$refs.overlay.clientHeight
-    this.$refs.overlay.scrollTop = this.$refs.stopTop.offsetTop
+    // this.$refs.sheet.scrollTop = this.$refs.sheet.clientHeight
+    this.$refs.sheet.scrollTop = this.$refs.stopTop.offsetTop
     this.activate()
   }
 
   toMid() {
-    this.$refs.overlay.scrollTop = this.$refs.stopMid.offsetTop
+    this.$refs.sheet.scrollTop = this.$refs.stopMid.offsetTop
   }
 
   toBottom() {
-    this.$refs.overlay.scrollTop = this.$refs.stopLow.offsetTop
+    this.$refs.sheet.scrollTop = this.$refs.stopLow.offsetTop
   }
 
   activate() {
@@ -118,21 +118,21 @@ export default class BottomSheet extends Vue {
   }
 
   scroll(e: Event) {
-    const overlayEl = this.$refs.overlay as HTMLElement
-    const overlayMarginEl = this.$refs.overlayMargin as HTMLElement
+    const sheetEl = this.$refs.sheet as HTMLElement
+    const sheetMarginEl = this.$refs.sheetMargin as HTMLElement
     // const stopMidEl = this.$refs.stopMid as HTMLElement
     // const stopLowEl = this.$refs.stopLow as HTMLElement
     const scrollMarginEl = this.$refs.scrollMargin as HTMLElement
 
-    if (overlayEl && !this.dismissed) {
-      const delta = overlayEl.scrollTop - this.scrollTop
-      this.scrollTop = overlayEl.scrollTop
+    if (sheetEl && !this.dismissed) {
+      const delta = sheetEl.scrollTop - this.scrollTop
+      this.scrollTop = sheetEl.scrollTop
 
-      if (this.scrollTop >= overlayMarginEl.clientHeight) {
+      if (this.scrollTop >= sheetMarginEl.clientHeight) {
         scrollMarginEl.style.height = '0'
         this.atTop = true
 
-        if (this.scrollTop > overlayMarginEl.clientHeight) {
+        if (this.scrollTop > sheetMarginEl.clientHeight) {
           this.scrolled = true
         }
 
@@ -143,13 +143,13 @@ export default class BottomSheet extends Vue {
       this.scrolled = false
       // var minHeight = stopLowEl.offsetTop / 2
 
-      // if (delta < 0 && overlayEl.scrollTop < minHeight) {
+      // if (delta < 0 && sheetEl.scrollTop < minHeight) {
       //   scrollMarginEl.style.height = '0'
       //   this.dismiss()
       //   return
       // }
 
-      scrollMarginEl.style.height = `${overlayEl.scrollTop}px`
+      scrollMarginEl.style.height = `${sheetEl.scrollTop}px`
     }
   }
 }
@@ -162,7 +162,7 @@ export default class BottomSheet extends Vue {
   --sheet-slide-duration: 0.25s;
 }
 
-.overlay {
+.sheet {
   -webkit-overflow-scrolling: touch;
 
   position: absolute;
@@ -192,14 +192,14 @@ export default class BottomSheet extends Vue {
   }
 }
 
-.overlay-margin {
+.sheet-margin {
   position: relative;
   width: 100%;
   height: calc(100% - var(--sheet-offset-bottom));
   background: none;
 }
 
-.overlay-stop {
+.sheet-stop {
   scroll-snap-align: start;
   scroll-snap-stop: always;
   display: block;
@@ -230,7 +230,7 @@ export default class BottomSheet extends Vue {
   width: 1px;
 }
 
-.overlay-content {
+.sheet-content {
   max-width: (380rem/16);
   margin: auto;
   position: relative;
@@ -243,7 +243,7 @@ export default class BottomSheet extends Vue {
 .sheet-leave-to {
   opacity: 0;
 
-  .overlay {
+  .sheet {
     transform: translateY(100vh);
   }
 }
@@ -252,7 +252,7 @@ export default class BottomSheet extends Vue {
   scroll-behavior: auto;
   transition: opacity 0.1s, visibility var(--sheet-slide-duration);
 
-  .overlay {
+  .sheet {
     transition: transform var(--sheet-slide-duration)
       cubic-bezier((1/4), (10/12), (1/10), 1);
   }
@@ -261,7 +261,7 @@ export default class BottomSheet extends Vue {
 .sheet-leave-active {
   transition: opacity 0.1s 0.2s, visibility var(--sheet-slide-duration);
 
-  .overlay {
+  .sheet {
     transition: transform var(--sheet-slide-duration)
       cubic-bezier((1/4), (10/12), (1/10), 1);
   }
