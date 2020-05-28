@@ -16,7 +16,8 @@
 
     button-location
 
-    router-view(:key="$route.fullPath")
+    bottom-sheet
+      router-view(:key="$route.fullPath")
 
 </template>
 
@@ -24,6 +25,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
+import BottomSheet from '@/components/BottomSheet.vue'
 import CastleMap from '@/components/CastleMap.vue'
 import CastleMarkers from '@/components/CastleMarkers.vue'
 import ContextMarker from '@/components/ContextMarker.vue'
@@ -31,6 +33,7 @@ import ButtonLocation from '@/components/ButtonLocation.vue'
 
 @Component({
   components: {
+    BottomSheet,
     CastleMap,
     CastleMarkers,
     ContextMarker,
