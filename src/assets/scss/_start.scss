@@ -36,7 +36,7 @@
   --height: max(2px, min(var(--size), 20px));
   --pin-background-color: var(--color-black);
   --pin-halo-color: var(--color-map-base);
-  --pin-halo-width: 2px;
+  --pin-halo-width: 1px;
   --label-background-color: var(--pin-background-color);
   --label-color: var(--color-white);
 
@@ -100,4 +100,61 @@
   --pin-halo-width: 3px;
   // --label-color: var(--color-text);
   z-index: 1;
+}
+
+// Card
+
+.card {
+  background-color: #ebebea;
+  padding: 1px;
+  min-height: 100vh;
+  box-shadow: 0 0 12px var(--shade-light), 0 0 0 1px var(--shade-light);
+  border-radius: 12px 12px 0 0;
+
+  ._top & {
+    border-radius: 0;
+  }
+}
+
+.card-header {
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: inherit;
+  border-radius: inherit;
+  box-shadow: 0 1px fade-out(#002, (11/12));
+  transition: border-radius 0.2s, box-shadow 0.2s;
+
+  &:before {
+    $width: 36px;
+    content: '';
+    border-radius: 2px;
+    height: 4px;
+    width: $width;
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: currentColor;
+    opacity: 0.1;
+    transition: top 0.2s, opacity 0.2s;
+  }
+
+  ._interactive & {
+    &:before {
+      opacity: 0.4;
+    }
+  }
+
+  ._top & {
+    &:before {
+      top: -6px;
+      opacity: 0;
+    }
+  }
+
+  ._scrolled & {
+    box-shadow: 0 0 4px fade-out(#002, (4/5));
+  }
 }

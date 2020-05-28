@@ -13,15 +13,19 @@
         @scroll="scroll"
       )
         .overlay-margin(
+          ref="overlayMargin"
           @mouseover="elide"
           @click="elide"
           @touchstart="elide"
           @touchmove="elide"
         )
+        .overlay-stop._top(
+          ref="stopTop"
+        )
         .overlay-stop._mid(
           ref="stopMid"
         )
-        .overlay-stop._low(
+        .overlay-stop._bottom(
           ref="stopLow"
         )
         .overlay-content(
@@ -62,9 +66,9 @@ export default class BottomSheet extends Vue {
 
   mounted() {
     this.onClient = true
-    document.addEventListener('touchend', this.documentTouchEnd)
+    // document.addEventListener('touchend', this.elide)
     this.$on('raise', this.toMid)
-    this.$on('lower', this.toLow)
+    this.$on('lower', this.toBottom)
   }
 
   destroyed() {
@@ -81,11 +85,12 @@ export default class BottomSheet extends Vue {
   }
 
   enter() {
-    this.peek ? this.toLow() : this.toTop()
+    this.peek ? this.toBottom() : this.toMid()
   }
 
   toTop() {
-    this.$refs.overlay.scrollTop = this.$refs.overlay.clientHeight
+    // this.$refs.overlay.scrollTop = this.$refs.overlay.clientHeight
+    this.$refs.overlay.scrollTop = this.$refs.stopTop.offsetTop
     this.activate()
   }
 
@@ -93,7 +98,7 @@ export default class BottomSheet extends Vue {
     this.$refs.overlay.scrollTop = this.$refs.stopMid.offsetTop
   }
 
-  toLow() {
+  toBottom() {
     this.$refs.overlay.scrollTop = this.$refs.stopLow.offsetTop
   }
 
@@ -114,19 +119,20 @@ export default class BottomSheet extends Vue {
 
   scroll(e: Event) {
     const overlayEl = this.$refs.overlay as HTMLElement
-    const stopMidEl = this.$refs.stopMid as HTMLElement
-    const stopLowEl = this.$refs.stopLow as HTMLElement
-    const marginEl = this.$refs.scrollMargin as HTMLElement
+    const overlayMarginEl = this.$refs.overlayMargin as HTMLElement
+    // const stopMidEl = this.$refs.stopMid as HTMLElement
+    // const stopLowEl = this.$refs.stopLow as HTMLElement
+    const scrollMarginEl = this.$refs.scrollMargin as HTMLElement
 
     if (overlayEl && !this.dismissed) {
       const delta = overlayEl.scrollTop - this.scrollTop
       this.scrollTop = overlayEl.scrollTop
 
-      if (overlayEl.scrollTop >= overlayEl.clientHeight) {
-        marginEl.style.height = '0'
+      if (this.scrollTop >= overlayMarginEl.clientHeight) {
+        scrollMarginEl.style.height = '0'
         this.atTop = true
 
-        if (overlayEl.scrollTop > overlayEl.clientHeight) {
+        if (this.scrollTop > overlayMarginEl.clientHeight) {
           this.scrolled = true
         }
 
@@ -138,12 +144,12 @@ export default class BottomSheet extends Vue {
       // var minHeight = stopLowEl.offsetTop / 2
 
       // if (delta < 0 && overlayEl.scrollTop < minHeight) {
-      //   marginEl.style.height = '0'
+      //   scrollMarginEl.style.height = '0'
       //   this.dismiss()
       //   return
       // }
 
-      marginEl.style.height = `${overlayEl.scrollTop}px`
+      scrollMarginEl.style.height = `${overlayEl.scrollTop}px`
     }
   }
 }
@@ -152,14 +158,14 @@ export default class BottomSheet extends Vue {
 <style lang="scss">
 :root {
   --sheet-offset-top: 0;
+  --sheet-offset-bottom: calc(5.25rem + env(safe-area-inset-bottom));
   --sheet-slide-duration: 0.25s;
 }
 
 .overlay {
   -webkit-overflow-scrolling: touch;
 
-  // @media (max-width: 719px) {
-  position: fixed;
+  position: absolute;
   top: var(--sheet-offset-top);
   left: 0;
   right: 0;
@@ -184,63 +190,51 @@ export default class BottomSheet extends Vue {
     pointer-events: auto;
     overflow-y: scroll;
   }
-  // }
 }
 
 .overlay-margin {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: calc(100% - var(--sheet-offset-bottom));
   background: none;
-
-  // @media (min-width: 720px) {
-  //   display: none;
-  // }
 }
 
 .overlay-stop {
   scroll-snap-align: start;
   scroll-snap-stop: always;
   display: block;
-  position: fixed;
+  position: absolute;
   left: 0;
-  width: 1px;
+  z-index: 2;
+  width: 100%;
   height: 1px;
+  // background-color: #f0f;
+
+  &._top {
+    top: calc(100% - var(--sheet-offset-bottom));
+  }
 
   &._mid {
-    top: 40vh;
+    top: calc(50% - var(--sheet-offset-bottom));
   }
 
-  &._low {
-    top: 6rem;
+  &._bottom {
+    top: 0;
   }
-
-  // @media (min-width: 720px) {
-  //   display: none;
-  // }
 }
 
 .scroll-margin {
   position: absolute;
   left: 0;
-  top: 100%; // calc(100% - 6rem);
+  top: 100%;
   width: 1px;
-  // display: none;
-
-  // @media (min-width: 720px) {
-  //   display: none;
-  // }
 }
 
 .overlay-content {
   max-width: (380rem/16);
   margin: auto;
-  // @media (max-width: 719px) {
   position: relative;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
   pointer-events: auto;
-  // }
 }
 
 // Animation
