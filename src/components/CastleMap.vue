@@ -53,6 +53,7 @@ export default class CastleMap extends Vue {
     this.mapView.center = this.map.getCenter()
     this.mapView.zoom = this.map.getZoom()
     this.updateBounds()
+    this.$root.$on('locationchange', this.mapEaseTo)
   }
 
   onStyleLoaded(e: any) {
@@ -111,7 +112,7 @@ export default class CastleMap extends Vue {
     this.map.easeTo(
       Object.assign(
         {
-          zoom: 14,
+          zoom: 8.5,
           duration: 800,
         },
         args

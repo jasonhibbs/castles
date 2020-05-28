@@ -44,14 +44,24 @@ export default class ButtonLocation extends Vue {
   }
 
   updateCurrentLocation(position: Position) {
-    this.mapView.context.lat = position.coords.latitude
-    this.mapView.context.lng = position.coords.longitude
+    const { lat, lng } = {
+      lat: position.coords.latitude,
+      lng: position.coords.longitude,
+    }
+    this.$store.commit('updateContext', { lat, lng })
+    this.$root.$emit('locationchange', { center: [lng, lat] })
     this.isFinding = false
   }
 
   handleLocationError(error: PositionError) {
     console.warn(error.message)
     this.isFinding = false
+  }
+
+  onLocationChange() {
+    this.$root.$emit('locationchange', {
+      center: [this.mapView.context.lng, this.mapView.context.lat],
+    })
   }
 }
 </script>
