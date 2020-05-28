@@ -1,15 +1,20 @@
 <template lang="pug">
 
-  .card
-    .card-header
+  card
+    template(#header)
       .layout
-        p Hello World
-    .card-content
+        h1 Where should thou test thine eyes?
+        h2 A map of English castles
+
+    template(#content)
 
 </template>
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import { Component, Ref, Vue, Watch } from 'vue-property-decorator'
+import Card from '@/components/Card.vue'
 
-@Component
+@Component({
+  components: { Card },
+})
 export default class Home extends Vue {}
 </script>

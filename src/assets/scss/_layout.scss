@@ -4,7 +4,7 @@
   --screen-padding-x: 20;
 
   --layout-measure: #{em(640)};
-  --layout-base: calc(100vw - ((2rem / 16) * var(--screen-padding-x)));
+  --layout-base: calc(100% - ((2rem / 16) * var(--screen-padding-x)));
 
   --space-hairline: 1;
   --space-smallest: 2;

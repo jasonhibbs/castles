@@ -14,10 +14,10 @@
       )
         .sheet-margin(
           ref="sheetMargin"
-          @mouseover="elide"
-          @click="elide"
-          @touchstart="elide"
-          @touchmove="elide"
+          @click="deactivate"
+          @mouseenter="deactivate"
+          @touchstart="deactivate"
+          @touchmove="deactivate"
         )
         .sheet-stop._top(
           ref="stopTop"
@@ -29,7 +29,8 @@
           ref="stopLow"
         )
         .sheet-content(
-          @mouseover="activate"
+          @mouseenter="activate"
+          @mouseleave="deactivate"
           @touchstart="activate"
         )
           slot
@@ -50,9 +51,14 @@ export default class BottomSheet extends Vue {
   onClient = false
   interactive = true
   scrolled = false
-  atTop = false
-  dismissed = false
   scrollTop = 0
+
+  willDismiss = false
+  dismissed = false
+
+  atTop = false
+  atMid = false
+  atBottom = false
 
   get classes() {
     return [
@@ -66,22 +72,8 @@ export default class BottomSheet extends Vue {
 
   mounted() {
     this.onClient = true
-    // document.addEventListener('touchend', this.elide)
     this.$on('raise', this.toMid)
     this.$on('lower', this.toBottom)
-  }
-
-  destroyed() {
-    document.removeEventListener('touchend', this.documentTouchEnd)
-  }
-
-  documentTouchEnd(t: any) {
-    const activeEl = document.activeElement
-    if (activeEl && 'input' !== activeEl.tagName.toLowerCase()) {
-      setTimeout(() => {
-        this.activate()
-      }, 10)
-    }
   }
 
   enter() {
@@ -89,7 +81,6 @@ export default class BottomSheet extends Vue {
   }
 
   toTop() {
-    // this.$refs.sheet.scrollTop = this.$refs.sheet.clientHeight
     this.$refs.sheet.scrollTop = this.$refs.stopTop.offsetTop
     this.activate()
   }
@@ -106,7 +97,7 @@ export default class BottomSheet extends Vue {
     this.interactive = true
   }
 
-  elide() {
+  deactivate() {
     this.interactive = false
   }
 
@@ -120,13 +111,25 @@ export default class BottomSheet extends Vue {
   scroll(e: Event) {
     const sheetEl = this.$refs.sheet as HTMLElement
     const sheetMarginEl = this.$refs.sheetMargin as HTMLElement
-    // const stopMidEl = this.$refs.stopMid as HTMLElement
-    // const stopLowEl = this.$refs.stopLow as HTMLElement
+    const stopMidEl = this.$refs.stopMid as HTMLElement
     const scrollMarginEl = this.$refs.scrollMargin as HTMLElement
 
     if (sheetEl && !this.dismissed) {
       const delta = sheetEl.scrollTop - this.scrollTop
       this.scrollTop = sheetEl.scrollTop
+
+      this.atTop = false
+      this.atMid = false
+      this.atBottom = false
+      this.scrolled = false
+
+      if (this.scrollTop <= 0) {
+        this.atBottom = true
+      }
+
+      if (this.scrollTop > 0 && this.scrollTop < sheetMarginEl.clientHeight) {
+        this.atMid = true
+      }
 
       if (this.scrollTop >= sheetMarginEl.clientHeight) {
         scrollMarginEl.style.height = '0'
@@ -139,15 +142,14 @@ export default class BottomSheet extends Vue {
         return
       }
 
-      this.atTop = false
-      this.scrolled = false
-      // var minHeight = stopLowEl.offsetTop / 2
-
-      // if (delta < 0 && sheetEl.scrollTop < minHeight) {
-      //   scrollMarginEl.style.height = '0'
-      //   this.dismiss()
-      //   return
-      // }
+      if (this.willDismiss) {
+        var minHeight = stopLowEl.offsetTop / 2
+        if (delta < 0 && sheetEl.scrollTop < minHeight) {
+          scrollMarginEl.style.height = '0'
+          this.dismiss()
+          return
+        }
+      }
 
       scrollMarginEl.style.height = `${sheetEl.scrollTop}px`
     }
@@ -156,15 +158,24 @@ export default class BottomSheet extends Vue {
 </script>
 
 <style lang="scss">
+@import '../assets/scss/util';
+
+$sheet-breakpoint: 660px;
+
 :root {
-  --sheet-offset-top: 0;
-  --sheet-offset-bottom: calc(5.25rem + env(safe-area-inset-bottom));
+  --sheet-top: 0;
+  --sheet-mid: 50%;
+  --sheet-bottom: calc(5.25rem);
+
+  --sheet-offset-top: var(--sheet-top);
+  --sheet-offset-bottom: calc(
+    var(--sheet-bottom) + env(safe-area-inset-bottom)
+  );
+
   --sheet-slide-duration: 0.25s;
 }
 
 .sheet {
-  -webkit-overflow-scrolling: touch;
-
   position: absolute;
   top: var(--sheet-offset-top);
   left: 0;
@@ -177,18 +188,35 @@ export default class BottomSheet extends Vue {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none;
 
-  max-width: (420rem/16);
+  max-width: rem(420);
+  padding: 0 env(safe-area-inset-left);
 
   &::-webkit-scrollbar,
   &::-webkit-scrollbar-thumb {
     display: none;
   }
 
-  &._interactive {
-    pointer-events: auto;
-    overflow-y: scroll;
+  // &._interactive {
+  //   pointer-events: auto;
+  //   overflow-y: scroll;
+  // }
+
+  @media (min-width: $sheet-breakpoint) {
+    max-width: rem(400);
+  }
+}
+
+.sheet-content {
+  max-width: rem(380);
+  margin: auto;
+  position: relative;
+  pointer-events: auto;
+
+  @media (min-width: $sheet-breakpoint) {
+    max-width: rem(360);
   }
 }
 
@@ -197,6 +225,7 @@ export default class BottomSheet extends Vue {
   width: 100%;
   height: calc(100% - var(--sheet-offset-bottom));
   background: none;
+  transition: height 0.2s ease-out;
 }
 
 .sheet-stop {
@@ -228,13 +257,6 @@ export default class BottomSheet extends Vue {
   left: 0;
   top: 100%;
   width: 1px;
-}
-
-.sheet-content {
-  max-width: (380rem/16);
-  margin: auto;
-  position: relative;
-  pointer-events: auto;
 }
 
 // Animation

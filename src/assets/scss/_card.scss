@@ -1,0 +1,72 @@
+// Card ————————————————————————————————————————————————————————————————
+
+.card {
+  background-color: #ebebea;
+  padding: 1px;
+  min-height: 100vh;
+  box-shadow: 0 0 12px var(--shade-light), 0 0 0 1px var(--shade-light);
+  border-radius: 12px 12px 0 0;
+
+  ._top & {
+    border-radius: 0;
+  }
+
+  .layout {
+    padding: 0;
+  }
+}
+
+.card-header {
+  padding: rem(16) 0 rem(20);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: inherit;
+  border-radius: inherit;
+  box-shadow: 0 1px fade-out(#002, (11/12));
+  transition: border-radius 0.2s, box-shadow 0.2s;
+
+  &:before {
+    $width: 36px;
+    // content: '';
+    border-radius: 2px;
+    height: 4px;
+    width: $width;
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: currentColor;
+    opacity: 0.1;
+    transition: top 0.2s, opacity 0.2s;
+  }
+
+  ._interactive & {
+    &:before {
+      opacity: 0.4;
+    }
+  }
+
+  ._top & {
+    &:before {
+      top: -6px;
+      opacity: 0;
+    }
+  }
+
+  ._scrolled & {
+    box-shadow: 0 0 4px fade-out(#002, (4/5));
+  }
+
+  h1 {
+    @include font-size(26, 32);
+  }
+
+  h2 {
+    @include font-size(18, 20);
+  }
+
+  h1 + h2 {
+    margin-top: rem(8);
+  }
+}

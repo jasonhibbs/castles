@@ -6,8 +6,8 @@ Vue.use(Vuex)
 const mapStart = {
   style: 'mapbox://styles/jasonhibbs/ckapkbzfh0fmw1instsyk4cph?fresh=true',
   center: {
-    lat: 54.54333,
-    lng: -1.92667,
+    lat: 54, // 52, // 54.54333,
+    lng: -1.59, // -2, // -1.92667,
   },
   context: {
     lat: 54.748,

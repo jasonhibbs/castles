@@ -1,9 +1,6 @@
 <template lang="pug">
 
   #app
-    header
-      h1 Where can I test my eyes?
-      h2 A map of English castles
 
     castle-map(
       @mapclick="onMapclick"
