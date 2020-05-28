@@ -6,7 +6,12 @@
   left: 0;
   z-index: 1;
   padding: rem(20);
+  padding-right: rem(64);
   pointer-events: none;
+
+  h1 {
+    line-height: (32/32);
+  }
 
   h2 {
     margin-top: rem(12);
