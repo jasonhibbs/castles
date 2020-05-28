@@ -1,8 +1,8 @@
 <template lang="pug">
 
   span.loader
-    span.loader-spinner(:style="sizeStyle")
-      span(:style="colorStyle")
+    span.loader-spinner
+      span
     span.loader-label
       slot
 
