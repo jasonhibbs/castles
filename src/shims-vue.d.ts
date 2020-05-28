@@ -3,3 +3,4 @@ declare module '*.vue' {
   export default Vue
 }
 declare module 'vue-mapbox'
+declare module 'vue-inline-svg'
