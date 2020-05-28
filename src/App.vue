@@ -4,6 +4,7 @@
     header
       h1 Where can I test my eyes?
       h2 A map of English castles
+
     castle-map(
       @mapclick="onMapclick"
     )
@@ -12,6 +13,8 @@
         v-if="hasCastles"
         :castles="castles"
       )
+
+    button-location
 
     router-view(:key="$route.fullPath")
 
@@ -24,13 +27,14 @@ import { Component, Vue } from 'vue-property-decorator'
 import CastleMap from '@/components/CastleMap.vue'
 import CastleMarkers from '@/components/CastleMarkers.vue'
 import ContextMarker from '@/components/ContextMarker.vue'
-import { MapboxEvent } from 'mapbox-gl'
+import ButtonLocation from '@/components/ButtonLocation.vue'
 
 @Component({
   components: {
     CastleMap,
     CastleMarkers,
     ContextMarker,
+    ButtonLocation,
   },
 })
 export default class App extends Vue {
@@ -58,8 +62,6 @@ export default class App extends Vue {
     if (originalEvent.target.tagName !== 'CANVAS') {
       return false
     }
-
-    console.log(e.mapboxEvent.lngLat)
 
     const { lat, lng } = e.mapboxEvent.lngLat
     this.$store.commit('updateContext', { lat, lng })

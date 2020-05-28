@@ -13,12 +13,15 @@
   }
 }
 
-// Castles
-
-#map {
-  --color-map-base: #f2eee8;
-  --color-map-text: #464948;
+.button-location {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  margin: rem(20);
 }
+
+// Castles
 
 .marker {
   --size-rate: 0.875;
