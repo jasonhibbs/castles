@@ -1,32 +1,40 @@
-// Start ———————————————————————————————————————————————————————————————
+// Map —————————————————————————————————————————————————————————————————
 
-#app > header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  padding: rem(20);
-  padding-right: rem(64);
-  pointer-events: none;
+// Mapbox --------------------------------------------------------------------
 
-  h1 {
-    line-height: (32/32);
-  }
+.mapboxgl-ctrl-bottom-right,
+.mapboxgl-ctrl-bottom-left {
+  transition: bottom 0.15s;
+}
 
-  h2 {
-    margin-top: rem(12);
+.mapboxgl-ctrl-attrib {
+  font-size: 12px;
+  padding: 2px 5px 0;
+
+  .mapbox-improve-map {
+    font-weight: 500;
   }
 }
 
-.button-location {
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 1;
-  margin: rem(20);
+@media (min-width: 660px) {
+  .mapboxgl-ctrl-bottom-left {
+    left: rem(380);
+  }
 }
 
-// Castles
+@media (max-width: (660px - 1)) {
+  .mapboxgl-ctrl-bottom-left {
+    bottom: var(--sheet-offset-bottom);
+  }
+}
+
+@media (max-width: (380px + 60px)) {
+  .mapboxgl-ctrl-bottom-right {
+    bottom: var(--sheet-offset-bottom);
+  }
+}
+
+// Markers -------------------------------------------------------------
 
 .marker {
   --size-rate: 0.875;
