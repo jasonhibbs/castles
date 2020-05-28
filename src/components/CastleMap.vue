@@ -62,7 +62,7 @@ export default class CastleMap extends Vue {
 
   onMapMove = debounce(() => {
     this.onMapMoved()
-  }, 300)
+  }, 400)
 
   onMapMoved() {
     this.mapView.center = this.map.getCenter()
@@ -72,7 +72,7 @@ export default class CastleMap extends Vue {
 
   onMapZoom = throttle(() => {
     this.onMapZoomed()
-  }, 100)
+  }, 200)
 
   onMapZoomed() {
     const currentZoom = this.map.getZoom()
