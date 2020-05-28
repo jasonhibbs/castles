@@ -5,6 +5,7 @@
       h1 Where can I test my eyes?
       h2 A map of English castles
     castle-map
+      context-marker
       castle-markers(
         v-if="hasCastles"
         :castles="castles"
@@ -20,11 +21,13 @@
 import { Component, Vue } from 'vue-property-decorator'
 import CastleMap from '@/components/CastleMap.vue'
 import CastleMarkers from '@/components/CastleMarkers.vue'
+import ContextMarker from '@/components/ContextMarker.vue'
 
 @Component({
   components: {
     CastleMap,
     CastleMarkers,
+    ContextMarker,
   },
 })
 export default class App extends Vue {

@@ -1,11 +1,11 @@
 <template lang="pug">
 
-  .castle-marker
-    .castle-marker-pin
-      .castle-marker-head
-      .castle-marker-shaft
-    .castle-marker-label
-      .castle-marker-label-content {{ label }}
+  .marker.castle-marker
+    .marker-pin
+      .marker-head
+      .marker-shaft
+    .marker-label
+      .marker-label-content {{ label }}
 
 
 </template>
