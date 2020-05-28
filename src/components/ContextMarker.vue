@@ -29,6 +29,7 @@ export default class ContextMarker extends Vue {
   mapView!: any
 
   get coords() {
+    console.log(this.mapView)
     return [this.mapView.context.lng, this.mapView.context.lat]
   }
 

@@ -4,7 +4,9 @@
     header
       h1 Where can I test my eyes?
       h2 A map of English castles
-    castle-map
+    castle-map(
+      @mapclick="onMapclick"
+    )
       context-marker
       castle-markers(
         v-if="hasCastles"
@@ -22,6 +24,7 @@ import { Component, Vue } from 'vue-property-decorator'
 import CastleMap from '@/components/CastleMap.vue'
 import CastleMarkers from '@/components/CastleMarkers.vue'
 import ContextMarker from '@/components/ContextMarker.vue'
+import { MapboxEvent } from 'mapbox-gl'
 
 @Component({
   components: {
@@ -47,6 +50,19 @@ export default class App extends Vue {
 
   mounted() {
     this.fetchCastles()
+  }
+
+  onMapclick(e: any) {
+    const originalEvent = e.mapboxEvent.originalEvent
+
+    if (originalEvent.target.tagName !== 'CANVAS') {
+      return false
+    }
+
+    console.log(e.mapboxEvent.lngLat)
+
+    const { lat, lng } = e.mapboxEvent.lngLat
+    this.$store.commit('updateContext', { lat, lng })
   }
 }
 </script>

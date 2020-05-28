@@ -8,6 +8,7 @@
     :hash="true"
     :style="{ '--map-zoom': mapView.zoom, '--map-zoom-floor': Math.floor(mapView.zoom), '--map-bearing': `${mapView.bearing}deg` }"
     @load="onMapLoaded"
+    @click="onMapClick"
     @move="onMapMove"
     @rotate="onMapRotate"
     @zoom="onMapZoom"
@@ -19,7 +20,7 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 import { mapState } from 'vuex'
-import Mapbox from 'mapbox-gl'
+import Mapbox, { MapMouseEvent } from 'mapbox-gl'
 import * as polyline from '@mapbox/polyline'
 import { MglMap, MglMarker, MglGeojsonLayer } from 'vue-mapbox'
 import debounce from 'lodash.debounce'
@@ -55,7 +56,7 @@ export default class CastleMap extends Vue {
   }
 
   onStyleLoaded(e: any) {
-    this.$root.$emit('mapstylechanged')
+    this.$emit('mapstylechange')
   }
 
   // Movement
@@ -67,7 +68,7 @@ export default class CastleMap extends Vue {
   onMapMoved() {
     this.mapView.center = this.map.getCenter()
     this.updateBounds()
-    this.$root.$emit('mapmoved')
+    this.$emit('mapmove')
   }
 
   onMapZoom = throttle(() => {
@@ -86,6 +87,10 @@ export default class CastleMap extends Vue {
   onMapRotated() {
     const currentBearing = this.map.getBearing()
     this.mapView.bearing = currentBearing
+  }
+
+  onMapClick(e: any) {
+    this.$emit('mapclick', e)
   }
 
   updateBounds() {

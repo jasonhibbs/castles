@@ -44,7 +44,11 @@ export default new Vuex.Store({
       zoom: 14,
     },
   },
-  mutations: {},
+  mutations: {
+    updateContext(state, coords) {
+      state.mapView.context = coords
+    },
+  },
   actions: {},
   modules: {},
 })
