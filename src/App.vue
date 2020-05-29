@@ -52,9 +52,18 @@ export default class App extends Vue {
     return this.castles.length
   }
 
+  // Lifecycle
+
+  queryDarkMode = window.matchMedia('(prefers-color-scheme: dark)')
+
   mounted() {
     this.fetchCastles()
+    this.queryDarkMode.addListener((dark: MediaQueryListEvent) => {
+      this.$root.$emit('colorschemechange', dark.matches ? 'dark' : 'light')
+    })
   }
+
+  // Events
 
   onMapclick(e: any) {
     const originalEvent = e.mapboxEvent.originalEvent

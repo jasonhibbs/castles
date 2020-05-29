@@ -70,9 +70,9 @@ export default class ButtonLocation extends Vue {
 .button-location {
   --padding-x: 0;
   --padding-y: 0;
-  --background-color: var(--contrast-darkest);
-  --hover-background-color: var(--color-contrast);
-  --color: var(--color-map-base);
+  --background-color: var(--shade-darkest);
+  --hover-background-color: var(--shade-darker);
+  --color: var(--color-white);
 
   width: 2.25rem;
   height: 2.25rem;

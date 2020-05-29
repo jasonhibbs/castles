@@ -2,7 +2,7 @@
 
   mgl-map#map(
     :accessToken="mapConfig.accessToken"
-    :mapStyle="mapConfig.styleUrl"
+    :mapStyle="mapStyle"
     :center="mapConfig.center"
     :zoom="mapConfig.zoom"
     :hash="true"
@@ -54,10 +54,22 @@ export default class CastleMap extends Vue {
     this.mapView.zoom = this.map.getZoom()
     this.updateBounds()
     this.$root.$on('locationchange', this.mapEaseTo)
+    this.$root.$on('colorschemechange', this.onSchemeChange)
+  }
+
+  get mapStyle() {
+    const scheme = window.matchMedia('(prefers-color-scheme: dark)').matches
+      ? 'dark'
+      : 'light'
+    return this.mapConfig.style[scheme]
   }
 
   onStyleLoaded(e: any) {
     this.$emit('mapstylechange')
+  }
+
+  onSchemeChange(value: string) {
+    this.map.setStyle(this.mapConfig.style[value])
   }
 
   // Movement

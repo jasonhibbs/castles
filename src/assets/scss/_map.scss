@@ -42,17 +42,15 @@
   --size: calc(0.125px * var(--size-exp));
   --width: max(2px, min(var(--size), 20px));
   --height: max(2px, min(var(--size), 20px));
-  --pin-background-color: var(--color-black);
-  --pin-halo-color: var(--color-map-base);
+  --pin-background-color: var(--color-text);
+  --pin-halo-color: var(--color-root);
   --pin-halo-width: 1px;
   --label-background-color: var(--pin-background-color);
-  --label-color: var(--color-white);
+  --label-color: var(--color-root);
 
   cursor: pointer;
   font-family: var(--font-body);
-  color: var(--color-map-text);
   padding: rem(8);
-  // mix-blend-mode: luminosity;
 
   &:hover {
     z-index: 1;

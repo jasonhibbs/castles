@@ -4,7 +4,10 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 const mapStart = {
-  style: 'mapbox://styles/jasonhibbs/ckapkbzfh0fmw1instsyk4cph?fresh=true',
+  style: {
+    light: 'mapbox://styles/jasonhibbs/ckapkbzfh0fmw1instsyk4cph?fresh=true',
+    dark: 'mapbox://styles/jasonhibbs/ckasnh7bp02cx1iny797chhmj?fresh=true',
+  },
   center: {
     lat: 54, // 52, // 54.54333,
     lng: -1.59, // -2, // -1.92667,
@@ -22,7 +25,7 @@ export default new Vuex.Store({
       accessToken:
         'pk.eyJ1IjoiamFzb25oaWJicyIsImEiOiJja2FzaG96dmswaGZ0MnNxZGw5dGQ4cHluIn0.iLXHxLjTPV2zlL9diVkfUg',
       center: [mapStart.center.lng, mapStart.center.lat],
-      styleUrl: mapStart.style,
+      style: mapStart.style,
       zoom: mapStart.zoom,
     },
     mapView: {
