@@ -137,12 +137,13 @@ export default class BottomSheet extends Vue {
 
   scroll() {
     if (this.sheetEl && !this.dismissed) {
+      const delta = this.sheetEl.scrollTop - this.scrollTop
       const top = this.sheetMarginEl.clientHeight
+      const context = window.innerHeight - this.stopTopEl.offsetTop
 
       this.scrolled = false
       this.scrollTop = this.sheetEl.scrollTop
-      this.height =
-        this.scrollTop + window.innerHeight - this.stopTopEl.offsetTop
+      this.height = this.scrollTop + context
 
       if (this.scrollTop >= top) {
         this.scrollMarginEl.style.height = '0'
@@ -166,7 +167,6 @@ export default class BottomSheet extends Vue {
       }
 
       if (this.willDismiss) {
-        const delta = this.sheetEl.scrollTop - this.scrollTop
         const minHeight = this.stopBottomEl.offsetTop / 2
         if (delta < 0 && this.sheetEl.scrollTop < minHeight) {
           this.scrollMarginEl.style.height = '0'
@@ -230,6 +230,10 @@ $sheet-max-viewport: 412;
     overflow-y: scroll;
   }
 
+  &._scrolled {
+    scroll-snap-type: none;
+  }
+
   @media (min-width: $sheet-breakpoint) {
     max-width: rem(400);
   }
@@ -258,8 +262,6 @@ $sheet-max-viewport: 412;
 }
 
 .sheet-stop {
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
   display: block;
   position: absolute;
   left: 0;
@@ -274,10 +276,14 @@ $sheet-max-viewport: 412;
 
   &._mid {
     top: calc(50% - var(--sheet-offset-bottom));
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
   }
 
   &._bottom {
     top: 0;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
   }
 }
 
