@@ -66,7 +66,7 @@ export default class BottomSheet extends Vue {
   willDismiss = false
   dismissed = false
 
-  willInteract = false
+  willInteract = true
   interactive = false
 
   get classes() {
@@ -136,7 +136,6 @@ export default class BottomSheet extends Vue {
 
   scroll(e: Event) {
     if (this.sheetEl && !this.dismissed) {
-      const delta = this.sheetEl.scrollTop - this.scrollTop
       const top = this.sheetMarginEl.clientHeight
 
       this.scrolled = false
@@ -166,6 +165,7 @@ export default class BottomSheet extends Vue {
       }
 
       if (this.willDismiss) {
+        const delta = this.sheetEl.scrollTop - this.scrollTop
         const minHeight = this.stopBottomEl.offsetTop / 2
         if (delta < 0 && this.sheetEl.scrollTop < minHeight) {
           this.scrollMarginEl.style.height = '0'

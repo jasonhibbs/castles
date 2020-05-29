@@ -24,10 +24,11 @@
   border-radius: inherit;
   box-shadow: 0 1px fade-out(#002, (11/12));
   transition: border-radius 0.2s, box-shadow 0.2s;
+  overflow: hidden;
 
   &:before {
     $width: 36px;
-    // content: '';
+    content: '';
     border-radius: 2px;
     height: 4px;
     width: $width;
@@ -67,5 +68,14 @@
 
   h1 + h2 {
     margin-top: rem(8);
+  }
+}
+
+.card-content {
+  padding-bottom: rem(128);
+  transition: opacity 0.3s;
+
+  ._bottom & {
+    opacity: 0;
   }
 }
