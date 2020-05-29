@@ -41,12 +41,16 @@ export default new Vuex.Store({
         lat: mapStart.context.lat,
         lng: mapStart.context.lng,
       },
+      sheetStop: 'bottom',
       zoom: 14,
     },
   },
   mutations: {
     updateContext(state, coords) {
       state.mapView.context = coords
+    },
+    updateSheetStop(state, stop) {
+      state.mapView.sheetStop = stop
     },
   },
   actions: {},

@@ -56,16 +56,16 @@ export default class BottomSheet extends Vue {
   @Ref('scrollMargin') scrollMarginEl!: HTMLElement
 
   onClient = false
-  interactive = true
+
   scrolled = false
   scrollTop = 0
+  stop: 'top' | 'middle' | 'bottom' = 'bottom'
 
   willDismiss = false
   dismissed = false
 
-  atTop = false
-  atMid = false
-  atBottom = false
+  willInteract = false
+  interactive = false
 
   get classes() {
     return [
@@ -73,6 +73,8 @@ export default class BottomSheet extends Vue {
         _interactive: this.interactive,
         _scrolled: this.scrolled,
         _top: this.atTop || this.scrolled,
+        _mid: this.atMid,
+        _bottom: this.atBottom,
       },
     ]
   }
@@ -85,6 +87,21 @@ export default class BottomSheet extends Vue {
 
   enter() {
     this.peek ? this.toBottom() : this.toMid()
+  }
+
+  activate() {
+    this.interactive = this.willInteract
+  }
+
+  deactivate() {
+    this.interactive = false
+  }
+
+  dismiss() {
+    if (!this.dismissed) {
+      this.dismissed = true
+      this.$emit('dismiss')
+    }
   }
 
   toTop() {
@@ -100,47 +117,42 @@ export default class BottomSheet extends Vue {
     this.sheetEl.scrollTop = this.stopBottomEl.offsetTop
   }
 
-  activate() {
-    this.interactive = true
+  atStop(stop: 'top' | 'middle' | 'bottom') {
+    this.stop = stop
+    this.$store.commit('updateSheetStop', stop)
   }
 
-  deactivate() {
-    this.interactive = false
+  get atTop() {
+    return this.stop === 'top'
   }
-
-  dismiss() {
-    if (!this.dismissed) {
-      this.dismissed = true
-      this.$emit('dismiss')
-    }
+  get atMid() {
+    return this.stop === 'middle'
+  }
+  get atBottom() {
+    return this.stop === 'bottom'
   }
 
   scroll(e: Event) {
     if (this.sheetEl && !this.dismissed) {
       const delta = this.sheetEl.scrollTop - this.scrollTop
-      this.scrollTop = this.sheetEl.scrollTop
+      const top = this.sheetMarginEl.clientHeight
 
-      this.atTop = false
-      this.atMid = false
-      this.atBottom = false
+      this.scrollTop = this.sheetEl.scrollTop
       this.scrolled = false
 
       if (this.scrollTop <= 0) {
-        this.atBottom = true
+        this.atStop('bottom')
       }
 
-      if (
-        this.scrollTop > 0 &&
-        this.scrollTop < this.sheetMarginEl.clientHeight
-      ) {
-        this.atMid = true
+      if (this.scrollTop > 0 && this.scrollTop < top) {
+        this.atStop('middle')
       }
 
-      if (this.scrollTop >= this.sheetMarginEl.clientHeight) {
+      if (this.scrollTop >= top) {
         this.scrollMarginEl.style.height = '0'
-        this.atTop = true
+        this.atStop('top')
 
-        if (this.scrollTop > this.sheetMarginEl.clientHeight) {
+        if (this.scrollTop > top) {
           this.scrolled = true
         }
 
@@ -189,7 +201,8 @@ $sheet-breakpoint: 660px;
   z-index: 100;
 
   pointer-events: none;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   overscroll-behavior: contain;
@@ -204,10 +217,10 @@ $sheet-breakpoint: 660px;
     display: none;
   }
 
-  // &._interactive {
-  //   pointer-events: auto;
-  //   overflow-y: scroll;
-  // }
+  &._interactive {
+    pointer-events: auto;
+    // overflow-y: scroll;
+  }
 
   @media (min-width: $sheet-breakpoint) {
     max-width: rem(400);
