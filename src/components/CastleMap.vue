@@ -112,7 +112,7 @@ export default class CastleMap extends Vue {
     this.map.easeTo(
       Object.assign(
         {
-          zoom: 8.5,
+          zoom: 8,
           duration: 800,
           padding: this.mapView.padding,
         },
