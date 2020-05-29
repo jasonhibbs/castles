@@ -26,7 +26,7 @@
           ref="stopMid"
         )
         .sheet-stop._bottom(
-          ref="stopLow"
+          ref="stopBottom"
         )
         .sheet-content(
           @mouseenter="activate"
@@ -42,11 +42,18 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator'
+import { Component, Prop, Ref, Vue } from 'vue-property-decorator'
 
 @Component
 export default class BottomSheet extends Vue {
   @Prop({ default: true }) peek!: boolean
+
+  @Ref('sheet') sheetEl!: HTMLElement
+  @Ref('sheetMargin') sheetMarginEl!: HTMLElement
+  @Ref('stopTop') stopTopEl!: HTMLElement
+  @Ref('stopMid') stopMidEl!: HTMLElement
+  @Ref('stopBottom') stopBottomEl!: HTMLElement
+  @Ref('scrollMargin') scrollMarginEl!: HTMLElement
 
   onClient = false
   interactive = true
@@ -81,16 +88,16 @@ export default class BottomSheet extends Vue {
   }
 
   toTop() {
-    this.$refs.sheet.scrollTop = this.$refs.stopTop.offsetTop
+    this.sheetEl.scrollTop = this.stopTopEl.offsetTop
     this.activate()
   }
 
   toMid() {
-    this.$refs.sheet.scrollTop = this.$refs.stopMid.offsetTop
+    this.sheetEl.scrollTop = this.stopMidEl.offsetTop
   }
 
   toBottom() {
-    this.$refs.sheet.scrollTop = this.$refs.stopLow.offsetTop
+    this.sheetEl.scrollTop = this.stopBottomEl.offsetTop
   }
 
   activate() {
@@ -109,14 +116,9 @@ export default class BottomSheet extends Vue {
   }
 
   scroll(e: Event) {
-    const sheetEl = this.$refs.sheet as HTMLElement
-    const sheetMarginEl = this.$refs.sheetMargin as HTMLElement
-    const stopMidEl = this.$refs.stopMid as HTMLElement
-    const scrollMarginEl = this.$refs.scrollMargin as HTMLElement
-
-    if (sheetEl && !this.dismissed) {
-      const delta = sheetEl.scrollTop - this.scrollTop
-      this.scrollTop = sheetEl.scrollTop
+    if (this.sheetEl && !this.dismissed) {
+      const delta = this.sheetEl.scrollTop - this.scrollTop
+      this.scrollTop = this.sheetEl.scrollTop
 
       this.atTop = false
       this.atMid = false
@@ -127,15 +129,18 @@ export default class BottomSheet extends Vue {
         this.atBottom = true
       }
 
-      if (this.scrollTop > 0 && this.scrollTop < sheetMarginEl.clientHeight) {
+      if (
+        this.scrollTop > 0 &&
+        this.scrollTop < this.sheetMarginEl.clientHeight
+      ) {
         this.atMid = true
       }
 
-      if (this.scrollTop >= sheetMarginEl.clientHeight) {
-        scrollMarginEl.style.height = '0'
+      if (this.scrollTop >= this.sheetMarginEl.clientHeight) {
+        this.scrollMarginEl.style.height = '0'
         this.atTop = true
 
-        if (this.scrollTop > sheetMarginEl.clientHeight) {
+        if (this.scrollTop > this.sheetMarginEl.clientHeight) {
           this.scrolled = true
         }
 
@@ -143,15 +148,15 @@ export default class BottomSheet extends Vue {
       }
 
       if (this.willDismiss) {
-        var minHeight = stopLowEl.offsetTop / 2
-        if (delta < 0 && sheetEl.scrollTop < minHeight) {
-          scrollMarginEl.style.height = '0'
+        const minHeight = this.stopBottomEl.offsetTop / 2
+        if (delta < 0 && this.sheetEl.scrollTop < minHeight) {
+          this.scrollMarginEl.style.height = '0'
           this.dismiss()
           return
         }
       }
 
-      scrollMarginEl.style.height = `${sheetEl.scrollTop}px`
+      this.scrollMarginEl.style.height = `${this.sheetEl.scrollTop}px`
     }
   }
 }

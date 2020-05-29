@@ -4,3 +4,7 @@ declare module '*.vue' {
 }
 declare module 'vue-mapbox'
 declare module 'vue-inline-svg'
+
+declare interface Document {
+  fonts?: any
+}
