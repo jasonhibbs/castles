@@ -22,7 +22,7 @@
   z-index: 100;
   background: inherit;
   border-radius: inherit;
-  box-shadow: 0 1px fade-out(#002, (11/12));
+  box-shadow: 0 1px var(--shade-lightest);
   transition: border-radius 0.2s, box-shadow 0.2s;
   overflow: hidden;
 
@@ -55,7 +55,7 @@
   }
 
   ._scrolled & {
-    box-shadow: 0 0 4px fade-out(#002, (4/5));
+    box-shadow: 0 0 4px var(--shade-light);
   }
 
   h1 {
@@ -77,5 +77,15 @@
 
   ._bottom & {
     opacity: 0;
+  }
+}
+
+.card footer {
+  @include font-size(13, 16);
+  box-shadow: 0 -1px var(--shade-lightest);
+  padding: var(--space-rem-small) 0;
+
+  p {
+    margin: var(--space-rem-small) 0;
   }
 }

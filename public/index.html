@@ -1,11 +1,25 @@
+<% IMG = BASE_URL + 'img/' %>
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta name="designer" content="Jason Hibbs">
+    <meta name="author" content="Jason Hibbs">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon-precomposed.png">
+
+    <meta property="og:title" content="Ocarina">
+    <meta property="og:image" content="https://eye-test.netlify.app<%= IMG %>opengraph.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="twitter:card" content="summary_large_image">
+
     <link rel="stylesheet" href="/css/mapbox-gl.css" />
   </head>
   <body>

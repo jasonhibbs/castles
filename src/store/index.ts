@@ -20,7 +20,7 @@ export default new Vuex.Store({
   state: {
     mapConfig: {
       accessToken:
-        'pk.eyJ1IjoiamFzb25oaWJicyIsImEiOiJjajhvbXR4bzEwNWt3Mndta2F1YndoeWxtIn0.h6J1nO-0WLtT1crICzIlJg',
+        'pk.eyJ1IjoiamFzb25oaWJicyIsImEiOiJja2FzaG96dmswaGZ0MnNxZGw5dGQ4cHluIn0.iLXHxLjTPV2zlL9diVkfUg',
       center: [mapStart.center.lng, mapStart.center.lat],
       styleUrl: mapStart.style,
       zoom: mapStart.zoom,

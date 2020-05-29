@@ -241,6 +241,9 @@ $sheet-max-viewport: 412;
   position: relative;
   pointer-events: auto;
 
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+
   @media (min-width: $sheet-breakpoint) {
     max-width: rem(360);
   }

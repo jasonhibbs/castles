@@ -13,6 +13,13 @@
         p Disclaimer: please do not actually drive while your eyesight is below #[a(href="https://www.gov.uk/driving-eyesight-rules#standards-of-vision-for-driving") the standards of vision for driving].
         p Privacy: your location isn’t used beyond this website.
 
+      footer
+        .layout
+          p Built with #[a(href="https://vuejs.org/") Vue]
+          p Powered by #[a(href="https://www.netlify.com/") Netlify]
+          p.vcard.h-card Made by #[a.p-name.u-url.fn.url(href="https://jasonhibbs.co.uk") Jason Hibbs]
+
+
 </template>
 <script lang="ts">
 import { Component, Ref, Vue, Watch } from 'vue-property-decorator'
