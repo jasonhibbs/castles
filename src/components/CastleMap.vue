@@ -114,6 +114,7 @@ export default class CastleMap extends Vue {
         {
           zoom: 8.5,
           duration: 800,
+          padding: this.mapView.padding,
         },
         args
       )

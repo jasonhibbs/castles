@@ -16,13 +16,13 @@
   }
 }
 
-@media (min-width: 660px) {
+@media (min-width: 768px) {
   .mapboxgl-ctrl-bottom-left {
     left: rem(380);
   }
 }
 
-@media (max-width: (660px - 1)) {
+@media (max-width: (768px - 1)) {
   .mapboxgl-ctrl-bottom-left {
     bottom: var(--sheet-offset-bottom);
   }

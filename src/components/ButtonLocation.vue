@@ -32,7 +32,7 @@ export default class ButtonLocation extends Vue {
   }
 
   get hasGeolocation() {
-    return !!navigator.geolocation
+    return !!navigator.geolocation && window.location.protocol.includes('https')
   }
 
   getCurrentLocation() {

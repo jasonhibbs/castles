@@ -41,7 +41,14 @@ export default new Vuex.Store({
         lat: mapStart.context.lat,
         lng: mapStart.context.lng,
       },
-      sheetStop: 'bottom',
+      sheet: {
+        stop: 'bottom',
+        height: 0,
+      },
+      padding: {
+        bottom: 0,
+        left: 0,
+      },
       zoom: 14,
     },
   },
@@ -49,10 +56,21 @@ export default new Vuex.Store({
     updateContext(state, coords) {
       state.mapView.context = coords
     },
-    updateSheetStop(state, stop) {
-      state.mapView.sheetStop = stop
+    updateSheet(state, sheet) {
+      state.mapView.sheet = sheet
+    },
+    updatePadding(state, padding) {
+      state.mapView.padding = padding
     },
   },
-  actions: {},
+  actions: {
+    sheetStopped(context, sheet) {
+      const w = window.innerWidth
+      if (w < 768) {
+        context.commit('updatePadding', { bottom: sheet.height, left: 0 })
+      }
+      context.commit('updateSheet', sheet)
+    },
+  },
   modules: {},
 })

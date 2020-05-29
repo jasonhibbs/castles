@@ -59,7 +59,9 @@ export default class BottomSheet extends Vue {
 
   scrolled = false
   scrollTop = 0
-  stop: 'top' | 'middle' | 'bottom' = 'bottom'
+
+  height = 0
+  stop: 'top' | 'middle' | 'bottom' | 'between' = 'bottom'
 
   willDismiss = false
   dismissed = false
@@ -117,9 +119,9 @@ export default class BottomSheet extends Vue {
     this.sheetEl.scrollTop = this.stopBottomEl.offsetTop
   }
 
-  atStop(stop: 'top' | 'middle' | 'bottom') {
+  atStop(stop: 'top' | 'middle' | 'bottom' | 'between') {
     this.stop = stop
-    this.$store.commit('updateSheetStop', stop)
+    this.$store.dispatch('sheetStopped', { stop, height: this.height })
   }
 
   get atTop() {
@@ -137,16 +139,10 @@ export default class BottomSheet extends Vue {
       const delta = this.sheetEl.scrollTop - this.scrollTop
       const top = this.sheetMarginEl.clientHeight
 
-      this.scrollTop = this.sheetEl.scrollTop
       this.scrolled = false
-
-      if (this.scrollTop <= 0) {
-        this.atStop('bottom')
-      }
-
-      if (this.scrollTop > 0 && this.scrollTop < top) {
-        this.atStop('middle')
-      }
+      this.scrollTop = this.sheetEl.scrollTop
+      this.height =
+        this.scrollTop + window.innerHeight - this.stopTopEl.offsetTop
 
       if (this.scrollTop >= top) {
         this.scrollMarginEl.style.height = '0'
@@ -157,6 +153,16 @@ export default class BottomSheet extends Vue {
         }
 
         return
+      }
+
+      if (this.scrollTop === this.stopMidEl.offsetTop) {
+        this.atStop('middle')
+      } else if (this.scrollTop > 0 && this.scrollTop < top) {
+        this.atStop('between')
+      }
+
+      if (this.scrollTop <= 0) {
+        this.atStop('bottom')
       }
 
       if (this.willDismiss) {
@@ -177,12 +183,13 @@ export default class BottomSheet extends Vue {
 <style lang="scss">
 @import '../assets/scss/util';
 
-$sheet-breakpoint: 660px;
+$sheet-breakpoint: 641px;
+$sheet-max-viewport: 412;
 
 :root {
   --sheet-top: 0;
   --sheet-mid: 50%;
-  --sheet-bottom: calc(5.25rem);
+  --sheet-bottom: 8rem;
 
   --sheet-offset-top: var(--sheet-top);
   --sheet-offset-bottom: calc(
@@ -201,7 +208,7 @@ $sheet-breakpoint: 660px;
   z-index: 100;
 
   pointer-events: none;
-  overflow-x: hidden;
+  overflow: hidden;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
@@ -209,7 +216,7 @@ $sheet-breakpoint: 660px;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none;
 
-  max-width: rem(420);
+  max-width: rem($sheet-max-viewport + 40);
   padding: 0 env(safe-area-inset-left);
 
   &::-webkit-scrollbar,
@@ -219,7 +226,7 @@ $sheet-breakpoint: 660px;
 
   &._interactive {
     pointer-events: auto;
-    // overflow-y: scroll;
+    overflow-y: scroll;
   }
 
   @media (min-width: $sheet-breakpoint) {
@@ -228,7 +235,7 @@ $sheet-breakpoint: 660px;
 }
 
 .sheet-content {
-  max-width: rem(380);
+  max-width: rem($sheet-max-viewport);
   margin: auto;
   position: relative;
   pointer-events: auto;
