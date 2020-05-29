@@ -3,6 +3,7 @@
   .card
     header.card-header(
       ref="cardHeader"
+      @click="$root.$emit('clickcardheader')"
     )
       slot(name="header")
 

@@ -86,6 +86,7 @@ export default class BottomSheet extends Vue {
     this.scroll()
     this.$on('raise', this.toMid)
     this.$on('lower', this.toBottom)
+    this.$root.$on('clickcardheader', this.toggle)
   }
 
   enter() {
@@ -104,6 +105,14 @@ export default class BottomSheet extends Vue {
     if (!this.dismissed) {
       this.dismissed = true
       this.$emit('dismiss')
+    }
+  }
+
+  toggle() {
+    if (this.atMid) {
+      this.toTop()
+    } else {
+      this.toMid()
     }
   }
 
