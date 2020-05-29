@@ -83,6 +83,7 @@ export default class BottomSheet extends Vue {
 
   mounted() {
     this.onClient = true
+    this.scroll()
     this.$on('raise', this.toMid)
     this.$on('lower', this.toBottom)
   }
@@ -134,7 +135,7 @@ export default class BottomSheet extends Vue {
     return this.stop === 'bottom'
   }
 
-  scroll(e: Event) {
+  scroll() {
     if (this.sheetEl && !this.dismissed) {
       const top = this.sheetMarginEl.clientHeight
 

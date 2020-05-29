@@ -6,4 +6,5 @@
   right: 0;
   z-index: 1;
   margin: rem(20);
+  margin-right: max(rem(20), env(safe-area-inset-right));
 }
