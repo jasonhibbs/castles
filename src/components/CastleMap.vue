@@ -65,7 +65,7 @@ export default class CastleMap extends Vue {
   }
 
   onStyleLoaded(e: any) {
-    this.$emit('mapstylechange')
+    this.$root.$emit('mapstylechange')
   }
 
   onSchemeChange(value: string) {

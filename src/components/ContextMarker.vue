@@ -11,12 +11,13 @@
         .marker-label
           .marker-label-content {{ label }}
 
-    mgl-geojson-layer(
-      :sourceId="radiusId"
-      :layerId="radiusId"
-      :source="radiusSource"
-      :layer="radiusLayer"
-    )
+    template
+      mgl-geojson-layer(
+        :sourceId="radius.id"
+        :layerId="radius.id"
+        :source="radius.source"
+        :layer="radius.layer"
+      )
 
 
 </template>
@@ -37,6 +38,19 @@ import { MglMarker, MglGeojsonLayer } from 'vue-mapbox'
 export default class ContextMarker extends Vue {
   mapView!: any
 
+  mounted() {
+    this.$root.$on('mapstylechange', this.onStyleChange)
+  }
+
+  onStyleChange() {
+    // geojsonlayer breaks on style change, so rebuild manually
+    const map = this.$store.state.map
+    if (!this.$store.state.map.getSource(this.radius.id)) {
+      map.addSource(this.radius.id, this.radius.source)
+      map.addLayer(this.radius.layer)
+    }
+  }
+
   get coords() {
     return [this.mapView.context.lng, this.mapView.context.lat]
   }
@@ -53,45 +67,44 @@ export default class ContextMarker extends Vue {
     return 'My Location'
   }
 
-  get radiusId() {
-    return 'contextRadius'
-  }
-
   get radiusWidth() {
     return this.mapView.zoom ** 2 * 0.1
   }
 
-  get radiusLayer() {
+  get radius() {
+    const id = 'contextRadius'
     return {
-      type: 'line',
-      paint: {
-        'line-width': this.radiusWidth,
-        'line-color': '#5398c6',
-        'line-opacity': 0.4,
+      id,
+      layer: {
+        id,
+        source: id,
+        type: 'line',
+        paint: {
+          'line-width': this.radiusWidth,
+          'line-color': '#5398c6',
+          'line-opacity': 0.4,
+        },
+      },
+      source: {
+        type: 'geojson',
+        data: {
+          type: 'FeatureCollection',
+          features: [this.makeRadius(this.lat, this.lng, 31.29767)],
+        },
       },
     }
   }
 
-  get radiusSource() {
-    return {
-      type: 'geojson',
-      data: {
-        type: 'FeatureCollection',
-        features: [this.makeCircle(this.lat, this.lng, 31.29767)],
-      },
-    }
-  }
-
-  makeCircle(lat: number, lng: number, radius: number, points?: number) {
+  makeRadius(lat: number, lng: number, radius: number, points?: number) {
     if (!points) points = 48
 
-    var km = radius
+    const km = radius
 
-    var ret = []
-    var distanceX = km / (111.32 * Math.cos((lat * Math.PI) / 180))
-    var distanceY = km / 110.574
+    const ret = []
+    const distanceX = km / (111.32 * Math.cos((lat * Math.PI) / 180))
+    const distanceY = km / 110.574
 
-    var theta, x, y
+    let theta, x, y
     for (var i = 0; i < points; i++) {
       theta = (i / points) * (2 * Math.PI)
       x = distanceX * Math.cos(theta)
