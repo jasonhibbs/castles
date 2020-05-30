@@ -50,10 +50,12 @@ export default class Card extends Vue {
   }
 
   updateSheetProperty() {
-    document.documentElement.style.setProperty(
-      '--sheet-bottom',
-      `${this.cardHeaderEl?.clientHeight}px`
-    )
+    if (this.cardHeaderEl) {
+      document.documentElement.style.setProperty(
+        '--sheet-bottom',
+        `${this.cardHeaderEl.clientHeight}px`
+      )
+    }
   }
 }
 </script>

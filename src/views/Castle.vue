@@ -1,9 +1,15 @@
 <template lang="pug">
 
-  card
+  card.card-castle
     template(#header)
       .layout
         h1 {{ title }}
+        router-link(
+          title="Dismiss castle"
+          :to="'/'"
+          @click.native.stop
+        )
+          icon-close
 
     template(#content)
       .layout
@@ -19,9 +25,10 @@
 import { Component, Vue } from 'vue-property-decorator'
 import Card from '@/components/Card.vue'
 import Loader from '@/components/Loader.vue'
+import IconClose from '@/components/IconClose.vue'
 
 @Component({
-  components: { Card, Loader },
+  components: { Card, Loader, IconClose },
 })
 export default class Caslte extends Vue {
   castle: any = {}
@@ -49,3 +56,40 @@ export default class Caslte extends Vue {
   }
 }
 </script>
+<style lang="scss">
+@import '../assets/scss/util';
+
+.card-castle .card-header {
+  padding: 0;
+
+  .layout {
+    display: flex;
+    width: auto;
+  }
+
+  h1 {
+    flex: auto;
+    margin: rem(16) 0 rem(16);
+    margin-left: rem(var(--screen-padding-x));
+  }
+
+  a {
+    $size: 28;
+    $margin: 16;
+    display: flex;
+    align-items: center;
+    flex: none;
+    font-size: rem($size);
+    text-align: right;
+    padding: 0 rem($margin);
+    max-height: rem($size + ($margin * 2));
+
+    &:focus {
+      outline: none;
+      .icon-close {
+        box-shadow: 0 0 0 3px var(--contrast-light);
+      }
+    }
+  }
+}
+</style>
