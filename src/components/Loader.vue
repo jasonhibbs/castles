@@ -18,8 +18,8 @@ export default class Loader extends Vue {}
 .loader {
   --size: 1.25em;
   --width: 2px;
-  --light-color: var(--tint-mid);
-  --color: var(--color-tint);
+  --light-color: var(--contrast-light);
+  --color: var(--contrast-darker);
   --speed: #{(2s/3)};
 
   display: flex;
@@ -32,8 +32,6 @@ export default class Loader extends Vue {}
   }
 
   .loader-spinner {
-    margin: auto;
-
     > span {
       display: block;
       width: var(--size);

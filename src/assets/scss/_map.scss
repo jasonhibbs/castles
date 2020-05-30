@@ -52,7 +52,8 @@
   font-family: var(--font-body);
   padding: rem(8);
 
-  &:hover {
+  &:hover,
+  &[aria-selected='true'] {
     z-index: 1;
   }
 }
@@ -85,7 +86,8 @@
   opacity: calc(var(--map-zoom-floor) - 10);
   transition: opacity 0.1s ease-out;
 
-  .marker:hover & {
+  .marker:hover &,
+  .marker[aria-selected='true'] & {
     opacity: 1;
   }
 }

@@ -76,5 +76,14 @@ export default class ButtonLocation extends Vue {
 
   width: 2.25rem;
   height: 2.25rem;
+
+  .loader {
+    --light-color: var(--tint-mid);
+    --color: var(--color-tint);
+  }
+
+  .loader-spinner {
+    margin: auto;
+  }
 }
 </style>

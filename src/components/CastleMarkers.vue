@@ -9,6 +9,7 @@
       castle-marker(
         slot="marker"
         :castle="castle"
+        :aria-selected="castle.id === selected"
       )
 
 </template>
@@ -25,5 +26,9 @@ import CastleMarker from '@/components/CastleMarker.vue'
 })
 export default class CastleMarkers extends Vue {
   @Prop() castles: any
+
+  get selected() {
+    return this.$route.name === 'Castle' ? this.$route.params?.id : ''
+  }
 }
 </script>
