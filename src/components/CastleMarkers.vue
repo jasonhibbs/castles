@@ -3,7 +3,7 @@
   .castle-markers
     mgl-marker(
       v-for="castle in castles"
-      v-if="castle.coords"
+      :key="castle.id"
       :coordinates="[castle.coords.lng, castle.coords.lat]"
     )
       castle-marker(

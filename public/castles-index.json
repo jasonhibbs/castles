@@ -1,0 +1,3394 @@
+[
+  {
+    "id": "someries-castle-bedfordshire",
+    "name": "Someries Castle",
+    "coords": {
+      "lat": 51.86889,
+      "lng": -0.37583
+    }
+  },
+  {
+    "id": "donnington-castle-berkshire",
+    "name": "Donnington Castle",
+    "coords": {
+      "lat": 51.41944,
+      "lng": -1.3375
+    }
+  },
+  {
+    "id": "windsor-castle-berkshire",
+    "name": "Windsor Castle",
+    "coords": {
+      "lat": 51.48333,
+      "lng": -0.60417
+    }
+  },
+  {
+    "id": "boarstall-tower-buckinghamshire",
+    "name": "Boarstall Tower",
+    "coords": {
+      "lat": 51.82333,
+      "lng": -1.09556
+    }
+  },
+  {
+    "id": "buckden-palace-cambridgeshire",
+    "name": "Buckden Palace",
+    "coords": {
+      "lat": 52.29417,
+      "lng": -0.2525
+    }
+  },
+  {
+    "id": "elton-hall-cambridgeshire",
+    "name": "Elton Hall",
+    "coords": {
+      "lat": 52.52361,
+      "lng": -0.3975
+    }
+  },
+  {
+    "id": "kimbolton-castle-cambridgeshire",
+    "name": "Kimbolton Castle",
+    "coords": {
+      "lat": 52.2964,
+      "lng": -0.3884
+    }
+  },
+  {
+    "id": "kirtling-tower-cambridgeshire",
+    "name": "Kirtling Tower",
+    "coords": {
+      "lat": 52.1891,
+      "lng": 0.465
+    }
+  },
+  {
+    "id": "longthorpe-tower-cambridgeshire",
+    "name": "Longthorpe Tower",
+    "coords": {
+      "lat": 52.5708,
+      "lng": -0.2869
+    }
+  },
+  {
+    "id": "northborough-castle-cambridgeshire",
+    "name": "Northborough Castle",
+    "coords": {
+      "lat": 52.6557,
+      "lng": -0.2998
+    }
+  },
+  {
+    "id": "woodcroft-castle-cambridgeshire",
+    "name": "Woodcroft Castle",
+    "coords": {
+      "lat": 52.6263,
+      "lng": -0.3172
+    }
+  },
+  {
+    "id": "beeston-castle-cheshire",
+    "name": "Beeston Castle",
+    "coords": {
+      "lat": 53.1277,
+      "lng": -2.6913
+    }
+  },
+  {
+    "id": "chester-castle-cheshire",
+    "name": "Chester Castle",
+    "coords": {
+      "lat": 53.1853,
+      "lng": -2.8923
+    }
+  },
+  {
+    "id": "cholmondeley-castle-cheshire",
+    "name": "Cholmondeley Castle",
+    "coords": {
+      "lat": 53.0572,
+      "lng": -2.6932
+    }
+  },
+  {
+    "id": "doddington-castle-cheshire",
+    "name": "Doddington Castle",
+    "coords": {
+      "lat": 53.0197,
+      "lng": -2.4356
+    }
+  },
+  {
+    "id": "halton-castle-cheshire",
+    "name": "Halton Castle",
+    "coords": {
+      "lat": 53.3331,
+      "lng": -2.6957
+    }
+  },
+  {
+    "id": "peckforton-castle-cheshire",
+    "name": "Peckforton Castle",
+    "coords": {
+      "lat": 53.1175,
+      "lng": -2.699
+    }
+  },
+  {
+    "id": "auckland-castle-county-durham",
+    "name": "Auckland Castle",
+    "coords": {
+      "lat": 54.6664,
+      "lng": -1.6702
+    }
+  },
+  {
+    "id": "barnard-castle-county-durham",
+    "name": "Barnard Castle",
+    "coords": {
+      "lat": 54.54333,
+      "lng": -1.92667
+    }
+  },
+  {
+    "id": "bowes-castle-county-durham",
+    "name": "Bowes Castle",
+    "coords": {
+      "lat": 54.5168,
+      "lng": -2.0139
+    }
+  },
+  {
+    "id": "brancepeth-castle-county-durham",
+    "name": "Brancepeth Castle",
+    "coords": {
+      "lat": 54.73333,
+      "lng": -1.65
+    }
+  },
+  {
+    "id": "durham-castle-county-durham",
+    "name": "Durham Castle",
+    "coords": {
+      "lat": 54.77472,
+      "lng": -1.57611
+    }
+  },
+  {
+    "id": "lambton-castle-county-durham",
+    "name": "Lambton Castle",
+    "coords": {
+      "lat": 54.867,
+      "lng": -1.536
+    }
+  },
+  {
+    "id": "lumley-castle-county-durham",
+    "name": "Lumley Castle",
+    "coords": {
+      "lat": 54.85472,
+      "lng": -1.55293
+    }
+  },
+  {
+    "id": "mortham-tower-county-durham",
+    "name": "Mortham Tower",
+    "coords": {
+      "lat": 54.51336,
+      "lng": -1.86715
+    }
+  },
+  {
+    "id": "raby-castle-county-durham",
+    "name": "Raby Castle",
+    "coords": {
+      "lat": 54.59083,
+      "lng": -1.80194
+    }
+  },
+  {
+    "id": "raby-old-lodge-county-durham",
+    "name": "Raby Old Lodge",
+    "coords": {
+      "lat": 54.567,
+      "lng": -1.8
+    }
+  },
+  {
+    "id": "scargill-castle-county-durham",
+    "name": "Scargill Castle",
+    "coords": {
+      "lat": 54.49125,
+      "lng": -1.92279
+    }
+  },
+  {
+    "id": "walworth-castle-county-durham",
+    "name": "Walworth Castle",
+    "coords": {
+      "lat": 54.565,
+      "lng": -1.639
+    }
+  },
+  {
+    "id": "witton-castle-county-durham",
+    "name": "Witton Castle",
+    "coords": {
+      "lat": 54.6684,
+      "lng": -1.7643
+    }
+  },
+  {
+    "id": "caerhays-castle-cornwall",
+    "name": "Caerhays Castle",
+    "coords": {
+      "lat": 50.2396,
+      "lng": -4.8467
+    }
+  },
+  {
+    "id": "carn-brea-castle-cornwall",
+    "name": "Carn Brea Castle",
+    "coords": {
+      "lat": 50.2224583,
+      "lng": -5.2448333
+    }
+  },
+  {
+    "id": "ince-castle-cornwall",
+    "name": "Ince Castle",
+    "coords": {
+      "lat": 50.3899284,
+      "lng": -4.25513
+    }
+  },
+  {
+    "id": "launceston-castle-cornwall",
+    "name": "Launceston Castle",
+    "coords": {
+      "lat": 50.63757,
+      "lng": -4.36144
+    }
+  },
+  {
+    "id": "pendennis-castle-cornwall",
+    "name": "Pendennis Castle",
+    "coords": {
+      "lat": 50.14722,
+      "lng": -5.04777
+    }
+  },
+  {
+    "id": "pengersick-castle-cornwall",
+    "name": "Pengersick Castle",
+    "coords": {
+      "lat": 50.115,
+      "lng": -5.379
+    }
+  },
+  {
+    "id": "place-house-fowey-cornwall",
+    "name": "Place House, Fowey",
+    "coords": {
+      "lat": 50.336,
+      "lng": -4.637
+    }
+  },
+  {
+    "id": "restormel-castle-cornwall",
+    "name": "Restormel Castle",
+    "coords": {
+      "lat": 50.4223,
+      "lng": -4.6715
+    }
+  },
+  {
+    "id": "st-catherines-castle-cornwall",
+    "name": "St Catherine's Castle",
+    "coords": {
+      "lat": 50.328222,
+      "lng": -4.644444
+    }
+  },
+  {
+    "id": "st-mawes-castle-cornwall",
+    "name": "St. Mawes Castle",
+    "coords": {
+      "lat": 50.15486,
+      "lng": -5.02377
+    }
+  },
+  {
+    "id": "st-michaels-mount-cornwall",
+    "name": "St. Michael's Mount",
+    "coords": {
+      "lat": 50.116,
+      "lng": -5.4772
+    }
+  },
+  {
+    "id": "tintagel-castle-cornwall",
+    "name": "Tintagel Castle",
+    "coords": {
+      "lat": 50.6679737,
+      "lng": -4.7599283
+    }
+  },
+  {
+    "id": "trematon-castle-cornwall",
+    "name": "Trematon Castle",
+    "coords": {
+      "lat": 50.40044,
+      "lng": -4.23774
+    }
+  },
+  {
+    "id": "appleby-castle-cumbria",
+    "name": "Appleby Castle",
+    "coords": {
+      "lat": 54.57423,
+      "lng": -2.48878
+    }
+  },
+  {
+    "id": "armathwaite-castle-cumbria",
+    "name": "Armathwaite Castle",
+    "coords": {
+      "lat": 54.8055,
+      "lng": -2.7701
+    }
+  },
+  {
+    "id": "arnside-tower-cumbria",
+    "name": "Arnside Tower",
+    "coords": {
+      "lat": 54.1841,
+      "lng": -2.8335
+    }
+  },
+  {
+    "id": "askerton-castle-cumbria",
+    "name": "Askerton Castle",
+    "coords": {
+      "lat": 55.0153,
+      "lng": -2.7053
+    }
+  },
+  {
+    "id": "beetham-hall-cumbria",
+    "name": "Beetham Hall",
+    "coords": {
+      "lat": 54.208,
+      "lng": -2.775
+    }
+  },
+  {
+    "id": "bewcastle-castle-cumbria",
+    "name": "Bewcastle Castle",
+    "coords": {
+      "lat": 55.0649,
+      "lng": -2.6811
+    }
+  },
+  {
+    "id": "bewley-castle-cumbria",
+    "name": "Bewley Castle",
+    "coords": {
+      "lat": 54.578,
+      "lng": -2.519
+    }
+  },
+  {
+    "id": "blencow-hall-cumbria",
+    "name": "Blencow Hall",
+    "coords": {
+      "lat": 54.666,
+      "lng": -2.85
+    }
+  },
+  {
+    "id": "brackenburgh-old-tower-cumbria",
+    "name": "Brackenburgh Old Tower",
+    "coords": {
+      "lat": 54.754,
+      "lng": -2.828
+    }
+  },
+  {
+    "id": "brackenhill-tower-cumbria",
+    "name": "Brackenhill Tower",
+    "coords": {
+      "lat": 55.016764,
+      "lng": -2.8682286
+    }
+  },
+  {
+    "id": "branthwaite-hall-cumbria",
+    "name": "Branthwaite Hall",
+    "coords": {
+      "lat": 54.6142,
+      "lng": -3.4493
+    }
+  },
+  {
+    "id": "brough-castle-cumbria",
+    "name": "Brough Castle",
+    "coords": {
+      "lat": 54.5218,
+      "lng": -2.3244
+    }
+  },
+  {
+    "id": "brougham-castle-cumbria",
+    "name": "Brougham Castle",
+    "coords": {
+      "lat": 54.654,
+      "lng": -2.7191
+    }
+  },
+  {
+    "id": "brougham-hall-cumbria",
+    "name": "Brougham Hall",
+    "coords": {
+      "lat": 54.648,
+      "lng": -2.7329
+    }
+  },
+  {
+    "id": "broughton-tower-cumbria",
+    "name": "Broughton Tower",
+    "coords": {
+      "lat": 54.278,
+      "lng": -3.214
+    }
+  },
+  {
+    "id": "burneside-hall-cumbria",
+    "name": "Burneside Hall",
+    "coords": {
+      "lat": 54.3563,
+      "lng": -2.757
+    }
+  },
+  {
+    "id": "carlisle-castle-cumbria",
+    "name": "Carlisle Castle",
+    "coords": {
+      "lat": 54.89726,
+      "lng": -2.941936
+    }
+  },
+  {
+    "id": "catterlen-hall-cumbria",
+    "name": "Catterlen Hall",
+    "coords": {
+      "lat": 54.683333,
+      "lng": -2.816667
+    }
+  },
+  {
+    "id": "clifton-hall-cumbria",
+    "name": "Clifton Hall",
+    "coords": {
+      "lat": 54.6368,
+      "lng": -2.7297
+    }
+  },
+  {
+    "id": "cockermouth-castle-cumbria",
+    "name": "Cockermouth Castle",
+    "coords": {
+      "lat": 54.66552,
+      "lng": -3.36122
+    }
+  },
+  {
+    "id": "corby-castle-cumbria",
+    "name": "Corby Castle",
+    "coords": {
+      "lat": 54.8797,
+      "lng": -2.8262
+    }
+  },
+  {
+    "id": "dacre-castle-cumbria",
+    "name": "Dacre Castle",
+    "coords": {
+      "lat": 54.6316,
+      "lng": -2.8365
+    }
+  },
+  {
+    "id": "dalston-hall-cumbria",
+    "name": "Dalston Hall",
+    "coords": {
+      "lat": 54.85466,
+      "lng": -2.97302
+    }
+  },
+  {
+    "id": "dalton-castle-cumbria",
+    "name": "Dalton Castle",
+    "coords": {
+      "lat": 54.1554,
+      "lng": -3.1865
+    }
+  },
+  {
+    "id": "drawdykes-castle-cumbria",
+    "name": "Drawdykes Castle",
+    "coords": {
+      "lat": 54.917,
+      "lng": -2.894
+    }
+  },
+  {
+    "id": "drumburgh-castle-cumbria",
+    "name": "Drumburgh Castle",
+    "coords": {
+      "lat": 54.9266,
+      "lng": -3.1484
+    }
+  },
+  {
+    "id": "egremont-castle-cumbria",
+    "name": "Egremont Castle",
+    "coords": {
+      "lat": 54.47836,
+      "lng": -3.5294
+    }
+  },
+  {
+    "id": "gleaston-castle-cumbria",
+    "name": "Gleaston Castle",
+    "coords": {
+      "lat": 54.134,
+      "lng": -3.1317
+    }
+  },
+  {
+    "id": "greystoke-castle-cumbria",
+    "name": "Greystoke Castle",
+    "coords": {
+      "lat": 54.66999,
+      "lng": -2.87757
+    }
+  },
+  {
+    "id": "harbybrow-tower-cumbria",
+    "name": "Harbybrow Tower",
+    "coords": {
+      "lat": 54.762,
+      "lng": -3.256
+    }
+  },
+  {
+    "id": "hayton-castle-cumbria",
+    "name": "Hayton Castle",
+    "coords": {
+      "lat": 54.762593,
+      "lng": -3.384152
+    }
+  },
+  {
+    "id": "hazelslack-tower-cumbria",
+    "name": "Hazelslack Tower",
+    "coords": {
+      "lat": 54.201,
+      "lng": -2.803
+    }
+  },
+  {
+    "id": "howgill-castle-cumbria",
+    "name": "Howgill Castle",
+    "coords": {
+      "lat": 54.657,
+      "lng": -2.536
+    }
+  },
+  {
+    "id": "hutton-in-the-forest-cumbria",
+    "name": "Hutton-in-the-Forest",
+    "coords": {
+      "lat": 54.714,
+      "lng": -2.839
+    }
+  },
+  {
+    "id": "hutton-john-cumbria",
+    "name": "Hutton John",
+    "coords": {
+      "lat": 54.633,
+      "lng": -2.874
+    }
+  },
+  {
+    "id": "ingmire-hall-cumbria",
+    "name": "Ingmire Hall",
+    "coords": {
+      "lat": 54.322,
+      "lng": -2.526
+    }
+  },
+  {
+    "id": "isel-hall-cumbria",
+    "name": "Isel Hall",
+    "coords": {
+      "lat": 54.696,
+      "lng": -3.3
+    }
+  },
+  {
+    "id": "kendal-castle-cumbria",
+    "name": "Kendal Castle",
+    "coords": {
+      "lat": 54.32492,
+      "lng": -2.73644
+    }
+  },
+  {
+    "id": "kentmere-hall-cumbria",
+    "name": "Kentmere Hall",
+    "coords": {
+      "lat": 54.429,
+      "lng": -2.84
+    }
+  },
+  {
+    "id": "kirkandrews-tower-cumbria",
+    "name": "Kirkandrews Tower",
+    "coords": {
+      "lat": 55.03813,
+      "lng": -2.95734
+    }
+  },
+  {
+    "id": "linstock-castle-cumbria",
+    "name": "Linstock Castle",
+    "coords": {
+      "lat": 54.917,
+      "lng": -2.894
+    }
+  },
+  {
+    "id": "lowther-castle-cumbria",
+    "name": "Lowther Castle",
+    "coords": {
+      "lat": 54.60583,
+      "lng": -2.74028
+    }
+  },
+  {
+    "id": "millom-castle-cumbria",
+    "name": "Millom Castle",
+    "coords": {
+      "lat": 54.220982,
+      "lng": -3.27247
+    }
+  },
+  {
+    "id": "muncaster-castle-cumbria",
+    "name": "Muncaster Castle",
+    "coords": {
+      "lat": 54.3546554,
+      "lng": -3.3808693
+    }
+  },
+  {
+    "id": "naworth-castle-cumbria",
+    "name": "Naworth Castle",
+    "coords": {
+      "lat": 54.95556,
+      "lng": -2.68889
+    }
+  },
+  {
+    "id": "newbiggin-hall-cumbria",
+    "name": "Newbiggin Hall",
+    "coords": {
+      "lat": 54.64999,
+      "lng": -2.5773
+    }
+  },
+  {
+    "id": "pendragon-castle-cumbria",
+    "name": "Pendragon Castle",
+    "coords": {
+      "lat": 54.41747,
+      "lng": -2.33898
+    }
+  },
+  {
+    "id": "penrith-castle-cumbria",
+    "name": "Penrith Castle",
+    "coords": {
+      "lat": 54.6621,
+      "lng": -2.7573
+    }
+  },
+  {
+    "id": "piel-castle-cumbria",
+    "name": "Piel Castle",
+    "coords": {
+      "lat": 54.0626,
+      "lng": -3.1733
+    }
+  },
+  {
+    "id": "priors-tower-carlisle-cumbria",
+    "name": "Prior's Tower, Carlisle",
+    "coords": {
+      "lat": 54.89472,
+      "lng": -2.93861
+    }
+  },
+  {
+    "id": "rose-castle-cumbria",
+    "name": "Rose Castle",
+    "coords": {
+      "lat": 54.8064,
+      "lng": -2.9802
+    }
+  },
+  {
+    "id": "scaleby-castle-cumbria",
+    "name": "Scaleby Castle",
+    "coords": {
+      "lat": 54.9532,
+      "lng": -2.8619
+    }
+  },
+  {
+    "id": "sizergh-castle-cumbria",
+    "name": "Sizergh Castle",
+    "coords": {
+      "lat": 54.28444,
+      "lng": -2.77194
+    }
+  },
+  {
+    "id": "toppin-castle-cumbria",
+    "name": "Toppin Castle",
+    "coords": {
+      "lat": 54.911,
+      "lng": -2.769
+    }
+  },
+  {
+    "id": "ubarrow-hall-cumbria",
+    "name": "Ubarrow Hall",
+    "coords": {
+      "lat": 54.419,
+      "lng": -2.77
+    }
+  },
+  {
+    "id": "wharton-hall-cumbria",
+    "name": "Wharton Hall",
+    "coords": {
+      "lat": 54.4505,
+      "lng": -2.3547
+    }
+  },
+  {
+    "id": "whitehall-mealsgate-cumbria",
+    "name": "Whitehall, Mealsgate",
+    "coords": {
+      "lat": 54.768,
+      "lng": -3.231
+    }
+  },
+  {
+    "id": "workington-hall-cumbria",
+    "name": "Workington Hall",
+    "coords": {
+      "lat": 54.644634,
+      "lng": -3.53894
+    }
+  },
+  {
+    "id": "wray-castle-cumbria",
+    "name": "Wray Castle",
+    "coords": {
+      "lat": 54.4006345,
+      "lng": -2.9641913
+    }
+  },
+  {
+    "id": "wraysholme-tower-cumbria",
+    "name": "Wraysholme Tower",
+    "coords": {
+      "lat": 54.1802,
+      "lng": -2.9398
+    }
+  },
+  {
+    "id": "yanwath-hall-cumbria",
+    "name": "Yanwath Hall",
+    "coords": {
+      "lat": 54.642,
+      "lng": -2.741
+    }
+  },
+  {
+    "id": "bolsover-castle-derbyshire",
+    "name": "Bolsover Castle",
+    "coords": {
+      "lat": 53.23139,
+      "lng": -1.29694
+    }
+  },
+  {
+    "id": "codnor-castle-derbyshire",
+    "name": "Codnor Castle",
+    "coords": {
+      "lat": 53.0454,
+      "lng": -1.3548
+    }
+  },
+  {
+    "id": "elvaston-castle-derbyshire",
+    "name": "Elvaston Castle",
+    "coords": {
+      "lat": 52.89278,
+      "lng": -1.39528
+    }
+  },
+  {
+    "id": "haddon-hall-derbyshire",
+    "name": "Haddon Hall",
+    "coords": {
+      "lat": 53.1939,
+      "lng": -1.6498
+    }
+  },
+  {
+    "id": "mackworth-castle-derbyshire",
+    "name": "Mackworth Castle",
+    "coords": {
+      "lat": 52.9369,
+      "lng": -1.5352
+    }
+  },
+  {
+    "id": "peveril-castle-derbyshire",
+    "name": "Peveril Castle",
+    "coords": {
+      "lat": 53.3402,
+      "lng": -1.7772
+    }
+  },
+  {
+    "id": "riber-castle-derbyshire",
+    "name": "Riber Castle",
+    "coords": {
+      "lat": 53.1278,
+      "lng": -1.543
+    }
+  },
+  {
+    "id": "wingfield-manor-derbyshire",
+    "name": "Wingfield Manor",
+    "coords": {
+      "lat": 53.08911,
+      "lng": -1.44303
+    }
+  },
+  {
+    "id": "affeton-castle-devon",
+    "name": "Affeton Castle",
+    "coords": {
+      "lat": 50.9092,
+      "lng": -3.7717
+    }
+  },
+  {
+    "id": "berry-pomeroy-castle-devon",
+    "name": "Berry Pomeroy Castle",
+    "coords": {
+      "lat": 50.449,
+      "lng": -3.6366
+    }
+  },
+  {
+    "id": "bickleigh-castle-devon",
+    "name": "Bickleigh Castle",
+    "coords": {
+      "lat": 50.85139,
+      "lng": -3.5125
+    }
+  },
+  {
+    "id": "compton-castle-devon",
+    "name": "Compton Castle",
+    "coords": {
+      "lat": 50.4726858,
+      "lng": -3.6001199
+    }
+  },
+  {
+    "id": "dartmouth-castle-devon",
+    "name": "Dartmouth Castle",
+    "coords": {
+      "lat": 50.34203,
+      "lng": -3.56829
+    }
+  },
+  {
+    "id": "castle-drogo-devon",
+    "name": "Castle Drogo",
+    "coords": {
+      "lat": 50.696,
+      "lng": -3.8114
+    }
+  },
+  {
+    "id": "gidleigh-castle-devon",
+    "name": "Gidleigh Castle",
+    "coords": {
+      "lat": 50.68004,
+      "lng": -3.88245
+    }
+  },
+  {
+    "id": "hemyock-castle-devon",
+    "name": "Hemyock Castle",
+    "coords": {
+      "lat": 50.91249,
+      "lng": -3.23144
+    }
+  },
+  {
+    "id": "kingswear-castle-devon",
+    "name": "Kingswear Castle",
+    "coords": {
+      "lat": 50.34125,
+      "lng": -3.55983
+    }
+  },
+  {
+    "id": "lydford-castle-devon",
+    "name": "Lydford Castle",
+    "coords": {
+      "lat": 50.6428,
+      "lng": -4.1115
+    }
+  },
+  {
+    "id": "marisco-castle-devon",
+    "name": "Marisco Castle",
+    "coords": {
+      "lat": 51.18117,
+      "lng": -4.67467
+    }
+  },
+  {
+    "id": "okehampton-castle-devon",
+    "name": "Okehampton Castle",
+    "coords": {
+      "lat": 50.730515,
+      "lng": -4.008649
+    }
+  },
+  {
+    "id": "plympton-castle-devon",
+    "name": "Plympton Castle",
+    "coords": {
+      "lat": 50.386,
+      "lng": -4.051
+    }
+  },
+  {
+    "id": "powderham-castle-devon",
+    "name": "Powderham Castle",
+    "coords": {
+      "lat": 50.642972,
+      "lng": -3.459972
+    }
+  },
+  {
+    "id": "rougemont-castle-devon",
+    "name": "Rougemont Castle",
+    "coords": {
+      "lat": 50.72567,
+      "lng": -3.53006
+    }
+  },
+  {
+    "id": "salcombe-castle-devon",
+    "name": "Salcombe Castle",
+    "coords": {
+      "lat": 50.2289,
+      "lng": -3.7765
+    }
+  },
+  {
+    "id": "tiverton-castle-devon",
+    "name": "Tiverton Castle",
+    "coords": {
+      "lat": 50.9063,
+      "lng": -3.4885
+    }
+  },
+  {
+    "id": "totnes-castle-devon",
+    "name": "Totnes Castle",
+    "coords": {
+      "lat": 50.4321,
+      "lng": -3.691
+    }
+  },
+  {
+    "id": "watermouth-castle-devon",
+    "name": "Watermouth Castle",
+    "coords": {
+      "lat": 51.21333,
+      "lng": -4.08028
+    }
+  },
+  {
+    "id": "brownsea-castle-dorset",
+    "name": "Brownsea Castle",
+    "coords": {
+      "lat": 50.69167,
+      "lng": -1.97222
+    }
+  },
+  {
+    "id": "christchurch-castle-dorset",
+    "name": "Christchurch Castle",
+    "coords": {
+      "lat": 50.733369,
+      "lng": -1.77501
+    }
+  },
+  {
+    "id": "corfe-castle-dorset",
+    "name": "Corfe Castle",
+    "coords": {
+      "lat": 50.64,
+      "lng": -2.058
+    }
+  },
+  {
+    "id": "lulworth-castle-dorset",
+    "name": "Lulworth Castle",
+    "coords": {
+      "lat": 50.6375,
+      "lng": -2.21056
+    }
+  },
+  {
+    "id": "pennsylvania-castle-dorset",
+    "name": "Pennsylvania Castle",
+    "coords": {
+      "lat": 50.538514,
+      "lng": -2.430482
+    }
+  },
+  {
+    "id": "portland-castle-dorset",
+    "name": "Portland Castle",
+    "coords": {
+      "lat": 50.56825,
+      "lng": -2.44671
+    }
+  },
+  {
+    "id": "rufus-castle-dorset",
+    "name": "Rufus Castle",
+    "coords": {
+      "lat": 50.5385,
+      "lng": -2.4294
+    }
+  },
+  {
+    "id": "sherborne-old-castle-dorset",
+    "name": "Sherborne Old Castle",
+    "coords": {
+      "lat": 50.9494,
+      "lng": -2.5024
+    }
+  },
+  {
+    "id": "woodsford-castle-dorset",
+    "name": "Woodsford Castle",
+    "coords": {
+      "lat": 50.714,
+      "lng": -2.338
+    }
+  },
+  {
+    "id": "paull-holme-tower-east-riding-of-yorkshire",
+    "name": "Paull Holme Tower",
+    "coords": {
+      "lat": 53.7069,
+      "lng": -0.2059
+    }
+  },
+  {
+    "id": "skipsea-castle-east-riding-of-yorkshire",
+    "name": "Skipsea Castle",
+    "coords": {
+      "lat": 53.978668,
+      "lng": -0.229589
+    }
+  },
+  {
+    "id": "wressle-castle-east-riding-of-yorkshire",
+    "name": "Wressle Castle",
+    "coords": {
+      "lat": 53.7755,
+      "lng": -0.9287
+    }
+  },
+  {
+    "id": "bodiam-castle-east-sussex",
+    "name": "Bodiam Castle",
+    "coords": {
+      "lat": 51.0023,
+      "lng": 0.5435
+    }
+  },
+  {
+    "id": "camber-castle-east-sussex",
+    "name": "Camber Castle",
+    "coords": {
+      "lat": 50.93305,
+      "lng": 0.73248
+    }
+  },
+  {
+    "id": "hastings-castle-east-sussex",
+    "name": "Hastings Castle",
+    "coords": {
+      "lat": 50.85631,
+      "lng": 0.58731
+    }
+  },
+  {
+    "id": "herstmonceux-castle-east-sussex",
+    "name": "Herstmonceux Castle",
+    "coords": {
+      "lat": 50.8695,
+      "lng": 0.3387
+    }
+  },
+  {
+    "id": "lewes-castle-east-sussex",
+    "name": "Lewes Castle",
+    "coords": {
+      "lat": 50.87417,
+      "lng": 0.00694
+    }
+  },
+  {
+    "id": "pevensey-castle-east-sussex",
+    "name": "Pevensey Castle",
+    "coords": {
+      "lat": 50.8188,
+      "lng": 0.3342
+    }
+  },
+  {
+    "id": "rye-castle-ypres-tower-east-sussex",
+    "name": "Rye Castle (Ypres Tower)",
+    "coords": {
+      "lat": 50.9498194,
+      "lng": 0.7355861
+    }
+  },
+  {
+    "id": "colchester-castle-essex",
+    "name": "Colchester Castle",
+    "coords": {
+      "lat": 51.890589,
+      "lng": 0.903047
+    }
+  },
+  {
+    "id": "hadleigh-castle-essex",
+    "name": "Hadleigh Castle",
+    "coords": {
+      "lat": 51.5444,
+      "lng": 0.609
+    }
+  },
+  {
+    "id": "hedingham-castle-essex",
+    "name": "Hedingham Castle",
+    "coords": {
+      "lat": 51.9925,
+      "lng": 0.60111
+    }
+  },
+  {
+    "id": "walden-castle-essex",
+    "name": "Walden Castle",
+    "coords": {
+      "lat": 52.0255,
+      "lng": 0.242
+    }
+  },
+  {
+    "id": "berkeley-castle-gloucestershire",
+    "name": "Berkeley Castle",
+    "coords": {
+      "lat": 51.68797,
+      "lng": -2.45707
+    }
+  },
+  {
+    "id": "beverstone-castle-gloucestershire",
+    "name": "Beverstone Castle",
+    "coords": {
+      "lat": 51.644239,
+      "lng": -2.201553
+    }
+  },
+  {
+    "id": "st-briavels-castle-gloucestershire",
+    "name": "St. Briavel's Castle",
+    "coords": {
+      "lat": 51.738,
+      "lng": -2.6405
+    }
+  },
+  {
+    "id": "sudeley-castle-gloucestershire",
+    "name": "Sudeley Castle",
+    "coords": {
+      "lat": 51.94722,
+      "lng": -1.95611
+    }
+  },
+  {
+    "id": "thornbury-castle-gloucestershire",
+    "name": "Thornbury Castle",
+    "coords": {
+      "lat": 51.6136,
+      "lng": -2.5301
+    }
+  },
+  {
+    "id": "tower-of-london-greater-london",
+    "name": "Tower of London",
+    "coords": {
+      "lat": 51.50806,
+      "lng": -0.07611
+    }
+  },
+  {
+    "id": "manor-farm-ruislip-greater-london",
+    "name": "Manor Farm, Ruislip",
+    "coords": {
+      "lat": 51.578206,
+      "lng": -0.428451
+    }
+  },
+  {
+    "id": "radcliffe-tower-greater-manchester",
+    "name": "Radcliffe Tower",
+    "coords": {
+      "lat": 53.56361,
+      "lng": -2.308259
+    }
+  },
+  {
+    "id": "calshot-castle-hampshire",
+    "name": "Calshot Castle",
+    "coords": {
+      "lat": 50.82,
+      "lng": -1.3075
+    }
+  },
+  {
+    "id": "hurst-castle-hampshire",
+    "name": "Hurst Castle",
+    "coords": {
+      "lat": 50.70639,
+      "lng": -1.55111
+    }
+  },
+  {
+    "id": "netley-castle-hampshire",
+    "name": "Netley Castle",
+    "coords": {
+      "lat": 50.878,
+      "lng": -1.36
+    }
+  },
+  {
+    "id": "odiham-castle-hampshire",
+    "name": "Odiham Castle",
+    "coords": {
+      "lat": 51.2614194,
+      "lng": -0.9617222
+    }
+  },
+  {
+    "id": "portchester-castle-hampshire",
+    "name": "Portchester Castle",
+    "coords": {
+      "lat": 50.836546,
+      "lng": -1.113034
+    }
+  },
+  {
+    "id": "southampton-castle-hampshire",
+    "name": "Southampton Castle",
+    "coords": {
+      "lat": 50.9007,
+      "lng": -1.4054
+    }
+  },
+  {
+    "id": "southsea-castle-hampshire",
+    "name": "Southsea Castle",
+    "coords": {
+      "lat": 50.77805,
+      "lng": -1.08888
+    }
+  },
+  {
+    "id": "winchester-castle-hampshire",
+    "name": "Winchester Castle",
+    "coords": {
+      "lat": 51.06243,
+      "lng": -1.32054
+    }
+  },
+  {
+    "id": "wolvesey-castle-hampshire",
+    "name": "Wolvesey Castle",
+    "coords": {
+      "lat": 51.059111,
+      "lng": -1.310056
+    }
+  },
+  {
+    "id": "brampton-bryan-castle-herefordshire",
+    "name": "Brampton Bryan Castle",
+    "coords": {
+      "lat": 52.3478,
+      "lng": -2.9263
+    }
+  },
+  {
+    "id": "clifford-castle-herefordshire",
+    "name": "Clifford Castle",
+    "coords": {
+      "lat": 52.10443,
+      "lng": -3.10666
+    }
+  },
+  {
+    "id": "croft-castle-herefordshire",
+    "name": "Croft Castle",
+    "coords": {
+      "lat": 52.28486,
+      "lng": -2.80916
+    }
+  },
+  {
+    "id": "downton-castle-herefordshire",
+    "name": "Downton Castle",
+    "coords": {
+      "lat": 52.3678,
+      "lng": -2.8164
+    }
+  },
+  {
+    "id": "eastnor-castle-herefordshire",
+    "name": "Eastnor Castle",
+    "coords": {
+      "lat": 52.0297,
+      "lng": -2.3877
+    }
+  },
+  {
+    "id": "goodrich-castle-herefordshire",
+    "name": "Goodrich Castle",
+    "coords": {
+      "lat": 51.8761,
+      "lng": -2.613
+    }
+  },
+  {
+    "id": "hampton-court-herefordshire",
+    "name": "Hampton Court",
+    "coords": {
+      "lat": 52.1676583,
+      "lng": -2.7041417
+    }
+  },
+  {
+    "id": "kentchurch-court-herefordshire",
+    "name": "Kentchurch Court",
+    "coords": {
+      "lat": 51.928581,
+      "lng": -2.840475
+    }
+  },
+  {
+    "id": "kinnersley-castle-herefordshire",
+    "name": "Kinnersley Castle",
+    "coords": {
+      "lat": 52.141,
+      "lng": -2.957
+    }
+  },
+  {
+    "id": "longtown-castle-herefordshire",
+    "name": "Longtown Castle",
+    "coords": {
+      "lat": 51.9562,
+      "lng": -2.991
+    }
+  },
+  {
+    "id": "pembridge-castle-herefordshire",
+    "name": "Pembridge Castle",
+    "coords": {
+      "lat": 51.8698,
+      "lng": -2.7448
+    }
+  },
+  {
+    "id": "snodhill-castle-herefordshire",
+    "name": "Snodhill Castle",
+    "coords": {
+      "lat": 52.0703,
+      "lng": -3.0016
+    }
+  },
+  {
+    "id": "treago-castle-herefordshire",
+    "name": "Treago Castle",
+    "coords": {
+      "lat": 51.9114,
+      "lng": -2.7425
+    }
+  },
+  {
+    "id": "wigmore-castle-herefordshire",
+    "name": "Wigmore Castle",
+    "coords": {
+      "lat": 52.3177,
+      "lng": -2.8714
+    }
+  },
+  {
+    "id": "wilton-castle-herefordshire",
+    "name": "Wilton Castle",
+    "coords": {
+      "lat": 51.916163,
+      "lng": -2.596635
+    }
+  },
+  {
+    "id": "berkhamsted-castle-hertfordshire",
+    "name": "Berkhamsted Castle",
+    "coords": {
+      "lat": 51.76361,
+      "lng": -0.55889
+    }
+  },
+  {
+    "id": "hertford-castle-hertfordshire",
+    "name": "Hertford Castle",
+    "coords": {
+      "lat": 51.7955,
+      "lng": -0.08
+    }
+  },
+  {
+    "id": "carisbrooke-castle-isle-of-wight",
+    "name": "Carisbrooke Castle",
+    "coords": {
+      "lat": 50.6874,
+      "lng": -1.3133
+    }
+  },
+  {
+    "id": "norris-castle-isle-of-wight",
+    "name": "Norris Castle",
+    "coords": {
+      "lat": 50.763056,
+      "lng": -1.270556
+    }
+  },
+  {
+    "id": "yarmouth-castle-isle-of-wight",
+    "name": "Yarmouth Castle",
+    "coords": {
+      "lat": 50.706667,
+      "lng": -1.500278
+    }
+  },
+  {
+    "id": "west-cowes-castle-isle-of-wight",
+    "name": "West Cowes Castle",
+    "coords": {
+      "lat": 50.7665,
+      "lng": -1.3012
+    }
+  },
+  {
+    "id": "cromwells-castle-isles-of-scilly",
+    "name": "Cromwell's Castle",
+    "coords": {
+      "lat": 49.9616,
+      "lng": -6.3505
+    }
+  },
+  {
+    "id": "star-castle-isles-of-scilly",
+    "name": "Star Castle",
+    "coords": {
+      "lat": 49.915378,
+      "lng": -6.321056
+    }
+  },
+  {
+    "id": "allington-castle-kent",
+    "name": "Allington Castle",
+    "coords": {
+      "lat": 51.293333,
+      "lng": 0.511702
+    }
+  },
+  {
+    "id": "canterbury-castle-kent",
+    "name": "Canterbury Castle",
+    "coords": {
+      "lat": 51.275686,
+      "lng": 1.074618
+    }
+  },
+  {
+    "id": "chiddingstone-castle-kent",
+    "name": "Chiddingstone Castle",
+    "coords": {
+      "lat": 51.1858,
+      "lng": 0.1424
+    }
+  },
+  {
+    "id": "chilham-castle-kent",
+    "name": "Chilham Castle",
+    "coords": {
+      "lat": 51.243,
+      "lng": 0.96
+    }
+  },
+  {
+    "id": "cooling-castle-kent",
+    "name": "Cooling Castle",
+    "coords": {
+      "lat": 51.455441,
+      "lng": 0.523084
+    }
+  },
+  {
+    "id": "deal-castle-kent",
+    "name": "Deal Castle",
+    "coords": {
+      "lat": 51.21943,
+      "lng": 1.40356
+    }
+  },
+  {
+    "id": "dover-castle-kent",
+    "name": "Dover Castle",
+    "coords": {
+      "lat": 51.1297,
+      "lng": 1.3214
+    }
+  },
+  {
+    "id": "eynsford-castle-kent",
+    "name": "Eynsford Castle",
+    "coords": {
+      "lat": 51.370556,
+      "lng": 0.213333
+    }
+  },
+  {
+    "id": "hever-castle-kent",
+    "name": "Hever Castle",
+    "coords": {
+      "lat": 51.18722,
+      "lng": 0.11417
+    }
+  },
+  {
+    "id": "kingsgate-castle-kent",
+    "name": "Kingsgate Castle",
+    "coords": {
+      "lat": 51.38306,
+      "lng": 1.44333
+    }
+  },
+  {
+    "id": "leeds-castle-kent",
+    "name": "Leeds Castle",
+    "coords": {
+      "lat": 51.24856,
+      "lng": 0.63008
+    }
+  },
+  {
+    "id": "leybourne-castle-kent",
+    "name": "Leybourne Castle",
+    "coords": {
+      "lat": 51.3043861,
+      "lng": 0.4208889
+    }
+  },
+  {
+    "id": "lullingstone-castle-kent",
+    "name": "Lullingstone Castle",
+    "coords": {
+      "lat": 51.3585,
+      "lng": 0.1959
+    }
+  },
+  {
+    "id": "lympne-castle-kent",
+    "name": "Lympne Castle",
+    "coords": {
+      "lat": 51.0722167,
+      "lng": 1.0236222
+    }
+  },
+  {
+    "id": "otford-palace-kent",
+    "name": "Otford Palace",
+    "coords": {
+      "lat": 51.3114,
+      "lng": 0.1911
+    }
+  },
+  {
+    "id": "penshurst-place-kent",
+    "name": "Penshurst Place",
+    "coords": {
+      "lat": 51.1747,
+      "lng": 0.1838
+    }
+  },
+  {
+    "id": "rochester-castle-kent",
+    "name": "Rochester Castle",
+    "coords": {
+      "lat": 51.3899935,
+      "lng": 0.5014843
+    }
+  },
+  {
+    "id": "st-leonards-tower-west-malling-kent",
+    "name": "St Leonard's Tower, West Malling",
+    "coords": {
+      "lat": 51.2882444,
+      "lng": 0.4019083
+    }
+  },
+  {
+    "id": "saltwood-castle-kent",
+    "name": "Saltwood Castle",
+    "coords": {
+      "lat": 51.0818444,
+      "lng": 1.0843667
+    }
+  },
+  {
+    "id": "sandgate-castle-kent",
+    "name": "Sandgate Castle",
+    "coords": {
+      "lat": 51.073444,
+      "lng": 1.148889
+    }
+  },
+  {
+    "id": "scotney-castle-kent",
+    "name": "Scotney Castle",
+    "coords": {
+      "lat": 51.0928,
+      "lng": 0.4082
+    }
+  },
+  {
+    "id": "sissinghurst-castle-kent",
+    "name": "Sissinghurst Castle",
+    "coords": {
+      "lat": 51.1157,
+      "lng": 0.5815
+    }
+  },
+  {
+    "id": "starkey-castle-kent",
+    "name": "Starkey Castle",
+    "coords": {
+      "lat": 51.34964,
+      "lng": 0.45836
+    }
+  },
+  {
+    "id": "stone-castle-kent",
+    "name": "Stone Castle",
+    "coords": {
+      "lat": 51.44333,
+      "lng": 0.27778
+    }
+  },
+  {
+    "id": "sutton-valence-castle-kent",
+    "name": "Sutton Valence Castle",
+    "coords": {
+      "lat": 51.21238,
+      "lng": 0.59775
+    }
+  },
+  {
+    "id": "tonbridge-castle-kent",
+    "name": "Tonbridge Castle",
+    "coords": {
+      "lat": 51.1971,
+      "lng": 0.2721
+    }
+  },
+  {
+    "id": "upnor-castle-kent",
+    "name": "Upnor Castle",
+    "coords": {
+      "lat": 51.406907,
+      "lng": 0.527114
+    }
+  },
+  {
+    "id": "walmer-castle-kent",
+    "name": "Walmer Castle",
+    "coords": {
+      "lat": 51.200992,
+      "lng": 1.402308
+    }
+  },
+  {
+    "id": "westenhanger-castle-kent",
+    "name": "Westenhanger Castle",
+    "coords": {
+      "lat": 51.09444,
+      "lng": 1.03139
+    }
+  },
+  {
+    "id": "ashton-hall-lancashire",
+    "name": "Ashton Hall",
+    "coords": {
+      "lat": 54.0089,
+      "lng": -2.8229
+    }
+  },
+  {
+    "id": "borwick-hall-lancashire",
+    "name": "Borwick Hall",
+    "coords": {
+      "lat": 54.15,
+      "lng": -2.73
+    }
+  },
+  {
+    "id": "clitheroe-castle-lancashire",
+    "name": "Clitheroe Castle",
+    "coords": {
+      "lat": 53.8709,
+      "lng": -2.3931
+    }
+  },
+  {
+    "id": "hornby-castle-lancashire",
+    "name": "Hornby Castle",
+    "coords": {
+      "lat": 54.1114,
+      "lng": -2.6323
+    }
+  },
+  {
+    "id": "lancaster-castle-lancashire",
+    "name": "Lancaster Castle",
+    "coords": {
+      "lat": 54.04981,
+      "lng": -2.80562
+    }
+  },
+  {
+    "id": "thurland-castle-lancashire",
+    "name": "Thurland Castle",
+    "coords": {
+      "lat": 54.152,
+      "lng": -2.5978
+    }
+  },
+  {
+    "id": "turton-tower-lancashire",
+    "name": "Turton Tower",
+    "coords": {
+      "lat": 53.633,
+      "lng": -2.4075
+    }
+  },
+  {
+    "id": "ashby-de-la-zouch-castle-leicestershire",
+    "name": "Ashby de la Zouch Castle",
+    "coords": {
+      "lat": 52.746132,
+      "lng": -1.4664382
+    }
+  },
+  {
+    "id": "belvoir-castle-leicestershire",
+    "name": "Belvoir Castle",
+    "coords": {
+      "lat": 52.8945,
+      "lng": -0.7825611
+    }
+  },
+  {
+    "id": "kirby-muxloe-castle-leicestershire",
+    "name": "Kirby Muxloe Castle",
+    "coords": {
+      "lat": 52.6366,
+      "lng": -1.2272
+    }
+  },
+  {
+    "id": "leicester-castle-leicestershire",
+    "name": "Leicester Castle",
+    "coords": {
+      "lat": 52.632333,
+      "lng": -1.141194
+    }
+  },
+  {
+    "id": "bolingbroke-castle-lincolnshire",
+    "name": "Bolingbroke Castle",
+    "coords": {
+      "lat": 53.16414,
+      "lng": 0.01638
+    }
+  },
+  {
+    "id": "grimsthorpe-castle-lincolnshire",
+    "name": "Grimsthorpe Castle",
+    "coords": {
+      "lat": 52.7923,
+      "lng": -0.4523
+    }
+  },
+  {
+    "id": "hussey-tower-lincolnshire",
+    "name": "Hussey Tower",
+    "coords": {
+      "lat": 52.974,
+      "lng": -0.0214
+    }
+  },
+  {
+    "id": "kyme-tower-lincolnshire",
+    "name": "Kyme Tower",
+    "coords": {
+      "lat": 53.03212,
+      "lng": -0.2489
+    }
+  },
+  {
+    "id": "lincoln-castle-lincolnshire",
+    "name": "Lincoln Castle",
+    "coords": {
+      "lat": 53.23529,
+      "lng": -0.54095
+    }
+  },
+  {
+    "id": "rochford-tower-lincolnshire",
+    "name": "Rochford Tower",
+    "coords": {
+      "lat": 52.974,
+      "lng": -0.0214
+    }
+  },
+  {
+    "id": "somerton-castle-lincolnshire",
+    "name": "Somerton Castle",
+    "coords": {
+      "lat": 53.1177,
+      "lng": -0.576
+    }
+  },
+  {
+    "id": "tattershall-castle-lincolnshire",
+    "name": "Tattershall Castle",
+    "coords": {
+      "lat": 53.101333,
+      "lng": -0.192611
+    }
+  },
+  {
+    "id": "torksey-castle-lincolnshire",
+    "name": "Torksey Castle",
+    "coords": {
+      "lat": 53.3,
+      "lng": -0.745
+    }
+  },
+  {
+    "id": "brimstage-hall-merseyside",
+    "name": "Brimstage Hall",
+    "coords": {
+      "lat": 53.3316,
+      "lng": -3.0622
+    }
+  },
+  {
+    "id": "leasowe-castle-merseyside",
+    "name": "Leasowe Castle",
+    "coords": {
+      "lat": 53.414,
+      "lng": -3.098
+    }
+  },
+  {
+    "id": "baconsthorpe-castle-norfolk",
+    "name": "Baconsthorpe Castle",
+    "coords": {
+      "lat": 52.8985,
+      "lng": 1.152
+    }
+  },
+  {
+    "id": "burgh-castle-norfolk",
+    "name": "Burgh Castle",
+    "coords": {
+      "lat": 52.5826,
+      "lng": 1.6515
+    }
+  },
+  {
+    "id": "castle-acre-castle-norfolk",
+    "name": "Castle Acre Castle",
+    "coords": {
+      "lat": 52.703052,
+      "lng": 0.693285
+    }
+  },
+  {
+    "id": "castle-rising-castle-norfolk",
+    "name": "Castle Rising Castle",
+    "coords": {
+      "lat": 52.7928,
+      "lng": 0.4689
+    }
+  },
+  {
+    "id": "claxton-castle-norfolk",
+    "name": "Claxton Castle",
+    "coords": {
+      "lat": 52.5818,
+      "lng": 1.4451
+    }
+  },
+  {
+    "id": "norwich-castle-norfolk",
+    "name": "Norwich Castle",
+    "coords": {
+      "lat": 52.6286,
+      "lng": 1.2964
+    }
+  },
+  {
+    "id": "oxburgh-hall-norfolk",
+    "name": "Oxburgh Hall",
+    "coords": {
+      "lat": 52.58139,
+      "lng": 0.57083
+    }
+  },
+  {
+    "id": "weeting-castle-norfolk",
+    "name": "Weeting Castle",
+    "coords": {
+      "lat": 52.4711,
+      "lng": 0.6163
+    }
+  },
+  {
+    "id": "astwell-castle-northamptonshire",
+    "name": "Astwell Castle",
+    "coords": {
+      "lat": 52.09167,
+      "lng": -1.11417
+    }
+  },
+  {
+    "id": "barnwell-castle-northamptonshire",
+    "name": "Barnwell Castle",
+    "coords": {
+      "lat": 52.45563,
+      "lng": -0.46062
+    }
+  },
+  {
+    "id": "rockingham-castle-northamptonshire",
+    "name": "Rockingham Castle",
+    "coords": {
+      "lat": 52.5129,
+      "lng": -0.724
+    }
+  },
+  {
+    "id": "thorpe-waterville-castle-northamptonshire",
+    "name": "Thorpe Waterville Castle",
+    "coords": {
+      "lat": 52.4211,
+      "lng": -0.4986
+    }
+  },
+  {
+    "id": "alnham-vicars-pele-northumberland",
+    "name": "Alnham Vicars Pele",
+    "coords": {
+      "lat": 55.3915,
+      "lng": -2.0081
+    }
+  },
+  {
+    "id": "alnwick-castle-northumberland",
+    "name": "Alnwick Castle",
+    "coords": {
+      "lat": 55.41575,
+      "lng": -1.70607
+    }
+  },
+  {
+    "id": "aydon-castle-northumberland",
+    "name": "Aydon Castle",
+    "coords": {
+      "lat": 54.9904,
+      "lng": -2
+    }
+  },
+  {
+    "id": "bamburgh-castle-northumberland",
+    "name": "Bamburgh Castle",
+    "coords": {
+      "lat": 55.608,
+      "lng": -1.709
+    }
+  },
+  {
+    "id": "barmoor-castle-northumberland",
+    "name": "Barmoor Castle",
+    "coords": {
+      "lat": 55.65245,
+      "lng": -2.00601
+    }
+  },
+  {
+    "id": "beaufront-castle-northumberland",
+    "name": "Beaufront Castle",
+    "coords": {
+      "lat": 54.988,
+      "lng": -2.058
+    }
+  },
+  {
+    "id": "bellister-castle-northumberland",
+    "name": "Bellister Castle",
+    "coords": {
+      "lat": 54.961,
+      "lng": -2.468
+    }
+  },
+  {
+    "id": "belsay-castle-northumberland",
+    "name": "Belsay Castle",
+    "coords": {
+      "lat": 55.102,
+      "lng": -1.869
+    }
+  },
+  {
+    "id": "berwick-castle-northumberland",
+    "name": "Berwick Castle",
+    "coords": {
+      "lat": 55.7738,
+      "lng": -2.0116
+    }
+  },
+  {
+    "id": "bitchfield-castle-northumberland",
+    "name": "Bitchfield Castle",
+    "coords": {
+      "lat": 55.089,
+      "lng": -1.857
+    }
+  },
+  {
+    "id": "blenkinsop-castle-northumberland",
+    "name": "Blenkinsop Castle",
+    "coords": {
+      "lat": 54.974,
+      "lng": -2.525
+    }
+  },
+  {
+    "id": "bothal-castle-northumberland",
+    "name": "Bothal Castle",
+    "coords": {
+      "lat": 55.173,
+      "lng": -1.625
+    }
+  },
+  {
+    "id": "bywell-castle-northumberland",
+    "name": "Bywell Castle",
+    "coords": {
+      "lat": 54.951,
+      "lng": -1.925
+    }
+  },
+  {
+    "id": "callaly-castle-northumberland",
+    "name": "Callaly Castle",
+    "coords": {
+      "lat": 55.383,
+      "lng": -1.921
+    }
+  },
+  {
+    "id": "cartington-castle-northumberland",
+    "name": "Cartington Castle",
+    "coords": {
+      "lat": 55.335,
+      "lng": -1.94
+    }
+  },
+  {
+    "id": "chillingham-castle-northumberland",
+    "name": "Chillingham Castle",
+    "coords": {
+      "lat": 55.526,
+      "lng": -1.905
+    }
+  },
+  {
+    "id": "chipchase-castle-northumberland",
+    "name": "Chipchase Castle",
+    "coords": {
+      "lat": 55.0756,
+      "lng": -2.186
+    }
+  },
+  {
+    "id": "cocklaw-tower-northumberland",
+    "name": "Cocklaw Tower",
+    "coords": {
+      "lat": 55.046,
+      "lng": -2.103
+    }
+  },
+  {
+    "id": "cockle-park-tower-northumberland",
+    "name": "Cockle Park Tower",
+    "coords": {
+      "lat": 55.213,
+      "lng": -1.684
+    }
+  },
+  {
+    "id": "corbridge-vicars-pele-northumberland",
+    "name": "Corbridge Vicar's Pele",
+    "coords": {
+      "lat": 54.974,
+      "lng": -2.019
+    }
+  },
+  {
+    "id": "coupland-castle-northumberland",
+    "name": "Coupland Castle",
+    "coords": {
+      "lat": 55.574,
+      "lng": -2.103
+    }
+  },
+  {
+    "id": "craster-tower-northumberland",
+    "name": "Craster Tower",
+    "coords": {
+      "lat": 55.47,
+      "lng": -1.597
+    }
+  },
+  {
+    "id": "crawley-tower-northumberland",
+    "name": "Crawley Tower",
+    "coords": {
+      "lat": 55.443,
+      "lng": -1.896
+    }
+  },
+  {
+    "id": "cresswell-castle-northumberland",
+    "name": "Cresswell Castle",
+    "coords": {
+      "lat": 55.233,
+      "lng": -1.5408
+    }
+  },
+  {
+    "id": "dilston-castle-northumberland",
+    "name": "Dilston Castle",
+    "coords": {
+      "lat": 54.965,
+      "lng": -2.039
+    }
+  },
+  {
+    "id": "dunstanburgh-castle-northumberland",
+    "name": "Dunstanburgh Castle",
+    "coords": {
+      "lat": 55.4911,
+      "lng": -1.5932
+    }
+  },
+  {
+    "id": "edlingham-castle-northumberland",
+    "name": "Edlingham Castle",
+    "coords": {
+      "lat": 55.376755,
+      "lng": -1.81842
+    }
+  },
+  {
+    "id": "elsdon-tower-northumberland",
+    "name": "Elsdon Tower",
+    "coords": {
+      "lat": 55.2346,
+      "lng": -2.1021
+    }
+  },
+  {
+    "id": "embleton-tower-northumberland",
+    "name": "Embleton Tower",
+    "coords": {
+      "lat": 55.495,
+      "lng": -1.637
+    }
+  },
+  {
+    "id": "etal-castle-northumberland",
+    "name": "Etal Castle",
+    "coords": {
+      "lat": 55.648,
+      "lng": -2.121
+    }
+  },
+  {
+    "id": "featherstone-castle-northumberland",
+    "name": "Featherstone Castle",
+    "coords": {
+      "lat": 54.943,
+      "lng": -2.51
+    }
+  },
+  {
+    "id": "ford-castle-northumberland",
+    "name": "Ford Castle",
+    "coords": {
+      "lat": 55.631,
+      "lng": -2.091
+    }
+  },
+  {
+    "id": "halton-castle-northumberland",
+    "name": "Halton Castle",
+    "coords": {
+      "lat": 55.005,
+      "lng": -2.006
+    }
+  },
+  {
+    "id": "harbottle-castle-northumberland",
+    "name": "Harbottle Castle",
+    "coords": {
+      "lat": 55.337,
+      "lng": -2.109
+    }
+  },
+  {
+    "id": "haughton-castle-northumberland",
+    "name": "Haughton Castle",
+    "coords": {
+      "lat": 55.05053,
+      "lng": -2.12988
+    }
+  },
+  {
+    "id": "hexham-moot-hall-and-old-gaol-northumberland",
+    "name": "Hexham Moot Hall and Old Gaol",
+    "coords": {
+      "lat": 54.971,
+      "lng": -2.101
+    }
+  },
+  {
+    "id": "horsley-tower-longhorsley-northumberland",
+    "name": "Horsley Tower, Longhorsley",
+    "coords": {
+      "lat": 55.244,
+      "lng": -1.773
+    }
+  },
+  {
+    "id": "langley-castle-northumberland",
+    "name": "Langley Castle",
+    "coords": {
+      "lat": 54.956,
+      "lng": -2.259
+    }
+  },
+  {
+    "id": "lemmington-hall-northumberland",
+    "name": "Lemmington Hall",
+    "coords": {
+      "lat": 55.39546,
+      "lng": -1.810281
+    }
+  },
+  {
+    "id": "lindisfarne-castle-northumberland",
+    "name": "Lindisfarne Castle",
+    "coords": {
+      "lat": 55.669,
+      "lng": -1.785
+    }
+  },
+  {
+    "id": "mitford-castle-northumberland",
+    "name": "Mitford Castle",
+    "coords": {
+      "lat": 55.164,
+      "lng": -1.734
+    }
+  },
+  {
+    "id": "morpeth-castle-northumberland",
+    "name": "Morpeth Castle",
+    "coords": {
+      "lat": 55.164,
+      "lng": -1.686
+    }
+  },
+  {
+    "id": "norham-castle-northumberland",
+    "name": "Norham Castle",
+    "coords": {
+      "lat": 55.722,
+      "lng": -2.149
+    }
+  },
+  {
+    "id": "preston-tower-ellingham-northumberland",
+    "name": "Preston Tower, Ellingham",
+    "coords": {
+      "lat": 55.5222934,
+      "lng": -1.7105359
+    }
+  },
+  {
+    "id": "prior-castells-tower-northumberland",
+    "name": "Prior Castell's Tower",
+    "coords": {
+      "lat": 55.622,
+      "lng": -1.628
+    }
+  },
+  {
+    "id": "prudhoe-castle-northumberland",
+    "name": "Prudhoe Castle",
+    "coords": {
+      "lat": 54.964,
+      "lng": -1.854
+    }
+  },
+  {
+    "id": "shilbottle-tower-northumberland",
+    "name": "Shilbottle Tower",
+    "coords": {
+      "lat": 55.3721,
+      "lng": -1.6915
+    }
+  },
+  {
+    "id": "shortflatt-tower-northumberland",
+    "name": "Shortflatt Tower",
+    "coords": {
+      "lat": 55.136,
+      "lng": -1.852
+    }
+  },
+  {
+    "id": "thirlwall-castle-northumberland",
+    "name": "Thirlwall Castle",
+    "coords": {
+      "lat": 54.989,
+      "lng": -2.532
+    }
+  },
+  {
+    "id": "warkworth-castle-northumberland",
+    "name": "Warkworth Castle",
+    "coords": {
+      "lat": 55.3447,
+      "lng": -1.6105
+    }
+  },
+  {
+    "id": "whittingham-tower-northumberland",
+    "name": "Whittingham Tower",
+    "coords": {
+      "lat": 55.397,
+      "lng": -1.899
+    }
+  },
+  {
+    "id": "whitton-tower-northumberland",
+    "name": "Whitton Tower",
+    "coords": {
+      "lat": 55.3097,
+      "lng": -1.9109
+    }
+  },
+  {
+    "id": "willimoteswick-castle-northumberland",
+    "name": "Willimoteswick Castle",
+    "coords": {
+      "lat": 54.975,
+      "lng": -2.337
+    }
+  },
+  {
+    "id": "ayton-castle-north-yorkshire",
+    "name": "Ayton Castle",
+    "coords": {
+      "lat": 54.247,
+      "lng": -0.487
+    }
+  },
+  {
+    "id": "barden-tower-north-yorkshire",
+    "name": "Barden Tower",
+    "coords": {
+      "lat": 54.0107,
+      "lng": -1.9239
+    }
+  },
+  {
+    "id": "bolton-castle-north-yorkshire",
+    "name": "Bolton Castle",
+    "coords": {
+      "lat": 54.321932,
+      "lng": -1.948106
+    }
+  },
+  {
+    "id": "cawood-castle-north-yorkshire",
+    "name": "Cawood Castle",
+    "coords": {
+      "lat": 53.8315,
+      "lng": -1.1309
+    }
+  },
+  {
+    "id": "cliffords-tower-north-yorkshire",
+    "name": "Clifford's Tower",
+    "coords": {
+      "lat": 53.9558,
+      "lng": -1.08
+    }
+  },
+  {
+    "id": "crayke-castle-north-yorkshire",
+    "name": "Crayke Castle",
+    "coords": {
+      "lat": 54.1289,
+      "lng": -1.1459
+    }
+  },
+  {
+    "id": "danby-castle-north-yorkshire",
+    "name": "Danby Castle",
+    "coords": {
+      "lat": 54.4677,
+      "lng": -0.9097
+    }
+  },
+  {
+    "id": "gilling-castle-north-yorkshire",
+    "name": "Gilling Castle",
+    "coords": {
+      "lat": 54.18335,
+      "lng": -1.06527
+    }
+  },
+  {
+    "id": "hazlewood-castle-north-yorkshire",
+    "name": "Hazlewood Castle",
+    "coords": {
+      "lat": 53.8523,
+      "lng": -1.3192
+    }
+  },
+  {
+    "id": "hellifield-peel-north-yorkshire",
+    "name": "Hellifield Peel",
+    "coords": {
+      "lat": 54.0045,
+      "lng": -2.2215
+    }
+  },
+  {
+    "id": "helmsley-castle-north-yorkshire",
+    "name": "Helmsley Castle",
+    "coords": {
+      "lat": 54.2391,
+      "lng": -1.0655
+    }
+  },
+  {
+    "id": "hornby-castle-north-yorkshire",
+    "name": "Hornby Castle",
+    "coords": {
+      "lat": 54.339,
+      "lng": -1.653
+    }
+  },
+  {
+    "id": "knaresborough-castle-north-yorkshire",
+    "name": "Knaresborough Castle",
+    "coords": {
+      "lat": 54.00719,
+      "lng": -1.46932
+    }
+  },
+  {
+    "id": "marmion-tower-north-yorkshire",
+    "name": "Marmion Tower",
+    "coords": {
+      "lat": 54.2034,
+      "lng": -1.5937
+    }
+  },
+  {
+    "id": "middleham-castle-north-yorkshire",
+    "name": "Middleham Castle",
+    "coords": {
+      "lat": 54.284065,
+      "lng": -1.8069
+    }
+  },
+  {
+    "id": "old-mulgrave-castle-north-yorkshire",
+    "name": "(Old) Mulgrave Castle",
+    "coords": {
+      "lat": 54.4935,
+      "lng": -0.7055
+    }
+  },
+  {
+    "id": "nappa-hall-north-yorkshire",
+    "name": "Nappa Hall",
+    "coords": {
+      "lat": 54.313,
+      "lng": -2.055
+    }
+  },
+  {
+    "id": "pickering-castle-north-yorkshire",
+    "name": "Pickering Castle",
+    "coords": {
+      "lat": 54.25,
+      "lng": -0.77556
+    }
+  },
+  {
+    "id": "ravensworth-castle-north-yorkshire",
+    "name": "Ravensworth Castle",
+    "coords": {
+      "lat": 54.4598,
+      "lng": -1.7841
+    }
+  },
+  {
+    "id": "richmond-castle-north-yorkshire",
+    "name": "Richmond Castle",
+    "coords": {
+      "lat": 54.4017,
+      "lng": -1.7376
+    }
+  },
+  {
+    "id": "ripley-castle-north-yorkshire",
+    "name": "Ripley Castle",
+    "coords": {
+      "lat": 54.041,
+      "lng": -1.568
+    }
+  },
+  {
+    "id": "scarborough-castle-north-yorkshire",
+    "name": "Scarborough Castle",
+    "coords": {
+      "lat": 54.287,
+      "lng": -0.388
+    }
+  },
+  {
+    "id": "sheriff-hutton-castle-north-yorkshire",
+    "name": "Sheriff Hutton Castle",
+    "coords": {
+      "lat": 54.08778,
+      "lng": -1.00472
+    }
+  },
+  {
+    "id": "skelton-castle-north-yorkshire",
+    "name": "Skelton Castle",
+    "coords": {
+      "lat": 54.5619,
+      "lng": -0.9874
+    }
+  },
+  {
+    "id": "skipton-castle-north-yorkshire",
+    "name": "Skipton Castle",
+    "coords": {
+      "lat": 53.9637342,
+      "lng": -2.0143676
+    }
+  },
+  {
+    "id": "snape-castle-north-yorkshire",
+    "name": "Snape Castle",
+    "coords": {
+      "lat": 54.25366,
+      "lng": -1.58976
+    }
+  },
+  {
+    "id": "south-cowton-castle-north-yorkshire",
+    "name": "South Cowton Castle",
+    "coords": {
+      "lat": 54.415697,
+      "lng": -1.548293
+    }
+  },
+  {
+    "id": "spofforth-castle-north-yorkshire",
+    "name": "Spofforth Castle",
+    "coords": {
+      "lat": 53.9538,
+      "lng": -1.4468
+    }
+  },
+  {
+    "id": "whorlton-castle-north-yorkshire",
+    "name": "Whorlton Castle",
+    "coords": {
+      "lat": 54.41515,
+      "lng": -1.25517
+    }
+  },
+  {
+    "id": "wilton-castle-north-yorkshire",
+    "name": "Wilton Castle",
+    "coords": {
+      "lat": 54.56889,
+      "lng": -1.10139
+    }
+  },
+  {
+    "id": "halloughton-manor-house-nottinghamshire",
+    "name": "Halloughton Manor House",
+    "coords": {
+      "lat": 53.057,
+      "lng": -0.974
+    }
+  },
+  {
+    "id": "newark-castle-nottinghamshire",
+    "name": "Newark Castle",
+    "coords": {
+      "lat": 53.0775,
+      "lng": -0.812415
+    }
+  },
+  {
+    "id": "nottingham-castle-nottinghamshire",
+    "name": "Nottingham Castle",
+    "coords": {
+      "lat": 52.9493,
+      "lng": -1.1546
+    }
+  },
+  {
+    "id": "bampton-castle-oxfordshire",
+    "name": "Bampton Castle",
+    "coords": {
+      "lat": 51.7254,
+      "lng": -1.553
+    }
+  },
+  {
+    "id": "broughton-castle-oxfordshire",
+    "name": "Broughton Castle",
+    "coords": {
+      "lat": 52.04063,
+      "lng": -1.39199
+    }
+  },
+  {
+    "id": "hanwell-castle-oxfordshire",
+    "name": "Hanwell Castle",
+    "coords": {
+      "lat": 52.091,
+      "lng": -1.364
+    }
+  },
+  {
+    "id": "oxford-castle-oxfordshire",
+    "name": "Oxford Castle",
+    "coords": {
+      "lat": 51.7517,
+      "lng": -1.2632
+    }
+  },
+  {
+    "id": "rotherfield-greys-castle-oxfordshire",
+    "name": "Rotherfield Greys Castle",
+    "coords": {
+      "lat": 51.54485,
+      "lng": -0.95591
+    }
+  },
+  {
+    "id": "shirburn-castle-oxfordshire",
+    "name": "Shirburn Castle",
+    "coords": {
+      "lat": 51.65757,
+      "lng": -0.9938
+    }
+  },
+  {
+    "id": "wallingford-castle-oxfordshire",
+    "name": "Wallingford Castle",
+    "coords": {
+      "lat": 51.6029,
+      "lng": -1.1221
+    }
+  },
+  {
+    "id": "oakham-castle-rutland",
+    "name": "Oakham Castle",
+    "coords": {
+      "lat": 52.670957,
+      "lng": -0.727449
+    }
+  },
+  {
+    "id": "acton-burnell-castle-shropshire",
+    "name": "Acton Burnell Castle",
+    "coords": {
+      "lat": 52.61286,
+      "lng": -2.68966
+    }
+  },
+  {
+    "id": "alberbury-castle-shropshire",
+    "name": "Alberbury Castle",
+    "coords": {
+      "lat": 52.7234,
+      "lng": -2.952
+    }
+  },
+  {
+    "id": "bridgnorth-castle-shropshire",
+    "name": "Bridgnorth Castle",
+    "coords": {
+      "lat": 52.5314,
+      "lng": -2.4201
+    }
+  },
+  {
+    "id": "broncroft-castle-shropshire",
+    "name": "Broncroft Castle",
+    "coords": {
+      "lat": 52.462,
+      "lng": -2.67
+    }
+  },
+  {
+    "id": "cheney-longville-castle-shropshire",
+    "name": "Cheney Longville Castle",
+    "coords": {
+      "lat": 52.45712,
+      "lng": -2.85941
+    }
+  },
+  {
+    "id": "clun-castle-shropshire",
+    "name": "Clun Castle",
+    "coords": {
+      "lat": 52.4216,
+      "lng": -3.0337
+    }
+  },
+  {
+    "id": "hopton-castle-shropshire",
+    "name": "Hopton Castle",
+    "coords": {
+      "lat": 52.3958,
+      "lng": -2.9318
+    }
+  },
+  {
+    "id": "ludlow-castle-shropshire",
+    "name": "Ludlow Castle",
+    "coords": {
+      "lat": 52.3672,
+      "lng": -2.723
+    }
+  },
+  {
+    "id": "moreton-corbet-castle-shropshire",
+    "name": "Moreton Corbet Castle",
+    "coords": {
+      "lat": 52.8045,
+      "lng": -2.6541
+    }
+  },
+  {
+    "id": "quatford-castle-shropshire",
+    "name": "Quatford Castle",
+    "coords": {
+      "lat": 52.513,
+      "lng": -2.386
+    }
+  },
+  {
+    "id": "red-castle-shropshire",
+    "name": "Red Castle",
+    "coords": {
+      "lat": 52.85755,
+      "lng": -2.642975
+    }
+  },
+  {
+    "id": "rowton-castle-shropshire",
+    "name": "Rowton Castle",
+    "coords": {
+      "lat": 52.7087,
+      "lng": -2.9207
+    }
+  },
+  {
+    "id": "shrewsbury-castle-shropshire",
+    "name": "Shrewsbury Castle",
+    "coords": {
+      "lat": 52.7077,
+      "lng": -2.7541
+    }
+  },
+  {
+    "id": "stokesay-castle-shropshire",
+    "name": "Stokesay Castle",
+    "coords": {
+      "lat": 52.4303,
+      "lng": -2.8313
+    }
+  },
+  {
+    "id": "wattlesborough-castle-shropshire",
+    "name": "Wattlesborough Castle",
+    "coords": {
+      "lat": 52.7074,
+      "lng": -2.956
+    }
+  },
+  {
+    "id": "whittington-castle-shropshire",
+    "name": "Whittington Castle",
+    "coords": {
+      "lat": 52.8731,
+      "lng": -3.0043
+    }
+  },
+  {
+    "id": "banwell-castle-somerset",
+    "name": "Banwell Castle",
+    "coords": {
+      "lat": 51.32361,
+      "lng": -2.86
+    }
+  },
+  {
+    "id": "beckington-castle-somerset",
+    "name": "Beckington Castle",
+    "coords": {
+      "lat": 51.26222,
+      "lng": -2.28833
+    }
+  },
+  {
+    "id": "dunster-castle-somerset",
+    "name": "Dunster Castle",
+    "coords": {
+      "lat": 51.1809,
+      "lng": -3.4449
+    }
+  },
+  {
+    "id": "farleigh-hungerford-castle-somerset",
+    "name": "Farleigh Hungerford Castle",
+    "coords": {
+      "lat": 51.3167,
+      "lng": -2.287
+    }
+  },
+  {
+    "id": "newton-st-loe-castle-somerset",
+    "name": "Newton St Loe Castle",
+    "coords": {
+      "lat": 51.3733,
+      "lng": -2.441
+    }
+  },
+  {
+    "id": "nunney-castle-somerset",
+    "name": "Nunney Castle",
+    "coords": {
+      "lat": 51.2101754,
+      "lng": -2.3783328
+    }
+  },
+  {
+    "id": "stogursey-castle-somerset",
+    "name": "Stogursey Castle",
+    "coords": {
+      "lat": 51.1761,
+      "lng": -3.1429
+    }
+  },
+  {
+    "id": "sutton-court-somerset",
+    "name": "Sutton Court",
+    "coords": {
+      "lat": 51.34167,
+      "lng": -2.58028
+    }
+  },
+  {
+    "id": "taunton-castle-somerset",
+    "name": "Taunton Castle",
+    "coords": {
+      "lat": 51.0153,
+      "lng": -3.1138
+    }
+  },
+  {
+    "id": "walton-castle-somerset",
+    "name": "Walton Castle",
+    "coords": {
+      "lat": 51.451755,
+      "lng": -2.842477
+    }
+  },
+  {
+    "id": "wells-bishops-palace-somerset",
+    "name": "Wells Bishop's Palace",
+    "coords": {
+      "lat": 51.209293,
+      "lng": -2.64255
+    }
+  },
+  {
+    "id": "conisbrough-castle-south-yorkshire",
+    "name": "Conisbrough Castle",
+    "coords": {
+      "lat": 53.48417,
+      "lng": -1.22639
+    }
+  },
+  {
+    "id": "tickhill-castle-south-yorkshire",
+    "name": "Tickhill Castle",
+    "coords": {
+      "lat": 53.4291,
+      "lng": -1.1081
+    }
+  },
+  {
+    "id": "alton-castle-staffordshire",
+    "name": "Alton Castle",
+    "coords": {
+      "lat": 52.9798,
+      "lng": -1.8912
+    }
+  },
+  {
+    "id": "caverswall-castle-staffordshire",
+    "name": "Caverswall Castle",
+    "coords": {
+      "lat": 52.9825,
+      "lng": -2.0759
+    }
+  },
+  {
+    "id": "chartley-castle-staffordshire",
+    "name": "Chartley Castle",
+    "coords": {
+      "lat": 52.85399,
+      "lng": -1.98659
+    }
+  },
+  {
+    "id": "eccleshall-castle-staffordshire",
+    "name": "Eccleshall Castle",
+    "coords": {
+      "lat": 52.8627,
+      "lng": -2.25841
+    }
+  },
+  {
+    "id": "stafford-castle-staffordshire",
+    "name": "Stafford Castle",
+    "coords": {
+      "lat": 52.7973,
+      "lng": -2.1468
+    }
+  },
+  {
+    "id": "stourton-castle-staffordshire",
+    "name": "Stourton Castle",
+    "coords": {
+      "lat": 52.46727,
+      "lng": -2.20015
+    }
+  },
+  {
+    "id": "tamworth-castle-staffordshire",
+    "name": "Tamworth Castle",
+    "coords": {
+      "lat": 52.63278,
+      "lng": -1.69667
+    }
+  },
+  {
+    "id": "tutbury-castle-staffordshire",
+    "name": "Tutbury Castle",
+    "coords": {
+      "lat": 52.859479,
+      "lng": -1.690575
+    }
+  },
+  {
+    "id": "bungay-castle-suffolk",
+    "name": "Bungay Castle",
+    "coords": {
+      "lat": 52.4553,
+      "lng": 1.4367
+    }
+  },
+  {
+    "id": "clare-castle-suffolk",
+    "name": "Clare Castle",
+    "coords": {
+      "lat": 52.0768,
+      "lng": 0.5829
+    }
+  },
+  {
+    "id": "eye-castle-suffolk",
+    "name": "Eye Castle",
+    "coords": {
+      "lat": 52.3202,
+      "lng": 1.1503
+    }
+  },
+  {
+    "id": "framlingham-castle-suffolk",
+    "name": "Framlingham Castle",
+    "coords": {
+      "lat": 52.22405,
+      "lng": 1.34691
+    }
+  },
+  {
+    "id": "mettingham-castle-suffolk",
+    "name": "Mettingham Castle",
+    "coords": {
+      "lat": 52.4448,
+      "lng": 1.4714
+    }
+  },
+  {
+    "id": "orford-castle-suffolk",
+    "name": "Orford Castle",
+    "coords": {
+      "lat": 52.0936,
+      "lng": 1.53
+    }
+  },
+  {
+    "id": "farnham-castle-surrey",
+    "name": "Farnham Castle",
+    "coords": {
+      "lat": 51.21889,
+      "lng": -0.80278
+    }
+  },
+  {
+    "id": "guildford-castle-surrey",
+    "name": "Guildford Castle",
+    "coords": {
+      "lat": 51.2346,
+      "lng": -0.5741
+    }
+  },
+  {
+    "id": "hylton-castle-tyne-and-wear",
+    "name": "Hylton Castle",
+    "coords": {
+      "lat": 54.92253,
+      "lng": -1.44318
+    }
+  },
+  {
+    "id": "newcastle-castle-tyne-and-wear",
+    "name": "Newcastle Castle",
+    "coords": {
+      "lat": 54.9688,
+      "lng": -1.6105
+    }
+  },
+  {
+    "id": "old-hollinside-tyne-and-wear",
+    "name": "Old Hollinside",
+    "coords": {
+      "lat": 54.9456,
+      "lng": -1.6726
+    }
+  },
+  {
+    "id": "ravensworth-castle-tyne-and-wear",
+    "name": "Ravensworth Castle",
+    "coords": {
+      "lat": 54.9264,
+      "lng": -1.6387
+    }
+  },
+  {
+    "id": "tynemouth-castle-tyne-and-wear",
+    "name": "Tynemouth Castle",
+    "coords": {
+      "lat": 55.0175,
+      "lng": -1.4189
+    }
+  },
+  {
+    "id": "astley-castle-warwickshire",
+    "name": "Astley Castle",
+    "coords": {
+      "lat": 52.5024,
+      "lng": -1.5424
+    }
+  },
+  {
+    "id": "kenilworth-castle-warwickshire",
+    "name": "Kenilworth Castle",
+    "coords": {
+      "lat": 52.3479693,
+      "lng": -1.5923611
+    }
+  },
+  {
+    "id": "maxstoke-castle-warwickshire",
+    "name": "Maxstoke Castle",
+    "coords": {
+      "lat": 52.4994,
+      "lng": -1.6729
+    }
+  },
+  {
+    "id": "warwick-castle-warwickshire",
+    "name": "Warwick Castle",
+    "coords": {
+      "lat": 52.27944,
+      "lng": -1.58472
+    }
+  },
+  {
+    "id": "dudley-castle-west-midlands",
+    "name": "Dudley Castle",
+    "coords": {
+      "lat": 52.5142,
+      "lng": -2.08
+    }
+  },
+  {
+    "id": "amberley-castle-west-sussex",
+    "name": "Amberley Castle",
+    "coords": {
+      "lat": 50.90914,
+      "lng": -0.54064
+    }
+  },
+  {
+    "id": "arundel-castle-west-sussex",
+    "name": "Arundel Castle",
+    "coords": {
+      "lat": 50.85611,
+      "lng": -0.55361
+    }
+  },
+  {
+    "id": "bramber-castle-west-sussex",
+    "name": "Bramber Castle",
+    "coords": {
+      "lat": 50.884087,
+      "lng": -0.316088
+    }
+  },
+  {
+    "id": "halnaker-house-west-sussex",
+    "name": "Halnaker House",
+    "coords": {
+      "lat": 50.86508,
+      "lng": -0.71193
+    }
+  },
+  {
+    "id": "old-knepp-castle-west-sussex",
+    "name": "(Old) Knepp Castle",
+    "coords": {
+      "lat": 50.97578,
+      "lng": -0.34482
+    }
+  },
+  {
+    "id": "dobroyd-castle-west-yorkshire",
+    "name": "Dobroyd Castle",
+    "coords": {
+      "lat": 53.71028,
+      "lng": -2.10806
+    }
+  },
+  {
+    "id": "harewood-castle-west-yorkshire",
+    "name": "Harewood Castle",
+    "coords": {
+      "lat": 53.9059,
+      "lng": -1.5117
+    }
+  },
+  {
+    "id": "pontefract-castle-west-yorkshire",
+    "name": "Pontefract Castle",
+    "coords": {
+      "lat": 53.69556,
+      "lng": -1.30389
+    }
+  },
+  {
+    "id": "sandal-castle-west-yorkshire",
+    "name": "Sandal Castle",
+    "coords": {
+      "lat": 53.658889,
+      "lng": -1.491111
+    }
+  },
+  {
+    "id": "devizes-castle-wiltshire",
+    "name": "Devizes Castle",
+    "coords": {
+      "lat": 51.3508,
+      "lng": -1.9985
+    }
+  },
+  {
+    "id": "longford-castle-wiltshire",
+    "name": "Longford Castle",
+    "coords": {
+      "lat": 51.039167,
+      "lng": -1.756925
+    }
+  },
+  {
+    "id": "ludgershall-castle-wiltshire",
+    "name": "Ludgershall Castle",
+    "coords": {
+      "lat": 51.2596,
+      "lng": -1.6233
+    }
+  },
+  {
+    "id": "old-sarum-castle-wiltshire",
+    "name": "Old Sarum Castle",
+    "coords": {
+      "lat": 51.09255,
+      "lng": -1.8075
+    }
+  },
+  {
+    "id": "old-wardour-castle-wiltshire",
+    "name": "Old Wardour Castle",
+    "coords": {
+      "lat": 51.0365,
+      "lng": -2.0888
+    }
+  },
+  {
+    "id": "caldwall-castle-worcestershire",
+    "name": "Caldwall Castle",
+    "coords": {
+      "lat": 52.3885,
+      "lng": -2.249
+    }
+  },
+  {
+    "id": "hartlebury-castle-worcestershire",
+    "name": "Hartlebury Castle",
+    "coords": {
+      "lat": 52.3386,
+      "lng": -2.2421
+    }
+  },
+  {
+    "id": "holt-castle-worcestershire",
+    "name": "Holt Castle",
+    "coords": {
+      "lat": 52.26937,
+      "lng": -2.2608
+    }
+  },
+  {
+    "id": "worcester-castle-worcestershire",
+    "name": "Worcester Castle",
+    "coords": {
+      "lat": 52.1867,
+      "lng": -2.2223
+    }
+  }
+]

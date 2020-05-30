@@ -15,7 +15,7 @@
 
       footer
         .layout
-          p Castle information gathered from #[a(href="https://en.wikipedia.org/wiki/List_of_castles_in_England") Wikipedia]
+          p Castles from #[a(href="https://en.wikipedia.org/wiki/List_of_castles_in_England") Wikipedia]
           p Built with #[a(href="https://vuejs.org/") Vue]
           p Powered by #[a(href="https://www.netlify.com/") Netlify]
           p.vcard.h-card Made by #[a.p-name.u-url.fn.url(href="https://jasonhibbs.co.uk") Jason Hibbs]

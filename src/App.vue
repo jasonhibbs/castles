@@ -44,7 +44,7 @@ export default class App extends Vue {
   castles: any[] = []
 
   async fetchCastles() {
-    return fetch('/castles.json')
+    return fetch('/castles-index.json')
       .then(response => response.json())
       .then(data => {
         this.castles = data
