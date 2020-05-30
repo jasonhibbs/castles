@@ -17,13 +17,15 @@ export default class Logo extends Vue {}
 
 <style lang="scss">
 .logo {
-  path#crest,
-  path#cornea {
-    fill: var(--color-text);
+  #lid {
+    transition: 160ms;
   }
 
-  path#eye {
-    fill: var(--color-root);
+  &:hover #lid {
+    transition: 80ms;
+    d: path(
+      'M312.5,1766.67l-45.833,0l0,-750l2133.33,0l0,750l-45.833,0c-232.882,371.792 -603.613,612.5 -1020.83,612.5c-417.22,0 -787.951,-240.708 -1020.83,-612.5Z'
+    );
   }
 }
 </style>
