@@ -1,6 +1,7 @@
 <template lang="pug">
 
   #app
+    logo
 
     castle-map(
       @mapclick="onMapclick"
@@ -27,6 +28,7 @@ import CastleMap from '@/components/CastleMap.vue'
 import CastleMarkers from '@/components/CastleMarkers.vue'
 import ContextMarker from '@/components/ContextMarker.vue'
 import ButtonLocation from '@/components/ButtonLocation.vue'
+import Logo from '@/components/Logo.vue'
 
 @Component({
   components: {
@@ -35,6 +37,7 @@ import ButtonLocation from '@/components/ButtonLocation.vue'
     CastleMarkers,
     ContextMarker,
     ButtonLocation,
+    Logo,
   },
 })
 export default class App extends Vue {

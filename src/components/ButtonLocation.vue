@@ -6,7 +6,7 @@
     @click="getCurrentLocation"
   )
     template(v-if="!isFinding")
-      inline-svg(:src="`/location-arrow.svg`")
+      inline-svg.inline-svg(:src="`/location-arrow.svg`")
     template(v-else)
       loader
 
@@ -76,13 +76,5 @@ export default class ButtonLocation extends Vue {
 
   width: 2.25rem;
   height: 2.25rem;
-
-  svg {
-    display: block;
-    height: 1em;
-    width: auto;
-    margin: auto;
-    fill: currentColor;
-  }
 }
 </style>

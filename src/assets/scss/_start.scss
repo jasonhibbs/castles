@@ -1,5 +1,23 @@
 // Start ———————————————————————————————————————————————————————————————
 
+.inline-svg {
+  display: block;
+  height: 1em;
+  width: auto;
+  margin: auto;
+  fill: currentColor;
+}
+
+#app > .logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin: rem(20);
+  margin-left: max(rem(20), env(safe-area-inset-left));
+  font-size: rem(48);
+}
+
 .button-location {
   position: fixed;
   top: 0;
