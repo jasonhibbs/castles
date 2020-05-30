@@ -22,8 +22,7 @@ const mapStart = {
 export default new Vuex.Store({
   state: {
     mapConfig: {
-      accessToken:
-        'pk.eyJ1IjoiamFzb25oaWJicyIsImEiOiJja2FzaG96dmswaGZ0MnNxZGw5dGQ4cHluIn0.iLXHxLjTPV2zlL9diVkfUg',
+      accessToken: process.env.VUE_APP_MAPBOX_ACCESS_TOKEN,
       center: [mapStart.center.lng, mapStart.center.lat],
       style: mapStart.style,
       zoom: mapStart.zoom,
