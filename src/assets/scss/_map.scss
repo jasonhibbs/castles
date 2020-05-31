@@ -52,7 +52,10 @@
   font-family: var(--font-body);
   padding: rem(8);
 
-  &:hover,
+  &:hover {
+    z-index: 2;
+  }
+
   &[aria-selected='true'] {
     z-index: 1;
   }
@@ -66,7 +69,8 @@
   border-radius: 2em;
   transition: box-shadow 0.1s ease-out;
 
-  .marker:hover & {
+  .marker:hover &,
+  .marker[aria-selected='true'] & {
     box-shadow: 0 0 0 var(--pin-halo-width) var(--pin-halo-color),
       0 0 0 calc(var(--pin-halo-width) + 2px) var(--pin-background-color);
   }
@@ -107,5 +111,6 @@
   --pin-background-color: var(--color-key);
   --pin-halo-width: 2px;
   // --label-color: var(--color-text);
+  cursor: default;
   z-index: 1;
 }

@@ -33,7 +33,11 @@ export default class CastleMarkers extends Vue {
   }
 
   onClickMarker(id: string) {
-    // this.$router.push({ name: 'Castle', params: { id } })
+    if (this.selected === id) {
+      this.$router.push('/')
+    } else {
+      this.$router.push({ name: 'Castle', params: { id } })
+    }
   }
 }
 </script>

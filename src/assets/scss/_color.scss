@@ -161,9 +161,9 @@ $grey-lightest: mix($color-white, $color-black, 94);
   --grey-lightest: #{$grey-lightest};
 
   --color-text: var(--color-contrast);
-  --color-text-light: var(--contrast-darker);
-  --color-text-lighter: var(--contrast-light);
-  --color-text-lightest: var(--contrast-mid);
+  --text-light: var(--contrast-darker);
+  --text-lighter: var(--contrast-mid);
+  --text-lightest: var(--contrast-light);
   --color-focus: var(--color-key-40);
 
   --color-map-base: #f2eee8;

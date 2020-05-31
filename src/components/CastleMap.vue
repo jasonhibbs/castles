@@ -50,11 +50,11 @@ export default class CastleMap extends Vue {
 
   onMapLoaded(e: any) {
     this.$store.state.map = e.map
+    this.$root.$on('locationchange', this.mapEaseTo)
+    this.$root.$on('colorschemechange', this.onSchemeChange)
     this.mapView.center = this.map.getCenter()
     this.mapView.zoom = this.map.getZoom()
     this.updateBounds()
-    this.$root.$on('locationchange', this.mapEaseTo)
-    this.$root.$on('colorschemechange', this.onSchemeChange)
   }
 
   get mapStyle() {
