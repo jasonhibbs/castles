@@ -267,7 +267,10 @@ $sheet-max-viewport: 412;
   width: 100%;
   height: calc(100% - var(--sheet-offset-bottom));
   background: none;
-  transition: height 0.2s ease-out;
+
+  ._bottom & {
+    transition: height 0.4s ease-out;
+  }
 }
 
 .sheet-stop {
@@ -284,7 +287,8 @@ $sheet-max-viewport: 412;
   }
 
   &._mid {
-    top: calc(50% - var(--sheet-offset-bottom));
+    $mid: (66.666% / (144 / 89));
+    top: calc(#{$mid} - var(--sheet-offset-bottom));
     scroll-snap-align: start;
     scroll-snap-stop: always;
   }

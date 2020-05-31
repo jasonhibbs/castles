@@ -10,6 +10,7 @@
         slot="marker"
         :castle="castle"
         :aria-selected="castle.id === selected"
+        @click.native="onClickMarker(castle.id)"
       )
 
 </template>
@@ -29,6 +30,10 @@ export default class CastleMarkers extends Vue {
 
   get selected() {
     return this.$route.name === 'Castle' ? this.$route.params?.id : ''
+  }
+
+  onClickMarker(id: string) {
+    // this.$router.push({ name: 'Castle', params: { id } })
   }
 }
 </script>

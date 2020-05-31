@@ -75,7 +75,7 @@ export default class Caslte extends Vue {
 
   a {
     $size: 28;
-    $margin: 16;
+    $margin: 18;
     display: flex;
     align-items: center;
     flex: none;
