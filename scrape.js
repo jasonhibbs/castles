@@ -5,8 +5,11 @@ const scrapeCastles = async () => {
   const browser = await puppeteer.launch()
   const page = await browser.newPage()
 
-  // page.on('console', consoleObj => console.log(consoleObj.text()))
-
+  // page.on('console', consoleMessageObject => {
+  //   if (consoleMessageObject._type !== 'warning') {
+  //     console.debug(consoleMessageObject._text)
+  //   }
+  // })
   await page.exposeFunction('formatId', async string =>
     string
       .trim()
@@ -15,12 +18,10 @@ const scrapeCastles = async () => {
       .replace(/[\s]/gi, '-')
   )
 
-  await page.exposeFunction('formatSentence', async string =>
-    string
-      .substr(0, string.indexOf('.') + 1)
-      .replace(/\s\([^()]*\)/g, '')
-      .replace(/\[[^\[\]]*\]/g, '')
-  )
+  await page.exposeFunction('formatSentence', async string => {
+    string = string.replace(/\s\([^()]*\)/g, '').replace(/\[[^\[\]]*\]/g, '')
+    return string.substr(0, string.search(/\.(\s|$)/) + 1)
+  })
 
   await page.goto('https://en.wikipedia.org/wiki/List_of_castles_in_England', {
     waitUntil: 'networkidle0',
@@ -173,10 +174,9 @@ const scrapeCastles = async () => {
 }
 
 scrapeCastles().then(castles => {
-
   // write data file
   fs.writeFile(
-    `./public/castles-data-${+new Date()}.json`
+    `./public/castles-data-${+new Date()}.json`,
     JSON.stringify(castles, null, 2),
     err => {
       if (err) {
