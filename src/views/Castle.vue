@@ -53,6 +53,12 @@ import IconClose from '@/components/IconClose.vue'
 @Component({
   components: { Card, Loader, IconClose },
   computed: mapState(['mapView']),
+  beforeRouteLeave(to, from, next) {
+    if (to.name === 'Home') {
+      Vue.nextTick(() => this.$root.$emit('lowersheet'))
+    }
+    next()
+  },
 })
 export default class Caslte extends Vue {
   mapView!: any
@@ -85,6 +91,7 @@ export default class Caslte extends Vue {
       return
     }
     const { lng, lat } = this.coords
+    this.$root.$emit('raisesheet')
     this.$root.$emit('locationchange', {
       center: [lng, lat],
     })

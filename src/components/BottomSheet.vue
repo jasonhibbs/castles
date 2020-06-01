@@ -84,8 +84,8 @@ export default class BottomSheet extends Vue {
   mounted() {
     this.onClient = true
     this.scroll()
-    this.$on('raise', this.toMid)
-    this.$on('lower', this.toBottom)
+    this.$root.$on('raisesheet', this.toMid)
+    this.$root.$on('lowersheet', this.toBottom)
     this.$root.$on('clickcardheader', this.toggle)
   }
 
