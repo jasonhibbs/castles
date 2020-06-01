@@ -1,6 +1,7 @@
 // Card ————————————————————————————————————————————————————————————————
 
 .card {
+  position: relative;
   background-color: var(--color-root);
   min-height: 100vh;
   box-shadow: 0 0 12px var(--shade-light), 0 0 0 1px var(--shade-light);
@@ -19,7 +20,7 @@
   padding: rem(16) 0 rem(20);
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 9;
   background: inherit;
   border-radius: inherit;
   box-shadow: 0 1px var(--shade-lightest);
@@ -93,4 +94,79 @@
 .card .loader {
   justify-content: center;
   padding: var(--space-rem-big) 0;
+}
+
+// Transitions
+
+.slide-up-enter-active {
+  transition: transform 0.5s cubic-bezier((1/4), (10/12), (1/10), 1);
+}
+
+.slide-down-leave-active {
+  transition: transform 0.5s ease-in;
+}
+.slide-up-leave-active,
+.slide-down-enter-active {
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: var(--contrast-light);
+    border-radius: inherit;
+  }
+}
+
+.slide-up-leave-active,
+.slide-down-leave-active {
+  position: absolute;
+  top: 0;
+}
+
+.slide-up-leave-active {
+  transition: opacity 0.2s ease-in 0.4s;
+  z-index: -1;
+
+  &:after {
+    opacity: 0;
+    transition: opacity 0.4s ease-in 0.1s;
+  }
+}
+
+.slide-up-enter,
+.slide-down-leave-to {
+  transform: translateY(100%);
+}
+
+.slide-up-leave-to {
+  opacity: 0;
+
+  &:after {
+    opacity: 1;
+  }
+}
+
+.slide-down-leave-active {
+  z-index: 10;
+  box-shadow: none;
+}
+
+.slide-down-enter-active {
+  transition: visibility 0.5s;
+
+  &:after {
+    opacity: 1;
+    transition: opacity 0.2s ease-in;
+    z-index: 9;
+  }
+}
+
+.slide-down-enter-to {
+  &:after {
+    opacity: 0;
+  }
 }

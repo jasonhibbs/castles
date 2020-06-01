@@ -15,14 +15,15 @@
     button-location
 
     bottom-sheet
-      router-view(:key="$route.fullPath")
+      transition(:name="transitionName")
+        router-view(:key="$route.fullPath")
 
 </template>
 
 <style lang="scss" src="@/assets/scss/style.scss"></style>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import { Component, Vue, Watch } from 'vue-property-decorator'
 import BottomSheet from '@/components/BottomSheet.vue'
 import CastleMap from '@/components/CastleMap.vue'
 import CastleMarkers from '@/components/CastleMarkers.vue'
@@ -64,6 +65,19 @@ export default class App extends Vue {
     this.queryDarkMode.addListener((dark: MediaQueryListEvent) => {
       this.$root.$emit('colorschemechange', dark.matches ? 'dark' : 'light')
     })
+  }
+
+  // Route
+
+  transitionName: string = 'none'
+
+  @Watch('$route') onRouteChange(to: any, from: any) {
+    if (to.name === 'Castle') {
+      this.transitionName = 'slide-up'
+    }
+    if (to.name === 'Home') {
+      this.transitionName = 'slide-down'
+    }
   }
 
   // Events

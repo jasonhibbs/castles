@@ -38,7 +38,7 @@
               a(
                 target="_blank"
                 :href="castle.href"
-              ) More on Wikipedia.
+              ) More on Wikipedia
 
 
 </template>
@@ -53,12 +53,6 @@ import IconClose from '@/components/IconClose.vue'
 @Component({
   components: { Card, Loader, IconClose },
   computed: mapState(['mapView']),
-  beforeRouteLeave(to, from, next) {
-    if (to.name === 'Home') {
-      Vue.nextTick(() => this.$root.$emit('lowersheet'))
-    }
-    next()
-  },
 })
 export default class Caslte extends Vue {
   mapView!: any
