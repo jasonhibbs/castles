@@ -21,7 +21,6 @@
 import { Component, Vue } from 'vue-property-decorator'
 import { mapState } from 'vuex'
 import Mapbox, { MapMouseEvent } from 'mapbox-gl'
-import * as polyline from '@mapbox/polyline'
 import { MglMap, MglMarker, MglGeojsonLayer } from 'vue-mapbox'
 import debounce from 'lodash.debounce'
 import throttle from 'lodash.throttle'

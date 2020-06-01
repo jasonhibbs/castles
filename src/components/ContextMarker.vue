@@ -99,13 +99,14 @@ export default class ContextMarker extends Vue {
     if (!points) points = 48
 
     const km = radius
-
     const ret = []
     const distanceX = km / (111.32 * Math.cos((lat * Math.PI) / 180))
     const distanceY = km / 110.574
+    let theta
+    let x
+    let y
 
-    let theta, x, y
-    for (var i = 0; i < points; i++) {
+    for (let i = 0; i < points; i++) {
       theta = (i / points) * (2 * Math.PI)
       x = distanceX * Math.cos(theta)
       y = distanceY * Math.sin(theta)
