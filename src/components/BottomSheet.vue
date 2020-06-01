@@ -280,7 +280,7 @@ $sheet-max-viewport: 412;
   z-index: 2;
   width: 100%;
   height: 1px;
-  background-color: #f0f;
+  // background-color: #f0f;
 
   &._top {
     top: calc(100% - var(--sheet-offset-bottom));
