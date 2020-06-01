@@ -84,14 +84,9 @@ export default class BottomSheet extends Vue {
   mounted() {
     this.onClient = true
     this.scroll()
-    this.$root.$on('raisesheet', () => {
-      if (this.atBottom) {
-        this.toMid()
-      }
-      this.scroll()
-    })
-    this.$root.$on('lowersheet', this.toBottom)
-    this.$root.$on('clickcardheader', this.toggle)
+    this.$root.$on('raisesheet', () => this.atBottom && this.toMid())
+    this.$root.$on('lowersheet', () => !this.atBottom && this.toBottom())
+    this.$root.$on('togglesheet', this.toggle)
   }
 
   enter() {
@@ -285,7 +280,7 @@ $sheet-max-viewport: 412;
   z-index: 2;
   width: 100%;
   height: 1px;
-  // background-color: #f0f;
+  background-color: #f0f;
 
   &._top {
     top: calc(100% - var(--sheet-offset-bottom));

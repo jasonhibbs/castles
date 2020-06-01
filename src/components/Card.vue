@@ -3,7 +3,7 @@
   .card
     header.card-header(
       ref="cardHeader"
-      @click="$root.$emit('clickcardheader')"
+      @click="$root.$emit('togglesheet')"
     )
       slot(name="header")
 
@@ -31,6 +31,12 @@ export default class Card extends Vue {
     })
   }
 
+  updated() {}
+
+  beforeDestroy() {
+    window.removeEventListener('resize', this.onResize)
+  }
+
   onResize = debounce(() => {
     this.updateMapPadding()
     this.updateSheetProperty()
@@ -55,6 +61,10 @@ export default class Card extends Vue {
         '--sheet-bottom',
         `${this.cardHeaderEl.clientHeight}px`
       )
+      window.dispatchEvent(new Event('scroll'))
+      if (this.mapView.sheet.stop === 'between') {
+        this.$root.$emit('togglesheet')
+      }
     }
   }
 }
