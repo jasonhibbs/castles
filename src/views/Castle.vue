@@ -5,8 +5,13 @@
     template(#header)
       .layout
 
-        h1(v-if="!castle")
-        h1(v-else) {{ title }}
+        template(v-if="castle")
+          .heading
+            h1 {{ title }}
+            span(
+              v-if="distance"
+              :class="{ _good: inRange }"
+            ) {{ distance }}
 
         router-link(
           title="Dismiss castle"
@@ -28,7 +33,7 @@
             ul.meta(v-if="meta")
               li(v-for="m in meta") {{ m }}
             p(v-if="castle.ownership") {{ castle.ownership }}
-            p(v-if="castle.ownership") {{ description }}
+            p(v-if="description") {{ description }}
             p
               a(
                 target="_blank"
@@ -39,14 +44,18 @@
 </template>
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
+import { mapState } from 'vuex'
+import distance from '@turf/distance'
 import Card from '@/components/Card.vue'
 import Loader from '@/components/Loader.vue'
 import IconClose from '@/components/IconClose.vue'
 
 @Component({
   components: { Card, Loader, IconClose },
+  computed: mapState(['mapView']),
 })
 export default class Caslte extends Vue {
+  mapView!: any
   castle: any = {}
   fetching: boolean = true
 
@@ -59,13 +68,46 @@ export default class Caslte extends Vue {
   }
 
   get meta() {
-    let { type, date, location } = this.castle
+    const { type, date, location } = this.castle
     const meta = [date, type, location].filter(x => !!x)
     return meta
   }
 
+  get coords() {
+    return this.castle.coords
+  }
+
+  get km() {
+    if (!this.coords || !this.mapView.context) {
+      return ''
+    }
+    const from = [this.mapView.context.lng, this.mapView.context.lat]
+    const to = [this.coords.lng, this.coords.lat]
+    return distance(from, to)
+  }
+
+  get distance() {
+    const { km } = this
+    if (km) {
+      switch (true) {
+        case km < 1:
+          return `${km.toFixed(2) * 1000} m`
+        case km > 100:
+          return `${km.toFixed(0)} km`
+        default:
+          return `${km.toFixed(1)} km`
+      }
+    }
+  }
+
+  get inRange() {
+    const magic = 31.37206463500155
+    const range = 2
+    return this.km > magic - range === this.km < magic + range
+  }
+
   get description() {
-    return this.castle?.description
+    return this.castle?.description.replace(/\s(\w+)\W*$/, ` $1`)
   }
 
   async fetchCastle(id: string) {
@@ -82,7 +124,7 @@ export default class Caslte extends Vue {
       setTimeout(() => this.easeToCastle(), 100)
       return
     }
-    const { lng, lat } = this.castle.coords
+    const { lng, lat } = this.coords
     this.$root.$emit('locationchange', {
       center: [lng, lat],
     })
@@ -108,10 +150,19 @@ export default class Caslte extends Vue {
     min-height: rem(64);
   }
 
-  h1 {
+  .heading {
     flex: auto;
-    margin: rem(16) 0 rem(16);
+    margin: rem(16) 0;
     margin-left: rem(var(--screen-padding-x));
+
+    span {
+      display: inline-block;
+      margin-top: rem(8);
+
+      &._good:after {
+        content: ' ✅';
+      }
+    }
   }
 
   a {
