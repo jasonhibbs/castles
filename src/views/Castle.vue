@@ -43,7 +43,7 @@
 
 </template>
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import { Component, Vue, Watch } from 'vue-property-decorator'
 import { mapState } from 'vuex'
 import distance from '@turf/distance'
 import Card from '@/components/Card.vue'
@@ -58,6 +58,39 @@ export default class Caslte extends Vue {
   mapView!: any
   castle: any = {}
   fetching: boolean = true
+
+  // Lifecycle
+
+  async mounted() {
+    this.castle = await this.fetchCastle(this.id)
+    if (this.castle?.coords) {
+      this.easeToCastle()
+    }
+  }
+
+  // Setup
+
+  async fetchCastle(id: string) {
+    return fetch('/castles-data.json')
+      .then(response => response.json())
+      .then(data => {
+        this.fetching = false
+        return data.find((c: any) => this.id === c.id)
+      })
+  }
+
+  async easeToCastle() {
+    if (!this.$store.state.map) {
+      setTimeout(() => this.easeToCastle(), 100)
+      return
+    }
+    const { lng, lat } = this.coords
+    this.$root.$emit('locationchange', {
+      center: [lng, lat],
+    })
+  }
+
+  // Detail
 
   get id() {
     return this.$route.params.id
@@ -107,34 +140,7 @@ export default class Caslte extends Vue {
   }
 
   get description() {
-    return this.castle?.description.replace(/\s(\w+)\W*$/, ` $1`)
-  }
-
-  async fetchCastle(id: string) {
-    return fetch('/castles-data.json')
-      .then(response => response.json())
-      .then(data => {
-        this.fetching = false
-        return data.find((c: any) => this.id === c.id)
-      })
-  }
-
-  async easeToCastle() {
-    if (!this.$store.state.map) {
-      setTimeout(() => this.easeToCastle(), 100)
-      return
-    }
-    const { lng, lat } = this.coords
-    this.$root.$emit('locationchange', {
-      center: [lng, lat],
-    })
-  }
-
-  async mounted() {
-    this.castle = await this.fetchCastle(this.id)
-    if (this.castle?.coords) {
-      this.easeToCastle()
-    }
+    return this.castle?.description?.replace(/\s(\w+)\W*$/, ` $1`)
   }
 }
 </script>
