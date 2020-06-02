@@ -128,12 +128,13 @@
 }
 
 .slide-up-leave-active {
-  transition: opacity 0.2s ease-in 0.4s;
+  transition: visibility 0.5s, box-shadow 0.5s;
   z-index: -1;
+  box-shadow: none;
 
   &:after {
     opacity: 0;
-    transition: opacity 0.4s ease-in 0.1s;
+    transition: opacity 0.3s ease-in 0.2s;
   }
 }
 
@@ -143,8 +144,6 @@
 }
 
 .slide-up-leave-to {
-  opacity: 0;
-
   &:after {
     opacity: 1;
   }
@@ -160,7 +159,7 @@
 
   &:after {
     opacity: 1;
-    transition: opacity 0.2s ease-in;
+    transition: opacity 0.3s ease-in;
     z-index: 9;
   }
 }
