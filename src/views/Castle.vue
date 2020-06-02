@@ -10,8 +10,7 @@
             h1 {{ title }}
             span(
               v-if="distance"
-              :class="{ _good: inRange }"
-            ) {{ distance }}
+            ) {{ distanceRangeLabel }}
 
         router-link(
           title="Dismiss castle"
@@ -103,7 +102,7 @@ export default class Caslte extends Vue {
 
   get meta() {
     const { type, date, location } = this.castle
-    const meta = [date, type, location].filter(x => !!x)
+    const meta = [type, date, location].filter(x => !!x)
     return meta
   }
 
@@ -120,6 +119,19 @@ export default class Caslte extends Vue {
     return distance(from, to)
   }
 
+  get range() {
+    const magic = 31.37206463500155
+    const range = 2
+    switch (true) {
+      case this.km > magic + range:
+        return 1
+      case this.km < magic - range:
+        return -1
+      default:
+        return 0
+    }
+  }
+
   get distance() {
     const { km } = this
     if (km) {
@@ -132,12 +144,18 @@ export default class Caslte extends Vue {
           return `${km.toFixed(1)} km`
       }
     }
+    return ''
   }
 
-  get inRange() {
-    const magic = 31.37206463500155
-    const range = 2
-    return this.km > magic - range === this.km < magic + range
+  get distanceRangeLabel() {
+    switch (true) {
+      case this.range > 0:
+        return `${this.distance} – too far`
+      case this.range < 0:
+        return `${this.distance} – too near`
+      default:
+        return `${this.distance} — just right`
+    }
   }
 
   get description() {
@@ -165,10 +183,6 @@ export default class Caslte extends Vue {
     span {
       display: inline-block;
       margin-top: rem(8);
-
-      &._good:after {
-        content: ' ✅';
-      }
     }
   }
 
