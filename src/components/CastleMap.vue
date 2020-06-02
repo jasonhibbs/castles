@@ -6,13 +6,19 @@
     :center="mapConfig.center"
     :zoom="mapConfig.zoom"
     :hash="true"
-    :style="{ '--map-zoom': mapView.zoom, '--map-zoom-floor': Math.floor(mapView.zoom), '--map-bearing': `${mapView.bearing}deg` }"
+    :style="styles"
     @load="onMapLoaded"
     @click="onMapClick"
     @move="onMapMove"
     @rotate="onMapRotate"
     @zoom="onMapZoom"
     @styledata="onStyleLoaded"
+    @mousedown="onMapMousedown"
+    @mousemove="onMapMousemove"
+    @mouseup="onMapMouseup"
+    @touchstart="onMapTouchstart"
+    @touchmove="onMapTouchmove"
+    @touchend="onMapTouchend"
   )
     slot
 
@@ -69,6 +75,14 @@ export default class CastleMap extends Vue {
 
   onSchemeChange(value: string) {
     this.map.setStyle(this.mapConfig.style[value])
+  }
+
+  get styles() {
+    return {
+      '--map-zoom': this.mapView.zoom,
+      '--map-zoom-floor': Math.floor(this.mapView.zoom),
+      '--map-bearing': `${this.mapView.bearing}deg`,
+    }
   }
 
   // Movement
@@ -131,6 +145,61 @@ export default class CastleMap extends Vue {
         args
       )
     )
+  }
+
+  // Longpress
+
+  longpressTimeout: number | undefined
+  longpressed = false
+
+  longpressTimeoutStart(e: any) {
+    this.longpressTimeoutClear()
+    this.longpressTimeout = window.setTimeout(() => {
+      this.longpressed = true
+      this.$emit('maplongpress', e)
+    }, 500)
+  }
+
+  longpressTimeoutEnd(e: any) {
+    this.longpressTimeoutClear()
+    if (this.longpressed === true) {
+      e.mapboxEvent.originalEvent.preventDefault()
+      this.longpressed = false
+    }
+  }
+
+  longpressTimeoutClear() {
+    if (this.longpressTimeout) {
+      window.clearTimeout(this.longpressTimeout)
+    }
+  }
+
+  // Mouse
+
+  onMapMousedown(e: any) {
+    this.longpressTimeoutStart(e)
+  }
+
+  onMapMouseup(e: any) {
+    this.longpressTimeoutEnd(e)
+  }
+
+  onMapMousemove(e: any) {
+    this.longpressTimeoutClear()
+  }
+
+  // Touch
+
+  onMapTouchstart(e: any) {
+    this.longpressTimeoutStart(e)
+  }
+
+  onMapTouchend(e: any) {
+    this.longpressTimeoutEnd(e)
+  }
+
+  onMapTouchmove(e: any) {
+    this.longpressTimeoutClear()
   }
 }
 </script>

@@ -4,7 +4,7 @@
     logo
 
     castle-map(
-      @mapclick="onMapclick"
+      @maplongpress="onMaplongpress"
     )
       context-marker
       castle-markers(
@@ -82,7 +82,7 @@ export default class App extends Vue {
 
   // Events
 
-  onMapclick(e: any) {
+  onMaplongpress(e: any) {
     const originalEvent = e.mapboxEvent.originalEvent
 
     if (originalEvent.target.tagName !== 'CANVAS') {
