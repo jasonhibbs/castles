@@ -55,8 +55,6 @@ export default class BottomSheet extends Vue {
   @Ref('stopBottom') stopBottomEl!: HTMLElement
   @Ref('scrollMargin') scrollMarginEl!: HTMLElement
 
-  onClient = false
-
   scrolled = false
   scrollTop = 0
 
@@ -82,7 +80,6 @@ export default class BottomSheet extends Vue {
   }
 
   mounted() {
-    this.onClient = true
     this.scroll()
     this.$root.$on('raisesheet', () => this.atBottom && this.toMid())
     this.$root.$on('lowersheet', () => !this.atBottom && this.toBottom())
@@ -131,7 +128,7 @@ export default class BottomSheet extends Vue {
 
   atStop(stop: 'top' | 'middle' | 'bottom' | 'between') {
     this.stop = stop
-    this.$store.dispatch('sheetStopped', { stop, height: this.height })
+    this.$store.dispatch('sheetScrolled', { stop, height: this.height })
   }
 
   get atTop() {
@@ -154,25 +151,23 @@ export default class BottomSheet extends Vue {
       this.scrollTop = this.sheetEl.scrollTop
       this.height = this.scrollTop + context
 
-      if (this.scrollTop >= top) {
-        this.scrollMarginEl.style.height = '0'
-        this.atStop('top')
-
-        if (this.scrollTop > top) {
-          this.scrolled = true
-        }
-
-        return
-      }
-
-      if (this.scrollTop === this.stopMidEl.offsetTop) {
-        this.atStop('middle')
-      } else if (this.scrollTop > 0 && this.scrollTop < top) {
-        this.atStop('between')
-      }
-
-      if (this.scrollTop <= 0) {
-        this.atStop('bottom')
+      switch (true) {
+        case this.scrollTop >= top:
+          this.atStop('top')
+          this.scrollMarginEl.style.height = '0'
+          if (this.scrollTop > top) {
+            this.scrolled = true
+          }
+          return
+        case this.scrollTop === this.stopMidEl.offsetTop:
+          this.atStop('middle')
+          break
+        case this.scrollTop <= 0:
+          this.atStop('bottom')
+          break
+        default:
+          this.atStop('between')
+          break
       }
 
       if (this.willDismiss) {
@@ -291,6 +286,10 @@ $sheet-max-viewport: 412;
     top: calc(#{$mid} - var(--sheet-offset-bottom));
     scroll-snap-align: start;
     scroll-snap-stop: always;
+
+    @media (max-height: 32em) {
+      top: calc(100% - 5.5rem - var(--sheet-offset-bottom));
+    }
   }
 
   &._bottom {

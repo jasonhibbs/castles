@@ -66,7 +66,7 @@ export default new Vuex.Store({
     },
   },
   actions: {
-    sheetStopped(context, sheet) {
+    sheetScrolled(context, sheet) {
       const w = window.innerWidth
       if (w < 768) {
         context.commit('updatePadding', { bottom: sheet.height, left: 0 })
