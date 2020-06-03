@@ -14,11 +14,11 @@
     @zoom="onMapZoom"
     @styledata="onStyleLoaded"
     @mousedown="onMapMousedown"
-    @mousemove="onMapMousemove"
     @mouseup="onMapMouseup"
+    @drag="onMapDrag"
     @touchstart="onMapTouchstart"
-    @touchmove="onMapTouchmove"
     @touchend="onMapTouchend"
+    @touchmove="onMapTouchmove"
   )
     slot
 
@@ -184,7 +184,7 @@ export default class CastleMap extends Vue {
     this.longpressTimeoutEnd(e)
   }
 
-  onMapMousemove(e: any) {
+  onMapDrag(e: any) {
     this.longpressTimeoutClear()
   }
 
