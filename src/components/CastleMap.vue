@@ -50,7 +50,7 @@ export default class CastleMap extends Vue {
   async setSource() {
     return this.map.addSource(this.sourceId, {
       type: 'geojson',
-      data: '/castles-1591211716907.geojson',
+      data: '/castles-1591219381299.geojson',
     })
   }
 
@@ -68,7 +68,7 @@ export default class CastleMap extends Vue {
     const features = this.map.queryRenderedFeatures(this.makeBox(e, range), {
       layers: ['_castle-circles'],
     })
-    return features[0]?.id || null
+    return features[0] || null
   }
 
   // Events
@@ -79,29 +79,43 @@ export default class CastleMap extends Vue {
   onClick(e: any) {
     const clicked = this.findFeature(e)
 
-    if (clicked) {
-      if (clicked === this.castleSelected) {
-        this.map.removeFeatureState(
-          {
-            source: 'castles',
-            id: this.castleSelected,
-          },
-          'selected'
-        )
-        this.castleSelected = null
-      } else {
-        this.castleSelected = +clicked
-        this.map.setFeatureState(
-          {
-            source: 'castles',
-            id: this.castleSelected,
-          },
-          {
-            selected: true,
-          }
-        )
-      }
+    // no castle clicked
+    if (!clicked) {
+      return
     }
+
+    // selected castle clicked
+    if (clicked.id === this.castleSelected) {
+      this.map.removeFeatureState(
+        {
+          source: 'castles',
+          id: this.castleSelected,
+        },
+        'selected'
+      )
+      this.castleSelected = null
+      this.$router.push('/')
+      return
+    }
+
+    // castle clicked
+    this.castleSelected = +clicked.id!
+    this.map.setFeatureState(
+      {
+        source: 'castles',
+        id: this.castleSelected,
+      },
+      {
+        selected: true,
+      }
+    )
+
+    this.$router.push({
+      name: 'Castle',
+      params: {
+        id: clicked.properties!.id,
+      },
+    })
   }
 
   onMousemove(e: any) {
@@ -119,7 +133,7 @@ export default class CastleMap extends Vue {
     }
 
     if (hovering) {
-      this.castleHovering = +hovering
+      this.castleHovering = +hovering.id!
       this.map.setFeatureState(
         {
           source: 'castles',

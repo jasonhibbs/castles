@@ -210,8 +210,6 @@ const indexCastles = async castles => {
   )
 }
 
-// scrapeCastles().then(indexCastles)
-
 const reindexCastles = async () => {
   fs.readFile('./public/castles-data.json', 'utf8', (err, data) => {
     if (err) throw err
@@ -244,7 +242,7 @@ const geojsonFromIndex = async () => {
     const castles = JSON.parse(data)
     const features = castles.map((c, index) => {
       return {
-        id: index,
+        id: index + 1,
         type: 'Feature',
         properties: {
           id: c.id,
@@ -286,4 +284,5 @@ const geojsonFromIndex = async () => {
   })
 }
 
+// scrapeCastles().then(indexCastles)
 geojsonFromIndex()
