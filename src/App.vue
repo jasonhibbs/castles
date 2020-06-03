@@ -4,13 +4,8 @@
     logo
 
     castle-map(
-      @maplongpress="onMaplongpress"
+      :castles="castles"
     )
-      context-marker
-      castle-markers(
-        v-if="hasCastles"
-        :castles="castles"
-      )
 
     button-location
 
