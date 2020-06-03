@@ -15,6 +15,7 @@
     @styledata="onStyleLoaded"
     @mousedown="onMapMousedown"
     @mouseup="onMapMouseup"
+    @mousemove="onMapMousemove"
     @drag="onMapDrag"
     @touchstart="onMapTouchstart"
     @touchend="onMapTouchend"
@@ -183,6 +184,10 @@ export default class MapboxMap extends Vue {
 
   onMapMouseup(e: any) {
     this.longpressTimeoutEnd(e)
+  }
+
+  onMapMousemove(e: any) {
+    this.$emit('mapmousemove', e)
   }
 
   onMapDrag(e: any) {

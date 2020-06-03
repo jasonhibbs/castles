@@ -1,42 +1,114 @@
 <template lang="pug">
 
   .castle-markers
-    mgl-marker(
-      v-for="castle in castles"
-      :key="castle.id"
-      :coordinates="[castle.coords.lng, castle.coords.lat]"
+    mgl-geojson-layer(
+      :sourceId="sourceId"
+      :layerId="castleCircles.id"
+      :layer="castleCircles"
     )
-      castle-marker(
-        slot="marker"
-        :castle="castle"
-        :aria-selected="castle.id === selected"
-        @click.native="onClickMarker(castle.id)"
-      )
+    mgl-geojson-layer(
+      :sourceId="sourceId"
+      :layerId="castleLabels.id"
+      :layer="castleLabels"
+    )
 
 </template>
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator'
-import { MglMarker } from 'vue-mapbox'
-import CastleMarker from '@/components/CastleMarker.vue'
+import { MglGeojsonLayer } from 'vue-mapbox'
 
 @Component({
   components: {
-    MglMarker,
-    CastleMarker,
+    MglGeojsonLayer,
   },
 })
 export default class CastleMarkers extends Vue {
-  @Prop() castles: any
+  @Prop() sourceId: any
 
-  get selected() {
-    return this.$route.name === 'Castle' ? this.$route.params?.id : ''
+  get castleCircles() {
+    return {
+      id: '_castle-circles',
+      type: 'circle',
+
+      paint: {
+        'circle-color': [
+          'case',
+          ['boolean', ['feature-state', 'hover'], false],
+          '#f00',
+          'hsl(160, 2%, 28%)',
+        ],
+        'circle-radius': [
+          'interpolate',
+          ['exponential', 1.2],
+          ['zoom'],
+          3,
+          1,
+          14,
+          10,
+        ],
+        'circle-stroke-color': [
+          'interpolate',
+          ['linear'],
+          ['zoom'],
+          5,
+          '#ebebea',
+          12,
+          'hsl(36, 28%, 93%)',
+        ],
+        'circle-stroke-width': 1,
+        'circle-pitch-alignment': 'map',
+        'circle-color-transition': {
+          duration: 300,
+        },
+      },
+    }
   }
 
-  onClickMarker(id: string) {
-    if (this.selected === id) {
-      this.$router.push('/')
-    } else {
-      this.$router.push({ name: 'Castle', params: { id } })
+  get castleLabels() {
+    return {
+      id: '_castle-labels',
+      type: 'symbol',
+      layout: {
+        'text-field': ['to-string', ['get', 'name']],
+        'text-justify': 'left',
+        'text-offset': [
+          'interpolate',
+          ['exponential', 1.1],
+          ['zoom'],
+          3,
+          ['literal', [0.25, 0]],
+          14,
+          ['literal', [1, -0.75]],
+        ],
+        'text-font': ['Overpass Mono Light', 'Arial Unicode MS Regular'],
+        'text-padding': 8,
+        'text-max-width': 16,
+        'text-anchor': 'bottom-left',
+        'text-allow-overlap': true,
+      },
+      paint: {
+        'text-color': 'hsl(160, 2%, 18%)',
+        'text-halo-color': [
+          'interpolate',
+          ['linear'],
+          ['zoom'],
+          5,
+          '#ebebea',
+          12,
+          'hsl(36, 28%, 93%)',
+        ],
+        'text-halo-width': 2,
+        'text-opacity': [
+          'case',
+          ['boolean', ['feature-state', 'hover'], false],
+          1,
+          0,
+        ],
+        // ['step', ['zoom'], 0, 8.5, 1],
+        'text-opacity-transition': {
+          duration: 400,
+        },
+      },
     }
   }
 }
