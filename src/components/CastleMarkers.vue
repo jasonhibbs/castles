@@ -24,7 +24,12 @@ export default class CastleMarkers extends Vue {
   @Prop() sourceId: any
 
   get layers() {
-    return [this.castleHoverCircles, this.castleCircles, this.castleLabels]
+    return [
+      this.castleCircles,
+      this.castleActiveRings,
+      this.castleActiveCircles,
+      this.castleLabels,
+    ]
   }
 
   get circleColor() {
@@ -68,12 +73,39 @@ export default class CastleMarkers extends Vue {
     }
   }
 
-  get castleHoverCircles() {
+  get castleActiveCircles() {
     return {
-      id: '_castle-hover-circles',
+      id: '_castle-active-circles',
       type: 'circle',
       paint: {
         ...this.circlePaintBase,
+        'circle-stroke-width': [
+          'case',
+          ['boolean', ['feature-state', 'selected'], false],
+          1,
+          ['boolean', ['feature-state', 'hover'], false],
+          1,
+          0,
+        ],
+        'circle-opacity': [
+          'case',
+          ['boolean', ['feature-state', 'selected'], false],
+          1,
+          ['boolean', ['feature-state', 'hover'], false],
+          1,
+          0,
+        ],
+      },
+    }
+  }
+
+  get castleActiveRings() {
+    return {
+      id: '_castle-active-rings',
+      type: 'circle',
+      paint: {
+        ...this.circlePaintBase,
+        'circle-stroke-width': 0,
         'circle-radius': [
           'interpolate',
           ['exponential', 1.2],
