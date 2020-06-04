@@ -72,10 +72,11 @@ export default class MapboxMap extends Vue {
   }
 
   onStyleLoaded(e: any) {
-    this.$root.$emit('mapstylechange')
+    this.$emit('mapstyleload')
   }
 
   onSchemeChange(value: string) {
+    this.$emit('mapstyleloading')
     this.map.setStyle(this.mapConfig.style[value])
   }
 

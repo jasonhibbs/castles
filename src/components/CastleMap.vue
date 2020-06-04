@@ -5,14 +5,17 @@
   )
     mapbox-map(
       @mapload="onLoad"
+      @mapstyleloading="onStyleLoading"
+      @mapstyleload="onStyleLoad"
       @mapclick="onClick"
       @mapmousemove="onMousemove"
       @maplongpress="onLongpress"
     )
-      context-marker
-      castle-markers(
-        :sourceId="sourceId"
-      )
+      template(v-if="styleLoaded")
+        context-marker
+        castle-markers(
+          :sourceId="sourceId"
+        )
 
 
 </template>
@@ -22,6 +25,7 @@ import MapboxMap from '@/components/MapboxMap.vue'
 import ContextMarker from '@/components/ContextMarker.vue'
 import CastleMarkers from '@/components/CastleMarkers.vue'
 import { Map } from 'mapbox-gl'
+import debounce from 'lodash.debounce'
 
 @Component({
   components: { MapboxMap, ContextMarker, CastleMarkers },
@@ -44,20 +48,27 @@ export default class CastleMap extends Vue {
 
   // Setup
 
+  styleLoaded = false
+
+  onStyleLoading() {
+    this.styleLoaded = false
+  }
+
+  onStyleLoad = debounce(() => {
+    this.onStyleLoaded()
+  }, 500)
+
+  onStyleLoaded() {
+    if (!this.map.getSource(this.sourceId)) {
+      this.setSource()
+    }
+    this.selectFromRoute()
+    this.styleLoaded = true
+  }
+
   async onLoad(map: Map) {
     this.map = map
     this.setSource()
-
-    setTimeout(() => {
-      const routeId = this.$route.params?.id
-      if (routeId) {
-        const feature = this.map.querySourceFeatures(this.sourceId, {
-          sourceLayer: '_castle-circles',
-          filter: ['==', 'id', routeId],
-        })
-        this.selectCastle(feature[0])
-      }
-    }, 1000)
   }
 
   get sourceId() {
@@ -82,10 +93,27 @@ export default class CastleMap extends Vue {
   }
 
   findFeature(e: any, range?: number) {
+    if (!this.map.getLayer('_castle-circles')) {
+      return
+    }
     const features = this.map.queryRenderedFeatures(this.makeBox(e, range), {
       layers: ['_castle-circles'],
     })
     return features[0] || null
+  }
+
+  selectFromRoute() {
+    if (!this.map.getLayer('_castle-circles')) {
+      return
+    }
+    const routeId = this.$route.params?.id
+    if (routeId) {
+      const features = this.map.querySourceFeatures(this.sourceId, {
+        sourceLayer: '_castle-circles',
+        filter: ['==', 'id', routeId],
+      })
+      this.selectCastle(features[0])
+    }
   }
 
   // Castles
