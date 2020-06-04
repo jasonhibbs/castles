@@ -15,11 +15,7 @@
 import { Component, Prop, Vue } from 'vue-property-decorator'
 import { MglGeojsonLayer } from 'vue-mapbox'
 
-@Component({
-  components: {
-    MglGeojsonLayer,
-  },
-})
+@Component({ components: { MglGeojsonLayer } })
 export default class CastleMarkers extends Vue {
   @Prop() sourceId: any
 
@@ -68,18 +64,22 @@ export default class CastleMarkers extends Vue {
     return this.isDark ? darkHalo : lightHalo
   }
 
+  circleRadius(offsetA: number = 0, offsetB: number = offsetA) {
+    return [
+      'interpolate',
+      ['exponential', 1.2],
+      ['zoom'],
+      2,
+      1 + offsetA,
+      14,
+      10 + offsetB,
+    ]
+  }
+
   get circlePaintBase() {
     return {
       'circle-color': this.circleColor,
-      'circle-radius': [
-        'interpolate',
-        ['exponential', 1.2],
-        ['zoom'],
-        3,
-        1,
-        14,
-        10,
-      ],
+      'circle-radius': this.circleRadius(),
       'circle-stroke-color': this.haloColor,
       'circle-stroke-width': 1,
       'circle-pitch-alignment': 'map',
@@ -130,15 +130,7 @@ export default class CastleMarkers extends Vue {
       paint: {
         ...this.circlePaintBase,
         'circle-stroke-width': 0,
-        'circle-radius': [
-          'interpolate',
-          ['exponential', 1.2],
-          ['zoom'],
-          3,
-          4,
-          14,
-          14,
-        ],
+        'circle-radius': this.circleRadius(3, 5),
         'circle-opacity': [
           'case',
           ['boolean', ['feature-state', 'selected'], false],
