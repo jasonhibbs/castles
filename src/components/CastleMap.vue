@@ -1,205 +1,259 @@
 <template lang="pug">
 
-  mgl-map#map(
-    :accessToken="mapConfig.accessToken"
-    :mapStyle="mapStyle"
-    :center="mapConfig.center"
-    :zoom="mapConfig.zoom"
-    :hash="true"
-    :style="styles"
-    @load="onMapLoaded"
-    @click="onMapClick"
-    @move="onMapMove"
-    @rotate="onMapRotate"
-    @zoom="onMapZoom"
-    @styledata="onStyleLoaded"
-    @mousedown="onMapMousedown"
-    @mouseup="onMapMouseup"
-    @drag="onMapDrag"
-    @touchstart="onMapTouchstart"
-    @touchend="onMapTouchend"
-    @touchmove="onMapTouchmove"
+  .castle-map(
+    :class="classes"
   )
-    slot
+    mapbox-map(
+      @mapload="onLoad"
+      @mapstyleloading="onStyleLoading"
+      @mapstyleload="onStyleLoad"
+      @mapclick="onClick"
+      @mapmousemove="onMousemove"
+      @maplongpress="onLongpress"
+    )
+      template(v-if="styleLoaded")
+        context-marker
+        castle-markers(
+          :sourceId="sourceId"
+        )
+
 
 </template>
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
-import { mapState } from 'vuex'
-import Mapbox, { MapMouseEvent } from 'mapbox-gl'
-import { MglMap, MglMarker, MglGeojsonLayer } from 'vue-mapbox'
+import { Component, Prop, Vue, Watch } from 'vue-property-decorator'
+import MapboxMap from '@/components/MapboxMap.vue'
+import ContextMarker from '@/components/ContextMarker.vue'
+import CastleMarkers from '@/components/CastleMarkers.vue'
+import { Map } from 'mapbox-gl'
 import debounce from 'lodash.debounce'
-import throttle from 'lodash.throttle'
 
 @Component({
-  components: {
-    MglMap,
-    MglMarker,
-    MglGeojsonLayer,
-  },
-  computed: {
-    ...mapState(['map', 'mapConfig', 'mapView']),
-  },
+  components: { MapboxMap, ContextMarker, CastleMarkers },
 })
 export default class CastleMap extends Vue {
-  map!: any
-  mapbox!: any
-  mapConfig!: any
-  mapView!: any
+  @Prop() castles: any
+  map!: Map
+
+  get classes() {
+    return {
+      _hover: this.castleHovering,
+    }
+  }
 
   // Setup
 
-  created() {
-    this.mapbox = Mapbox
+  async onLoad(map: Map) {
+    this.map = map
+    this.setSource()
   }
 
-  onMapLoaded(e: any) {
-    this.$store.state.map = e.map
-    this.$root.$on('locationchange', this.mapEaseTo)
-    this.$root.$on('colorschemechange', this.onSchemeChange)
-    this.mapView.center = this.map.getCenter()
-    this.mapView.zoom = this.map.getZoom()
-    this.updateBounds()
-  }
-
-  get mapStyle() {
-    const scheme = window.matchMedia('(prefers-color-scheme: dark)').matches
-      ? 'dark'
-      : 'light'
-    return this.mapConfig.style[scheme]
-  }
-
-  onStyleLoaded(e: any) {
-    this.$root.$emit('mapstylechange')
-  }
-
-  onSchemeChange(value: string) {
-    this.map.setStyle(this.mapConfig.style[value])
-  }
-
-  get styles() {
-    return {
-      '--map-zoom': this.mapView.zoom,
-      '--map-zoom-floor': Math.floor(this.mapView.zoom),
-      '--map-bearing': `${this.mapView.bearing}deg`,
-    }
-  }
-
-  // Movement
-
-  onMapMove = debounce(() => {
-    this.onMapMoved()
-  }, 400)
-
-  onMapMoved() {
-    this.mapView.center = this.map.getCenter()
-    this.updateBounds()
-    this.$emit('mapmove')
-  }
-
-  onMapZoom = throttle(() => {
-    this.onMapZoomed()
-  }, 200)
-
-  onMapZoomed() {
-    const currentZoom = this.map.getZoom()
-    this.mapView.zoom = currentZoom
-  }
-
-  onMapRotate = throttle(() => {
-    this.onMapRotated()
-  }, 60)
-
-  onMapRotated() {
-    const currentBearing = this.map.getBearing()
-    this.mapView.bearing = currentBearing
-  }
-
-  onMapClick(e: any) {
-    this.$emit('mapclick', e)
-  }
-
-  updateBounds() {
-    if (this.mapView.zoom < 6) {
+  selectFromRoute() {
+    if (!this.map.getLayer('_castle-circles')) {
       return
     }
-
-    const bounds = this.map.getBounds()
-    this.mapView.bounds = {
-      north: bounds.getNorth(),
-      east: bounds.getEast(),
-      south: bounds.getSouth(),
-      west: bounds.getWest(),
+    const routeId = this.$route.params?.id
+    if (routeId) {
+      const features = this.map.querySourceFeatures(this.sourceId, {
+        sourceLayer: '_castle-circles',
+        filter: ['==', 'id', routeId],
+      })
+      this.selectCastle(features[0])
     }
   }
 
-  mapEaseTo(args: any) {
-    const defaultZoom = 8 > this.mapView.zoom ? 8 : this.mapView.zoom
-    this.map.easeTo(
-      Object.assign(
+  @Watch('$route') onRouteChange(to: any, from: any) {
+    if (to.name === 'Home') {
+      this.deselectCastles()
+    }
+  }
+
+  // Style
+
+  styleLoaded = false
+
+  onStyleLoading() {
+    this.styleLoaded = false
+  }
+
+  onStyleLoad = debounce(() => {
+    this.onStyleLoaded()
+  }, 500)
+
+  onStyleLoaded() {
+    if (!this.map.getSource(this.sourceId)) {
+      this.setSource()
+    }
+    this.selectFromRoute()
+    this.styleLoaded = true
+  }
+
+  // Source
+
+  get sourceId() {
+    return 'castles'
+  }
+
+  async setSource() {
+    return this.map.addSource(this.sourceId, {
+      type: 'geojson',
+      data: '/castles-1591219381299.geojson',
+    })
+  }
+
+  // Map
+
+  makeBox(e: any, range: number = 6): any {
+    const { x, y } = e.mapboxEvent.point
+    return [
+      [x - range, y - range],
+      [x + range, y + range],
+    ]
+  }
+
+  findFeature(e: any, range?: number) {
+    if (!this.map.getLayer('_castle-circles')) {
+      return
+    }
+    const features = this.map.queryRenderedFeatures(this.makeBox(e, range), {
+      layers: ['_castle-circles'],
+    })
+    return features[0] || null
+  }
+
+  // Castles
+
+  castleSelected: number | null = null
+  castleHovering: number | null = null
+
+  selectCastle(feature: mapboxgl.MapboxGeoJSONFeature) {
+    if (this.castleSelected) {
+      this.map.removeFeatureState(
         {
-          zoom: defaultZoom,
-          duration: 800,
-          padding: this.mapView.padding,
+          source: 'castles',
+          id: this.castleSelected,
         },
-        args
+        'selected'
       )
+    }
+
+    this.castleSelected = +feature.id!
+    this.map.setFeatureState(
+      {
+        source: 'castles',
+        id: this.castleSelected,
+      },
+      {
+        selected: true,
+      }
+    )
+
+    if (this.$route.params?.id !== feature.properties!.id) {
+      this.$router.push({
+        name: 'Castle',
+        params: {
+          id: feature.properties!.id,
+        },
+      })
+    }
+  }
+
+  deselectCastles() {
+    if (this.castleSelected) {
+      this.map.removeFeatureState(
+        {
+          source: 'castles',
+          id: this.castleSelected,
+        },
+        'selected'
+      )
+      this.castleSelected = null
+    }
+    if (this.$route.name !== 'Home') {
+      this.$router.push('/')
+    }
+  }
+
+  hoverCastle(feature: mapboxgl.MapboxGeoJSONFeature) {
+    this.castleHovering = +feature.id!
+    this.map.setFeatureState(
+      {
+        source: 'castles',
+        id: this.castleHovering,
+      },
+      {
+        hover: true,
+      }
     )
   }
 
-  // Longpress
-
-  longpressTimeout: number | undefined
-  longpressed = false
-
-  longpressTimeoutStart(e: any) {
-    this.longpressTimeoutClear()
-    this.longpressTimeout = window.setTimeout(() => {
-      this.longpressed = true
-      this.$emit('maplongpress', e)
-    }, 500)
+  unhoverCastles() {
+    if (this.castleHovering) {
+      this.map.removeFeatureState(
+        {
+          source: 'castles',
+          id: this.castleHovering,
+        },
+        'hover'
+      )
+    }
+    this.castleHovering = null
   }
 
-  longpressTimeoutEnd(e: any) {
-    this.longpressTimeoutClear()
-    if (this.longpressed === true) {
-      e.mapboxEvent.originalEvent.preventDefault()
-      this.longpressed = false
+  // Input
+
+  onClick(e: any) {
+    const clicked = this.findFeature(e)
+
+    // no castle clicked
+    if (!clicked) {
+      return
+    }
+
+    // selected castle clicked
+    if (clicked.id === this.castleSelected) {
+      this.deselectCastles()
+      return
+    }
+
+    // castle clicked
+    this.selectCastle(clicked)
+  }
+
+  onMousemove(e: any) {
+    const hovering = this.findFeature(e)
+
+    if (this.castleHovering) {
+      this.unhoverCastles()
+    }
+
+    if (hovering) {
+      this.hoverCastle(hovering)
     }
   }
 
-  longpressTimeoutClear() {
-    if (this.longpressTimeout) {
-      window.clearTimeout(this.longpressTimeout)
+  onLongpress(e: any) {
+    const originalEvent = e.mapboxEvent.originalEvent
+
+    if (originalEvent.target.tagName !== 'CANVAS') {
+      return false
     }
-  }
 
-  // Mouse
-
-  onMapMousedown(e: any) {
-    this.longpressTimeoutStart(e)
-  }
-
-  onMapMouseup(e: any) {
-    this.longpressTimeoutEnd(e)
-  }
-
-  onMapDrag(e: any) {
-    this.longpressTimeoutClear()
-  }
-
-  // Touch
-
-  onMapTouchstart(e: any) {
-    this.longpressTimeoutStart(e)
-  }
-
-  onMapTouchend(e: any) {
-    this.longpressTimeoutEnd(e)
-  }
-
-  onMapTouchmove(e: any) {
-    this.longpressTimeoutClear()
+    const { lat, lng } = e.mapboxEvent.lngLat
+    this.$store.commit('updateContext', { lat, lng })
   }
 }
 </script>
+
+<style lang="scss">
+.castle-map {
+  &,
+  #map {
+    overflow: hidden;
+    height: 100%;
+  }
+
+  &._hover canvas {
+    cursor: pointer;
+  }
+}
+</style>

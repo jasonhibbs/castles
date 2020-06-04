@@ -1,0 +1,6365 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "id": 1,
+      "type": "Feature",
+      "properties": {
+        "id": "someries-castle-bedfordshire",
+        "name": "Someries Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.37583,
+          51.86889
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "type": "Feature",
+      "properties": {
+        "id": "donnington-castle-berkshire",
+        "name": "Donnington Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.3375,
+          51.41944
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "type": "Feature",
+      "properties": {
+        "id": "windsor-castle-berkshire",
+        "name": "Windsor Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.60417,
+          51.48333
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "type": "Feature",
+      "properties": {
+        "id": "boarstall-tower-buckinghamshire",
+        "name": "Boarstall Tower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.09556,
+          51.82333
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "type": "Feature",
+      "properties": {
+        "id": "buckden-palace-cambridgeshire",
+        "name": "Buckden Palace"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2525,
+          52.29417
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "type": "Feature",
+      "properties": {
+        "id": "elton-hall-cambridgeshire",
+        "name": "Elton Hall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3975,
+          52.52361
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "type": "Feature",
+      "properties": {
+        "id": "kimbolton-castle-cambridgeshire",
+        "name": "Kimbolton Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3884,
+          52.2964
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "type": "Feature",
+      "properties": {
+        "id": "kirtling-tower-cambridgeshire",
+        "name": "Kirtling Tower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.465,
+          52.1891
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "type": "Feature",
+      "properties": {
+        "id": "longthorpe-tower-cambridgeshire",
+        "name": "Longthorpe Tower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2869,
+          52.5708
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "type": "Feature",
+      "properties": {
+        "id": "northborough-castle-cambridgeshire",
+        "name": "Northborough Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2998,
+          52.6557
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "type": "Feature",
+      "properties": {
+        "id": "woodcroft-castle-cambridgeshire",
+        "name": "Woodcroft Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3172,
+          52.6263
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "type": "Feature",
+      "properties": {
+        "id": "beeston-castle-cheshire",
+        "name": "Beeston Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.6913,
+          53.1277
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "type": "Feature",
+      "properties": {
+        "id": "chester-castle-cheshire",
+        "name": "Chester Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.8923,
+          53.1853
+        ]
+      }
+    },
+    {
+      "id": 14,
+      "type": "Feature",
+      "properties": {
+        "id": "cholmondeley-castle-cheshire",
+        "name": "Cholmondeley Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.6932,
+          53.0572
+        ]
+      }
+    },
+    {
+      "id": 15,
+      "type": "Feature",
+      "properties": {
+        "id": "doddington-castle-cheshire",
+        "name": "Doddington Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.4356,
+          53.0197
+        ]
+      }
+    },
+    {
+      "id": 16,
+      "type": "Feature",
+      "properties": {
+        "id": "halton-castle-cheshire",
+        "name": "Halton Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.6957,
+          53.3331
+        ]
+      }
+    },
+    {
+      "id": 17,
+      "type": "Feature",
+      "properties": {
+        "id": "peckforton-castle-cheshire",
+        "name": "Peckforton Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.699,
+          53.1175
+        ]
+      }
+    },
+    {
+      "id": 18,
+      "type": "Feature",
+      "properties": {
+        "id": "auckland-castle-county-durham",
+        "name": "Auckland Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.6702,
+          54.6664
+        ]
+      }
+    },
+    {
+      "id": 19,
+      "type": "Feature",
+      "properties": {
+        "id": "barnard-castle-county-durham",
+        "name": "Barnard Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.92667,
+          54.54333
+        ]
+      }
+    },
+    {
+      "id": 20,
+      "type": "Feature",
+      "properties": {
+        "id": "bowes-castle-county-durham",
+        "name": "Bowes Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.0139,
+          54.5168
+        ]
+      }
+    },
+    {
+      "id": 21,
+      "type": "Feature",
+      "properties": {
+        "id": "brancepeth-castle-county-durham",
+        "name": "Brancepeth Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.65,
+          54.73333
+        ]
+      }
+    },
+    {
+      "id": 22,
+      "type": "Feature",
+      "properties": {
+        "id": "durham-castle-county-durham",
+        "name": "Durham Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.57611,
+          54.77472
+        ]
+      }
+    },
+    {
+      "id": 23,
+      "type": "Feature",
+      "properties": {
+        "id": "lambton-castle-county-durham",
+        "name": "Lambton Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.536,
+          54.867
+        ]
+      }
+    },
+    {
+      "id": 24,
+      "type": "Feature",
+      "properties": {
+        "id": "lumley-castle-county-durham",
+        "name": "Lumley Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.55293,
+          54.85472
+        ]
+      }
+    },
+    {
+      "id": 25,
+      "type": "Feature",
+      "properties": {
+        "id": "mortham-tower-county-durham",
+        "name": "Mortham Tower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.86715,
+          54.51336
+        ]
+      }
+    },
+    {
+      "id": 26,
+      "type": "Feature",
+      "properties": {
+        "id": "raby-castle-county-durham",
+        "name": "Raby Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.80194,
+          54.59083
+        ]
+      }
+    },
+    {
+      "id": 27,
+      "type": "Feature",
+      "properties": {
+        "id": "raby-old-lodge-county-durham",
+        "name": "Raby Old Lodge"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.8,
+          54.567
+        ]
+      }
+    },
+    {
+      "id": 28,
+      "type": "Feature",
+      "properties": {
+        "id": "scargill-castle-county-durham",
+        "name": "Scargill Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.92279,
+          54.49125
+        ]
+      }
+    },
+    {
+      "id": 29,
+      "type": "Feature",
+      "properties": {
+        "id": "walworth-castle-county-durham",
+        "name": "Walworth Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.639,
+          54.565
+        ]
+      }
+    },
+    {
+      "id": 30,
+      "type": "Feature",
+      "properties": {
+        "id": "witton-castle-county-durham",
+        "name": "Witton Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.7643,
+          54.6684
+        ]
+      }
+    },
+    {
+      "id": 31,
+      "type": "Feature",
+      "properties": {
+        "id": "caerhays-castle-cornwall",
+        "name": "Caerhays Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.8467,
+          50.2396
+        ]
+      }
+    },
+    {
+      "id": 32,
+      "type": "Feature",
+      "properties": {
+        "id": "carn-brea-castle-cornwall",
+        "name": "Carn Brea Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.2448333,
+          50.2224583
+        ]
+      }
+    },
+    {
+      "id": 33,
+      "type": "Feature",
+      "properties": {
+        "id": "ince-castle-cornwall",
+        "name": "Ince Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.25513,
+          50.3899284
+        ]
+      }
+    },
+    {
+      "id": 34,
+      "type": "Feature",
+      "properties": {
+        "id": "launceston-castle-cornwall",
+        "name": "Launceston Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.36144,
+          50.63757
+        ]
+      }
+    },
+    {
+      "id": 35,
+      "type": "Feature",
+      "properties": {
+        "id": "pendennis-castle-cornwall",
+        "name": "Pendennis Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.04777,
+          50.14722
+        ]
+      }
+    },
+    {
+      "id": 36,
+      "type": "Feature",
+      "properties": {
+        "id": "pengersick-castle-cornwall",
+        "name": "Pengersick Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.379,
+          50.115
+        ]
+      }
+    },
+    {
+      "id": 37,
+      "type": "Feature",
+      "properties": {
+        "id": "place-house-fowey-cornwall",
+        "name": "Place House, Fowey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.637,
+          50.336
+        ]
+      }
+    },
+    {
+      "id": 38,
+      "type": "Feature",
+      "properties": {
+        "id": "restormel-castle-cornwall",
+        "name": "Restormel Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.6715,
+          50.4223
+        ]
+      }
+    },
+    {
+      "id": 39,
+      "type": "Feature",
+      "properties": {
+        "id": "st-catherines-castle-cornwall",
+        "name": "St Catherine's Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.644444,
+          50.328222
+        ]
+      }
+    },
+    {
+      "id": 40,
+      "type": "Feature",
+      "properties": {
+        "id": "st-mawes-castle-cornwall",
+        "name": "St. Mawes Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.02377,
+          50.15486
+        ]
+      }
+    },
+    {
+      "id": 41,
+      "type": "Feature",
+      "properties": {
+        "id": "st-michaels-mount-cornwall",
+        "name": "St. Michael's Mount"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.4772,
+          50.116
+        ]
+      }
+    },
+    {
+      "id": 42,
+      "type": "Feature",
+      "properties": {
+        "id": "tintagel-castle-cornwall",
+        "name": "Tintagel Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.7599283,
+          50.6679737
+        ]
+      }
+    },
+    {
+      "id": 43,
+      "type": "Feature",
+      "properties": {
+        "id": "trematon-castle-cornwall",
+        "name": "Trematon Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.23774,
+          50.40044
+        ]
+      }
+    },
+    {
+      "id": 44,
+      "type": "Feature",
+      "properties": {
+        "id": "appleby-castle-cumbria",
+        "name": "Appleby Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.48878,
+          54.57423
+        ]
+      }
+    },
+    {
+      "id": 45,
+      "type": "Feature",
+      "properties": {
+        "id": "armathwaite-castle-cumbria",
+        "name": "Armathwaite Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.7701,
+          54.8055
+        ]
+      }
+    },
+    {
+      "id": 46,
+      "type": "Feature",
+      "properties": {
+        "id": "arnside-tower-cumbria",
+        "name": "Arnside Tower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.8335,
+          54.1841
+        ]
+      }
+    },
+    {
+      "id": 47,
+      "type": "Feature",
+      "properties": {
+        "id": "askerton-castle-cumbria",
+        "name": "Askerton Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.7053,
+          55.0153
+        ]
+      }
+    },
+    {
+      "id": 48,
+      "type": "Feature",
+      "properties": {
+        "id": "beetham-hall-cumbria",
+        "name": "Beetham Hall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.775,
+          54.208
+        ]
+      }
+    },
+    {
+      "id": 49,
+      "type": "Feature",
+      "properties": {
+        "id": "bewcastle-castle-cumbria",
+        "name": "Bewcastle Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.6811,
+          55.0649
+        ]
+      }
+    },
+    {
+      "id": 50,
+      "type": "Feature",
+      "properties": {
+        "id": "bewley-castle-cumbria",
+        "name": "Bewley Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.519,
+          54.578
+        ]
+      }
+    },
+    {
+      "id": 51,
+      "type": "Feature",
+      "properties": {
+        "id": "blencow-hall-cumbria",
+        "name": "Blencow Hall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.85,
+          54.666
+        ]
+      }
+    },
+    {
+      "id": 52,
+      "type": "Feature",
+      "properties": {
+        "id": "brackenburgh-old-tower-cumbria",
+        "name": "Brackenburgh Old Tower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.828,
+          54.754
+        ]
+      }
+    },
+    {
+      "id": 53,
+      "type": "Feature",
+      "properties": {
+        "id": "brackenhill-tower-cumbria",
+        "name": "Brackenhill Tower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.8682286,
+          55.016764
+        ]
+      }
+    },
+    {
+      "id": 54,
+      "type": "Feature",
+      "properties": {
+        "id": "branthwaite-hall-cumbria",
+        "name": "Branthwaite Hall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.4493,
+          54.6142
+        ]
+      }
+    },
+    {
+      "id": 55,
+      "type": "Feature",
+      "properties": {
+        "id": "brough-castle-cumbria",
+        "name": "Brough Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.3244,
+          54.5218
+        ]
+      }
+    },
+    {
+      "id": 56,
+      "type": "Feature",
+      "properties": {
+        "id": "brougham-castle-cumbria",
+        "name": "Brougham Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.7191,
+          54.654
+        ]
+      }
+    },
+    {
+      "id": 57,
+      "type": "Feature",
+      "properties": {
+        "id": "brougham-hall-cumbria",
+        "name": "Brougham Hall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.7329,
+          54.648
+        ]
+      }
+    },
+    {
+      "id": 58,
+      "type": "Feature",
+      "properties": {
+        "id": "broughton-tower-cumbria",
+        "name": "Broughton Tower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.214,
+          54.278
+        ]
+      }
+    },
+    {
+      "id": 59,
+      "type": "Feature",
+      "properties": {
+        "id": "burneside-hall-cumbria",
+        "name": "Burneside Hall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.757,
+          54.3563
+        ]
+      }
+    },
+    {
+      "id": 60,
+      "type": "Feature",
+      "properties": {
+        "id": "carlisle-castle-cumbria",
+        "name": "Carlisle Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.941936,
+          54.89726
+        ]
+      }
+    },
+    {
+      "id": 61,
+      "type": "Feature",
+      "properties": {
+        "id": "catterlen-hall-cumbria",
+        "name": "Catterlen Hall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.816667,
+          54.683333
+        ]
+      }
+    },
+    {
+      "id": 62,
+      "type": "Feature",
+      "properties": {
+        "id": "clifton-hall-cumbria",
+        "name": "Clifton Hall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.7297,
+          54.6368
+        ]
+      }
+    },
+    {
+      "id": 63,
+      "type": "Feature",
+      "properties": {
+        "id": "cockermouth-castle-cumbria",
+        "name": "Cockermouth Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.36122,
+          54.66552
+        ]
+      }
+    },
+    {
+      "id": 64,
+      "type": "Feature",
+      "properties": {
+        "id": "corby-castle-cumbria",
+        "name": "Corby Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.8262,
+          54.8797
+        ]
+      }
+    },
+    {
+      "id": 65,
+      "type": "Feature",
+      "properties": {
+        "id": "dacre-castle-cumbria",
+        "name": "Dacre Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.8365,
+          54.6316
+        ]
+      }
+    },
+    {
+      "id": 66,
+      "type": "Feature",
+      "properties": {
+        "id": "dalston-hall-cumbria",
+        "name": "Dalston Hall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.97302,
+          54.85466
+        ]
+      }
+    },
+    {
+      "id": 67,
+      "type": "Feature",
+      "properties": {
+        "id": "dalton-castle-cumbria",
+        "name": "Dalton Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.1865,
+          54.1554
+        ]
+      }
+    },
+    {
+      "id": 68,
+      "type": "Feature",
+      "properties": {
+        "id": "drawdykes-castle-cumbria",
+        "name": "Drawdykes Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.894,
+          54.917
+        ]
+      }
+    },
+    {
+      "id": 69,
+      "type": "Feature",
+      "properties": {
+        "id": "drumburgh-castle-cumbria",
+        "name": "Drumburgh Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.1484,
+          54.9266
+        ]
+      }
+    },
+    {
+      "id": 70,
+      "type": "Feature",
+      "properties": {
+        "id": "egremont-castle-cumbria",
+        "name": "Egremont Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.5294,
+          54.47836
+        ]
+      }
+    },
+    {
+      "id": 71,
+      "type": "Feature",
+      "properties": {
+        "id": "gleaston-castle-cumbria",
+        "name": "Gleaston Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.1317,
+          54.134
+        ]
+      }
+    },
+    {
+      "id": 72,
+      "type": "Feature",
+      "properties": {
+        "id": "greystoke-castle-cumbria",
+        "name": "Greystoke Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.87757,
+          54.66999
+        ]
+      }
+    },
+    {
+      "id": 73,
+      "type": "Feature",
+      "properties": {
+        "id": "harbybrow-tower-cumbria",
+        "name": "Harbybrow Tower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.256,
+          54.762
+        ]
+      }
+    },
+    {
+      "id": 74,
+      "type": "Feature",
+      "properties": {
+        "id": "hayton-castle-cumbria",
+        "name": "Hayton Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.384152,
+          54.762593
+        ]
+      }
+    },
+    {
+      "id": 75,
+      "type": "Feature",
+      "properties": {
+        "id": "hazelslack-tower-cumbria",
+        "name": "Hazelslack Tower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.803,
+          54.201
+        ]
+      }
+    },
+    {
+      "id": 76,
+      "type": "Feature",
+      "properties": {
+        "id": "howgill-castle-cumbria",
+        "name": "Howgill Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.536,
+          54.657
+        ]
+      }
+    },
+    {
+      "id": 77,
+      "type": "Feature",
+      "properties": {
+        "id": "hutton-in-the-forest-cumbria",
+        "name": "Hutton-in-the-Forest"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.839,
+          54.714
+        ]
+      }
+    },
+    {
+      "id": 78,
+      "type": "Feature",
+      "properties": {
+        "id": "hutton-john-cumbria",
+        "name": "Hutton John"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.874,
+          54.633
+        ]
+      }
+    },
+    {
+      "id": 79,
+      "type": "Feature",
+      "properties": {
+        "id": "ingmire-hall-cumbria",
+        "name": "Ingmire Hall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.526,
+          54.322
+        ]
+      }
+    },
+    {
+      "id": 80,
+      "type": "Feature",
+      "properties": {
+        "id": "isel-hall-cumbria",
+        "name": "Isel Hall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.3,
+          54.696
+        ]
+      }
+    },
+    {
+      "id": 81,
+      "type": "Feature",
+      "properties": {
+        "id": "kendal-castle-cumbria",
+        "name": "Kendal Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.73644,
+          54.32492
+        ]
+      }
+    },
+    {
+      "id": 82,
+      "type": "Feature",
+      "properties": {
+        "id": "kentmere-hall-cumbria",
+        "name": "Kentmere Hall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.84,
+          54.429
+        ]
+      }
+    },
+    {
+      "id": 83,
+      "type": "Feature",
+      "properties": {
+        "id": "kirkandrews-tower-cumbria",
+        "name": "Kirkandrews Tower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.95734,
+          55.03813
+        ]
+      }
+    },
+    {
+      "id": 84,
+      "type": "Feature",
+      "properties": {
+        "id": "linstock-castle-cumbria",
+        "name": "Linstock Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.894,
+          54.917
+        ]
+      }
+    },
+    {
+      "id": 85,
+      "type": "Feature",
+      "properties": {
+        "id": "lowther-castle-cumbria",
+        "name": "Lowther Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.74028,
+          54.60583
+        ]
+      }
+    },
+    {
+      "id": 86,
+      "type": "Feature",
+      "properties": {
+        "id": "millom-castle-cumbria",
+        "name": "Millom Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.27247,
+          54.220982
+        ]
+      }
+    },
+    {
+      "id": 87,
+      "type": "Feature",
+      "properties": {
+        "id": "muncaster-castle-cumbria",
+        "name": "Muncaster Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.3808693,
+          54.3546554
+        ]
+      }
+    },
+    {
+      "id": 88,
+      "type": "Feature",
+      "properties": {
+        "id": "naworth-castle-cumbria",
+        "name": "Naworth Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.68889,
+          54.95556
+        ]
+      }
+    },
+    {
+      "id": 89,
+      "type": "Feature",
+      "properties": {
+        "id": "newbiggin-hall-cumbria",
+        "name": "Newbiggin Hall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.5773,
+          54.64999
+        ]
+      }
+    },
+    {
+      "id": 90,
+      "type": "Feature",
+      "properties": {
+        "id": "pendragon-castle-cumbria",
+        "name": "Pendragon Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.33898,
+          54.41747
+        ]
+      }
+    },
+    {
+      "id": 91,
+      "type": "Feature",
+      "properties": {
+        "id": "penrith-castle-cumbria",
+        "name": "Penrith Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.7573,
+          54.6621
+        ]
+      }
+    },
+    {
+      "id": 92,
+      "type": "Feature",
+      "properties": {
+        "id": "piel-castle-cumbria",
+        "name": "Piel Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.1733,
+          54.0626
+        ]
+      }
+    },
+    {
+      "id": 93,
+      "type": "Feature",
+      "properties": {
+        "id": "priors-tower-carlisle-cumbria",
+        "name": "Prior's Tower, Carlisle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.93861,
+          54.89472
+        ]
+      }
+    },
+    {
+      "id": 94,
+      "type": "Feature",
+      "properties": {
+        "id": "rose-castle-cumbria",
+        "name": "Rose Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.9802,
+          54.8064
+        ]
+      }
+    },
+    {
+      "id": 95,
+      "type": "Feature",
+      "properties": {
+        "id": "scaleby-castle-cumbria",
+        "name": "Scaleby Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.8619,
+          54.9532
+        ]
+      }
+    },
+    {
+      "id": 96,
+      "type": "Feature",
+      "properties": {
+        "id": "sizergh-castle-cumbria",
+        "name": "Sizergh Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.77194,
+          54.28444
+        ]
+      }
+    },
+    {
+      "id": 97,
+      "type": "Feature",
+      "properties": {
+        "id": "toppin-castle-cumbria",
+        "name": "Toppin Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.769,
+          54.911
+        ]
+      }
+    },
+    {
+      "id": 98,
+      "type": "Feature",
+      "properties": {
+        "id": "ubarrow-hall-cumbria",
+        "name": "Ubarrow Hall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.77,
+          54.419
+        ]
+      }
+    },
+    {
+      "id": 99,
+      "type": "Feature",
+      "properties": {
+        "id": "wharton-hall-cumbria",
+        "name": "Wharton Hall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.3547,
+          54.4505
+        ]
+      }
+    },
+    {
+      "id": 100,
+      "type": "Feature",
+      "properties": {
+        "id": "whitehall-mealsgate-cumbria",
+        "name": "Whitehall, Mealsgate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.231,
+          54.768
+        ]
+      }
+    },
+    {
+      "id": 101,
+      "type": "Feature",
+      "properties": {
+        "id": "workington-hall-cumbria",
+        "name": "Workington Hall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.53894,
+          54.644634
+        ]
+      }
+    },
+    {
+      "id": 102,
+      "type": "Feature",
+      "properties": {
+        "id": "wray-castle-cumbria",
+        "name": "Wray Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.9641913,
+          54.4006345
+        ]
+      }
+    },
+    {
+      "id": 103,
+      "type": "Feature",
+      "properties": {
+        "id": "wraysholme-tower-cumbria",
+        "name": "Wraysholme Tower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.9398,
+          54.1802
+        ]
+      }
+    },
+    {
+      "id": 104,
+      "type": "Feature",
+      "properties": {
+        "id": "yanwath-hall-cumbria",
+        "name": "Yanwath Hall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.741,
+          54.642
+        ]
+      }
+    },
+    {
+      "id": 105,
+      "type": "Feature",
+      "properties": {
+        "id": "bolsover-castle-derbyshire",
+        "name": "Bolsover Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.29694,
+          53.23139
+        ]
+      }
+    },
+    {
+      "id": 106,
+      "type": "Feature",
+      "properties": {
+        "id": "codnor-castle-derbyshire",
+        "name": "Codnor Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.3548,
+          53.0454
+        ]
+      }
+    },
+    {
+      "id": 107,
+      "type": "Feature",
+      "properties": {
+        "id": "elvaston-castle-derbyshire",
+        "name": "Elvaston Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.39528,
+          52.89278
+        ]
+      }
+    },
+    {
+      "id": 108,
+      "type": "Feature",
+      "properties": {
+        "id": "haddon-hall-derbyshire",
+        "name": "Haddon Hall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.6498,
+          53.1939
+        ]
+      }
+    },
+    {
+      "id": 109,
+      "type": "Feature",
+      "properties": {
+        "id": "mackworth-castle-derbyshire",
+        "name": "Mackworth Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5352,
+          52.9369
+        ]
+      }
+    },
+    {
+      "id": 110,
+      "type": "Feature",
+      "properties": {
+        "id": "peveril-castle-derbyshire",
+        "name": "Peveril Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.7772,
+          53.3402
+        ]
+      }
+    },
+    {
+      "id": 111,
+      "type": "Feature",
+      "properties": {
+        "id": "riber-castle-derbyshire",
+        "name": "Riber Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.543,
+          53.1278
+        ]
+      }
+    },
+    {
+      "id": 112,
+      "type": "Feature",
+      "properties": {
+        "id": "wingfield-manor-derbyshire",
+        "name": "Wingfield Manor"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.44303,
+          53.08911
+        ]
+      }
+    },
+    {
+      "id": 113,
+      "type": "Feature",
+      "properties": {
+        "id": "affeton-castle-devon",
+        "name": "Affeton Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.7717,
+          50.9092
+        ]
+      }
+    },
+    {
+      "id": 114,
+      "type": "Feature",
+      "properties": {
+        "id": "berry-pomeroy-castle-devon",
+        "name": "Berry Pomeroy Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.6366,
+          50.449
+        ]
+      }
+    },
+    {
+      "id": 115,
+      "type": "Feature",
+      "properties": {
+        "id": "bickleigh-castle-devon",
+        "name": "Bickleigh Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.5125,
+          50.85139
+        ]
+      }
+    },
+    {
+      "id": 116,
+      "type": "Feature",
+      "properties": {
+        "id": "compton-castle-devon",
+        "name": "Compton Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.6001199,
+          50.4726858
+        ]
+      }
+    },
+    {
+      "id": 117,
+      "type": "Feature",
+      "properties": {
+        "id": "dartmouth-castle-devon",
+        "name": "Dartmouth Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.56829,
+          50.34203
+        ]
+      }
+    },
+    {
+      "id": 118,
+      "type": "Feature",
+      "properties": {
+        "id": "castle-drogo-devon",
+        "name": "Castle Drogo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.8114,
+          50.696
+        ]
+      }
+    },
+    {
+      "id": 119,
+      "type": "Feature",
+      "properties": {
+        "id": "gidleigh-castle-devon",
+        "name": "Gidleigh Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.88245,
+          50.68004
+        ]
+      }
+    },
+    {
+      "id": 120,
+      "type": "Feature",
+      "properties": {
+        "id": "hemyock-castle-devon",
+        "name": "Hemyock Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.23144,
+          50.91249
+        ]
+      }
+    },
+    {
+      "id": 121,
+      "type": "Feature",
+      "properties": {
+        "id": "kingswear-castle-devon",
+        "name": "Kingswear Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.55983,
+          50.34125
+        ]
+      }
+    },
+    {
+      "id": 122,
+      "type": "Feature",
+      "properties": {
+        "id": "lydford-castle-devon",
+        "name": "Lydford Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.1115,
+          50.6428
+        ]
+      }
+    },
+    {
+      "id": 123,
+      "type": "Feature",
+      "properties": {
+        "id": "marisco-castle-devon",
+        "name": "Marisco Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.67467,
+          51.18117
+        ]
+      }
+    },
+    {
+      "id": 124,
+      "type": "Feature",
+      "properties": {
+        "id": "okehampton-castle-devon",
+        "name": "Okehampton Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.008649,
+          50.730515
+        ]
+      }
+    },
+    {
+      "id": 125,
+      "type": "Feature",
+      "properties": {
+        "id": "plympton-castle-devon",
+        "name": "Plympton Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.051,
+          50.386
+        ]
+      }
+    },
+    {
+      "id": 126,
+      "type": "Feature",
+      "properties": {
+        "id": "powderham-castle-devon",
+        "name": "Powderham Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.459972,
+          50.642972
+        ]
+      }
+    },
+    {
+      "id": 127,
+      "type": "Feature",
+      "properties": {
+        "id": "rougemont-castle-devon",
+        "name": "Rougemont Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.53006,
+          50.72567
+        ]
+      }
+    },
+    {
+      "id": 128,
+      "type": "Feature",
+      "properties": {
+        "id": "salcombe-castle-devon",
+        "name": "Salcombe Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.7765,
+          50.2289
+        ]
+      }
+    },
+    {
+      "id": 129,
+      "type": "Feature",
+      "properties": {
+        "id": "tiverton-castle-devon",
+        "name": "Tiverton Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.4885,
+          50.9063
+        ]
+      }
+    },
+    {
+      "id": 130,
+      "type": "Feature",
+      "properties": {
+        "id": "totnes-castle-devon",
+        "name": "Totnes Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.691,
+          50.4321
+        ]
+      }
+    },
+    {
+      "id": 131,
+      "type": "Feature",
+      "properties": {
+        "id": "watermouth-castle-devon",
+        "name": "Watermouth Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.08028,
+          51.21333
+        ]
+      }
+    },
+    {
+      "id": 132,
+      "type": "Feature",
+      "properties": {
+        "id": "brownsea-castle-dorset",
+        "name": "Brownsea Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.97222,
+          50.69167
+        ]
+      }
+    },
+    {
+      "id": 133,
+      "type": "Feature",
+      "properties": {
+        "id": "christchurch-castle-dorset",
+        "name": "Christchurch Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.77501,
+          50.733369
+        ]
+      }
+    },
+    {
+      "id": 134,
+      "type": "Feature",
+      "properties": {
+        "id": "corfe-castle-dorset",
+        "name": "Corfe Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.058,
+          50.64
+        ]
+      }
+    },
+    {
+      "id": 135,
+      "type": "Feature",
+      "properties": {
+        "id": "lulworth-castle-dorset",
+        "name": "Lulworth Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.21056,
+          50.6375
+        ]
+      }
+    },
+    {
+      "id": 136,
+      "type": "Feature",
+      "properties": {
+        "id": "pennsylvania-castle-dorset",
+        "name": "Pennsylvania Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.430482,
+          50.538514
+        ]
+      }
+    },
+    {
+      "id": 137,
+      "type": "Feature",
+      "properties": {
+        "id": "portland-castle-dorset",
+        "name": "Portland Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.44671,
+          50.56825
+        ]
+      }
+    },
+    {
+      "id": 138,
+      "type": "Feature",
+      "properties": {
+        "id": "rufus-castle-dorset",
+        "name": "Rufus Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.4294,
+          50.5385
+        ]
+      }
+    },
+    {
+      "id": 139,
+      "type": "Feature",
+      "properties": {
+        "id": "sherborne-old-castle-dorset",
+        "name": "Sherborne Old Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.5024,
+          50.9494
+        ]
+      }
+    },
+    {
+      "id": 140,
+      "type": "Feature",
+      "properties": {
+        "id": "woodsford-castle-dorset",
+        "name": "Woodsford Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.338,
+          50.714
+        ]
+      }
+    },
+    {
+      "id": 141,
+      "type": "Feature",
+      "properties": {
+        "id": "paull-holme-tower-east-riding-of-yorkshire",
+        "name": "Paull Holme Tower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2059,
+          53.7069
+        ]
+      }
+    },
+    {
+      "id": 142,
+      "type": "Feature",
+      "properties": {
+        "id": "skipsea-castle-east-riding-of-yorkshire",
+        "name": "Skipsea Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.229589,
+          53.978668
+        ]
+      }
+    },
+    {
+      "id": 143,
+      "type": "Feature",
+      "properties": {
+        "id": "wressle-castle-east-riding-of-yorkshire",
+        "name": "Wressle Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.9287,
+          53.7755
+        ]
+      }
+    },
+    {
+      "id": 144,
+      "type": "Feature",
+      "properties": {
+        "id": "bodiam-castle-east-sussex",
+        "name": "Bodiam Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.5435,
+          51.0023
+        ]
+      }
+    },
+    {
+      "id": 145,
+      "type": "Feature",
+      "properties": {
+        "id": "camber-castle-east-sussex",
+        "name": "Camber Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.73248,
+          50.93305
+        ]
+      }
+    },
+    {
+      "id": 146,
+      "type": "Feature",
+      "properties": {
+        "id": "hastings-castle-east-sussex",
+        "name": "Hastings Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.58731,
+          50.85631
+        ]
+      }
+    },
+    {
+      "id": 147,
+      "type": "Feature",
+      "properties": {
+        "id": "herstmonceux-castle-east-sussex",
+        "name": "Herstmonceux Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.3387,
+          50.8695
+        ]
+      }
+    },
+    {
+      "id": 148,
+      "type": "Feature",
+      "properties": {
+        "id": "lewes-castle-east-sussex",
+        "name": "Lewes Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.00694,
+          50.87417
+        ]
+      }
+    },
+    {
+      "id": 149,
+      "type": "Feature",
+      "properties": {
+        "id": "pevensey-castle-east-sussex",
+        "name": "Pevensey Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.3342,
+          50.8188
+        ]
+      }
+    },
+    {
+      "id": 150,
+      "type": "Feature",
+      "properties": {
+        "id": "rye-castle-ypres-tower-east-sussex",
+        "name": "Rye Castle (Ypres Tower)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.7355861,
+          50.9498194
+        ]
+      }
+    },
+    {
+      "id": 151,
+      "type": "Feature",
+      "properties": {
+        "id": "colchester-castle-essex",
+        "name": "Colchester Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.903047,
+          51.890589
+        ]
+      }
+    },
+    {
+      "id": 152,
+      "type": "Feature",
+      "properties": {
+        "id": "hadleigh-castle-essex",
+        "name": "Hadleigh Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.609,
+          51.5444
+        ]
+      }
+    },
+    {
+      "id": 153,
+      "type": "Feature",
+      "properties": {
+        "id": "hedingham-castle-essex",
+        "name": "Hedingham Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.60111,
+          51.9925
+        ]
+      }
+    },
+    {
+      "id": 154,
+      "type": "Feature",
+      "properties": {
+        "id": "walden-castle-essex",
+        "name": "Walden Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.242,
+          52.0255
+        ]
+      }
+    },
+    {
+      "id": 155,
+      "type": "Feature",
+      "properties": {
+        "id": "berkeley-castle-gloucestershire",
+        "name": "Berkeley Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.45707,
+          51.68797
+        ]
+      }
+    },
+    {
+      "id": 156,
+      "type": "Feature",
+      "properties": {
+        "id": "beverstone-castle-gloucestershire",
+        "name": "Beverstone Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.201553,
+          51.644239
+        ]
+      }
+    },
+    {
+      "id": 157,
+      "type": "Feature",
+      "properties": {
+        "id": "st-briavels-castle-gloucestershire",
+        "name": "St. Briavel's Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.6405,
+          51.738
+        ]
+      }
+    },
+    {
+      "id": 158,
+      "type": "Feature",
+      "properties": {
+        "id": "sudeley-castle-gloucestershire",
+        "name": "Sudeley Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.95611,
+          51.94722
+        ]
+      }
+    },
+    {
+      "id": 159,
+      "type": "Feature",
+      "properties": {
+        "id": "thornbury-castle-gloucestershire",
+        "name": "Thornbury Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.5301,
+          51.6136
+        ]
+      }
+    },
+    {
+      "id": 160,
+      "type": "Feature",
+      "properties": {
+        "id": "tower-of-london-greater-london",
+        "name": "Tower of London"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.07611,
+          51.50806
+        ]
+      }
+    },
+    {
+      "id": 161,
+      "type": "Feature",
+      "properties": {
+        "id": "manor-farm-ruislip-greater-london",
+        "name": "Manor Farm, Ruislip"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.428451,
+          51.578206
+        ]
+      }
+    },
+    {
+      "id": 162,
+      "type": "Feature",
+      "properties": {
+        "id": "radcliffe-tower-greater-manchester",
+        "name": "Radcliffe Tower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.308259,
+          53.56361
+        ]
+      }
+    },
+    {
+      "id": 163,
+      "type": "Feature",
+      "properties": {
+        "id": "calshot-castle-hampshire",
+        "name": "Calshot Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.3075,
+          50.82
+        ]
+      }
+    },
+    {
+      "id": 164,
+      "type": "Feature",
+      "properties": {
+        "id": "hurst-castle-hampshire",
+        "name": "Hurst Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.55111,
+          50.70639
+        ]
+      }
+    },
+    {
+      "id": 165,
+      "type": "Feature",
+      "properties": {
+        "id": "netley-castle-hampshire",
+        "name": "Netley Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.36,
+          50.878
+        ]
+      }
+    },
+    {
+      "id": 166,
+      "type": "Feature",
+      "properties": {
+        "id": "odiham-castle-hampshire",
+        "name": "Odiham Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.9617222,
+          51.2614194
+        ]
+      }
+    },
+    {
+      "id": 167,
+      "type": "Feature",
+      "properties": {
+        "id": "portchester-castle-hampshire",
+        "name": "Portchester Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.113034,
+          50.836546
+        ]
+      }
+    },
+    {
+      "id": 168,
+      "type": "Feature",
+      "properties": {
+        "id": "southampton-castle-hampshire",
+        "name": "Southampton Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.4054,
+          50.9007
+        ]
+      }
+    },
+    {
+      "id": 169,
+      "type": "Feature",
+      "properties": {
+        "id": "southsea-castle-hampshire",
+        "name": "Southsea Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.08888,
+          50.77805
+        ]
+      }
+    },
+    {
+      "id": 170,
+      "type": "Feature",
+      "properties": {
+        "id": "winchester-castle-hampshire",
+        "name": "Winchester Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.32054,
+          51.06243
+        ]
+      }
+    },
+    {
+      "id": 171,
+      "type": "Feature",
+      "properties": {
+        "id": "wolvesey-castle-hampshire",
+        "name": "Wolvesey Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.310056,
+          51.059111
+        ]
+      }
+    },
+    {
+      "id": 172,
+      "type": "Feature",
+      "properties": {
+        "id": "brampton-bryan-castle-herefordshire",
+        "name": "Brampton Bryan Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.9263,
+          52.3478
+        ]
+      }
+    },
+    {
+      "id": 173,
+      "type": "Feature",
+      "properties": {
+        "id": "clifford-castle-herefordshire",
+        "name": "Clifford Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.10666,
+          52.10443
+        ]
+      }
+    },
+    {
+      "id": 174,
+      "type": "Feature",
+      "properties": {
+        "id": "croft-castle-herefordshire",
+        "name": "Croft Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.80916,
+          52.28486
+        ]
+      }
+    },
+    {
+      "id": 175,
+      "type": "Feature",
+      "properties": {
+        "id": "downton-castle-herefordshire",
+        "name": "Downton Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.8164,
+          52.3678
+        ]
+      }
+    },
+    {
+      "id": 176,
+      "type": "Feature",
+      "properties": {
+        "id": "eastnor-castle-herefordshire",
+        "name": "Eastnor Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.3877,
+          52.0297
+        ]
+      }
+    },
+    {
+      "id": 177,
+      "type": "Feature",
+      "properties": {
+        "id": "goodrich-castle-herefordshire",
+        "name": "Goodrich Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.613,
+          51.8761
+        ]
+      }
+    },
+    {
+      "id": 178,
+      "type": "Feature",
+      "properties": {
+        "id": "hampton-court-herefordshire",
+        "name": "Hampton Court"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.7041417,
+          52.1676583
+        ]
+      }
+    },
+    {
+      "id": 179,
+      "type": "Feature",
+      "properties": {
+        "id": "kentchurch-court-herefordshire",
+        "name": "Kentchurch Court"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.840475,
+          51.928581
+        ]
+      }
+    },
+    {
+      "id": 180,
+      "type": "Feature",
+      "properties": {
+        "id": "kinnersley-castle-herefordshire",
+        "name": "Kinnersley Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.957,
+          52.141
+        ]
+      }
+    },
+    {
+      "id": 181,
+      "type": "Feature",
+      "properties": {
+        "id": "longtown-castle-herefordshire",
+        "name": "Longtown Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.991,
+          51.9562
+        ]
+      }
+    },
+    {
+      "id": 182,
+      "type": "Feature",
+      "properties": {
+        "id": "pembridge-castle-herefordshire",
+        "name": "Pembridge Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.7448,
+          51.8698
+        ]
+      }
+    },
+    {
+      "id": 183,
+      "type": "Feature",
+      "properties": {
+        "id": "snodhill-castle-herefordshire",
+        "name": "Snodhill Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.0016,
+          52.0703
+        ]
+      }
+    },
+    {
+      "id": 184,
+      "type": "Feature",
+      "properties": {
+        "id": "treago-castle-herefordshire",
+        "name": "Treago Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.7425,
+          51.9114
+        ]
+      }
+    },
+    {
+      "id": 185,
+      "type": "Feature",
+      "properties": {
+        "id": "wigmore-castle-herefordshire",
+        "name": "Wigmore Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.8714,
+          52.3177
+        ]
+      }
+    },
+    {
+      "id": 186,
+      "type": "Feature",
+      "properties": {
+        "id": "wilton-castle-herefordshire",
+        "name": "Wilton Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.596635,
+          51.916163
+        ]
+      }
+    },
+    {
+      "id": 187,
+      "type": "Feature",
+      "properties": {
+        "id": "berkhamsted-castle-hertfordshire",
+        "name": "Berkhamsted Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.55889,
+          51.76361
+        ]
+      }
+    },
+    {
+      "id": 188,
+      "type": "Feature",
+      "properties": {
+        "id": "hertford-castle-hertfordshire",
+        "name": "Hertford Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.08,
+          51.7955
+        ]
+      }
+    },
+    {
+      "id": 189,
+      "type": "Feature",
+      "properties": {
+        "id": "carisbrooke-castle-isle-of-wight",
+        "name": "Carisbrooke Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.3133,
+          50.6874
+        ]
+      }
+    },
+    {
+      "id": 190,
+      "type": "Feature",
+      "properties": {
+        "id": "norris-castle-isle-of-wight",
+        "name": "Norris Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.270556,
+          50.763056
+        ]
+      }
+    },
+    {
+      "id": 191,
+      "type": "Feature",
+      "properties": {
+        "id": "yarmouth-castle-isle-of-wight",
+        "name": "Yarmouth Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.500278,
+          50.706667
+        ]
+      }
+    },
+    {
+      "id": 192,
+      "type": "Feature",
+      "properties": {
+        "id": "west-cowes-castle-isle-of-wight",
+        "name": "West Cowes Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.3012,
+          50.7665
+        ]
+      }
+    },
+    {
+      "id": 193,
+      "type": "Feature",
+      "properties": {
+        "id": "cromwells-castle-isles-of-scilly",
+        "name": "Cromwell's Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.3505,
+          49.9616
+        ]
+      }
+    },
+    {
+      "id": 194,
+      "type": "Feature",
+      "properties": {
+        "id": "star-castle-isles-of-scilly",
+        "name": "Star Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.321056,
+          49.915378
+        ]
+      }
+    },
+    {
+      "id": 195,
+      "type": "Feature",
+      "properties": {
+        "id": "allington-castle-kent",
+        "name": "Allington Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.511702,
+          51.293333
+        ]
+      }
+    },
+    {
+      "id": 196,
+      "type": "Feature",
+      "properties": {
+        "id": "canterbury-castle-kent",
+        "name": "Canterbury Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.074618,
+          51.275686
+        ]
+      }
+    },
+    {
+      "id": 197,
+      "type": "Feature",
+      "properties": {
+        "id": "chiddingstone-castle-kent",
+        "name": "Chiddingstone Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1424,
+          51.1858
+        ]
+      }
+    },
+    {
+      "id": 198,
+      "type": "Feature",
+      "properties": {
+        "id": "chilham-castle-kent",
+        "name": "Chilham Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.96,
+          51.243
+        ]
+      }
+    },
+    {
+      "id": 199,
+      "type": "Feature",
+      "properties": {
+        "id": "cooling-castle-kent",
+        "name": "Cooling Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.523084,
+          51.455441
+        ]
+      }
+    },
+    {
+      "id": 200,
+      "type": "Feature",
+      "properties": {
+        "id": "deal-castle-kent",
+        "name": "Deal Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.40356,
+          51.21943
+        ]
+      }
+    },
+    {
+      "id": 201,
+      "type": "Feature",
+      "properties": {
+        "id": "dover-castle-kent",
+        "name": "Dover Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.3214,
+          51.1297
+        ]
+      }
+    },
+    {
+      "id": 202,
+      "type": "Feature",
+      "properties": {
+        "id": "eynsford-castle-kent",
+        "name": "Eynsford Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.213333,
+          51.370556
+        ]
+      }
+    },
+    {
+      "id": 203,
+      "type": "Feature",
+      "properties": {
+        "id": "hever-castle-kent",
+        "name": "Hever Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.11417,
+          51.18722
+        ]
+      }
+    },
+    {
+      "id": 204,
+      "type": "Feature",
+      "properties": {
+        "id": "kingsgate-castle-kent",
+        "name": "Kingsgate Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.44333,
+          51.38306
+        ]
+      }
+    },
+    {
+      "id": 205,
+      "type": "Feature",
+      "properties": {
+        "id": "leeds-castle-kent",
+        "name": "Leeds Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.63008,
+          51.24856
+        ]
+      }
+    },
+    {
+      "id": 206,
+      "type": "Feature",
+      "properties": {
+        "id": "leybourne-castle-kent",
+        "name": "Leybourne Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.4208889,
+          51.3043861
+        ]
+      }
+    },
+    {
+      "id": 207,
+      "type": "Feature",
+      "properties": {
+        "id": "lullingstone-castle-kent",
+        "name": "Lullingstone Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1959,
+          51.3585
+        ]
+      }
+    },
+    {
+      "id": 208,
+      "type": "Feature",
+      "properties": {
+        "id": "lympne-castle-kent",
+        "name": "Lympne Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.0236222,
+          51.0722167
+        ]
+      }
+    },
+    {
+      "id": 209,
+      "type": "Feature",
+      "properties": {
+        "id": "otford-palace-kent",
+        "name": "Otford Palace"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1911,
+          51.3114
+        ]
+      }
+    },
+    {
+      "id": 210,
+      "type": "Feature",
+      "properties": {
+        "id": "penshurst-place-kent",
+        "name": "Penshurst Place"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1838,
+          51.1747
+        ]
+      }
+    },
+    {
+      "id": 211,
+      "type": "Feature",
+      "properties": {
+        "id": "rochester-castle-kent",
+        "name": "Rochester Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.5014843,
+          51.3899935
+        ]
+      }
+    },
+    {
+      "id": 212,
+      "type": "Feature",
+      "properties": {
+        "id": "st-leonards-tower-west-malling-kent",
+        "name": "St Leonard's Tower, West Malling"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.4019083,
+          51.2882444
+        ]
+      }
+    },
+    {
+      "id": 213,
+      "type": "Feature",
+      "properties": {
+        "id": "saltwood-castle-kent",
+        "name": "Saltwood Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.0843667,
+          51.0818444
+        ]
+      }
+    },
+    {
+      "id": 214,
+      "type": "Feature",
+      "properties": {
+        "id": "sandgate-castle-kent",
+        "name": "Sandgate Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.148889,
+          51.073444
+        ]
+      }
+    },
+    {
+      "id": 215,
+      "type": "Feature",
+      "properties": {
+        "id": "scotney-castle-kent",
+        "name": "Scotney Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.4082,
+          51.0928
+        ]
+      }
+    },
+    {
+      "id": 216,
+      "type": "Feature",
+      "properties": {
+        "id": "sissinghurst-castle-kent",
+        "name": "Sissinghurst Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.5815,
+          51.1157
+        ]
+      }
+    },
+    {
+      "id": 217,
+      "type": "Feature",
+      "properties": {
+        "id": "starkey-castle-kent",
+        "name": "Starkey Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.45836,
+          51.34964
+        ]
+      }
+    },
+    {
+      "id": 218,
+      "type": "Feature",
+      "properties": {
+        "id": "stone-castle-kent",
+        "name": "Stone Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.27778,
+          51.44333
+        ]
+      }
+    },
+    {
+      "id": 219,
+      "type": "Feature",
+      "properties": {
+        "id": "sutton-valence-castle-kent",
+        "name": "Sutton Valence Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.59775,
+          51.21238
+        ]
+      }
+    },
+    {
+      "id": 220,
+      "type": "Feature",
+      "properties": {
+        "id": "tonbridge-castle-kent",
+        "name": "Tonbridge Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.2721,
+          51.1971
+        ]
+      }
+    },
+    {
+      "id": 221,
+      "type": "Feature",
+      "properties": {
+        "id": "upnor-castle-kent",
+        "name": "Upnor Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.527114,
+          51.406907
+        ]
+      }
+    },
+    {
+      "id": 222,
+      "type": "Feature",
+      "properties": {
+        "id": "walmer-castle-kent",
+        "name": "Walmer Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.402308,
+          51.200992
+        ]
+      }
+    },
+    {
+      "id": 223,
+      "type": "Feature",
+      "properties": {
+        "id": "westenhanger-castle-kent",
+        "name": "Westenhanger Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.03139,
+          51.09444
+        ]
+      }
+    },
+    {
+      "id": 224,
+      "type": "Feature",
+      "properties": {
+        "id": "ashton-hall-lancashire",
+        "name": "Ashton Hall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.8229,
+          54.0089
+        ]
+      }
+    },
+    {
+      "id": 225,
+      "type": "Feature",
+      "properties": {
+        "id": "borwick-hall-lancashire",
+        "name": "Borwick Hall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.73,
+          54.15
+        ]
+      }
+    },
+    {
+      "id": 226,
+      "type": "Feature",
+      "properties": {
+        "id": "clitheroe-castle-lancashire",
+        "name": "Clitheroe Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.3931,
+          53.8709
+        ]
+      }
+    },
+    {
+      "id": 227,
+      "type": "Feature",
+      "properties": {
+        "id": "hornby-castle-lancashire",
+        "name": "Hornby Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.6323,
+          54.1114
+        ]
+      }
+    },
+    {
+      "id": 228,
+      "type": "Feature",
+      "properties": {
+        "id": "lancaster-castle-lancashire",
+        "name": "Lancaster Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.80562,
+          54.04981
+        ]
+      }
+    },
+    {
+      "id": 229,
+      "type": "Feature",
+      "properties": {
+        "id": "thurland-castle-lancashire",
+        "name": "Thurland Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.5978,
+          54.152
+        ]
+      }
+    },
+    {
+      "id": 230,
+      "type": "Feature",
+      "properties": {
+        "id": "turton-tower-lancashire",
+        "name": "Turton Tower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.4075,
+          53.633
+        ]
+      }
+    },
+    {
+      "id": 231,
+      "type": "Feature",
+      "properties": {
+        "id": "ashby-de-la-zouch-castle-leicestershire",
+        "name": "Ashby de la Zouch Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.4664382,
+          52.746132
+        ]
+      }
+    },
+    {
+      "id": 232,
+      "type": "Feature",
+      "properties": {
+        "id": "belvoir-castle-leicestershire",
+        "name": "Belvoir Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.7825611,
+          52.8945
+        ]
+      }
+    },
+    {
+      "id": 233,
+      "type": "Feature",
+      "properties": {
+        "id": "kirby-muxloe-castle-leicestershire",
+        "name": "Kirby Muxloe Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.2272,
+          52.6366
+        ]
+      }
+    },
+    {
+      "id": 234,
+      "type": "Feature",
+      "properties": {
+        "id": "leicester-castle-leicestershire",
+        "name": "Leicester Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.141194,
+          52.632333
+        ]
+      }
+    },
+    {
+      "id": 235,
+      "type": "Feature",
+      "properties": {
+        "id": "bolingbroke-castle-lincolnshire",
+        "name": "Bolingbroke Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.01638,
+          53.16414
+        ]
+      }
+    },
+    {
+      "id": 236,
+      "type": "Feature",
+      "properties": {
+        "id": "grimsthorpe-castle-lincolnshire",
+        "name": "Grimsthorpe Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4523,
+          52.7923
+        ]
+      }
+    },
+    {
+      "id": 237,
+      "type": "Feature",
+      "properties": {
+        "id": "hussey-tower-lincolnshire",
+        "name": "Hussey Tower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0214,
+          52.974
+        ]
+      }
+    },
+    {
+      "id": 238,
+      "type": "Feature",
+      "properties": {
+        "id": "kyme-tower-lincolnshire",
+        "name": "Kyme Tower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2489,
+          53.03212
+        ]
+      }
+    },
+    {
+      "id": 239,
+      "type": "Feature",
+      "properties": {
+        "id": "lincoln-castle-lincolnshire",
+        "name": "Lincoln Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.54095,
+          53.23529
+        ]
+      }
+    },
+    {
+      "id": 240,
+      "type": "Feature",
+      "properties": {
+        "id": "rochford-tower-lincolnshire",
+        "name": "Rochford Tower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0214,
+          52.974
+        ]
+      }
+    },
+    {
+      "id": 241,
+      "type": "Feature",
+      "properties": {
+        "id": "somerton-castle-lincolnshire",
+        "name": "Somerton Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.576,
+          53.1177
+        ]
+      }
+    },
+    {
+      "id": 242,
+      "type": "Feature",
+      "properties": {
+        "id": "tattershall-castle-lincolnshire",
+        "name": "Tattershall Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.192611,
+          53.101333
+        ]
+      }
+    },
+    {
+      "id": 243,
+      "type": "Feature",
+      "properties": {
+        "id": "torksey-castle-lincolnshire",
+        "name": "Torksey Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.745,
+          53.3
+        ]
+      }
+    },
+    {
+      "id": 244,
+      "type": "Feature",
+      "properties": {
+        "id": "brimstage-hall-merseyside",
+        "name": "Brimstage Hall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.0622,
+          53.3316
+        ]
+      }
+    },
+    {
+      "id": 245,
+      "type": "Feature",
+      "properties": {
+        "id": "leasowe-castle-merseyside",
+        "name": "Leasowe Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.098,
+          53.414
+        ]
+      }
+    },
+    {
+      "id": 246,
+      "type": "Feature",
+      "properties": {
+        "id": "baconsthorpe-castle-norfolk",
+        "name": "Baconsthorpe Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.152,
+          52.8985
+        ]
+      }
+    },
+    {
+      "id": 247,
+      "type": "Feature",
+      "properties": {
+        "id": "burgh-castle-norfolk",
+        "name": "Burgh Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.6515,
+          52.5826
+        ]
+      }
+    },
+    {
+      "id": 248,
+      "type": "Feature",
+      "properties": {
+        "id": "castle-acre-castle-norfolk",
+        "name": "Castle Acre Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.693285,
+          52.703052
+        ]
+      }
+    },
+    {
+      "id": 249,
+      "type": "Feature",
+      "properties": {
+        "id": "castle-rising-castle-norfolk",
+        "name": "Castle Rising Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.4689,
+          52.7928
+        ]
+      }
+    },
+    {
+      "id": 250,
+      "type": "Feature",
+      "properties": {
+        "id": "claxton-castle-norfolk",
+        "name": "Claxton Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4451,
+          52.5818
+        ]
+      }
+    },
+    {
+      "id": 251,
+      "type": "Feature",
+      "properties": {
+        "id": "norwich-castle-norfolk",
+        "name": "Norwich Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.2964,
+          52.6286
+        ]
+      }
+    },
+    {
+      "id": 252,
+      "type": "Feature",
+      "properties": {
+        "id": "oxburgh-hall-norfolk",
+        "name": "Oxburgh Hall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.57083,
+          52.58139
+        ]
+      }
+    },
+    {
+      "id": 253,
+      "type": "Feature",
+      "properties": {
+        "id": "weeting-castle-norfolk",
+        "name": "Weeting Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.6163,
+          52.4711
+        ]
+      }
+    },
+    {
+      "id": 254,
+      "type": "Feature",
+      "properties": {
+        "id": "astwell-castle-northamptonshire",
+        "name": "Astwell Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.11417,
+          52.09167
+        ]
+      }
+    },
+    {
+      "id": 255,
+      "type": "Feature",
+      "properties": {
+        "id": "barnwell-castle-northamptonshire",
+        "name": "Barnwell Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.46062,
+          52.45563
+        ]
+      }
+    },
+    {
+      "id": 256,
+      "type": "Feature",
+      "properties": {
+        "id": "rockingham-castle-northamptonshire",
+        "name": "Rockingham Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.724,
+          52.5129
+        ]
+      }
+    },
+    {
+      "id": 257,
+      "type": "Feature",
+      "properties": {
+        "id": "thorpe-waterville-castle-northamptonshire",
+        "name": "Thorpe Waterville Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4986,
+          52.4211
+        ]
+      }
+    },
+    {
+      "id": 258,
+      "type": "Feature",
+      "properties": {
+        "id": "alnham-vicars-pele-northumberland",
+        "name": "Alnham Vicars Pele"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.0081,
+          55.3915
+        ]
+      }
+    },
+    {
+      "id": 259,
+      "type": "Feature",
+      "properties": {
+        "id": "alnwick-castle-northumberland",
+        "name": "Alnwick Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.70607,
+          55.41575
+        ]
+      }
+    },
+    {
+      "id": 260,
+      "type": "Feature",
+      "properties": {
+        "id": "aydon-castle-northumberland",
+        "name": "Aydon Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2,
+          54.9904
+        ]
+      }
+    },
+    {
+      "id": 261,
+      "type": "Feature",
+      "properties": {
+        "id": "bamburgh-castle-northumberland",
+        "name": "Bamburgh Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.709,
+          55.608
+        ]
+      }
+    },
+    {
+      "id": 262,
+      "type": "Feature",
+      "properties": {
+        "id": "barmoor-castle-northumberland",
+        "name": "Barmoor Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.00601,
+          55.65245
+        ]
+      }
+    },
+    {
+      "id": 263,
+      "type": "Feature",
+      "properties": {
+        "id": "beaufront-castle-northumberland",
+        "name": "Beaufront Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.058,
+          54.988
+        ]
+      }
+    },
+    {
+      "id": 264,
+      "type": "Feature",
+      "properties": {
+        "id": "bellister-castle-northumberland",
+        "name": "Bellister Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.468,
+          54.961
+        ]
+      }
+    },
+    {
+      "id": 265,
+      "type": "Feature",
+      "properties": {
+        "id": "belsay-castle-northumberland",
+        "name": "Belsay Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.869,
+          55.102
+        ]
+      }
+    },
+    {
+      "id": 266,
+      "type": "Feature",
+      "properties": {
+        "id": "berwick-castle-northumberland",
+        "name": "Berwick Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.0116,
+          55.7738
+        ]
+      }
+    },
+    {
+      "id": 267,
+      "type": "Feature",
+      "properties": {
+        "id": "bitchfield-castle-northumberland",
+        "name": "Bitchfield Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.857,
+          55.089
+        ]
+      }
+    },
+    {
+      "id": 268,
+      "type": "Feature",
+      "properties": {
+        "id": "blenkinsop-castle-northumberland",
+        "name": "Blenkinsop Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.525,
+          54.974
+        ]
+      }
+    },
+    {
+      "id": 269,
+      "type": "Feature",
+      "properties": {
+        "id": "bothal-castle-northumberland",
+        "name": "Bothal Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.625,
+          55.173
+        ]
+      }
+    },
+    {
+      "id": 270,
+      "type": "Feature",
+      "properties": {
+        "id": "bywell-castle-northumberland",
+        "name": "Bywell Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.925,
+          54.951
+        ]
+      }
+    },
+    {
+      "id": 271,
+      "type": "Feature",
+      "properties": {
+        "id": "callaly-castle-northumberland",
+        "name": "Callaly Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.921,
+          55.383
+        ]
+      }
+    },
+    {
+      "id": 272,
+      "type": "Feature",
+      "properties": {
+        "id": "cartington-castle-northumberland",
+        "name": "Cartington Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.94,
+          55.335
+        ]
+      }
+    },
+    {
+      "id": 273,
+      "type": "Feature",
+      "properties": {
+        "id": "chillingham-castle-northumberland",
+        "name": "Chillingham Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.905,
+          55.526
+        ]
+      }
+    },
+    {
+      "id": 274,
+      "type": "Feature",
+      "properties": {
+        "id": "chipchase-castle-northumberland",
+        "name": "Chipchase Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.186,
+          55.0756
+        ]
+      }
+    },
+    {
+      "id": 275,
+      "type": "Feature",
+      "properties": {
+        "id": "cocklaw-tower-northumberland",
+        "name": "Cocklaw Tower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.103,
+          55.046
+        ]
+      }
+    },
+    {
+      "id": 276,
+      "type": "Feature",
+      "properties": {
+        "id": "cockle-park-tower-northumberland",
+        "name": "Cockle Park Tower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.684,
+          55.213
+        ]
+      }
+    },
+    {
+      "id": 277,
+      "type": "Feature",
+      "properties": {
+        "id": "corbridge-vicars-pele-northumberland",
+        "name": "Corbridge Vicar's Pele"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.019,
+          54.974
+        ]
+      }
+    },
+    {
+      "id": 278,
+      "type": "Feature",
+      "properties": {
+        "id": "coupland-castle-northumberland",
+        "name": "Coupland Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.103,
+          55.574
+        ]
+      }
+    },
+    {
+      "id": 279,
+      "type": "Feature",
+      "properties": {
+        "id": "craster-tower-northumberland",
+        "name": "Craster Tower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.597,
+          55.47
+        ]
+      }
+    },
+    {
+      "id": 280,
+      "type": "Feature",
+      "properties": {
+        "id": "crawley-tower-northumberland",
+        "name": "Crawley Tower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.896,
+          55.443
+        ]
+      }
+    },
+    {
+      "id": 281,
+      "type": "Feature",
+      "properties": {
+        "id": "cresswell-castle-northumberland",
+        "name": "Cresswell Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5408,
+          55.233
+        ]
+      }
+    },
+    {
+      "id": 282,
+      "type": "Feature",
+      "properties": {
+        "id": "dilston-castle-northumberland",
+        "name": "Dilston Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.039,
+          54.965
+        ]
+      }
+    },
+    {
+      "id": 283,
+      "type": "Feature",
+      "properties": {
+        "id": "dunstanburgh-castle-northumberland",
+        "name": "Dunstanburgh Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5932,
+          55.4911
+        ]
+      }
+    },
+    {
+      "id": 284,
+      "type": "Feature",
+      "properties": {
+        "id": "edlingham-castle-northumberland",
+        "name": "Edlingham Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.81842,
+          55.376755
+        ]
+      }
+    },
+    {
+      "id": 285,
+      "type": "Feature",
+      "properties": {
+        "id": "elsdon-tower-northumberland",
+        "name": "Elsdon Tower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.1021,
+          55.2346
+        ]
+      }
+    },
+    {
+      "id": 286,
+      "type": "Feature",
+      "properties": {
+        "id": "embleton-tower-northumberland",
+        "name": "Embleton Tower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.637,
+          55.495
+        ]
+      }
+    },
+    {
+      "id": 287,
+      "type": "Feature",
+      "properties": {
+        "id": "etal-castle-northumberland",
+        "name": "Etal Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.121,
+          55.648
+        ]
+      }
+    },
+    {
+      "id": 288,
+      "type": "Feature",
+      "properties": {
+        "id": "featherstone-castle-northumberland",
+        "name": "Featherstone Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.51,
+          54.943
+        ]
+      }
+    },
+    {
+      "id": 289,
+      "type": "Feature",
+      "properties": {
+        "id": "ford-castle-northumberland",
+        "name": "Ford Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.091,
+          55.631
+        ]
+      }
+    },
+    {
+      "id": 290,
+      "type": "Feature",
+      "properties": {
+        "id": "halton-castle-northumberland",
+        "name": "Halton Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.006,
+          55.005
+        ]
+      }
+    },
+    {
+      "id": 291,
+      "type": "Feature",
+      "properties": {
+        "id": "harbottle-castle-northumberland",
+        "name": "Harbottle Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.109,
+          55.337
+        ]
+      }
+    },
+    {
+      "id": 292,
+      "type": "Feature",
+      "properties": {
+        "id": "haughton-castle-northumberland",
+        "name": "Haughton Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.12988,
+          55.05053
+        ]
+      }
+    },
+    {
+      "id": 293,
+      "type": "Feature",
+      "properties": {
+        "id": "hexham-moot-hall-and-old-gaol-northumberland",
+        "name": "Hexham Moot Hall and Old Gaol"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.101,
+          54.971
+        ]
+      }
+    },
+    {
+      "id": 294,
+      "type": "Feature",
+      "properties": {
+        "id": "horsley-tower-longhorsley-northumberland",
+        "name": "Horsley Tower, Longhorsley"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.773,
+          55.244
+        ]
+      }
+    },
+    {
+      "id": 295,
+      "type": "Feature",
+      "properties": {
+        "id": "langley-castle-northumberland",
+        "name": "Langley Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.259,
+          54.956
+        ]
+      }
+    },
+    {
+      "id": 296,
+      "type": "Feature",
+      "properties": {
+        "id": "lemmington-hall-northumberland",
+        "name": "Lemmington Hall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.810281,
+          55.39546
+        ]
+      }
+    },
+    {
+      "id": 297,
+      "type": "Feature",
+      "properties": {
+        "id": "lindisfarne-castle-northumberland",
+        "name": "Lindisfarne Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.785,
+          55.669
+        ]
+      }
+    },
+    {
+      "id": 298,
+      "type": "Feature",
+      "properties": {
+        "id": "mitford-castle-northumberland",
+        "name": "Mitford Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.734,
+          55.164
+        ]
+      }
+    },
+    {
+      "id": 299,
+      "type": "Feature",
+      "properties": {
+        "id": "morpeth-castle-northumberland",
+        "name": "Morpeth Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.686,
+          55.164
+        ]
+      }
+    },
+    {
+      "id": 300,
+      "type": "Feature",
+      "properties": {
+        "id": "norham-castle-northumberland",
+        "name": "Norham Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.149,
+          55.722
+        ]
+      }
+    },
+    {
+      "id": 301,
+      "type": "Feature",
+      "properties": {
+        "id": "preston-tower-ellingham-northumberland",
+        "name": "Preston Tower, Ellingham"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.7105359,
+          55.5222934
+        ]
+      }
+    },
+    {
+      "id": 302,
+      "type": "Feature",
+      "properties": {
+        "id": "prior-castells-tower-northumberland",
+        "name": "Prior Castell's Tower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.628,
+          55.622
+        ]
+      }
+    },
+    {
+      "id": 303,
+      "type": "Feature",
+      "properties": {
+        "id": "prudhoe-castle-northumberland",
+        "name": "Prudhoe Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.854,
+          54.964
+        ]
+      }
+    },
+    {
+      "id": 304,
+      "type": "Feature",
+      "properties": {
+        "id": "shilbottle-tower-northumberland",
+        "name": "Shilbottle Tower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.6915,
+          55.3721
+        ]
+      }
+    },
+    {
+      "id": 305,
+      "type": "Feature",
+      "properties": {
+        "id": "shortflatt-tower-northumberland",
+        "name": "Shortflatt Tower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.852,
+          55.136
+        ]
+      }
+    },
+    {
+      "id": 306,
+      "type": "Feature",
+      "properties": {
+        "id": "thirlwall-castle-northumberland",
+        "name": "Thirlwall Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.532,
+          54.989
+        ]
+      }
+    },
+    {
+      "id": 307,
+      "type": "Feature",
+      "properties": {
+        "id": "warkworth-castle-northumberland",
+        "name": "Warkworth Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.6105,
+          55.3447
+        ]
+      }
+    },
+    {
+      "id": 308,
+      "type": "Feature",
+      "properties": {
+        "id": "whittingham-tower-northumberland",
+        "name": "Whittingham Tower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.899,
+          55.397
+        ]
+      }
+    },
+    {
+      "id": 309,
+      "type": "Feature",
+      "properties": {
+        "id": "whitton-tower-northumberland",
+        "name": "Whitton Tower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.9109,
+          55.3097
+        ]
+      }
+    },
+    {
+      "id": 310,
+      "type": "Feature",
+      "properties": {
+        "id": "willimoteswick-castle-northumberland",
+        "name": "Willimoteswick Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.337,
+          54.975
+        ]
+      }
+    },
+    {
+      "id": 311,
+      "type": "Feature",
+      "properties": {
+        "id": "ayton-castle-north-yorkshire",
+        "name": "Ayton Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.487,
+          54.247
+        ]
+      }
+    },
+    {
+      "id": 312,
+      "type": "Feature",
+      "properties": {
+        "id": "barden-tower-north-yorkshire",
+        "name": "Barden Tower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.9239,
+          54.0107
+        ]
+      }
+    },
+    {
+      "id": 313,
+      "type": "Feature",
+      "properties": {
+        "id": "bolton-castle-north-yorkshire",
+        "name": "Bolton Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.948106,
+          54.321932
+        ]
+      }
+    },
+    {
+      "id": 314,
+      "type": "Feature",
+      "properties": {
+        "id": "cawood-castle-north-yorkshire",
+        "name": "Cawood Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1309,
+          53.8315
+        ]
+      }
+    },
+    {
+      "id": 315,
+      "type": "Feature",
+      "properties": {
+        "id": "cliffords-tower-north-yorkshire",
+        "name": "Clifford's Tower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.08,
+          53.9558
+        ]
+      }
+    },
+    {
+      "id": 316,
+      "type": "Feature",
+      "properties": {
+        "id": "crayke-castle-north-yorkshire",
+        "name": "Crayke Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1459,
+          54.1289
+        ]
+      }
+    },
+    {
+      "id": 317,
+      "type": "Feature",
+      "properties": {
+        "id": "danby-castle-north-yorkshire",
+        "name": "Danby Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.9097,
+          54.4677
+        ]
+      }
+    },
+    {
+      "id": 318,
+      "type": "Feature",
+      "properties": {
+        "id": "gilling-castle-north-yorkshire",
+        "name": "Gilling Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.06527,
+          54.18335
+        ]
+      }
+    },
+    {
+      "id": 319,
+      "type": "Feature",
+      "properties": {
+        "id": "hazlewood-castle-north-yorkshire",
+        "name": "Hazlewood Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.3192,
+          53.8523
+        ]
+      }
+    },
+    {
+      "id": 320,
+      "type": "Feature",
+      "properties": {
+        "id": "hellifield-peel-north-yorkshire",
+        "name": "Hellifield Peel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.2215,
+          54.0045
+        ]
+      }
+    },
+    {
+      "id": 321,
+      "type": "Feature",
+      "properties": {
+        "id": "helmsley-castle-north-yorkshire",
+        "name": "Helmsley Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.0655,
+          54.2391
+        ]
+      }
+    },
+    {
+      "id": 322,
+      "type": "Feature",
+      "properties": {
+        "id": "hornby-castle-north-yorkshire",
+        "name": "Hornby Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.653,
+          54.339
+        ]
+      }
+    },
+    {
+      "id": 323,
+      "type": "Feature",
+      "properties": {
+        "id": "knaresborough-castle-north-yorkshire",
+        "name": "Knaresborough Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.46932,
+          54.00719
+        ]
+      }
+    },
+    {
+      "id": 324,
+      "type": "Feature",
+      "properties": {
+        "id": "marmion-tower-north-yorkshire",
+        "name": "Marmion Tower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5937,
+          54.2034
+        ]
+      }
+    },
+    {
+      "id": 325,
+      "type": "Feature",
+      "properties": {
+        "id": "middleham-castle-north-yorkshire",
+        "name": "Middleham Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.8069,
+          54.284065
+        ]
+      }
+    },
+    {
+      "id": 326,
+      "type": "Feature",
+      "properties": {
+        "id": "old-mulgrave-castle-north-yorkshire",
+        "name": "(Old) Mulgrave Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.7055,
+          54.4935
+        ]
+      }
+    },
+    {
+      "id": 327,
+      "type": "Feature",
+      "properties": {
+        "id": "nappa-hall-north-yorkshire",
+        "name": "Nappa Hall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.055,
+          54.313
+        ]
+      }
+    },
+    {
+      "id": 328,
+      "type": "Feature",
+      "properties": {
+        "id": "pickering-castle-north-yorkshire",
+        "name": "Pickering Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.77556,
+          54.25
+        ]
+      }
+    },
+    {
+      "id": 329,
+      "type": "Feature",
+      "properties": {
+        "id": "ravensworth-castle-north-yorkshire",
+        "name": "Ravensworth Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.7841,
+          54.4598
+        ]
+      }
+    },
+    {
+      "id": 330,
+      "type": "Feature",
+      "properties": {
+        "id": "richmond-castle-north-yorkshire",
+        "name": "Richmond Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.7376,
+          54.4017
+        ]
+      }
+    },
+    {
+      "id": 331,
+      "type": "Feature",
+      "properties": {
+        "id": "ripley-castle-north-yorkshire",
+        "name": "Ripley Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.568,
+          54.041
+        ]
+      }
+    },
+    {
+      "id": 332,
+      "type": "Feature",
+      "properties": {
+        "id": "scarborough-castle-north-yorkshire",
+        "name": "Scarborough Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.388,
+          54.287
+        ]
+      }
+    },
+    {
+      "id": 333,
+      "type": "Feature",
+      "properties": {
+        "id": "sheriff-hutton-castle-north-yorkshire",
+        "name": "Sheriff Hutton Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.00472,
+          54.08778
+        ]
+      }
+    },
+    {
+      "id": 334,
+      "type": "Feature",
+      "properties": {
+        "id": "skelton-castle-north-yorkshire",
+        "name": "Skelton Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.9874,
+          54.5619
+        ]
+      }
+    },
+    {
+      "id": 335,
+      "type": "Feature",
+      "properties": {
+        "id": "skipton-castle-north-yorkshire",
+        "name": "Skipton Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.0143676,
+          53.9637342
+        ]
+      }
+    },
+    {
+      "id": 336,
+      "type": "Feature",
+      "properties": {
+        "id": "snape-castle-north-yorkshire",
+        "name": "Snape Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.58976,
+          54.25366
+        ]
+      }
+    },
+    {
+      "id": 337,
+      "type": "Feature",
+      "properties": {
+        "id": "south-cowton-castle-north-yorkshire",
+        "name": "South Cowton Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.548293,
+          54.415697
+        ]
+      }
+    },
+    {
+      "id": 338,
+      "type": "Feature",
+      "properties": {
+        "id": "spofforth-castle-north-yorkshire",
+        "name": "Spofforth Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.4468,
+          53.9538
+        ]
+      }
+    },
+    {
+      "id": 339,
+      "type": "Feature",
+      "properties": {
+        "id": "whorlton-castle-north-yorkshire",
+        "name": "Whorlton Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.25517,
+          54.41515
+        ]
+      }
+    },
+    {
+      "id": 340,
+      "type": "Feature",
+      "properties": {
+        "id": "wilton-castle-north-yorkshire",
+        "name": "Wilton Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.10139,
+          54.56889
+        ]
+      }
+    },
+    {
+      "id": 341,
+      "type": "Feature",
+      "properties": {
+        "id": "halloughton-manor-house-nottinghamshire",
+        "name": "Halloughton Manor House"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.974,
+          53.057
+        ]
+      }
+    },
+    {
+      "id": 342,
+      "type": "Feature",
+      "properties": {
+        "id": "newark-castle-nottinghamshire",
+        "name": "Newark Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.812415,
+          53.0775
+        ]
+      }
+    },
+    {
+      "id": 343,
+      "type": "Feature",
+      "properties": {
+        "id": "nottingham-castle-nottinghamshire",
+        "name": "Nottingham Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1546,
+          52.9493
+        ]
+      }
+    },
+    {
+      "id": 344,
+      "type": "Feature",
+      "properties": {
+        "id": "bampton-castle-oxfordshire",
+        "name": "Bampton Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.553,
+          51.7254
+        ]
+      }
+    },
+    {
+      "id": 345,
+      "type": "Feature",
+      "properties": {
+        "id": "broughton-castle-oxfordshire",
+        "name": "Broughton Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.39199,
+          52.04063
+        ]
+      }
+    },
+    {
+      "id": 346,
+      "type": "Feature",
+      "properties": {
+        "id": "hanwell-castle-oxfordshire",
+        "name": "Hanwell Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.364,
+          52.091
+        ]
+      }
+    },
+    {
+      "id": 347,
+      "type": "Feature",
+      "properties": {
+        "id": "oxford-castle-oxfordshire",
+        "name": "Oxford Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.2632,
+          51.7517
+        ]
+      }
+    },
+    {
+      "id": 348,
+      "type": "Feature",
+      "properties": {
+        "id": "rotherfield-greys-castle-oxfordshire",
+        "name": "Rotherfield Greys Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.95591,
+          51.54485
+        ]
+      }
+    },
+    {
+      "id": 349,
+      "type": "Feature",
+      "properties": {
+        "id": "shirburn-castle-oxfordshire",
+        "name": "Shirburn Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.9938,
+          51.65757
+        ]
+      }
+    },
+    {
+      "id": 350,
+      "type": "Feature",
+      "properties": {
+        "id": "wallingford-castle-oxfordshire",
+        "name": "Wallingford Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1221,
+          51.6029
+        ]
+      }
+    },
+    {
+      "id": 351,
+      "type": "Feature",
+      "properties": {
+        "id": "oakham-castle-rutland",
+        "name": "Oakham Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.727449,
+          52.670957
+        ]
+      }
+    },
+    {
+      "id": 352,
+      "type": "Feature",
+      "properties": {
+        "id": "acton-burnell-castle-shropshire",
+        "name": "Acton Burnell Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.68966,
+          52.61286
+        ]
+      }
+    },
+    {
+      "id": 353,
+      "type": "Feature",
+      "properties": {
+        "id": "alberbury-castle-shropshire",
+        "name": "Alberbury Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.952,
+          52.7234
+        ]
+      }
+    },
+    {
+      "id": 354,
+      "type": "Feature",
+      "properties": {
+        "id": "bridgnorth-castle-shropshire",
+        "name": "Bridgnorth Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.4201,
+          52.5314
+        ]
+      }
+    },
+    {
+      "id": 355,
+      "type": "Feature",
+      "properties": {
+        "id": "broncroft-castle-shropshire",
+        "name": "Broncroft Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.67,
+          52.462
+        ]
+      }
+    },
+    {
+      "id": 356,
+      "type": "Feature",
+      "properties": {
+        "id": "cheney-longville-castle-shropshire",
+        "name": "Cheney Longville Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.85941,
+          52.45712
+        ]
+      }
+    },
+    {
+      "id": 357,
+      "type": "Feature",
+      "properties": {
+        "id": "clun-castle-shropshire",
+        "name": "Clun Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.0337,
+          52.4216
+        ]
+      }
+    },
+    {
+      "id": 358,
+      "type": "Feature",
+      "properties": {
+        "id": "hopton-castle-shropshire",
+        "name": "Hopton Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.9318,
+          52.3958
+        ]
+      }
+    },
+    {
+      "id": 359,
+      "type": "Feature",
+      "properties": {
+        "id": "ludlow-castle-shropshire",
+        "name": "Ludlow Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.723,
+          52.3672
+        ]
+      }
+    },
+    {
+      "id": 360,
+      "type": "Feature",
+      "properties": {
+        "id": "moreton-corbet-castle-shropshire",
+        "name": "Moreton Corbet Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.6541,
+          52.8045
+        ]
+      }
+    },
+    {
+      "id": 361,
+      "type": "Feature",
+      "properties": {
+        "id": "quatford-castle-shropshire",
+        "name": "Quatford Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.386,
+          52.513
+        ]
+      }
+    },
+    {
+      "id": 362,
+      "type": "Feature",
+      "properties": {
+        "id": "red-castle-shropshire",
+        "name": "Red Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.642975,
+          52.85755
+        ]
+      }
+    },
+    {
+      "id": 363,
+      "type": "Feature",
+      "properties": {
+        "id": "rowton-castle-shropshire",
+        "name": "Rowton Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.9207,
+          52.7087
+        ]
+      }
+    },
+    {
+      "id": 364,
+      "type": "Feature",
+      "properties": {
+        "id": "shrewsbury-castle-shropshire",
+        "name": "Shrewsbury Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.7541,
+          52.7077
+        ]
+      }
+    },
+    {
+      "id": 365,
+      "type": "Feature",
+      "properties": {
+        "id": "stokesay-castle-shropshire",
+        "name": "Stokesay Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.8313,
+          52.4303
+        ]
+      }
+    },
+    {
+      "id": 366,
+      "type": "Feature",
+      "properties": {
+        "id": "wattlesborough-castle-shropshire",
+        "name": "Wattlesborough Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.956,
+          52.7074
+        ]
+      }
+    },
+    {
+      "id": 367,
+      "type": "Feature",
+      "properties": {
+        "id": "whittington-castle-shropshire",
+        "name": "Whittington Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.0043,
+          52.8731
+        ]
+      }
+    },
+    {
+      "id": 368,
+      "type": "Feature",
+      "properties": {
+        "id": "banwell-castle-somerset",
+        "name": "Banwell Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.86,
+          51.32361
+        ]
+      }
+    },
+    {
+      "id": 369,
+      "type": "Feature",
+      "properties": {
+        "id": "beckington-castle-somerset",
+        "name": "Beckington Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.28833,
+          51.26222
+        ]
+      }
+    },
+    {
+      "id": 370,
+      "type": "Feature",
+      "properties": {
+        "id": "dunster-castle-somerset",
+        "name": "Dunster Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.4449,
+          51.1809
+        ]
+      }
+    },
+    {
+      "id": 371,
+      "type": "Feature",
+      "properties": {
+        "id": "farleigh-hungerford-castle-somerset",
+        "name": "Farleigh Hungerford Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.287,
+          51.3167
+        ]
+      }
+    },
+    {
+      "id": 372,
+      "type": "Feature",
+      "properties": {
+        "id": "newton-st-loe-castle-somerset",
+        "name": "Newton St Loe Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.441,
+          51.3733
+        ]
+      }
+    },
+    {
+      "id": 373,
+      "type": "Feature",
+      "properties": {
+        "id": "nunney-castle-somerset",
+        "name": "Nunney Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.3783328,
+          51.2101754
+        ]
+      }
+    },
+    {
+      "id": 374,
+      "type": "Feature",
+      "properties": {
+        "id": "stogursey-castle-somerset",
+        "name": "Stogursey Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.1429,
+          51.1761
+        ]
+      }
+    },
+    {
+      "id": 375,
+      "type": "Feature",
+      "properties": {
+        "id": "sutton-court-somerset",
+        "name": "Sutton Court"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.58028,
+          51.34167
+        ]
+      }
+    },
+    {
+      "id": 376,
+      "type": "Feature",
+      "properties": {
+        "id": "taunton-castle-somerset",
+        "name": "Taunton Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.1138,
+          51.0153
+        ]
+      }
+    },
+    {
+      "id": 377,
+      "type": "Feature",
+      "properties": {
+        "id": "walton-castle-somerset",
+        "name": "Walton Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.842477,
+          51.451755
+        ]
+      }
+    },
+    {
+      "id": 378,
+      "type": "Feature",
+      "properties": {
+        "id": "wells-bishops-palace-somerset",
+        "name": "Wells Bishop's Palace"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.64255,
+          51.209293
+        ]
+      }
+    },
+    {
+      "id": 379,
+      "type": "Feature",
+      "properties": {
+        "id": "conisbrough-castle-south-yorkshire",
+        "name": "Conisbrough Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.22639,
+          53.48417
+        ]
+      }
+    },
+    {
+      "id": 380,
+      "type": "Feature",
+      "properties": {
+        "id": "tickhill-castle-south-yorkshire",
+        "name": "Tickhill Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1081,
+          53.4291
+        ]
+      }
+    },
+    {
+      "id": 381,
+      "type": "Feature",
+      "properties": {
+        "id": "alton-castle-staffordshire",
+        "name": "Alton Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.8912,
+          52.9798
+        ]
+      }
+    },
+    {
+      "id": 382,
+      "type": "Feature",
+      "properties": {
+        "id": "caverswall-castle-staffordshire",
+        "name": "Caverswall Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.0759,
+          52.9825
+        ]
+      }
+    },
+    {
+      "id": 383,
+      "type": "Feature",
+      "properties": {
+        "id": "chartley-castle-staffordshire",
+        "name": "Chartley Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.98659,
+          52.85399
+        ]
+      }
+    },
+    {
+      "id": 384,
+      "type": "Feature",
+      "properties": {
+        "id": "eccleshall-castle-staffordshire",
+        "name": "Eccleshall Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.25841,
+          52.8627
+        ]
+      }
+    },
+    {
+      "id": 385,
+      "type": "Feature",
+      "properties": {
+        "id": "stafford-castle-staffordshire",
+        "name": "Stafford Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.1468,
+          52.7973
+        ]
+      }
+    },
+    {
+      "id": 386,
+      "type": "Feature",
+      "properties": {
+        "id": "stourton-castle-staffordshire",
+        "name": "Stourton Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.20015,
+          52.46727
+        ]
+      }
+    },
+    {
+      "id": 387,
+      "type": "Feature",
+      "properties": {
+        "id": "tamworth-castle-staffordshire",
+        "name": "Tamworth Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.69667,
+          52.63278
+        ]
+      }
+    },
+    {
+      "id": 388,
+      "type": "Feature",
+      "properties": {
+        "id": "tutbury-castle-staffordshire",
+        "name": "Tutbury Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.690575,
+          52.859479
+        ]
+      }
+    },
+    {
+      "id": 389,
+      "type": "Feature",
+      "properties": {
+        "id": "bungay-castle-suffolk",
+        "name": "Bungay Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4367,
+          52.4553
+        ]
+      }
+    },
+    {
+      "id": 390,
+      "type": "Feature",
+      "properties": {
+        "id": "clare-castle-suffolk",
+        "name": "Clare Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.5829,
+          52.0768
+        ]
+      }
+    },
+    {
+      "id": 391,
+      "type": "Feature",
+      "properties": {
+        "id": "eye-castle-suffolk",
+        "name": "Eye Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.1503,
+          52.3202
+        ]
+      }
+    },
+    {
+      "id": 392,
+      "type": "Feature",
+      "properties": {
+        "id": "framlingham-castle-suffolk",
+        "name": "Framlingham Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.34691,
+          52.22405
+        ]
+      }
+    },
+    {
+      "id": 393,
+      "type": "Feature",
+      "properties": {
+        "id": "mettingham-castle-suffolk",
+        "name": "Mettingham Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4714,
+          52.4448
+        ]
+      }
+    },
+    {
+      "id": 394,
+      "type": "Feature",
+      "properties": {
+        "id": "orford-castle-suffolk",
+        "name": "Orford Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.53,
+          52.0936
+        ]
+      }
+    },
+    {
+      "id": 395,
+      "type": "Feature",
+      "properties": {
+        "id": "farnham-castle-surrey",
+        "name": "Farnham Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.80278,
+          51.21889
+        ]
+      }
+    },
+    {
+      "id": 396,
+      "type": "Feature",
+      "properties": {
+        "id": "guildford-castle-surrey",
+        "name": "Guildford Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5741,
+          51.2346
+        ]
+      }
+    },
+    {
+      "id": 397,
+      "type": "Feature",
+      "properties": {
+        "id": "hylton-castle-tyne-and-wear",
+        "name": "Hylton Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.44318,
+          54.92253
+        ]
+      }
+    },
+    {
+      "id": 398,
+      "type": "Feature",
+      "properties": {
+        "id": "newcastle-castle-tyne-and-wear",
+        "name": "Newcastle Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.6105,
+          54.9688
+        ]
+      }
+    },
+    {
+      "id": 399,
+      "type": "Feature",
+      "properties": {
+        "id": "old-hollinside-tyne-and-wear",
+        "name": "Old Hollinside"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.6726,
+          54.9456
+        ]
+      }
+    },
+    {
+      "id": 400,
+      "type": "Feature",
+      "properties": {
+        "id": "ravensworth-castle-tyne-and-wear",
+        "name": "Ravensworth Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.6387,
+          54.9264
+        ]
+      }
+    },
+    {
+      "id": 401,
+      "type": "Feature",
+      "properties": {
+        "id": "tynemouth-castle-tyne-and-wear",
+        "name": "Tynemouth Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.4189,
+          55.0175
+        ]
+      }
+    },
+    {
+      "id": 402,
+      "type": "Feature",
+      "properties": {
+        "id": "astley-castle-warwickshire",
+        "name": "Astley Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5424,
+          52.5024
+        ]
+      }
+    },
+    {
+      "id": 403,
+      "type": "Feature",
+      "properties": {
+        "id": "kenilworth-castle-warwickshire",
+        "name": "Kenilworth Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5923611,
+          52.3479693
+        ]
+      }
+    },
+    {
+      "id": 404,
+      "type": "Feature",
+      "properties": {
+        "id": "maxstoke-castle-warwickshire",
+        "name": "Maxstoke Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.6729,
+          52.4994
+        ]
+      }
+    },
+    {
+      "id": 405,
+      "type": "Feature",
+      "properties": {
+        "id": "warwick-castle-warwickshire",
+        "name": "Warwick Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.58472,
+          52.27944
+        ]
+      }
+    },
+    {
+      "id": 406,
+      "type": "Feature",
+      "properties": {
+        "id": "dudley-castle-west-midlands",
+        "name": "Dudley Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.08,
+          52.5142
+        ]
+      }
+    },
+    {
+      "id": 407,
+      "type": "Feature",
+      "properties": {
+        "id": "amberley-castle-west-sussex",
+        "name": "Amberley Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.54064,
+          50.90914
+        ]
+      }
+    },
+    {
+      "id": 408,
+      "type": "Feature",
+      "properties": {
+        "id": "arundel-castle-west-sussex",
+        "name": "Arundel Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.55361,
+          50.85611
+        ]
+      }
+    },
+    {
+      "id": 409,
+      "type": "Feature",
+      "properties": {
+        "id": "bramber-castle-west-sussex",
+        "name": "Bramber Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.316088,
+          50.884087
+        ]
+      }
+    },
+    {
+      "id": 410,
+      "type": "Feature",
+      "properties": {
+        "id": "halnaker-house-west-sussex",
+        "name": "Halnaker House"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.71193,
+          50.86508
+        ]
+      }
+    },
+    {
+      "id": 411,
+      "type": "Feature",
+      "properties": {
+        "id": "old-knepp-castle-west-sussex",
+        "name": "(Old) Knepp Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.34482,
+          50.97578
+        ]
+      }
+    },
+    {
+      "id": 412,
+      "type": "Feature",
+      "properties": {
+        "id": "dobroyd-castle-west-yorkshire",
+        "name": "Dobroyd Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.10806,
+          53.71028
+        ]
+      }
+    },
+    {
+      "id": 413,
+      "type": "Feature",
+      "properties": {
+        "id": "harewood-castle-west-yorkshire",
+        "name": "Harewood Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5117,
+          53.9059
+        ]
+      }
+    },
+    {
+      "id": 414,
+      "type": "Feature",
+      "properties": {
+        "id": "pontefract-castle-west-yorkshire",
+        "name": "Pontefract Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.30389,
+          53.69556
+        ]
+      }
+    },
+    {
+      "id": 415,
+      "type": "Feature",
+      "properties": {
+        "id": "sandal-castle-west-yorkshire",
+        "name": "Sandal Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.491111,
+          53.658889
+        ]
+      }
+    },
+    {
+      "id": 416,
+      "type": "Feature",
+      "properties": {
+        "id": "devizes-castle-wiltshire",
+        "name": "Devizes Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.9985,
+          51.3508
+        ]
+      }
+    },
+    {
+      "id": 417,
+      "type": "Feature",
+      "properties": {
+        "id": "longford-castle-wiltshire",
+        "name": "Longford Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.756925,
+          51.039167
+        ]
+      }
+    },
+    {
+      "id": 418,
+      "type": "Feature",
+      "properties": {
+        "id": "ludgershall-castle-wiltshire",
+        "name": "Ludgershall Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.6233,
+          51.2596
+        ]
+      }
+    },
+    {
+      "id": 419,
+      "type": "Feature",
+      "properties": {
+        "id": "old-sarum-castle-wiltshire",
+        "name": "Old Sarum Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.8075,
+          51.09255
+        ]
+      }
+    },
+    {
+      "id": 420,
+      "type": "Feature",
+      "properties": {
+        "id": "old-wardour-castle-wiltshire",
+        "name": "Old Wardour Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.0888,
+          51.0365
+        ]
+      }
+    },
+    {
+      "id": 421,
+      "type": "Feature",
+      "properties": {
+        "id": "caldwall-castle-worcestershire",
+        "name": "Caldwall Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.249,
+          52.3885
+        ]
+      }
+    },
+    {
+      "id": 422,
+      "type": "Feature",
+      "properties": {
+        "id": "hartlebury-castle-worcestershire",
+        "name": "Hartlebury Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.2421,
+          52.3386
+        ]
+      }
+    },
+    {
+      "id": 423,
+      "type": "Feature",
+      "properties": {
+        "id": "holt-castle-worcestershire",
+        "name": "Holt Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.2608,
+          52.26937
+        ]
+      }
+    },
+    {
+      "id": 424,
+      "type": "Feature",
+      "properties": {
+        "id": "worcester-castle-worcestershire",
+        "name": "Worcester Castle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.2223,
+          52.1867
+        ]
+      }
+    }
+  ]
+}

@@ -11,8 +11,7 @@
   $size: 1em;
 
   --background-color: var(--contrast-lighter);
-  --element-color: var(--grey-dark);
-
+  --element-color: var(--grey-darker);
   --hover-background-color: var(--contrast-mid);
   --hover-element-color: var(--color-text);
 

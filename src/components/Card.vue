@@ -31,8 +31,6 @@ export default class Card extends Vue {
     })
   }
 
-  updated() {}
-
   beforeDestroy() {
     window.removeEventListener('resize', this.onResize)
   }

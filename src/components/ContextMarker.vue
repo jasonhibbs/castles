@@ -38,19 +38,6 @@ import { MglMarker, MglGeojsonLayer } from 'vue-mapbox'
 export default class ContextMarker extends Vue {
   mapView!: any
 
-  mounted() {
-    this.$root.$on('mapstylechange', this.onStyleChange)
-  }
-
-  onStyleChange() {
-    // geojsonlayer breaks on style change, so rebuild manually
-    const map = this.$store.state.map
-    if (!this.$store.state.map.getSource(this.radius.id)) {
-      map.addSource(this.radius.id, this.radius.source)
-      map.addLayer(this.radius.layer)
-    }
-  }
-
   get coords() {
     return [this.mapView.context.lng, this.mapView.context.lat]
   }

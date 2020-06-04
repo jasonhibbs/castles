@@ -1,5 +1,6 @@
 const puppeteer = require('puppeteer')
 const fs = require('fs')
+const { exec } = require('child_process')
 
 const scrapeCastles = async () => {
   const browser = await puppeteer.launch()
@@ -173,10 +174,11 @@ const scrapeCastles = async () => {
   return castles
 }
 
-scrapeCastles().then(castles => {
+const indexCastles = async castles => {
+  const timestamp = +new Date()
   // write data file
   fs.writeFile(
-    `./public/castles-data-${+new Date()}.json`,
+    `./public/castles-data-${timestamp}.json`,
     JSON.stringify(castles, null, 2),
     err => {
       if (err) {
@@ -196,7 +198,7 @@ scrapeCastles().then(castles => {
     }
   })
   fs.writeFile(
-    `./public/castles-index-${+new Date()}.json`,
+    `./public/castles-index-${timestamp}.json`,
     JSON.stringify(castlesIndex, null, 2),
     err => {
       if (err) {
@@ -206,7 +208,7 @@ scrapeCastles().then(castles => {
       }
     }
   )
-})
+}
 
 const reindexCastles = async () => {
   fs.readFile('./public/castles-data.json', 'utf8', (err, data) => {
@@ -219,7 +221,7 @@ const reindexCastles = async () => {
         coords: c.coords,
       }
     })
-    console.log(castlesIndex)
+    console.log(`${castlesIndex.length} castles indexed`)
     fs.writeFile(
       `./public/castles-index-${+new Date()}.json`,
       JSON.stringify(castlesIndex, null, 2),
@@ -233,3 +235,54 @@ const reindexCastles = async () => {
     )
   })
 }
+
+const geojsonFromIndex = async () => {
+  fs.readFile('./public/castles-index.json', 'utf8', (err, data) => {
+    if (err) throw err
+    const castles = JSON.parse(data)
+    const features = castles.map((c, index) => {
+      return {
+        id: index + 1,
+        type: 'Feature',
+        properties: {
+          id: c.id,
+          name: c.name,
+        },
+        geometry: {
+          type: 'Point',
+          coordinates: [c.coords.lng, c.coords.lat],
+        },
+      }
+    })
+    const geojson = {
+      type: 'FeatureCollection',
+      features,
+    }
+    console.log(`${geojson.features.length} features collected`)
+    const path = `public/castles-${+new Date()}`
+    fs.writeFile(`./${path}.geojson`, JSON.stringify(geojson, null, 2), err => {
+      if (err) {
+        console.log('Couldn’t write JSON')
+      } else {
+        console.log('GeoJSON file written')
+      }
+    })
+    exec(
+      `tippecanoe -o ${path}.mbtiles -zg --drop-densest-as-needed --generate-ids ${path}.geojson`,
+      (error, stdout, stderr) => {
+        if (error) {
+          console.log(`error: ${error.message}`)
+          return
+        }
+        if (stderr) {
+          console.log(`stderr: ${stderr}`)
+          return
+        }
+        console.log(`stdout: ${stdout}`)
+      }
+    )
+  })
+}
+
+// scrapeCastles().then(indexCastles)
+geojsonFromIndex()
