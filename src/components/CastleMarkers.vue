@@ -36,6 +36,18 @@ export default class CastleMarkers extends Vue {
     return 'hsl(160, 2%, 28%)'
   }
 
+  get haloColor() {
+    return [
+      'interpolate',
+      ['linear'],
+      ['zoom'],
+      5,
+      '#ebebea',
+      12,
+      'hsl(36, 28%, 93%)',
+    ]
+  }
+
   get circlePaintBase() {
     return {
       'circle-color': this.circleColor,
@@ -48,15 +60,7 @@ export default class CastleMarkers extends Vue {
         14,
         10,
       ],
-      'circle-stroke-color': [
-        'interpolate',
-        ['linear'],
-        ['zoom'],
-        5,
-        '#ebebea',
-        12,
-        'hsl(36, 28%, 93%)',
-      ],
+      'circle-stroke-color': this.haloColor,
       'circle-stroke-width': 1,
       'circle-pitch-alignment': 'map',
       'circle-color-transition': {
@@ -151,15 +155,7 @@ export default class CastleMarkers extends Vue {
       },
       paint: {
         'text-color': 'hsl(160, 2%, 18%)',
-        'text-halo-color': [
-          'interpolate',
-          ['linear'],
-          ['zoom'],
-          5,
-          '#ebebea',
-          12,
-          'hsl(36, 28%, 93%)',
-        ],
+        'text-halo-color': this.haloColor,
         'text-halo-width': 2,
         'text-opacity': [
           'case',
@@ -169,7 +165,6 @@ export default class CastleMarkers extends Vue {
           1,
           0,
         ],
-        // ['step', ['zoom'], 0, 8.5, 1],
         'text-opacity-transition': {
           duration: 120,
         },
