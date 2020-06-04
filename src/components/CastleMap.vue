@@ -17,7 +17,7 @@
 
 </template>
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator'
+import { Component, Prop, Vue, Watch } from 'vue-property-decorator'
 import MapboxMap from '@/components/MapboxMap.vue'
 import ContextMarker from '@/components/ContextMarker.vue'
 import CastleMarkers from '@/components/CastleMarkers.vue'
@@ -30,6 +30,12 @@ export default class CastleMap extends Vue {
   @Prop() castles: any
   map!: Map
 
+  @Watch('$route') onRouteChange(to: any, from: any) {
+    if (to.name === 'Home') {
+      this.deselectCastles()
+    }
+  }
+
   get classes() {
     return {
       _hover: this.castleHovering,
@@ -41,6 +47,17 @@ export default class CastleMap extends Vue {
   async onLoad(map: Map) {
     this.map = map
     this.setSource()
+
+    setTimeout(() => {
+      const routeId = this.$route.params?.id
+      if (routeId) {
+        const feature = this.map.querySourceFeatures(this.sourceId, {
+          sourceLayer: '_castle-circles',
+          filter: ['==', 'id', routeId],
+        })
+        this.selectCastle(feature[0])
+      }
+    }, 1000)
   }
 
   get sourceId() {
@@ -77,6 +94,16 @@ export default class CastleMap extends Vue {
   castleHovering: number | null = null
 
   selectCastle(feature: mapboxgl.MapboxGeoJSONFeature) {
+    if (this.castleSelected) {
+      this.map.removeFeatureState(
+        {
+          source: 'castles',
+          id: this.castleSelected,
+        },
+        'selected'
+      )
+    }
+
     this.castleSelected = +feature.id!
     this.map.setFeatureState(
       {
@@ -88,12 +115,14 @@ export default class CastleMap extends Vue {
       }
     )
 
-    this.$router.push({
-      name: 'Castle',
-      params: {
-        id: feature.properties!.id,
-      },
-    })
+    if (this.$route.params?.id !== feature.properties!.id) {
+      this.$router.push({
+        name: 'Castle',
+        params: {
+          id: feature.properties!.id,
+        },
+      })
+    }
   }
 
   deselectCastles() {
@@ -105,9 +134,11 @@ export default class CastleMap extends Vue {
         },
         'selected'
       )
+      this.castleSelected = null
     }
-    this.castleSelected = null
-    this.$router.push('/')
+    if (this.$route.name !== 'Home') {
+      this.$router.push('/')
+    }
   }
 
   hoverCastle(feature: mapboxgl.MapboxGeoJSONFeature) {

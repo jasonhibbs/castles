@@ -6,6 +6,8 @@
       :sourceId="sourceId"
       :layerId="layer.id"
       :layer="layer"
+      replaceSource
+      replace
     )
 
 </template>
@@ -77,9 +79,9 @@ export default class CastleMarkers extends Vue {
           ['exponential', 1.2],
           ['zoom'],
           3,
-          3,
+          4,
           14,
-          13,
+          14,
         ],
         'circle-opacity': [
           'case',
