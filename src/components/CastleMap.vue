@@ -56,7 +56,7 @@ export default class CastleMap extends Vue {
 
   // Map
 
-  makeBox(e: any, range: number = 10): any {
+  makeBox(e: any, range: number = 6): any {
     const { x, y } = e.mapboxEvent.point
     return [
       [x - range, y - range],
@@ -71,35 +71,13 @@ export default class CastleMap extends Vue {
     return features[0] || null
   }
 
-  // Events
+  // Castles
 
   castleSelected: number | null = null
   castleHovering: number | null = null
 
-  onClick(e: any) {
-    const clicked = this.findFeature(e)
-
-    // no castle clicked
-    if (!clicked) {
-      return
-    }
-
-    // selected castle clicked
-    if (clicked.id === this.castleSelected) {
-      this.map.removeFeatureState(
-        {
-          source: 'castles',
-          id: this.castleSelected,
-        },
-        'selected'
-      )
-      this.castleSelected = null
-      this.$router.push('/')
-      return
-    }
-
-    // castle clicked
-    this.castleSelected = +clicked.id!
+  selectCastle(feature: mapboxgl.MapboxGeoJSONFeature) {
+    this.castleSelected = +feature.id!
     this.map.setFeatureState(
       {
         source: 'castles',
@@ -113,14 +91,39 @@ export default class CastleMap extends Vue {
     this.$router.push({
       name: 'Castle',
       params: {
-        id: clicked.properties!.id,
+        id: feature.properties!.id,
       },
     })
   }
 
-  onMousemove(e: any) {
-    const hovering = this.findFeature(e, 6)
+  deselectCastles() {
+    if (this.castleSelected) {
+      this.map.removeFeatureState(
+        {
+          source: 'castles',
+          id: this.castleSelected,
+        },
+        'selected'
+      )
+    }
+    this.castleSelected = null
+    this.$router.push('/')
+  }
 
+  hoverCastle(feature: mapboxgl.MapboxGeoJSONFeature) {
+    this.castleHovering = +feature.id!
+    this.map.setFeatureState(
+      {
+        source: 'castles',
+        id: this.castleHovering,
+      },
+      {
+        hover: true,
+      }
+    )
+  }
+
+  unhoverCastles() {
     if (this.castleHovering) {
       this.map.removeFeatureState(
         {
@@ -129,20 +132,39 @@ export default class CastleMap extends Vue {
         },
         'hover'
       )
-      this.castleHovering = null
+    }
+    this.castleHovering = null
+  }
+
+  // Events
+
+  onClick(e: any) {
+    const clicked = this.findFeature(e)
+
+    // no castle clicked
+    if (!clicked) {
+      return
+    }
+
+    // selected castle clicked
+    if (clicked.id === this.castleSelected) {
+      this.deselectCastles()
+      return
+    }
+
+    // castle clicked
+    this.selectCastle(clicked)
+  }
+
+  onMousemove(e: any) {
+    const hovering = this.findFeature(e)
+
+    if (this.castleHovering) {
+      this.unhoverCastles()
     }
 
     if (hovering) {
-      this.castleHovering = +hovering.id!
-      this.map.setFeatureState(
-        {
-          source: 'castles',
-          id: this.castleHovering,
-        },
-        {
-          hover: true,
-        }
-      )
+      this.hoverCastle(hovering)
     }
   }
 

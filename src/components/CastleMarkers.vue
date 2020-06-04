@@ -58,7 +58,7 @@ export default class CastleMarkers extends Vue {
         'circle-stroke-width': 1,
         'circle-pitch-alignment': 'map',
         'circle-color-transition': {
-          duration: 300,
+          duration: 120,
         },
       },
     }
@@ -106,7 +106,7 @@ export default class CastleMarkers extends Vue {
         ],
         // ['step', ['zoom'], 0, 8.5, 1],
         'text-opacity-transition': {
-          duration: 400,
+          duration: 120,
         },
       },
     }
