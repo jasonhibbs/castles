@@ -34,12 +34,6 @@ export default class CastleMap extends Vue {
   @Prop() castles: any
   map!: Map
 
-  @Watch('$route') onRouteChange(to: any, from: any) {
-    if (to.name === 'Home') {
-      this.deselectCastles()
-    }
-  }
-
   get classes() {
     return {
       _hover: this.castleHovering,
@@ -47,6 +41,33 @@ export default class CastleMap extends Vue {
   }
 
   // Setup
+
+  async onLoad(map: Map) {
+    this.map = map
+    this.setSource()
+  }
+
+  selectFromRoute() {
+    if (!this.map.getLayer('_castle-circles')) {
+      return
+    }
+    const routeId = this.$route.params?.id
+    if (routeId) {
+      const features = this.map.querySourceFeatures(this.sourceId, {
+        sourceLayer: '_castle-circles',
+        filter: ['==', 'id', routeId],
+      })
+      this.selectCastle(features[0])
+    }
+  }
+
+  @Watch('$route') onRouteChange(to: any, from: any) {
+    if (to.name === 'Home') {
+      this.deselectCastles()
+    }
+  }
+
+  // Style
 
   styleLoaded = false
 
@@ -66,10 +87,7 @@ export default class CastleMap extends Vue {
     this.styleLoaded = true
   }
 
-  async onLoad(map: Map) {
-    this.map = map
-    this.setSource()
-  }
+  // Source
 
   get sourceId() {
     return 'castles'
@@ -100,20 +118,6 @@ export default class CastleMap extends Vue {
       layers: ['_castle-circles'],
     })
     return features[0] || null
-  }
-
-  selectFromRoute() {
-    if (!this.map.getLayer('_castle-circles')) {
-      return
-    }
-    const routeId = this.$route.params?.id
-    if (routeId) {
-      const features = this.map.querySourceFeatures(this.sourceId, {
-        sourceLayer: '_castle-circles',
-        filter: ['==', 'id', routeId],
-      })
-      this.selectCastle(features[0])
-    }
   }
 
   // Castles
@@ -195,7 +199,7 @@ export default class CastleMap extends Vue {
     this.castleHovering = null
   }
 
-  // Events
+  // Input
 
   onClick(e: any) {
     const clicked = this.findFeature(e)
