@@ -23,6 +23,10 @@ import { MglGeojsonLayer } from 'vue-mapbox'
 export default class CastleMarkers extends Vue {
   @Prop() sourceId: any
 
+  get isDark() {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches
+  }
+
   get layers() {
     return [
       this.castleCircles,
@@ -32,20 +36,36 @@ export default class CastleMarkers extends Vue {
     ]
   }
 
+  get labelColor() {
+    return this.isDark ? 'hsl(180, 0%, 100%)' : 'hsl(160, 2%, 18%)'
+  }
+
   get circleColor() {
-    return 'hsl(160, 2%, 28%)'
+    return this.isDark ? 'hsl(180, 2%, 80%)' : 'hsl(160, 2%, 28%)'
   }
 
   get haloColor() {
-    return [
+    const darkHalo = [
       'interpolate',
       ['linear'],
       ['zoom'],
       5,
-      '#ebebea',
+      'hsl(180, 1%, 12%)',
+      12,
+      'hsl(180, 3%, 8%)',
+    ]
+
+    const lightHalo = [
+      'interpolate',
+      ['linear'],
+      ['zoom'],
+      5,
+      'hsl(60, 2%, 92%)',
       12,
       'hsl(36, 28%, 93%)',
     ]
+
+    return this.isDark ? darkHalo : lightHalo
   }
 
   get circlePaintBase() {
@@ -154,7 +174,7 @@ export default class CastleMarkers extends Vue {
         'text-allow-overlap': true,
       },
       paint: {
-        'text-color': 'hsl(160, 2%, 18%)',
+        'text-color': this.labelColor,
         'text-halo-color': this.haloColor,
         'text-halo-width': 2,
         'text-opacity': [
