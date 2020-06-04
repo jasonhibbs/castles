@@ -2,14 +2,10 @@
 
   .castle-markers
     mgl-geojson-layer(
+      v-for="layer in layers"
       :sourceId="sourceId"
-      :layerId="castleCircles.id"
-      :layer="castleCircles"
-    )
-    mgl-geojson-layer(
-      :sourceId="sourceId"
-      :layerId="castleLabels.id"
-      :layer="castleLabels"
+      :layerId="layer.id"
+      :layer="layer"
     )
 
 </template>
@@ -25,41 +21,74 @@ import { MglGeojsonLayer } from 'vue-mapbox'
 export default class CastleMarkers extends Vue {
   @Prop() sourceId: any
 
+  get layers() {
+    return [this.castleHoverCircles, this.castleCircles, this.castleLabels]
+  }
+
+  get circleColor() {
+    return 'hsl(160, 2%, 28%)'
+  }
+
+  get circlePaintBase() {
+    return {
+      'circle-color': this.circleColor,
+      'circle-radius': [
+        'interpolate',
+        ['exponential', 1.2],
+        ['zoom'],
+        3,
+        1,
+        14,
+        10,
+      ],
+      'circle-stroke-color': [
+        'interpolate',
+        ['linear'],
+        ['zoom'],
+        5,
+        '#ebebea',
+        12,
+        'hsl(36, 28%, 93%)',
+      ],
+      'circle-stroke-width': 1,
+      'circle-pitch-alignment': 'map',
+      'circle-color-transition': {
+        duration: 120,
+      },
+    }
+  }
+
   get castleCircles() {
     return {
       id: '_castle-circles',
       type: 'circle',
+      paint: this.circlePaintBase,
+    }
+  }
 
+  get castleHoverCircles() {
+    return {
+      id: '_castle-hover-circles',
+      type: 'circle',
       paint: {
-        'circle-color': [
-          'case',
-          ['boolean', ['feature-state', 'hover'], false],
-          '#f00',
-          'hsl(160, 2%, 28%)',
-        ],
+        ...this.circlePaintBase,
         'circle-radius': [
           'interpolate',
           ['exponential', 1.2],
           ['zoom'],
           3,
-          1,
+          3,
           14,
-          10,
+          13,
         ],
-        'circle-stroke-color': [
-          'interpolate',
-          ['linear'],
-          ['zoom'],
-          5,
-          '#ebebea',
-          12,
-          'hsl(36, 28%, 93%)',
+        'circle-opacity': [
+          'case',
+          ['boolean', ['feature-state', 'selected'], false],
+          1,
+          ['boolean', ['feature-state', 'hover'], false],
+          1,
+          0,
         ],
-        'circle-stroke-width': 1,
-        'circle-pitch-alignment': 'map',
-        'circle-color-transition': {
-          duration: 120,
-        },
       },
     }
   }
@@ -100,6 +129,8 @@ export default class CastleMarkers extends Vue {
         'text-halo-width': 2,
         'text-opacity': [
           'case',
+          ['boolean', ['feature-state', 'selected'], false],
+          1,
           ['boolean', ['feature-state', 'hover'], false],
           1,
           0,
