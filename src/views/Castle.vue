@@ -5,12 +5,14 @@
     template(#header)
       .layout
 
-        template(v-if="castle")
-          .heading
-            h1 {{ title }}
-            span(
-              v-if="distance"
-            ) {{ distanceRangeLabel }}
+        .heading(v-if="castle")
+          h1 {{ title }}
+          span(
+            v-if="distance"
+          ) {{ distanceRangeLabel }}
+
+        .heading(v-else)
+          h1 404
 
         router-link(
           title="Dismiss castle"
