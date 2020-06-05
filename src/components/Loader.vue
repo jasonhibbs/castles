@@ -20,7 +20,7 @@ export default class Loader extends Vue {}
   --width: 2px;
   --light-color: var(--contrast-light);
   --color: var(--contrast-darker);
-  --speed: #{(2s/3)};
+  --speed: #{(1s/2)};
 
   display: flex;
   align-items: center;
