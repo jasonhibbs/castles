@@ -55,7 +55,7 @@ import IconClose from '@/components/IconClose.vue'
   components: { Card, Loader, IconClose },
   computed: mapState(['mapView']),
 })
-export default class Caslte extends Vue {
+export default class Castle extends Vue {
   mapView!: any
   castle: any = {}
   fetching: boolean = true
@@ -63,8 +63,15 @@ export default class Caslte extends Vue {
   // Lifecycle
 
   async mounted() {
+    // ease immediately if possible
+    const storeCoords = this.mapView.selected?.geometry.coordinates
+    if (storeCoords) {
+      this.easeToCastle(storeCoords[1], storeCoords[0])
+    }
+    // fetch castle data
     this.castle = await this.fetchCastle(this.id)
-    if (this.castle?.coords) {
+    // ease from data if necessary
+    if (!storeCoords && this.castle?.coords) {
       this.easeToCastle()
     }
   }
@@ -80,12 +87,17 @@ export default class Caslte extends Vue {
       })
   }
 
-  async easeToCastle() {
+  async easeToCastle(lat?: number, lng?: number) {
     if (!this.$store.state.map) {
-      setTimeout(() => this.easeToCastle(), 100)
+      setTimeout(() => this.easeToCastle(lat, lng), 100)
       return
     }
-    const { lng, lat } = this.coords
+
+    if (!lng || !lat) {
+      lng = this.coords.lng
+      lat = this.coords.lat
+    }
+
     this.$root.$emit('raisesheet')
     this.$root.$emit('locationchange', {
       center: [lng, lat],

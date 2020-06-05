@@ -21,18 +21,22 @@
 </template>
 <script lang="ts">
 import { Component, Prop, Vue, Watch } from 'vue-property-decorator'
+import { mapState } from 'vuex'
 import MapboxMap from '@/components/MapboxMap.vue'
 import ContextMarker from '@/components/ContextMarker.vue'
 import CastleMarkers from '@/components/CastleMarkers.vue'
 import { Map } from 'mapbox-gl'
+import { Point } from 'geojson'
 import debounce from 'lodash.debounce'
 
 @Component({
   components: { MapboxMap, ContextMarker, CastleMarkers },
+  computed: mapState(['mapView']),
 })
 export default class CastleMap extends Vue {
   @Prop() castles: any
   map!: Map
+  mapView!: any
 
   get classes() {
     return {
@@ -57,13 +61,18 @@ export default class CastleMap extends Vue {
         sourceLayer: '_castle-circles',
         filter: ['==', 'id', routeId],
       })
-      this.selectCastle(features[0])
+      if (features.length) {
+        this.selectCastle(features[0])
+      }
     }
   }
 
   @Watch('$route') onRouteChange(to: any, from: any) {
     if (to.name === 'Home') {
       this.deselectCastles()
+    }
+    if (to.name === 'Castle') {
+      this.selectFromRoute()
     }
   }
 
@@ -122,8 +131,11 @@ export default class CastleMap extends Vue {
 
   // Castles
 
-  castleSelected: number | null = null
   castleHovering: number | null = null
+
+  get castleSelected() {
+    return this.mapView.selected?.id
+  }
 
   selectCastle(feature: mapboxgl.MapboxGeoJSONFeature) {
     if (this.castleSelected) {
@@ -134,9 +146,10 @@ export default class CastleMap extends Vue {
         },
         'selected'
       )
+      this.$store.commit('updateSelected', null)
     }
 
-    this.castleSelected = +feature.id!
+    this.$store.commit('updateSelected', feature)
     this.map.setFeatureState(
       {
         source: 'castles',
@@ -166,7 +179,7 @@ export default class CastleMap extends Vue {
         },
         'selected'
       )
-      this.castleSelected = null
+      this.$store.commit('updateSelected', null)
     }
     if (this.$route.name !== 'Home') {
       this.$router.push('/')

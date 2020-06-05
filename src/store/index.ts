@@ -43,6 +43,7 @@ export default new Vuex.Store({
         lat: mapStart.context.lat,
         lng: mapStart.context.lng,
       },
+      selected: null,
       sheet: {
         stop: 'bottom',
         height: 0,
@@ -63,6 +64,9 @@ export default new Vuex.Store({
     },
     updatePadding(state, padding) {
       state.mapView.padding = padding
+    },
+    updateSelected(state, feature) {
+      state.mapView.selected = feature
     },
   },
   actions: {
