@@ -2,13 +2,8 @@
 
   #app
     logo
-
-    castle-map(
-      :castles="castles"
-    )
-
+    castle-map
     button-location
-
     bottom-sheet
       transition(:name="transitionName")
         router-view(:key="$route.fullPath")
@@ -37,26 +32,11 @@ import Logo from '@/components/Logo.vue'
   },
 })
 export default class App extends Vue {
-  castles: any[] = []
-
-  async fetchCastles() {
-    return fetch('/castles-index.json')
-      .then(response => response.json())
-      .then(data => {
-        this.castles = data
-      })
-  }
-
-  get hasCastles() {
-    return this.castles.length
-  }
-
   // Lifecycle
 
   queryDarkMode = window.matchMedia('(prefers-color-scheme: dark)')
 
   mounted() {
-    this.fetchCastles()
     this.queryDarkMode.addListener((dark: MediaQueryListEvent) => {
       this.$root.$emit('colorschemechange', dark.matches ? 'dark' : 'light')
     })
