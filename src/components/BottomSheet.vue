@@ -46,7 +46,7 @@ import { Component, Prop, Ref, Vue } from 'vue-property-decorator'
 
 @Component
 export default class BottomSheet extends Vue {
-  @Prop({ default: true }) peek!: boolean
+  @Prop({ default: false }) peek!: boolean
 
   @Ref('sheet') sheetEl!: HTMLElement
   @Ref('sheetMargin') sheetMarginEl!: HTMLElement
