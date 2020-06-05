@@ -248,7 +248,7 @@ export default class CastleMap extends Vue {
   }
 
   onLongpress(e: any) {
-    const originalEvent = e.mapboxEvent.originalEvent
+    const { originalEvent } = e.mapboxEvent
 
     if (originalEvent.target.tagName !== 'CANVAS') {
       return false
@@ -264,8 +264,13 @@ export default class CastleMap extends Vue {
     }
 
     const sheetZone = window.innerHeight - (this.mapView.sheet.height + 44)
-    const { clientY, pageY } = e.mapboxEvent.originalEvent
-    const dragY = pageY || clientY
+    const { originalEvent } = e.mapboxEvent
+    let dragY = originalEvent.clientY
+
+    if (originalEvent.touches) {
+      const touches = [...originalEvent.touches].map(t => t.pageY)
+      dragY = Math.max(...touches)
+    }
 
     if (dragY > sheetZone) {
       this.$root.$emit('lowersheet')
