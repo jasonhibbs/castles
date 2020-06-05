@@ -52,7 +52,7 @@ export default class CastleMap extends Vue {
   }
 
   selectFromRoute() {
-    if (!this.map.getLayer('_castle-circles')) {
+    if (!this.map?.getLayer('_castle-circles')) {
       return
     }
     const routeId = this.$route.params?.id

@@ -93,15 +93,18 @@ export default class Castle extends Vue {
       return
     }
 
-    if (!lng || !lat) {
+    if ((!lng || !lat) && this.coords) {
       lng = this.coords.lng
       lat = this.coords.lat
     }
 
+    if (lng && lat) {
+      this.$root.$emit('locationchange', {
+        center: [lng, lat],
+      })
+    }
+
     this.$root.$emit('raisesheet')
-    this.$root.$emit('locationchange', {
-      center: [lng, lat],
-    })
   }
 
   // Detail
