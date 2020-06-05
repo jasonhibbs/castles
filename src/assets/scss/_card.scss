@@ -92,8 +92,9 @@
 }
 
 .card .loader {
+  color: var(--contrast-dark);
   justify-content: center;
-  padding: var(--space-rem-big) 0;
+  padding: var(--space-rem-biggest) 0;
 }
 
 // Transitions
