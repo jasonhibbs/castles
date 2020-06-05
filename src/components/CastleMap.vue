@@ -9,8 +9,10 @@
       @styleloading="onStyleLoading"
       @styleload="onStyleLoad"
       @click="onClick"
-      @mousemove="onMousemove"
       @longpress="onLongpress"
+      @mousemove="onMousemove"
+      @drag.passive="onDrag"
+
     )
       template(v-if="styleLoaded")
         context-marker
@@ -254,6 +256,20 @@ export default class CastleMap extends Vue {
 
     const { lat, lng } = e.mapboxEvent.lngLat
     this.$store.commit('updateContext', { lat, lng })
+  }
+
+  onDrag(e: any) {
+    if (window.innerWidth >= 768) {
+      return
+    }
+
+    const sheetZone = window.innerHeight - (this.mapView.sheet.height + 44)
+    const { clientY, pageY } = e.mapboxEvent.originalEvent
+    const dragY = pageY || clientY
+
+    if (dragY > sheetZone) {
+      this.$root.$emit('lowersheet')
+    }
   }
 }
 </script>

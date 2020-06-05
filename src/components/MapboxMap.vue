@@ -201,6 +201,7 @@ export default class MapboxMap extends Vue {
 
   onMapDrag(e: any) {
     this.longpressTimeoutClear()
+    this.$emit('drag', e)
   }
 
   // Touch
