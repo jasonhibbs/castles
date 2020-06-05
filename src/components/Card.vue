@@ -46,8 +46,8 @@ export default class Card extends Vue {
     let left = 0
 
     if (w >= 768) {
-      left = 360
-      bottom = 0
+      left = 320
+      bottom = 20
     }
 
     this.$store.commit('updatePadding', { left, bottom })
