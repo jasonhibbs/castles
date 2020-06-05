@@ -7,7 +7,7 @@
     :zoom="mapConfig.zoom"
     :hash="true"
     :style="styles"
-    @load="onMapLoaded"
+    @load="onMapLoad"
     @click="onMapClick"
     @move="onMapMove"
     @rotate="onMapRotate"
@@ -54,11 +54,14 @@ export default class MapboxMap extends Vue {
     this.mapbox = Mapbox
   }
 
-  onMapLoaded(e: any) {
-    this.$store.state.map = e.map
-    this.$emit('mapload', e.map)
+  mounted() {
     this.$root.$on('locationchange', this.mapEaseTo)
     this.$root.$on('colorschemechange', this.onSchemeChange)
+  }
+
+  onMapLoad(e: any) {
+    this.$store.state.map = e.map
+    this.$emit('load', e.map)
     this.mapView.center = this.map.getCenter()
     this.mapView.zoom = this.map.getZoom()
     this.updateBounds()
@@ -72,11 +75,11 @@ export default class MapboxMap extends Vue {
   }
 
   onStyleLoaded(e: any) {
-    this.$emit('mapstyleload')
+    this.$emit('styleload')
   }
 
   onSchemeChange(value: string) {
-    this.$emit('mapstyleloading')
+    this.$emit('styleloading')
     this.map.setStyle(this.mapConfig.style[value])
   }
 
@@ -97,7 +100,7 @@ export default class MapboxMap extends Vue {
   onMapMoved() {
     this.mapView.center = this.map.getCenter()
     this.updateBounds()
-    this.$emit('mapmove')
+    this.$emit('move')
   }
 
   onMapZoom = throttle(() => {
@@ -119,7 +122,7 @@ export default class MapboxMap extends Vue {
   }
 
   onMapClick(e: any) {
-    this.$emit('mapclick', e)
+    this.$emit('click', e)
   }
 
   updateBounds() {
@@ -137,6 +140,11 @@ export default class MapboxMap extends Vue {
   }
 
   mapEaseTo(args: any) {
+    if (!this.map) {
+      setTimeout(() => {
+        this.mapEaseTo(args)
+      }, 400)
+    }
     const defaultZoom = 8 > this.mapView.zoom ? 8 : this.mapView.zoom
     this.map.easeTo(
       Object.assign(
@@ -159,7 +167,7 @@ export default class MapboxMap extends Vue {
     this.longpressTimeoutClear()
     this.longpressTimeout = window.setTimeout(() => {
       this.longpressed = true
-      this.$emit('maplongpress', e)
+      this.$emit('longpress', e)
     }, 500)
   }
 
@@ -188,7 +196,7 @@ export default class MapboxMap extends Vue {
   }
 
   onMapMousemove(e: any) {
-    this.$emit('mapmousemove', e)
+    this.$emit('mousemove', e)
   }
 
   onMapDrag(e: any) {

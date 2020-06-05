@@ -3,34 +3,34 @@
   .castle-map(
     :class="classes"
   )
+    loader(v-if="!styleLoaded")
     mapbox-map(
-      @mapload="onLoad"
-      @mapstyleloading="onStyleLoading"
-      @mapstyleload="onStyleLoad"
-      @mapclick="onClick"
-      @mapmousemove="onMousemove"
-      @maplongpress="onLongpress"
+      @load="onLoad"
+      @styleloading="onStyleLoading"
+      @styleload="onStyleLoad"
+      @click="onClick"
+      @mousemove="onMousemove"
+      @longpress="onLongpress"
     )
       template(v-if="styleLoaded")
         context-marker
-        castle-markers(
-          :sourceId="sourceId"
-        )
+        castle-markers(:sourceId="sourceId")
 
 
 </template>
 <script lang="ts">
 import { Component, Prop, Vue, Watch } from 'vue-property-decorator'
 import { mapState } from 'vuex'
-import MapboxMap from '@/components/MapboxMap.vue'
-import ContextMarker from '@/components/ContextMarker.vue'
-import CastleMarkers from '@/components/CastleMarkers.vue'
 import { Map } from 'mapbox-gl'
 import { Point } from 'geojson'
 import debounce from 'lodash.debounce'
+import MapboxMap from '@/components/MapboxMap.vue'
+import ContextMarker from '@/components/ContextMarker.vue'
+import CastleMarkers from '@/components/CastleMarkers.vue'
+import Loader from '@/components/Loader.vue'
 
 @Component({
-  components: { MapboxMap, ContextMarker, CastleMarkers },
+  components: { MapboxMap, ContextMarker, CastleMarkers, Loader },
   computed: mapState(['mapView']),
 })
 export default class CastleMap extends Vue {
@@ -41,6 +41,7 @@ export default class CastleMap extends Vue {
   get classes() {
     return {
       _hover: this.castleHovering,
+      _ready: this.styleLoaded,
     }
   }
 
@@ -267,6 +268,24 @@ export default class CastleMap extends Vue {
 
   &._hover canvas {
     cursor: pointer;
+  }
+
+  canvas {
+    opacity: 0;
+    transition: opacity 0.4s;
+  }
+
+  &._ready canvas {
+    opacity: 1;
+  }
+
+  .loader {
+    --size: 2em;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    z-index: 1;
   }
 }
 </style>
