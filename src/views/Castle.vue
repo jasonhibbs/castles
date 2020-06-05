@@ -53,10 +53,11 @@ import IconClose from '@/components/IconClose.vue'
 
 @Component({
   components: { Card, Loader, IconClose },
-  computed: mapState(['mapView']),
+  computed: mapState(['mapView', 'castles']),
 })
 export default class Castle extends Vue {
   mapView!: any
+  castles!: []
   castle: any = {}
   fetching: boolean = true
 
@@ -69,7 +70,7 @@ export default class Castle extends Vue {
       this.easeToCastle(storeCoords[1], storeCoords[0])
     }
     // fetch castle data
-    this.castle = await this.fetchCastle(this.id)
+    this.castle = await this.getCastle(this.id)
     // ease from data if necessary
     if (!storeCoords && this.castle?.coords) {
       this.easeToCastle()
@@ -78,12 +79,19 @@ export default class Castle extends Vue {
 
   // Setup
 
-  async fetchCastle(id: string) {
+  async getCastle(id: string) {
+    if (!this.castles.length) {
+      await this.fetchCastles()
+    }
+    this.fetching = false
+    return this.castles.find((c: any) => this.id === c.id)
+  }
+
+  async fetchCastles() {
     return fetch('/castles-data.json')
       .then(response => response.json())
       .then(data => {
-        this.fetching = false
-        return data.find((c: any) => this.id === c.id)
+        return this.$store.commit('updateCastles', data)
       })
   }
 

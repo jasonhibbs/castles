@@ -54,6 +54,7 @@ export default new Vuex.Store({
       },
       zoom: 14,
     },
+    castles: [],
   },
   mutations: {
     updateContext(state, coords) {
@@ -67,6 +68,9 @@ export default new Vuex.Store({
     },
     updateSelected(state, feature) {
       state.mapView.selected = feature
+    },
+    updateCastles(state, castles) {
+      state.castles = castles
     },
   },
   actions: {
