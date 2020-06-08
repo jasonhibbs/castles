@@ -9,9 +9,9 @@
     template(#content)
       .layout
         p According to the UK Prime Minister’s Chief Adviser, vision is best checked via the operation of a motor vehicle travelling towards a castle approximately 31.4 kilometres from your estate.
-        p Long-press anywhere on the map (or tap the compass arrow) to mark your location and discover the ideal castles for you.
-        p Disclaimer: please do not actually drive while your eyesight is below #[a(href="https://www.gov.uk/driving-eyesight-rules#standards-of-vision-for-driving") the standards of vision for driving].
+        p {{ locationHint }} to mark your location and discover the ideal castles for you.
         p Privacy: your location isn’t used beyond this website.
+        p Disclaimer: please do not actually drive while your eyesight is below #[a(href="https://www.gov.uk/driving-eyesight-rules#standards-of-vision-for-driving") the standards of vision for driving].
 
       footer
         .layout
@@ -29,5 +29,15 @@ import Card from '@/components/Card.vue'
 @Component({
   components: { Card },
 })
-export default class Home extends Vue {}
+export default class Home extends Vue {
+  get hasGeolocation() {
+    return !!navigator.geolocation && window.location.protocol.includes('https')
+  }
+
+  get locationHint() {
+    return !this.hasGeolocation
+      ? 'Long-press anywhere on the map'
+      : 'Tap the compass arrow (or long-press anywhere on the map)'
+  }
+}
 </script>

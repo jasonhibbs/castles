@@ -115,3 +115,14 @@
   padding: rem(6);
   z-index: 1;
 }
+
+// Button
+
+button.button-location {
+  position: fixed;
+  top: rem(12);
+  right: rem(12);
+  z-index: 1;
+  padding: rem(12);
+  padding-right: max(rem(12), env(safe-area-inset-right));
+}

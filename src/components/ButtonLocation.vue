@@ -1,14 +1,15 @@
 <template lang="pug">
 
-  button.button-location(
+  button.button-location._inner(
     v-if="hasGeolocation"
     :title="title"
     @click="getCurrentLocation"
   )
-    template(v-if="!isFinding")
-      inline-svg.inline-svg(:src="`/location-arrow.svg`")
-    template(v-else)
-      loader
+    .button-inner
+      template(v-if="!isFinding")
+        inline-svg.inline-svg(:src="`/location-arrow.svg`")
+      template(v-else)
+        loader
 
 </template>
 <script lang="ts">
@@ -67,15 +68,22 @@ export default class ButtonLocation extends Vue {
 </script>
 
 <style lang="scss">
+@import '../assets/scss/util';
+
 .button-location {
   --padding-x: 0;
   --padding-y: 0;
-  --background-color: var(--shade-darkest);
-  --hover-background-color: var(--shade-darker);
+  --background-color: var(--color-black);
+  --hover-background-color: var(--grey-darkest);
   --color: var(--color-white);
 
-  width: 2.25rem;
-  height: 2.25rem;
+  .button-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(32);
+    height: rem(32);
+  }
 
   .loader {
     --light-color: var(--tint-mid);
