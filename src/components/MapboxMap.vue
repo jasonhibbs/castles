@@ -7,19 +7,19 @@
     :zoom="mapConfig.zoom"
     :hash="true"
     :style="styles"
-    @load="onMapLoad"
-    @click="onMapClick"
-    @move="onMapMove"
-    @rotate="onMapRotate"
-    @zoom="onMapZoom"
+    @load="onLoad"
+    @click="onClick"
+    @move="onMove"
+    @rotate="onRotate"
+    @zoom="onZoom"
     @styledata="onStyleLoaded"
-    @mousedown="onMapMousedown"
-    @mouseup="onMapMouseup"
-    @mousemove="onMapMousemove"
-    @drag="onMapDrag"
-    @touchstart="onMapTouchstart"
-    @touchend="onMapTouchend"
-    @touchmove="onMapTouchmove"
+    @mousedown="onMousedown"
+    @mouseup="onMouseup"
+    @mousemove="onMousemove"
+    @drag="onDrag"
+    @touchstart="onTouchstart"
+    @touchend="onTouchend"
+    @touchmove="onTouchmove"
   )
     slot
 
@@ -59,7 +59,7 @@ export default class MapboxMap extends Vue {
     this.$root.$on('colorschemechange', this.onSchemeChange)
   }
 
-  onMapLoad(e: any) {
+  onLoad(e: any) {
     this.$store.state.map = e.map
     this.$emit('load', e.map)
     this.mapView.center = this.map.getCenter()
@@ -93,35 +93,35 @@ export default class MapboxMap extends Vue {
 
   // Movement
 
-  onMapMove = debounce(() => {
-    this.onMapMoved()
+  onMove = debounce(() => {
+    this.onMoved()
   }, 400)
 
-  onMapMoved() {
+  onMoved() {
     this.mapView.center = this.map.getCenter()
     this.updateBounds()
     this.$emit('move')
   }
 
-  onMapZoom = throttle(() => {
-    this.onMapZoomed()
+  onZoom = throttle(() => {
+    this.onZoomed()
   }, 200)
 
-  onMapZoomed() {
+  onZoomed() {
     const currentZoom = this.map.getZoom()
     this.mapView.zoom = currentZoom
   }
 
-  onMapRotate = throttle(() => {
-    this.onMapRotated()
+  onRotate = throttle(() => {
+    this.onRotated()
   }, 60)
 
-  onMapRotated() {
+  onRotated() {
     const currentBearing = this.map.getBearing()
     this.mapView.bearing = currentBearing
   }
 
-  onMapClick(e: any) {
+  onClick(e: any) {
     this.$emit('click', e)
   }
 
@@ -187,34 +187,34 @@ export default class MapboxMap extends Vue {
 
   // Mouse
 
-  onMapMousedown(e: any) {
+  onMousedown(e: any) {
     this.longpressTimeoutStart(e)
   }
 
-  onMapMouseup(e: any) {
+  onMouseup(e: any) {
     this.longpressTimeoutEnd(e)
   }
 
-  onMapMousemove(e: any) {
+  onMousemove(e: any) {
     this.$emit('mousemove', e)
   }
 
-  onMapDrag(e: any) {
+  onDrag(e: any) {
     this.longpressTimeoutClear()
     this.$emit('drag', e)
   }
 
   // Touch
 
-  onMapTouchstart(e: any) {
+  onTouchstart(e: any) {
     this.longpressTimeoutStart(e)
   }
 
-  onMapTouchend(e: any) {
+  onTouchend(e: any) {
     this.longpressTimeoutEnd(e)
   }
 
-  onMapTouchmove(e: any) {
+  onTouchmove(e: any) {
     this.longpressTimeoutClear()
   }
 }
