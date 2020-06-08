@@ -34,19 +34,53 @@
   }
 }
 
+// Elements ------------------------------------------------------------
+
+#app > .logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin: rem(20);
+  font-size: rem(48);
+}
+
+button.button-location {
+  position: fixed;
+  top: rem(12);
+  right: rem(12);
+  z-index: 1;
+  padding: rem(12);
+}
+
+@supports (padding: max(1px)) {
+  #app > .logo {
+    margin-left: max(rem(20), env(safe-area-inset-left));
+  }
+
+  button.button-location {
+    padding-right: max(rem(12), env(safe-area-inset-right));
+  }
+}
+
 // Markers -------------------------------------------------------------
 
 .marker {
   --size-rate: 0.875;
   --size-exp: calc(var(--map-zoom) * (var(--map-zoom) * var(--size-rate)));
   --size: calc(0.125px * var(--size-exp));
-  --width: max(2px, min(var(--size), 20px));
-  --height: max(2px, min(var(--size), 20px));
+  --width: var(--size);
+  --height: var(--size);
   --pin-background-color: var(--color-text);
   --pin-halo-color: var(--color-root);
   --pin-halo-width: 1px;
   --label-background-color: var(--pin-background-color);
   --label-color: var(--color-root);
+
+  @supports (width: min(1px)) {
+    --width: max(2px, min(var(--size), 20px));
+    --height: max(2px, min(var(--size), 20px));
+  }
 
   cursor: pointer;
   font-family: var(--font-body);
@@ -66,7 +100,7 @@
   height: var(--height);
   background-color: var(--pin-background-color);
   box-shadow: 0 0 0 var(--pin-halo-width) var(--pin-halo-color);
-  border-radius: 2em;
+  border-radius: 6em;
   transition: box-shadow 0.1s ease-out;
 
   .marker:hover &,
@@ -106,23 +140,18 @@
 
 .context-marker {
   --size-rate: 1.25;
-  --width: max(12px, min(var(--size), 24px));
-  --height: max(12px, min(var(--size), 24px));
+  --width: var(--size);
+  --height: var(--size);
   --pin-background-color: var(--color-key);
   --pin-halo-width: 2px;
   // --label-color: var(--color-text);
+
+  @supports (width: min(1px)) {
+    --width: max(12px, min(var(--size), 24px));
+    --height: max(12px, min(var(--size), 24px));
+  }
+
   cursor: default;
   padding: rem(6);
   z-index: 1;
-}
-
-// Button
-
-button.button-location {
-  position: fixed;
-  top: rem(12);
-  right: rem(12);
-  z-index: 1;
-  padding: rem(12);
-  padding-right: max(rem(12), env(safe-area-inset-right));
 }

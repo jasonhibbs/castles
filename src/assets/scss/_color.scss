@@ -47,21 +47,23 @@ $color-caution-20: fade-out($color-caution, 0.8);
 $color-caution-10: fade-out($color-caution, 0.9);
 $color-text-caution: darken($color-caution, 10);
 
-$tint-darkest: fade-out($color-white, 0.4);
-$tint-darker: fade-out($color-white, 0.5);
-$tint-dark: fade-out($color-white, 0.6);
-$tint-mid: fade-out($color-white, 0.7);
-$tint-light: fade-out($color-white, 0.8);
-$tint-lighter: fade-out($color-white, 0.88);
-$tint-lightest: fade-out($color-white, 0.94);
+$color-tint: $color-white;
+$tint-darkest: fade-out($color-tint, 0.4);
+$tint-darker: fade-out($color-tint, 0.5);
+$tint-dark: fade-out($color-tint, 0.6);
+$tint-mid: fade-out($color-tint, 0.7);
+$tint-light: fade-out($color-tint, 0.8);
+$tint-lighter: fade-out($color-tint, 0.88);
+$tint-lightest: fade-out($color-tint, 0.94);
 
-$shade-darkest: fade-out($color-black, 0.2);
-$shade-darker: fade-out($color-black, 0.4);
-$shade-dark: fade-out($color-black, 0.5);
-$shade-mid: fade-out($color-black, 0.7);
-$shade-light: fade-out($color-black, 0.85);
-$shade-lighter: fade-out($color-black, 0.9);
-$shade-lightest: fade-out($color-black, 0.94);
+$color-shade: $color-black;
+$shade-darkest: fade-out($color-shade, 0.2);
+$shade-darker: fade-out($color-shade, 0.4);
+$shade-dark: fade-out($color-shade, 0.5);
+$shade-mid: fade-out($color-shade, 0.7);
+$shade-light: fade-out($color-shade, 0.85);
+$shade-lighter: fade-out($color-shade, 0.9);
+$shade-lightest: fade-out($color-shade, 0.94);
 
 $grey-darkest: mix($color-white, $color-black, 20);
 $grey-darker: mix($color-white, $color-black, 40);
@@ -125,16 +127,9 @@ $grey-lightest: mix($color-white, $color-black, 94);
   --color-root: var(--color-white);
   --color-root-backdrop: #{$tint-darkest};
 
+  --color-shade: #{$color-black};
+  --color-tint: #{$color-white};
   --color-contrast: var(--color-black);
-  --color-shade: var(--color-black);
-
-  --contrast-darkest: #{$shade-darkest};
-  --contrast-darker: #{$shade-darker};
-  --contrast-dark: #{$shade-dark};
-  --contrast-mid: #{$shade-mid};
-  --contrast-light: #{$shade-light};
-  --contrast-lighter: #{$shade-lighter};
-  --contrast-lightest: #{$shade-lightest};
 
   --shade-darkest: #{$shade-darkest};
   --shade-darker: #{$shade-darker};
@@ -151,6 +146,14 @@ $grey-lightest: mix($color-white, $color-black, 94);
   --tint-light: #{$tint-light};
   --tint-lighter: #{$tint-lighter};
   --tint-lightest: #{$tint-lightest};
+
+  --contrast-darkest: #{$shade-darkest};
+  --contrast-darker: #{$shade-darker};
+  --contrast-dark: #{$shade-dark};
+  --contrast-mid: #{$shade-mid};
+  --contrast-light: #{$shade-light};
+  --contrast-lighter: #{$shade-lighter};
+  --contrast-lightest: #{$shade-lightest};
 
   --grey-darkest: #{$grey-darkest};
   --grey-darker: #{$grey-darker};

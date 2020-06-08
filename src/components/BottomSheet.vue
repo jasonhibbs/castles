@@ -220,6 +220,7 @@ $sheet-max-viewport: 412;
   overscroll-behavior: contain;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none;
+  scrollbar-width: none;
 
   max-width: rem($sheet-max-viewport + 40);
   padding: 0 env(safe-area-inset-left);
