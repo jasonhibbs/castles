@@ -4,13 +4,13 @@
   transition(
     appear
     name="sheet"
-    @enter="enter"
+    @enter="onEnter"
   )
     .sheet-context
       .sheet(
         ref="sheet"
         :class="classes"
-        @scroll="scroll"
+        @scroll="onScroll"
       )
         .sheet-margin(
           ref="sheetMargin"
@@ -80,14 +80,11 @@ export default class BottomSheet extends Vue {
   }
 
   mounted() {
-    this.scroll()
     this.$root.$on('raisesheet', () => this.atBottom && this.toMid())
     this.$root.$on('lowersheet', () => !this.atBottom && this.toBottom())
     this.$root.$on('togglesheet', this.toggle)
-  }
-
-  enter() {
-    this.peek ? this.toBottom() : this.toMid()
+    this.$root.$on('checksheet', this.check)
+    // this.onScroll()
   }
 
   activate() {
@@ -104,6 +101,18 @@ export default class BottomSheet extends Vue {
       this.$emit('dismiss')
     }
   }
+
+  check() {
+    window.dispatchEvent(new Event('scroll'))
+    if (this.atBetween) {
+      this.toggle()
+    }
+    if (this.atTop) {
+      this.sheetEl.scroll()
+    }
+  }
+
+  // Stops
 
   toggle() {
     if (this.atMid) {
@@ -126,7 +135,7 @@ export default class BottomSheet extends Vue {
     this.sheetEl.scrollTop = this.stopBottomEl.offsetTop
   }
 
-  atStop(stop: 'top' | 'middle' | 'bottom' | 'between') {
+  setStop(stop: 'top' | 'middle' | 'bottom' | 'between') {
     this.stop = stop
     this.$store.dispatch('sheetScrolled', { stop, height: this.height })
   }
@@ -134,14 +143,27 @@ export default class BottomSheet extends Vue {
   get atTop() {
     return this.stop === 'top'
   }
+
   get atMid() {
     return this.stop === 'middle'
   }
+
   get atBottom() {
     return this.stop === 'bottom'
   }
 
-  scroll() {
+  get atBetween() {
+    return this.stop === 'between'
+  }
+
+  // Events
+
+  onEnter() {
+    this.peek ? this.toBottom() : this.toMid()
+  }
+
+  onScroll() {
+    console.log('scrolled')
     if (this.sheetEl && !this.dismissed) {
       const delta = this.sheetEl.scrollTop - this.scrollTop
       const top = this.sheetMarginEl.clientHeight
@@ -153,20 +175,20 @@ export default class BottomSheet extends Vue {
 
       switch (true) {
         case this.scrollTop >= top:
-          this.atStop('top')
+          this.setStop('top')
           this.scrollMarginEl.style.height = '0'
           if (this.scrollTop > top) {
             this.scrolled = true
           }
           return
         case this.scrollTop === this.stopMidEl.offsetTop:
-          this.atStop('middle')
+          this.setStop('middle')
           break
         case this.scrollTop <= 0:
-          this.atStop('bottom')
+          this.setStop('bottom')
           break
         default:
-          this.atStop('between')
+          this.setStop('between')
           break
       }
 
@@ -261,8 +283,9 @@ $sheet-max-viewport: 412;
 .sheet-margin {
   position: relative;
   width: 100%;
+  background: transparent;
   height: calc(100% - var(--sheet-offset-bottom));
-  background: none;
+  will-change: height;
 
   ._bottom & {
     transition: height 0.4s ease-out;
@@ -276,7 +299,7 @@ $sheet-max-viewport: 412;
   z-index: 2;
   width: 100%;
   height: 1px;
-  // background-color: #f0f;
+  background-color: #f0f;
 
   &._top {
     top: calc(100% - var(--sheet-offset-bottom));

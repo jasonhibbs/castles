@@ -59,10 +59,7 @@ export default class Card extends Vue {
         '--sheet-bottom',
         `${this.cardHeaderEl.clientHeight}px`
       )
-      window.dispatchEvent(new Event('scroll'))
-      if (this.mapView.sheet.stop === 'between') {
-        this.$root.$emit('togglesheet')
-      }
+      this.$root.$emit('checksheet')
     }
   }
 }
