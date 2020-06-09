@@ -122,7 +122,10 @@ export default class MapboxMap extends Vue {
   }
 
   onClick(e: any) {
-    this.$emit('click', e)
+    if (!this.longpressed) {
+      this.$emit('click', e)
+    }
+    this.longpressTimeoutEnd(e)
   }
 
   updateBounds() {
@@ -192,7 +195,7 @@ export default class MapboxMap extends Vue {
   }
 
   onMouseup(e: any) {
-    this.longpressTimeoutEnd(e)
+    // this.longpressTimeoutEnd(e)
   }
 
   onMousemove(e: any) {
