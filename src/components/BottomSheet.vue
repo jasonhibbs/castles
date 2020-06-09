@@ -84,7 +84,7 @@ export default class BottomSheet extends Vue {
     this.$root.$on('lowersheet', () => !this.atBottom && this.toBottom())
     this.$root.$on('togglesheet', this.toggle)
     this.$root.$on('checksheet', this.check)
-    // this.onScroll()
+    this.onScroll()
   }
 
   activate() {
@@ -103,10 +103,20 @@ export default class BottomSheet extends Vue {
   }
 
   check() {
+    // This is a selection of hacks to overcome attempts
+    // to adjust the scroll height based on content of the sheet
+
+    // Chrome scrolls when the scroll height changes,
+    // Safari doesn’t
     window.dispatchEvent(new Event('scroll'))
+
+    // The new scroll height tends to end up between
+    // when it should be in the middle
     if (this.atBetween) {
-      this.toggle()
+      this.toMid()
     }
+
+    // Firefox responds to this
     if (this.atTop) {
       this.sheetEl.scroll()
     }
@@ -163,7 +173,6 @@ export default class BottomSheet extends Vue {
   }
 
   onScroll() {
-    console.log('scrolled')
     if (this.sheetEl && !this.dismissed) {
       const delta = this.sheetEl.scrollTop - this.scrollTop
       const top = this.sheetMarginEl.clientHeight
@@ -299,7 +308,7 @@ $sheet-max-viewport: 412;
   z-index: 2;
   width: 100%;
   height: 1px;
-  background-color: #f0f;
+  // background-color: #f0f;
 
   &._top {
     top: calc(100% - var(--sheet-offset-bottom));
