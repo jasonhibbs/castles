@@ -1,25 +1,19 @@
 <template lang="pug">
 
 
-  card.card-castle
+  card.card-castle(
+    dismiss="Dismiss Castle"
+  )
+
     template(#header)
-      .layout
+      .heading(v-if="castle")
+        h1 {{ title }}
+        span(
+          v-if="distance"
+        ) {{ distanceRangeLabel }}
 
-        .heading(v-if="castle")
-          h1 {{ title }}
-          span(
-            v-if="distance"
-          ) {{ distanceRangeLabel }}
-
-        .heading(v-else)
-          h1 404
-
-        router-link(
-          title="Dismiss castle"
-          :to="'/'"
-          @click.native.stop
-        )
-          icon-close
+      .heading(v-else)
+        h1 404
 
     template(#content)
       .layout
@@ -49,10 +43,9 @@ import { mapState } from 'vuex'
 import distance from '@turf/distance'
 import Card from '@/components/Card.vue'
 import Loader from '@/components/Loader.vue'
-import IconClose from '@/components/IconClose.vue'
 
 @Component({
-  components: { Card, Loader, IconClose },
+  components: { Card, Loader },
   computed: mapState(['mapView', 'castles']),
 })
 export default class Castle extends Vue {
@@ -190,46 +183,6 @@ export default class Castle extends Vue {
 </script>
 <style lang="scss">
 @import '../assets/scss/util';
-
-.card-castle .card-header {
-  padding: 0;
-
-  .layout {
-    display: flex;
-    width: auto;
-    min-height: rem(64);
-  }
-
-  .heading {
-    flex: auto;
-    margin: rem(16) 0;
-    margin-left: rem(var(--screen-padding-x));
-
-    span {
-      display: inline-block;
-      margin-top: rem(8);
-    }
-  }
-
-  a {
-    $size: 28;
-    $margin: 18;
-    display: flex;
-    align-items: center;
-    flex: none;
-    font-size: rem($size);
-    text-align: right;
-    padding: 0 rem($margin);
-    max-height: rem($size + ($margin * 2));
-
-    &:focus {
-      outline: none;
-      .icon-close {
-        box-shadow: 0 0 0 3px var(--contrast-light);
-      }
-    }
-  }
-}
 
 ul.meta {
   margin: 0;

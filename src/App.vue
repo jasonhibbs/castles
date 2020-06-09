@@ -47,7 +47,7 @@ export default class App extends Vue {
   transitionName: string = 'none'
 
   @Watch('$route') onRouteChange(to: any, from: any) {
-    if (to.name === 'Castle') {
+    if (to.name !== 'Home') {
       this.transitionName = 'slide-up'
     }
     if (to.name === 'Home') {

@@ -52,6 +52,14 @@ a {
   }
 
   @include focus-outline;
+
+  &._unlink {
+    &,
+    &:focus,
+    &:hover {
+      color: inherit;
+    }
+  }
 }
 
 h1,

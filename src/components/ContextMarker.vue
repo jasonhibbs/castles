@@ -4,7 +4,10 @@
     mgl-marker(
       :coordinates="[lng, lat]"
     )
-      .marker.context-marker(slot="marker")
+      .marker.context-marker(
+        slot="marker"
+        @click="onClick"
+      )
         .marker-pin
           .marker-head
           .marker-shaft
@@ -37,6 +40,14 @@ import { MglMarker, MglGeojsonLayer } from 'vue-mapbox'
 })
 export default class ContextMarker extends Vue {
   mapView!: any
+
+  onClick() {
+    if (this.$route.name === 'Nearby') {
+      this.$router.push({ name: 'Home' })
+    } else {
+      this.$router.push({ name: 'Nearby' })
+    }
+  }
 
   get coords() {
     return [this.mapView.context.lng, this.mapView.context.lat]

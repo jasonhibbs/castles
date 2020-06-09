@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
 import Home from '../views/Home.vue'
 import Castle from '../views/Castle.vue'
+import Nearby from '../views/Nearby.vue'
 
 Vue.use(VueRouter)
 
@@ -19,6 +20,11 @@ const routes: RouteConfig[] = [
     path: '/castles/:id',
     name: 'Castle',
     component: Castle,
+  },
+  {
+    path: '/nearby',
+    name: 'Nearby',
+    component: Nearby,
   },
 ]
 
