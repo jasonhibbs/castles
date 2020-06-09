@@ -65,6 +65,7 @@ export default class Nearby extends Vue {
   async mounted() {
     // fetch castle data
     await this.checkCastles()
+    this.$root.$emit('raisesheet')
   }
 
   // Setup
