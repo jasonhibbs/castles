@@ -58,12 +58,6 @@ export default class ButtonLocation extends Vue {
     console.warn(error.message)
     this.isFinding = false
   }
-
-  onLocationChange() {
-    this.$root.$emit('locationchange', {
-      center: [this.mapView.context.lng, this.mapView.context.lat],
-    })
-  }
 }
 </script>
 

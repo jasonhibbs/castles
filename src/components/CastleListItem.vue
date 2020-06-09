@@ -1,8 +1,10 @@
 <template lang="pug">
 
   li.castle-list-item
-    p {{ castle.name }}
-    p {{ distanceRangeLabel }}
+    router-link._unlink(:to="link")
+      .layout
+        h2 {{ name }}
+        p {{ distanceRangeLabel }}
 
 
 </template>
@@ -15,33 +17,37 @@ import distance from '@turf/distance'
   computed: mapState(['mapView']),
 })
 export default class CastleListItem extends Vue {
-  @Prop() castle!: any
+  @Prop() id!: string
+  @Prop() name!: string
+  @Prop() distance!: number
 
   mapView!: any
 
-  get coords() {
-    return this.castle.coords
-  }
-
-  get km() {
-    return this.castle.distance
+  get link() {
+    return {
+      name: 'Castle',
+      params: {
+        id: this.id,
+      },
+    }
   }
 
   get range() {
     const magic = 31.37206463500155
     const range = 2
+    const km = this.distance
     switch (true) {
-      case this.km > magic + range:
+      case km > magic + range:
         return 1
-      case this.km < magic - range:
+      case km < magic - range:
         return -1
       default:
         return 0
     }
   }
 
-  get distance() {
-    const { km } = this
+  get distanceLabel() {
+    const km = this.distance
     if (km) {
       switch (true) {
         case km < 1:
@@ -58,12 +64,47 @@ export default class CastleListItem extends Vue {
   get distanceRangeLabel() {
     switch (true) {
       case this.range > 0:
-        return `${this.distance} – too far`
+        return `${this.distanceLabel} – too far`
       case this.range < 0:
-        return `${this.distance} – too near`
+        return `${this.distanceLabel} – too near`
       default:
-        return `${this.distance} — just right`
+        return `${this.distanceLabel} — just right`
     }
   }
 }
 </script>
+<style lang="scss">
+@import '../assets/scss/util';
+
+.castle-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.castle-list-item {
+  a {
+    display: block;
+
+    &:focus,
+    &:hover {
+      background-color: var(--contrast-lightest);
+    }
+  }
+
+  .layout {
+    padding: rem(16) 0;
+    box-shadow: 0 1px var(--contrast-lighter);
+  }
+
+  h2 {
+    @include font-size(20, 20);
+    padding-bottom: rem(8);
+  }
+
+  p {
+    margin: 0;
+  }
+}
+</style>
+

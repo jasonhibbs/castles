@@ -9,14 +9,12 @@
         h1 Nearby
 
     template(#content)
-      .layout
-
-        ul
-          castle-list-item(
-            v-for="castle in nearbyCastles"
-            :key="castle.id"
-            :castle="castle"
-          )
+      ul.castle-list
+        castle-list-item(
+          v-for="castle in nearbyCastles"
+          :key="castle.id"
+          v-bind="castle"
+        )
 
 
 </template>
@@ -32,7 +30,7 @@ import CastleListItem from '@/components/CastleListItem.vue'
   components: { Card, Loader, CastleListItem },
   computed: mapState(['mapView', 'castles']),
 })
-export default class Castle extends Vue {
+export default class Nearby extends Vue {
   mapView!: any
   castles!: []
   fetching: boolean = true
@@ -47,15 +45,19 @@ export default class Castle extends Vue {
     return distance(from, to)
   }
 
+  get measuredCastles() {
+    // console.log(this.$store.state.mapView.context.lat, this.mapView.context.lat)
+    const update = this.mapView.context.lat
+    return this.castles.map((c: any) => {
+      c.distance = this.getCastleDistance(c)
+      return c
+    })
+  }
+
   get nearbyCastles() {
-    return this.castles
-      .map((c: any) => {
-        c.distance = this.getCastleDistance(c)
-        return c
-      })
-      .sort((a: any, b: any) => {
-        return a.distance - b.distance
-      })
+    return this.measuredCastles.sort((a: any, b: any) => {
+      return a.distance - b.distance
+    })
   }
 
   // Lifecycle
