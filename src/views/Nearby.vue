@@ -1,17 +1,12 @@
 <template lang="pug">
 
-  card.card-nearby
-    template(#header)
-      .layout
-        .heading
-          h1 Nearby
+  card.card-nearby(
+    dismiss="Dismiss Nearby"
+  )
 
-        router-link(
-          title="Dismiss Nearby"
-          :to="'/'"
-          @click.native.stop
-        )
-          icon-close
+    template(#header)
+      .heading
+        h1 Nearby
 
     template(#content)
       .layout
@@ -37,7 +32,6 @@ import IconClose from '@/components/IconClose.vue'
 export default class Castle extends Vue {
   mapView!: any
   castles!: []
-  castle: any = {}
   finding: boolean = true
 
   // Lifecycle

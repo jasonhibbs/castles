@@ -17,7 +17,6 @@
 }
 
 .card-header {
-  padding: rem(16) 0 rem(20);
   position: sticky;
   top: 0;
   z-index: 9;
@@ -40,6 +39,23 @@
     background-color: currentColor;
     opacity: 0.1;
     transition: top 0.2s, opacity 0.2s;
+  }
+
+  .layout {
+    display: flex;
+    width: auto;
+    min-height: rem(64);
+  }
+
+  .heading {
+    flex: auto;
+    margin: rem(16) 0;
+    margin-left: rem(var(--screen-padding-x));
+
+    span {
+      display: inline-block;
+      margin-top: rem(8);
+    }
   }
 
   ._interactive & {
@@ -69,6 +85,25 @@
 
   h1 + h2 {
     margin-top: rem(8);
+  }
+}
+
+.card-header-close {
+  $size: 28;
+  $margin: 18;
+  display: flex;
+  align-items: center;
+  flex: none;
+  font-size: rem($size);
+  text-align: right;
+  padding: 0 rem($margin);
+  max-height: rem($size + ($margin * 2));
+
+  &:focus {
+    outline: none;
+    .icon-close {
+      box-shadow: 0 0 0 3px var(--contrast-light);
+    }
   }
 }
 

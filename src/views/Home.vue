@@ -3,8 +3,9 @@
   card
     template(#header)
       .layout
-        h1 Where should thou test thine eyes?
-        h2 A map of English castles
+        .heading
+          h1 Where should thou test thine eyes?
+          h2 A map of English castles
 
     template(#content)
       .layout

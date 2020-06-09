@@ -5,22 +5,33 @@
       ref="cardHeader"
       @click="$root.$emit('togglesheet')"
     )
-      slot(name="header")
+      .layout
+        slot(name="header")
+        router-link.card-header-close(
+          v-if="dismiss"
+          :title="dismiss"
+          :to="{ name: 'Home' }"
+          @click.native.stop
+        )
+          icon-close
 
     main.card-content
       slot(name="content")
 
 </template>
 <script lang="ts">
-import { Component, Ref, Vue, Watch } from 'vue-property-decorator'
+import { Component, Prop, Ref, Vue, Watch } from 'vue-property-decorator'
 import { mapState } from 'vuex'
 import debounce from 'lodash.debounce'
+import IconClose from '@/components/IconClose.vue'
 
 @Component({
+  components: { IconClose },
   computed: mapState(['mapView']),
 })
 export default class Card extends Vue {
   @Ref('cardHeader') cardHeaderEl!: HTMLElement
+  @Prop({ default: '' }) dismiss!: string
 
   mapView!: any
 

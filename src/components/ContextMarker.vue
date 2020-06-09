@@ -41,7 +41,13 @@ import { MglMarker, MglGeojsonLayer } from 'vue-mapbox'
 export default class ContextMarker extends Vue {
   mapView!: any
 
-  onClick() {}
+  onClick() {
+    if (this.$route.name === 'Nearby') {
+      this.$router.push({ name: 'Home' })
+    } else {
+      this.$router.push({ name: 'Nearby' })
+    }
+  }
 
   get coords() {
     return [this.mapView.context.lng, this.mapView.context.lat]
