@@ -7,9 +7,10 @@
   transition: bottom 0.15s;
 }
 
-.mapboxgl-ctrl-attrib {
+.mapboxgl-ctrl.mapboxgl-ctrl-attrib {
   font-size: 12px;
   padding: 2px 5px 0;
+  padding-right: max(env(safe-area-inset-right), 5px);
 
   .mapbox-improve-map {
     font-weight: 500;

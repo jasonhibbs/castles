@@ -45,12 +45,12 @@
     display: flex;
     width: auto;
     min-height: rem(64);
+    padding: 0 rem(var(--screen-padding-x));
   }
 
   .heading {
     flex: auto;
     margin: rem(16) 0;
-    margin-left: rem(var(--screen-padding-x));
 
     span {
       display: inline-block;
@@ -98,6 +98,7 @@
   text-align: right;
   padding: 0 rem($margin);
   max-height: rem($size + ($margin * 2));
+  margin-right: -rem(var(--screen-padding-x));
 
   &:focus {
     outline: none;

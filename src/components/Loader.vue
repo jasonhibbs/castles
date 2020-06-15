@@ -36,8 +36,8 @@ export default class Loader extends Vue {}
       display: block;
       width: var(--size);
       height: var(--size);
-      border: var(--width) solid var(--color);
-      border-top-color: var(--light-color) !important;
+      border: var(--width) solid var(--light-color);
+      border-top-color: var(--color) !important;
       border-radius: var(--size);
       animation: spin var(--speed) linear infinite;
     }

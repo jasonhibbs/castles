@@ -267,7 +267,9 @@ $sheet-max-viewport: 412;
   scrollbar-width: none;
 
   max-width: rem($sheet-max-viewport + 40);
-  padding: 0 env(safe-area-inset-left);
+  padding: 0;
+  padding-left: env(safe-area-inset-left);
+  padding-right: calc(env(safe-area-inset-left) / 2);
 
   &::-webkit-scrollbar,
   &::-webkit-scrollbar-thumb {
