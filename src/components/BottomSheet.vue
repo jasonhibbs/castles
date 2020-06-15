@@ -103,12 +103,15 @@ export default class BottomSheet extends Vue {
   }
 
   check() {
-    // This is a selection of hacks to overcome attempts
-    // to adjust the scroll height based on content of the sheet
+    // This is a collection of hacks trying to fix issues relating to
+    // adjusting the scroll height based on content of the sheet
+    // They don’t really work
 
-    // Chrome scrolls when the scroll height changes,
-    // Safari doesn’t
-    window.dispatchEvent(new Event('scroll'))
+    // Safari is fine until the user has scrolled the sheet
+    // then it seems to need a kick
+    if (this.isSafari) {
+      window.dispatchEvent(new Event('scroll'))
+    }
 
     // The new scroll height tends to end up between
     // when it should be in the middle
@@ -117,9 +120,19 @@ export default class BottomSheet extends Vue {
     }
 
     // Firefox responds to this
-    if (this.atTop) {
+    if (this.isFirefox) {
       this.sheetEl.scroll()
     }
+  }
+
+  // Sniffs
+
+  get isSafari() {
+    return /^((?!chrome|android).)*safari/i.test(navigator.userAgent)
+  }
+
+  get isFirefox() {
+    return 'netscape' in window
   }
 
   // Stops
