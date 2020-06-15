@@ -219,9 +219,10 @@ export default class CastleMap extends Vue {
 
   onClick(e: any) {
     const clicked = this.findFeature(e)
+    const onCanvas = e.mapboxEvent.originalEvent.target.tagName === 'CANVAS'
 
     // no castle clicked
-    if (!clicked) {
+    if (!clicked || !onCanvas) {
       return
     }
 
