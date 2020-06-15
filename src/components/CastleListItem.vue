@@ -19,7 +19,7 @@ import distance from '@turf/distance'
 export default class CastleListItem extends Vue {
   @Prop() id!: string
   @Prop() name!: string
-  @Prop() distance!: number
+  @Prop({ default: 0 }) distance!: number
 
   mapView!: any
 
@@ -48,16 +48,16 @@ export default class CastleListItem extends Vue {
 
   get distanceLabel() {
     const km = this.distance
-    if (km) {
-      switch (true) {
-        case km < 1:
-          return `${km.toFixed(2) * 1000} m`
-        case km > 100:
-          return `${km.toFixed(0)} km`
-        default:
-          return `${km.toFixed(1)} km`
-      }
+
+    switch (true) {
+      case km < 1:
+        return `${+km.toFixed(2) * 1000} m`
+      case km > 100:
+        return `${km.toFixed(0)} km`
+      default:
+        return `${km.toFixed(1)} km`
     }
+
     return ''
   }
 
