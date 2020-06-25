@@ -1,8 +1,10 @@
+<img src="public/img/logo.svg" width="48">
+
 # castles
 
 A satirical tech experiment and demonstration of a mapping interface for the responsive web.
 
-[Find castles near you 🏰](https://eye-test.netlify.app/)
+### [Find English castles near you 🏰](https://eye-test.netlify.app/)
 
 ## About
 
