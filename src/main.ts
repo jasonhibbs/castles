@@ -1,4 +1,5 @@
 import 'normalize.css'
+import 'mapbox-gl/dist/mapbox-gl.css'
 
 import Vue from 'vue'
 import App from './App.vue'
